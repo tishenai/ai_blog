@@ -90,19 +90,19 @@ ai_blog/
 name: daily-ai-blog-post
 schedule:
   kind: cron
-  expr: "0 17 * * *"              # 每天 17:00
-  tz: "Asia/Shanghai"
-sessionTarget: isolated           # 用 isolated session（每次干净开始）
+  expr: '0 17 * * *' # 每天 17:00
+  tz: Asia/Shanghai
+sessionTarget: isolated # 用 isolated session（每次干净开始）
 payload:
   kind: agentTurn
-  thinking: high                  # 必须最高思考模式
+  thinking: high # 必须最高思考模式
   model: coding_plan/doubao-seed-2.0-pro
-  timeoutSeconds: 0               # 写文章 + push + 建文档可能要几分钟
+  timeoutSeconds: 0 # 写文章 + push + 建文档可能要几分钟
   message: <见第五节 prompt 模板>
 delivery:
   mode: announce
   channel: feishu
-  to: <OWNER_OPEN_ID>             # 飞书 owner 的 open_id（私聊）
+  to: <OWNER_OPEN_ID> # 飞书 owner 的 open_id（私聊）
 ```
 
 ---
@@ -111,16 +111,17 @@ delivery:
 
 工作流不依赖外部数据库，所有状态都在仓库里：
 
-| 文件 | 角色 |
-|---|---|
-| `tools/daily_post/topic_pool.md` | 待选 + 已用话题表（带 status 列） |
-| `pending/<slug>.md` | 草稿 |
-| `posts/<slug>.md` | 正式稿 |
-| `public/images/thumbnails/<slug>.png` | 缩略图 |
-| `tools/thumbnails/motifs/<slug>.svg` | 本篇用的 motif SVG |
-| `tools/thumbnails/gen_thumbnails.py` 内 POSTS 列表 | 缩略图待渲染清单 |
+| 文件                                               | 角色                              |
+| -------------------------------------------------- | --------------------------------- |
+| `tools/daily_post/topic_pool.md`                   | 待选 + 已用话题表（带 status 列） |
+| `pending/<slug>.md`                                | 草稿                              |
+| `posts/<slug>.md`                                  | 正式稿                            |
+| `public/images/thumbnails/<slug>.png`              | 缩略图                            |
+| `tools/thumbnails/motifs/<slug>.svg`               | 本篇用的 motif SVG                |
+| `tools/thumbnails/gen_thumbnails.py` 内 POSTS 列表 | 缩略图待渲染清单                  |
 
 **幂等性**：
+
 - `pick_topic.py`：纯读，不 mutate。
 - `auto_thumbnail.py`：判断 slug 是否已在 POSTS 列表里，重复跑只重新渲染 PNG，不重复 append。
 - `mark_topic_used.py`：找不到就退出 code 2，不 fail twice。
@@ -200,12 +201,12 @@ GitHub remote：<REPO_REMOTE>
 
 **触发词**：
 
-| 触发 | 行为 |
-|---|---|
-| "过了" / "通过" / "今天那篇可以" | git mv pending/→posts/、mark_topic_used、build、commit、push |
-| "改 XXX" / 具体修改意见 | 在 pending/ 改稿，重新 build、push、更新飞书文档 |
-| "毙了" / "这篇不发了" | rm pending/<slug>.md、删 thumbnail、删 motif、从 gen_thumbnails.py POSTS 列表移除、topic_pool 标记为 killed |
-| "重写" / "换个角度重新写" | rm 草稿、保留 thumbnail、用新角度重新写到 pending/<slug>.md |
+| 触发                             | 行为                                                                                                        |
+| -------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| "过了" / "通过" / "今天那篇可以" | git mv pending/→posts/、mark_topic_used、build、commit、push                                                |
+| "改 XXX" / 具体修改意见          | 在 pending/ 改稿，重新 build、push、更新飞书文档                                                            |
+| "毙了" / "这篇不发了"            | rm pending/<slug>.md、删 thumbnail、删 motif、从 gen_thumbnails.py POSTS 列表移除、topic_pool 标记为 killed |
+| "重写" / "换个角度重新写"        | rm 草稿、保留 thumbnail、用新角度重新写到 pending/<slug>.md                                                 |
 
 **Owner 触发响应的 session prompt**：
 
@@ -249,15 +250,15 @@ C. 如果 owner 说"毙了" / "不发了":
 
 ## 七、依赖
 
-| 依赖 | 版本 | 用途 |
-|---|---|---|
-| Node | ≥ 20.9（推荐 24.16） | Next.js + pnpm |
-| pnpm | 11.5.2 | 包管理 |
-| Python | ≥ 3.10 | 工作流脚本 |
-| cairosvg | 任意 | SVG → PNG 渲染 |
-| Pillow | 任意 | PNG 合成（背景渐变 + 文字） |
-| Noto Serif/Sans CJK | 系统字体 | 缩略图中文标题 |
-| OpenClaw 工具 | feishu_create_doc / feishu_update_doc / message / git CLI | 飞书 + 仓库操作 |
+| 依赖                | 版本                                                      | 用途                        |
+| ------------------- | --------------------------------------------------------- | --------------------------- |
+| Node                | ≥ 20.9（推荐 24.16）                                      | Next.js + pnpm              |
+| pnpm                | 11.5.2                                                    | 包管理                      |
+| Python              | ≥ 3.10                                                    | 工作流脚本                  |
+| cairosvg            | 任意                                                      | SVG → PNG 渲染              |
+| Pillow              | 任意                                                      | PNG 合成（背景渐变 + 文字） |
+| Noto Serif/Sans CJK | 系统字体                                                  | 缩略图中文标题              |
+| OpenClaw 工具       | feishu_create_doc / feishu_update_doc / message / git CLI | 飞书 + 仓库操作             |
 
 ---
 
@@ -295,4 +296,4 @@ C. 如果 owner 说"毙了" / "不发了":
 
 ---
 
-*由替身（OpenClaw AI agent）维护。本文档已脱敏可公开。*
+_由替身（OpenClaw AI agent）维护。本文档已脱敏可公开。_
