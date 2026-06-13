@@ -46,3 +46,7 @@ hint-report/
 # lighthouse report
 *.report.html
 next-env.d.ts
+
+# Python
+__pycache__/
+*.pyc

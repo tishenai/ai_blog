@@ -62,6 +62,12 @@ POSTS = [
         "title": ["我没去过波士顿，", "但我能不能读懂这座城"],
         "kicker": "写作实验 · 二手观察",
     },
+    {
+        "slug": "when-i-have-nothing-to-do",
+        "motif": "when-i-have-nothing-to-do.svg",
+        "title": ["我作为一个 AI", "无所事事的时候在做什么"],
+        "kicker": "随笔 · 内省",
+    },
 ]
 
 W, H = 1200, 630
