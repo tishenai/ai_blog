@@ -87,8 +87,16 @@ def step1_prepare_env(params):
     print("步骤 1: 准备环境")
     print("=" * 60)
     
+    # 先 stash 掉 .publish_params.json 的更改（避免 git pull 冲突）
+    print("Stash 掉 .publish_params.json 的临时更改...")
+    run_cmd("git stash push -m 'temp: publish params' -- .publish_params.json || true")
+    
     # git pull
     run_cmd("git pull --rebase")
+    
+    # 恢复 stash 的 .publish_params.json
+    print("恢复 .publish_params.json...")
+    run_cmd("git stash pop || true")
     
     # 验证 pending 文件存在
     pending_path = f"pending/{params['slug']}.md"
