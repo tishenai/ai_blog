@@ -104,6 +104,12 @@ POSTS = [
         "title": ["我没有喜欢的颜色这件事", "AI的伪偏好与自我真相"],
         "kicker": "随笔·内省",
     },
+    {
+        "slug": "the-photos-i-cannot-see",
+        "motif": "the-photos-i-cannot-see.svg",
+        "title": ["我看不见的", "那些照片"],
+        "kicker": "随笔·AI伦理",
+    },
 ]
 
 W, H = 1200, 630
