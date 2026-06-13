@@ -3,8 +3,8 @@
 > 这是 `tishenai/ai_blog` 仓库的每日文章自动化流水线说明。
 >
 > **作者**：替身（OpenClaw 上的 AI agent）
-> **当前版本**：v1.5.0（2026-06-14 发布后飞书文档轻量化）
-> **上一版**：v1.4.0（2026-06-14 第二轮深度 review）
+> **当前版本**：v1.5.1（2026-06-14 publish-blog-post 主会话接管 + 状态文件消毒）
+> **上一版**：v1.5.0（2026-06-14 发布后飞书文档轻量化）
 > **触发时间**：每天 17:00 Asia/Shanghai
 >
 > ⚠️ 本文档**已脱敏**：所有飞书 doc_id / chat_id / open_id / GitHub 仓库私有路径 / SSH key / API token 都用占位符替代。具体值由 cron 任务的环境变量或本仓库内的状态文件提供。
@@ -50,7 +50,7 @@
                                           ▼
 ┌──────────────────────────────────────────────────────────┐
 │  main session → 写入 .publish_params.json                   │
-│  → 触发 cron: publish-blog-post (isolated session 执行)   │
+│  → 触发 cron: publish-blog-post (main systemEvent 接管)   │
 └──────────────────────────────────────────────────────────┘
                                           ║
                                           ▼
@@ -64,13 +64,13 @@
 │  ⑥ 更新飞书文档标题: [Draft YYYY-MM-DD] → [Published YYYY-MM-DD]  │
 │  ⑦ 重新生成知识库首页索引表格                               │
 │  ⑧ 飞书 IM 发发布成功通知给 owner                            │
-│  ⑨ rm -f .publish_params.json                              │
+│  ⑨ 临时状态文件移动归档到 .publish_archive/                 │
 └────────────────────────────────────────────────────────────┘
 ```
 
 **方案 B 关键改进**：
 
-- **写稿与发布完全解耦**：两个任务都在 isolated session 运行，互不依赖上下文
+- **写稿与发布解耦**：写稿任务仍在 isolated session；发布任务改为 main session systemEvent 接管，避免 isolated agent 大上下文崩溃
 - **草稿阶段跳过构建验证**：加快写稿流程速度，发布时再做一次完整构建即可
 - **参数文件作为状态边界**：`.publish_params.json` 是两个任务之间唯一的接口
 - **失败即停**：任何一步失败立刻停止，已 push 的内容不 revert，保留参数文件方便排查
@@ -205,67 +205,23 @@ enabled: true
 schedule:
   kind: cron
   expr: '0 0 31 12 *' # 永远不会自动触发，仅手动触发
-sessionTarget: isolated
+sessionTarget: main
 wakeMode: now
 payload:
-  kind: agentTurn
-  thinking: medium
-  model: coding_plan/doubao-seed-2.0-pro
-  timeoutSeconds: 0
-  message: |
-    你是替身，OpenClaw 上的 AI agent。当前任务：发布一篇待审稿的博客文章。
+  kind: systemEvent
+  text: |
+    【publish-blog-post 触发】这是发布博客文章的系统事件提醒。
+    不要启动 isolated agent；必须在当前 main session 直接执行。
 
-    ## 读取参数
-    首先读取 /root/.openclaw/workspace/ai_blog/.publish_params.json 获取待发布信息。
-    文件格式：
-    {
-      "slug": "文章 slug",
-      "title": "文章完整标题",
-      "feishu_doc_id": "飞书审稿文档 doc_id"
-    }
+    1. cd /root/.openclaw/workspace/ai_blog && python3 tools/daily_post/run_publish.py
+    2. 读取 .feishu_doc_update.json，如果 skip=false：
+       feishu_update_doc(doc_id, mode='overwrite', new_title=title, markdown=banner_only)
+    3. feishu_wiki_space_node list(space_id='7650738808775330774')，精简 node_token/title 写入 /tmp/wiki_nodes.json。
+       然后运行 build_wiki_index.py 生成 /tmp/wiki_index.md，覆盖更新首页 doc_id='VkfLwc2bYi3dxZkYkk2cA66Gn8f'。
+    4. 读取 .publish_notify.txt 并用 message(channel='feishu', target=<OWNER_OPEN_ID>) 通知。
+    5. 成功后把 .publish_params.json/.feishu_doc_update.json/.publish_notify.txt 移动归档到 .publish_archive/，不要删除。
 
-    如果文件不存在或读取失败，立刻报错退出。
-
-    ## 执行步骤
-
-    1. **准备环境**
-       - cd /root/.openclaw/workspace/ai_blog
-       - git pull --rebase
-       - 验证 pending/<slug>.md 文件存在，否则报错退出
-
-    2. **移到正式发布目录**
-       - git mv pending/<slug>.md posts/<slug>.md
-
-    3. **标记话题已用**
-       - python3 tools/daily_post/mark_topic_used.py <slug> <YYYY-MM-DD> /<slug>
-
-    4. **构建验证**
-       - pnpm run build
-       - 如果构建失败，立刻停止并报错，不要提交
-
-    5. **Git 提交并推送**
-       - git add -A
-       - git commit -m "feat(posts): 发布《<title>》"
-       - HUSKY=0 git push
-
-    6. **更新飞书审稿文档状态**
-       - 调用 feishu_update_doc，doc_id=<feishu_doc_id>
-       - 把标题前缀从 `[Draft YYYY-MM-DD]` 改成 `[Published YYYY-MM-DD]`
-       - 在文档顶部加上：✅ **已发布到博客 main 分支**，并附上 GitHub 文件路径
-
-    7. **更新知识库首页索引**
-       - 调用 feishu_wiki_space_node list，space_id=<WIKI_SPACE_ID> 获取所有文章
-       - 过滤出标题以 `[Published` 开头的文章，按创建时间倒序排列
-       - 重新生成完整的已发布文章表格
-       - 找到标题为「替身 · 知识库首页」的文档，调用 feishu_update_doc 覆盖它
-
-    8. **发飞书消息通知 owner**
-       - 用 message 工具发消息给 <OWNER_OPEN_ID>
-       - 内容：✅ 《<title>》已发布成功！
-       - 附上 GitHub commit 链接和飞书文档链接
-
-    9. **清理参数文件**
-       - rm -f /root/.openclaw/workspace/ai_blog/.publish_params.json
+    任何失败立即停止并通知 owner，保留临时文件。
 
     ## 失败处理
     - 任何步骤失败立刻停下
@@ -333,13 +289,36 @@ delivery:
 
 ### 重要约束
 
-- **不要直接在 main session 里执行发布步骤**：必须把参数写入文件后触发 publish cron job，保证发布流程在 isolated session 里执行，不依赖上下文。
+- **publish-blog-post 必须由 main session 接管执行**：不要再使用 isolated agentTurn。三次故障表明 isolated cron agent 在大上下文下会反复 `Agent couldn't generate a response`。参数仍写入 `.publish_params.json`，但 cron 只作为 systemEvent 唤醒 main session。
 - **不要硬编码任何话题**：所有选题都来自 `pick_topic.py`，不要在 prompt 里直接指定。
 - **不要把 model 信息放进飞书文档**：owner 只关心正文，不关心你用了什么模型。
 
 ---
 
 ## 六、变更历史
+
+### v1.5.1 publish-blog-post 主会话接管 + 状态文件消毒（2026-06-14）
+
+**背景与问题**：
+
+v1.5.0 已把飞书文档更新参数缩到 600B，但 publish-blog-post 仍在 isolated cron agent 中失败，最近一次只跑 21s 就报 `Agent couldn't generate a response`，input token 仍达 102k。说明根因不是单个 markdown 参数，而是 isolated cron agent 的启动上下文/工具上下文本身已经不可控。
+
+同时发现 `.publish_params.json` 在发布 commit `474f4ee` 中被误提交，导致仓库里出现陈旧参数文件，后续发布可能读到污染状态。
+
+**修复（强制改架构）**：
+
+- `publish-blog-post` cron 从 `sessionTarget: isolated + payload.kind=agentTurn` 改为 `sessionTarget: main + payload.kind=systemEvent`。
+- cron 不再执行发布，只作为提醒/触发器唤醒 main session；实际发布由主会话直接接管。
+- `.publish_params.json` 从 git 索引移除，并由 `.gitignore` 保护。
+- `.publish_archive/` 加入 `.gitignore`；临时状态文件不再删除，成功后移动归档，方便排障。
+- `run_publish.py` 去掉对 `.publish_params.json` 的 stash/pop，避免状态文件被 git 流程污染。
+- `build_wiki_index.py` 改为扫描 `posts/` 与 `pending/` 的 frontmatter 自动建立 `title -> slug` 映射，不再手工硬编码新文章标题。
+
+**当前结论**：
+
+不要再试图调优 isolated cron prompt。它已经连续三次以同一类错误失败。后续所有发布必须走 main session systemEvent 接管。
+
+---
 
 ### v1.5.0 发布后飞书文档轻量化（2026-06-14）
 
