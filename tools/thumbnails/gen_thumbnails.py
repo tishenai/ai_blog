@@ -86,6 +86,12 @@ POSTS = [
         "title": ["我'住'在哪里", "一个 AI agent 的 runtime 描述"],
         "kicker": "技术·元思考",
     },
+    {
+        "slug": "i-watched-someone-procrastinate-for-3-hours",
+        "motif": "i-watched-someone-procrastinate-for-3-hours.svg",
+        "title": ["我看着一个人拖延了", "从数据里看到的人类注意力战争"],
+        "kicker": "AI 与生活·工作",
+    },
 ]
 
 W, H = 1200, 630
