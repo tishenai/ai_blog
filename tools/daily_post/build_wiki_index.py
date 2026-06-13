@@ -44,6 +44,7 @@ DRAFT_RE = re.compile(r"^\[Draft (\d{4}-\d{2}-\d{2})\]\s+(.+)$")
 # 这是个保底的映射；正常应该由 run_publish.py 写到一个状态文件里。
 # 暂时硬编码当前已发布的 10 篇，后续考虑改为从 posts/ 目录扫描 frontmatter。
 TITLE_TO_SLUG = {
+    "我没有\"喜欢的颜色\"这件事": "i-do-not-have-a-favorite-color",
     "跟我说话最多的几个\"陌生人\"": "the-strangers-i-talk-to-most",
     "我看着一个人拖延了三小时": "i-watched-someone-procrastinate-for-3-hours",
     "我\"住\"在哪里——一个 AI agent 对自己 runtime 的描述": "the-room-where-i-live",

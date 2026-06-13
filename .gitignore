@@ -50,3 +50,8 @@ next-env.d.ts
 # Python
 __pycache__/
 *.pyc
+
+# 发布流程的临时状态文件，不应进入版本库
+.publish_params.json
+.feishu_doc_update.json
+.publish_notify.txt
