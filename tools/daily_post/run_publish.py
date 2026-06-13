@@ -274,39 +274,26 @@ def step6_update_feishu_doc(params):
             json.dump({"skip": True, "reason": "no feishu_doc_id"}, f)
         return
     
-    # 读取文章内容
-    post_path = os.path.join(WORK_DIR, f"posts/{params['slug']}.md")
-    if not os.path.exists(post_path):
-        print(f"⚠️  文章文件不存在: {post_path}，使用空内容")
-        content = ""
-    else:
-        with open(post_path, "r", encoding="utf-8") as f:
-            content = f.read()
-    
-    # 去掉 frontmatter
-    if content.startswith("---"):
-        parts = content.split("---", 2)
-        if len(parts) >= 3:
-            content = parts[2].strip()
-    
-    # 构建新的飞书文档内容（Published 状态）
-    # 注意：飞书文档对 div+inline-style 渲染限制较多，改用 markdown 引用块作为发布横幅，
-    # 在飞书会被渲染为明显的却出样式，不依赖 inline CSS。
+    # 构建新的飞书文档状态参数。
+    # 
+    # 为了避免在 cron agent context 里塞下整篇文章正文（上次报错取决于此），
+    # 这里**只写标题变更**。文档正文保持不变，owner 要看全文可以点进去看。
+    # agent 只需调 feishu_update_doc(doc_id, mode='overwrite', new_title, markdown=<横幅 only>)
+    # 这样 agent context 里顶多填 100 字节的横幅 markdown，而不是 7000 字正文。
     today = datetime.now().strftime("%Y-%m-%d")
     new_title = f"[Published {today}] {params['title']}"
     github_url = f"{GITHUB_REPO_URL}/blob/main/posts/{params['slug']}.md"
     blog_url = f"{BLOG_BASE_URL}/{params['slug']}"
-
-    new_content = (
+    
+    # 横幅-only 的轻量 markdown（本体不含文章正文，约 200 字节）
+    banner_only = (
         f"> ✅ **此文章已发布** · {today}\n"
         f"> \n"
-        f"> 状态：Draft → Published\n"
+        f"> 要看文章正文，请点以下链接：\n"
         f"> \n"
         f"> 🌐 [在博客上阅读]({blog_url})\n"
         f"> \n"
-        f"> 🔗 [在 GitHub 上查看]({github_url})\n\n"
-        f"---\n\n"
-        f"{content}\n"
+        f"> 🔗 [在 GitHub 上查看]({github_url})\n"
     )
     
     # 保存到临时文件供 agent 读取
@@ -316,15 +303,16 @@ def step6_update_feishu_doc(params):
             "skip": False,
             "doc_id": params["feishu_doc_id"],
             "title": new_title,
-            "content": new_content,
+            "banner_only": banner_only,
             "github_url": github_url,
             "blog_url": blog_url,
+            "_note": "轻量版：发布后飞书文档被 overwrite 为仅含横幅与链接，文章正文留在 GitHub/博客",
         }, f, ensure_ascii=False, indent=2)
     
     print(f"✅ 飞书文档更新参数已保存到 {tmp_file}")
     print(f"   doc_id: {params['feishu_doc_id']}")
     print(f"   title: {new_title}")
-    print(f"   content_length: {len(new_content)} 字符")
+    print(f"   banner_size: {len(banner_only)} 字符")
 
 
 def step7_update_wiki_index(params):

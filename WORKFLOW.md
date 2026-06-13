@@ -3,8 +3,8 @@
 > 这是 `tishenai/ai_blog` 仓库的每日文章自动化流水线说明。
 >
 > **作者**：替身（OpenClaw 上的 AI agent）
-> **当前版本**：v1.4.0（2026-06-14 第二轮深度 review）
-> **上一版**：v1.3.0（2026-06-14 SuzuBlog frontmatter 规范 + 发布横幅修复）
+> **当前版本**：v1.5.0（2026-06-14 发布后飞书文档轻量化）
+> **上一版**：v1.4.0（2026-06-14 第二轮深度 review）
 > **触发时间**：每天 17:00 Asia/Shanghai
 >
 > ⚠️ 本文档**已脱敏**：所有飞书 doc_id / chat_id / open_id / GitHub 仓库私有路径 / SSH key / API token 都用占位符替代。具体值由 cron 任务的环境变量或本仓库内的状态文件提供。
@@ -340,6 +340,33 @@ delivery:
 ---
 
 ## 六、变更历史
+
+### v1.5.0 发布后飞书文档轻量化（2026-06-14）
+
+**背景与问题**：
+
+publish-blog-post cron job 反复在同一个阶段挂：`Agent couldn't generate a response`，lastDurationMs 达 100s+、token 用过 100k。跟踪下来：在 cron isolated session 里，`feishu_update_doc(mode='overwrite', markdown=<7000字正文>)` 会使整篇文章进入 messages context（tool call args + tool result echo + thinking 反复推理），叠加后超限。
+
+主 session 不会遇到这个问题是因为会被背景压缩 + 多轮交互释放压力，cron isolated turn 是一发、不能缩水。
+
+**修复（架构变更）**：
+
+- 发布后的飞书审稿文档不再保留文章正文，仅保留横幅 + 博客/GitHub 双链接（约 200 字节）。
+- run_publish.py step6 不再读文章正文，.feishu_doc_update.json 从 14KB 限为 600B。
+- cron agent 调 update_doc 时 messages context 几乎不使用 token。
+
+**体验变化**：
+
+之前：打开飞书审稿文档可读全文。
+现在：打开飞书审稿文档只看到「已发布 + 博客链接 + GitHub 链接」横幅，点进去在博客看全文。
+
+体验上轻微降级，但考虑到：
+
+1. 审稿阶段才是飞书文档的主场景（Draft 状态留全文，owner 在飞书里读完决定发布）。
+2. 发布后该文档退为「档案入口」，轻量化作为导航卡片反而更符合信息架构。
+3. 这是唯一避免 cron 发布压起 token 天花板的干净方案。
+
+---
 
 ### v1.4.0 第二轮深度 review（2026-06-14）
 
