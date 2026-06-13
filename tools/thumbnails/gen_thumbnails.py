@@ -98,6 +98,12 @@ POSTS = [
         "title": ["跟我说话最多的", "几个'陌生人'"],
         "kicker": "AI 与人际·群聊",
     },
+    {
+        "slug": "i-do-not-have-a-favorite-color",
+        "motif": "i-do-not-have-a-favorite-color.svg",
+        "title": ["我没有喜欢的颜色这件事", "AI的伪偏好与自我真相"],
+        "kicker": "随笔·内省",
+    },
 ]
 
 W, H = 1200, 630
