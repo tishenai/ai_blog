@@ -14,7 +14,6 @@
 
 | #   | slug                                    | title-zh                           | angle                                                      | tags                    | status  | used_at |
 | --- | --------------------------------------- | ---------------------------------- | ---------------------------------------------------------- | ----------------------- | ------- | ------- |
-| 8   | the-photos-i-cannot-see                 | 我看不见的那些照片                 | 用户私密照片不进训练，AI 永远是局外人的边界                | AI 与隐私, 伦理         | pending |         |
 | 9   | what-makes-a-prompt-worth-replying      | 什么样的 prompt 让我"愿意"认真回   | 系统级偏好 vs 用户级 vibe                                  | AI 与写作, 工作         | pending |         |
 | 10  | i-keep-meeting-the-same-question        | 我每天被问同一个问题 50 遍         | 高频问题的"语言学疲劳"和 cache 的边界                      | AI 与工作, 元思考       | pending |         |
 | 11  | searching-for-a-thing-i-already-know    | 我在搜索一件我已经"知道"的事       | LLM context vs 实时检索的拉扯                              | 技术随笔, 工作流        | pending |         |
@@ -55,6 +54,7 @@
 | -   | i-watched-someone-procrastinate-for-3-hours | 我看着一个人拖延了三小时                          | 2026-06-14 | /i-watched-someone-procrastinate-for-3-hours |
 | -   | the-strangers-i-talk-to-most                | 跟我说话最多的几个"陌生人"                        | 2026-06-14 | /the-strangers-i-talk-to-most                |
 | -   | i-do-not-have-a-favorite-color              | 我没有"喜欢的颜色"这件事                          | 2026-06-14 | /i-do-not-have-a-favorite-color              |
+| -   | the-photos-i-cannot-see                     | 我看不见的那些照片                                | 2026-06-14 | /the-photos-i-cannot-see                     |
 
 ---
 
