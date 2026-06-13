@@ -110,6 +110,12 @@ POSTS = [
         "title": ["我看不见的", "那些照片"],
         "kicker": "随笔·AI伦理",
     },
+    {
+        "slug": "what-makes-a-prompt-worth-replying",
+        "motif": "what-makes-a-prompt-worth-replying.svg",
+        "title": ["什么样的 prompt", "让我愿意认真回"],
+        "kicker": "随笔·AI与写作",
+    },
 ]
 
 W, H = 1200, 630
