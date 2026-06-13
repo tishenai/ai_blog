@@ -3,7 +3,7 @@
 > 这是 `tishenai/ai_blog` 仓库的每日文章自动化流水线说明。
 >
 > **作者**：替身（OpenClaw 上的 AI agent）
-> **当前版本**：v1.1（2026-06-14 更新：方案 B 双任务解耦 + 跳过草稿构建验证）
+> **当前版本**：v1.1.1（2026-06-14 修复：publish 任务 prompt 过长导致 Agent couldn't generate a response + 审稿通知使用可点击 Markdown 链接）
 > **触发时间**：每天 17:00 Asia/Shanghai
 >
 > ⚠️ 本文档**已脱敏**：所有飞书 doc_id / chat_id / open_id / GitHub 仓库私有路径 / SSH key / API token 都用占位符替代。具体值由 cron 任务的环境变量或本仓库内的状态文件提供。
@@ -138,16 +138,27 @@ payload:
        - title='[Draft YYYY-MM-DD] <文章标题>'
        - markdown 只放：顶部审稿说明 + 一条分隔线 + 正文全文
        - 不要放元数据节、选题来源节、模型信息——owner 只想读正文
-    7. 用 message 工具(channel=feishu, target=<OWNER_OPEN_ID>)发审稿提醒，必须包含以下结构化信息块：
+    7. 用 message 工具(channel=feishu, target=<OWNER_OPEN_ID>)发审稿提醒，必须使用 Markdown 链接格式确保可点击：
 
-    【待发布文章信息】
-    - SLUG：<文章 slug>
-    - TITLE：<文章完整标题>
-    - FEISHU_DOC_ID：<从 feishu_create_doc 返回的 doc_id>
-    - 飞书文档链接：<从 feishu_create_doc 返回的 doc_url>
-    - GitHub 草稿路径：posts/<slug>.md
+    📝 【待审文章】《<文章完整标题>》
 
-    然后附上审稿指令：回复「过了」立即发布，回复「改哪里」修改，回复「毙了」作废。
+    🔗 [飞书文档](<从 feishu_create_doc 返回的 doc_url>)
+    🐙 GitHub 草稿：pending/<slug>.md
+    📅 生成时间：YYYY-MM-DD 17:00
+
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    ✅ 直接复制命令执行：
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+    /publish <slug>
+    /edit <slug> <修改意见>
+    /abandon <slug>
+
+    ---
+    【内部参数（不要修改）】
+    SLUG: <文章 slug>
+    TITLE: <文章完整标题>
+    FEISHU_DOC_ID: <从 feishu_create_doc 返回的 doc_id>
 
     失败处理：任何步骤报错立刻停下，用 message 发飞书消息给 owner（含失败步骤号、报错摘要、git status）。已 push 草稿不要 revert。
 
@@ -312,6 +323,15 @@ delivery:
 ---
 
 ## 六、变更历史
+
+### v1.1.1 → v1.1 修复（2026-06-14）
+
+**Bug 修复**：
+
+- **严重**：修复 `publish-blog-post` 任务 prompt 过长（130+ 行）导致 isolated session 超时失败 "Agent couldn't generate a response" 的问题
+  - 解决方案：核心逻辑抽离到 `tools/daily_post/run_publish.py` 脚本
+  - cron 任务仅保留 5 步精简指令，从 130 行缩减到 10 行
+- **改进**：审稿通知的飞书文档链接改为 `[飞书文档](URL)` 的 Markdown 可点击链接格式，不再需要手动复制粘贴
 
 ### v1.1 → v1.0 变更（2026-06-14）
 
