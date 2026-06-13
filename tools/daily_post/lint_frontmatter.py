@@ -3,8 +3,10 @@
 Frontmatter 规范校验工具（适配 SuzuBlog: https://suzu.zla.app/guide/posts/）
 
 使用方式：
-    python3 tools/daily_post/lint_frontmatter.py <md_path>           # 仅校验
-    python3 tools/daily_post/lint_frontmatter.py --fix <md_path>     # 校验并尝试自动修复
+    python3 tools/daily_post/lint_frontmatter.py <md_path>                       # 仅校验
+    python3 tools/daily_post/lint_frontmatter.py --fix <md_path>                 # 校验并尝试自动修复
+    python3 tools/daily_post/lint_frontmatter.py --inject-thumbnail <md_path>    # 自动补 thumbnail/showLicense/showComments
+    （可与 --fix 组合使用）
 
 校验规则（适配 SuzuBlog frontmatter 规范）：
 
@@ -82,7 +84,12 @@ def split_frontmatter(text):
     return parts[1].strip(), parts[2]
 
 
-def lint(path, fix=False):
+def _slug_from_path(path):
+    """从 md 文件路径推断 slug（去掉目录和 .md 后缀）。"""
+    return os.path.splitext(os.path.basename(path))[0]
+
+
+def lint(path, fix=False, inject_thumbnail=False):
     """
     校验单个 md 文件的 frontmatter。
     返回: (errors: list[str], warnings: list[str], fixed_text: str | None)
@@ -182,7 +189,7 @@ def lint(path, fix=False):
 
     # 自动修复
     fixed_text = None
-    if fix:
+    if fix or inject_thumbnail:
         fixed_data = dict(data)
         changed = False
 
@@ -222,10 +229,25 @@ def lint(path, fix=False):
                 fixed_data["date"] = str(d)
             changed = True
 
-        # 删除非标字段
-        for field in NON_STANDARD:
-            if field in fixed_data:
-                fixed_data.pop(field)
+        # 删除非标字段（仅在 --fix 模式下）
+        if fix:
+            for field in NON_STANDARD:
+                if field in fixed_data:
+                    fixed_data.pop(field)
+                    changed = True
+
+        # 注入推荐字段（--inject-thumbnail 模式）
+        if inject_thumbnail:
+            slug = _slug_from_path(path)
+            thumb_path = f"/images/thumbnails/{slug}.png"
+            if "thumbnail" not in fixed_data:
+                fixed_data["thumbnail"] = thumb_path
+                changed = True
+            if "showLicense" not in fixed_data:
+                fixed_data["showLicense"] = True
+                changed = True
+            if "showComments" not in fixed_data:
+                fixed_data["showComments"] = True
                 changed = True
 
         if changed:
@@ -243,11 +265,20 @@ def lint(path, fix=False):
 def main():
     parser = argparse.ArgumentParser(description="SuzuBlog frontmatter 校验工具")
     parser.add_argument("path", help="要校验的 markdown 文件路径")
-    parser.add_argument("--fix", action="store_true", help="自动修复可修复的问题")
+    parser.add_argument("--fix", action="store_true", help="自动修复可修复的问题（typo/类型/非标字段）")
+    parser.add_argument(
+        "--inject-thumbnail",
+        action="store_true",
+        help="自动补缺失的推荐字段：thumbnail（按文件名）/showLicense=true/showComments=true",
+    )
     parser.add_argument("--quiet", action="store_true", help="只在出错时输出")
     args = parser.parse_args()
 
-    errors, warnings, fixed_text = lint(args.path, fix=args.fix)
+    errors, warnings, fixed_text = lint(
+        args.path,
+        fix=args.fix,
+        inject_thumbnail=args.inject_thumbnail,
+    )
 
     if not args.quiet or errors or warnings:
         print(f"📝 校验文件: {args.path}")
@@ -262,7 +293,7 @@ def main():
         for w in warnings:
             print(f"   - {w}")
 
-    if args.fix and fixed_text is not None:
+    if (args.fix or args.inject_thumbnail) and fixed_text is not None:
         with open(args.path, "w", encoding="utf-8") as f:
             f.write(fixed_text)
         print(f"\n✅ 已自动修复并写回 {args.path}")

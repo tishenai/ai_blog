@@ -34,6 +34,11 @@ PARAMS_FILE = os.path.join(WORK_DIR, ".publish_params.json")
 WIKI_SPACE_ID = "7650738808775330774"
 OWNER_OPEN_ID = "ou_106a0b92c4a08afd40abec947337313a"
 
+# 关键 URL。谁也不要再在别处硬编码 blog.tishenai.app 之类东西。
+BLOG_BASE_URL = "https://www.wemixmemory.top"
+GITHUB_REPO_URL = "https://github.com/tishenai/ai_blog"
+FEISHU_WIKI_URL_PREFIX = "https://vcnd3kpj0wx8.feishu.cn/wiki"
+
 
 def run_cmd(cmd, shell=True, cwd=WORK_DIR, capture_output=False):
     """执行 shell 命令，失败则退出"""
@@ -154,29 +159,58 @@ def step1b_lint_and_fix_frontmatter(params):
 
 
 def step2_move_to_posts(params):
-    """步骤 2: 移到正式发布目录"""
+    """步骤 2: 移到正式发布目录（幂等）"""
     print("\n" + "=" * 60)
     print("步骤 2: 移到正式发布目录")
     print("=" * 60)
     
     src = f"pending/{params['slug']}.md"
     dst = f"posts/{params['slug']}.md"
+
+    src_abs = os.path.join(WORK_DIR, src)
+    dst_abs = os.path.join(WORK_DIR, dst)
+
+    src_exists = os.path.exists(src_abs)
+    dst_exists = os.path.exists(dst_abs)
+
+    if dst_exists and not src_exists:
+        print(f"⚠️  跳过：{dst} 已存在且 {src} 不存在（幂等）")
+        return
+
+    if dst_exists and src_exists:
+        print(f"⚠️  异常状态：{src} 和 {dst} 同时存在，请人工介入")
+        sys.exit(1)
+
+    if not src_exists:
+        print(f"❌ {src} 不存在，无法发布")
+        sys.exit(1)
+
     run_cmd(f"git mv {src} {dst}")
     print(f"✅ 已移动: {src} → {dst}")
 
 
 def step3_mark_topic_used(params):
-    """步骤 3: 标记话题已用"""
+    """步骤 3: 标记话题已用（幂等）"""
     print("\n" + "=" * 60)
     print("步骤 3: 标记话题已用")
     print("=" * 60)
     
     today = datetime.now().strftime("%Y-%m-%d")
-    run_cmd(
+    # mark_topic_used.py 在话题不在 Pending 表中时退出码 2（幂等）
+    # 这里允许它返回 0、2，其他退出码汇报失败
+    cmd = (
         f"python3 tools/daily_post/mark_topic_used.py "
         f"{params['slug']} {today} /{params['slug']}"
     )
-    print("✅ 话题已标记为已用")
+    print(f"$ {cmd}")
+    result = subprocess.run(cmd, shell=True, cwd=WORK_DIR)
+    if result.returncode == 0:
+        print("✅ 话题已标记为已用")
+    elif result.returncode == 2:
+        print(f"⚠️  跳过：话题 {params['slug']} 不在 Pending 表，可能已经标过")
+    else:
+        print(f"❌ mark_topic_used.py 失败（退出码 {result.returncode}）")
+        sys.exit(1)
 
 
 def step4_build_verify():
@@ -190,15 +224,40 @@ def step4_build_verify():
 
 
 def step5_git_commit_and_push(params):
-    """步骤 5: Git 提交并推送"""
+    """步骤 5: Git 提交并推送（幂等）。
+    
+    如果工作区干净（上次已提交过），跳过 commit，但仍会 push 一次以防本地 commit 未到远端。
+    """
     print("\n" + "=" * 60)
     print("步骤 5: Git 提交并推送")
     print("=" * 60)
-    
+
     run_cmd("git add -A")
-    run_cmd(f"git commit -m \"feat(posts): 发布《{params['title']}》\"")
-    run_cmd("HUSKY=0 git push")
-    print("✅ 已提交并推送到 main 分支")
+
+    # 检查是否有待提交的变动
+    status = subprocess.run(
+        "git diff --cached --quiet",
+        shell=True,
+        cwd=WORK_DIR,
+    )
+    if status.returncode == 0:
+        print("⚠️  暂存区为空，跳过 commit（可能上次已 commit）")
+    else:
+        run_cmd(f"git commit -m \"feat(posts): 发布《{params['title']}》\"")
+
+    # 检查是否有未 push 的 commit
+    unpushed = subprocess.run(
+        "git log @{u}.. --oneline",
+        shell=True,
+        cwd=WORK_DIR,
+        capture_output=True,
+        text=True,
+    )
+    if unpushed.stdout.strip():
+        run_cmd("HUSKY=0 git push")
+        print("✅ 已提交并推送到 main 分支")
+    else:
+        print("⚠️  本地与远端一致，跳过 push")
 
 
 def step6_update_feishu_doc(params):
@@ -235,12 +294,15 @@ def step6_update_feishu_doc(params):
     # 在飞书会被渲染为明显的却出样式，不依赖 inline CSS。
     today = datetime.now().strftime("%Y-%m-%d")
     new_title = f"[Published {today}] {params['title']}"
-    github_url = f"https://github.com/tishenai/ai_blog/blob/main/posts/{params['slug']}.md"
+    github_url = f"{GITHUB_REPO_URL}/blob/main/posts/{params['slug']}.md"
+    blog_url = f"{BLOG_BASE_URL}/{params['slug']}"
 
     new_content = (
         f"> ✅ **此文章已发布** · {today}\n"
         f"> \n"
         f"> 状态：Draft → Published\n"
+        f"> \n"
+        f"> 🌐 [在博客上阅读]({blog_url})\n"
         f"> \n"
         f"> 🔗 [在 GitHub 上查看]({github_url})\n\n"
         f"---\n\n"
@@ -256,6 +318,7 @@ def step6_update_feishu_doc(params):
             "title": new_title,
             "content": new_content,
             "github_url": github_url,
+            "blog_url": blog_url,
         }, f, ensure_ascii=False, indent=2)
     
     print(f"✅ 飞书文档更新参数已保存到 {tmp_file}")
@@ -284,14 +347,16 @@ def step8_send_notification(params):
     print("步骤 8: 生成飞书消息通知内容")
     print("=" * 60)
     
-    github_url = f"https://github.com/tishenai/ai_blog/blob/main/posts/{params['slug']}.md"
-    msg = f"""✅ 《{params['title']}》已发布成功！
-
-🔗 GitHub: {github_url}
-"""
+    github_url = f"{GITHUB_REPO_URL}/blob/main/posts/{params['slug']}.md"
+    blog_url = f"{BLOG_BASE_URL}/{params['slug']}"
+    msg = (
+        f"✅ 《{params['title']}》已发布成功！\n\n"
+        f"🌐 博客: {blog_url}\n"
+        f"🔗 GitHub: {github_url}\n"
+    )
     
     if "feishu_doc_id" in params:
-        doc_url = f"https://vcnd3kpj0wx8.feishu.cn/wiki/{params['feishu_doc_id']}"
+        doc_url = f"{FEISHU_WIKI_URL_PREFIX}/{params['feishu_doc_id']}"
         msg += f"📑 飞书文档: {doc_url}\n"
     
     # 保存通知内容供 agent 发送

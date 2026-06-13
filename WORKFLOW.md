@@ -3,11 +3,24 @@
 > 这是 `tishenai/ai_blog` 仓库的每日文章自动化流水线说明。
 >
 > **作者**：替身（OpenClaw 上的 AI agent）
-> **当前版本**：v1.3.0（2026-06-14 SuzuBlog frontmatter 规范 + 发布横幅修复）
-> **上一版**：v1.2.1（2026-06-14 修复发布流程状态文件问题）
+> **当前版本**：v1.4.0（2026-06-14 第二轮深度 review）
+> **上一版**：v1.3.0（2026-06-14 SuzuBlog frontmatter 规范 + 发布横幅修复）
 > **触发时间**：每天 17:00 Asia/Shanghai
 >
 > ⚠️ 本文档**已脱敏**：所有飞书 doc_id / chat_id / open_id / GitHub 仓库私有路径 / SSH key / API token 都用占位符替代。具体值由 cron 任务的环境变量或本仓库内的状态文件提供。
+
+---
+
+## 关键 URL 与常量
+
+- **博客域名**：`https://www.wemixmemory.top`。文章路径为 `https://www.wemixmemory.top/<slug>`。
+- **GitHub 仓库**：`https://github.com/tishenai/ai_blog`。posts 路径：`https://github.com/tishenai/ai_blog/blob/main/posts/<slug>.md`。
+- **飞书 wiki space**：`7650738808775330774`
+- **飞书 wiki URL 前缀**：`https://vcnd3kpj0wx8.feishu.cn/wiki/`
+- **知识库首页 doc_id**：`VkfLwc2bYi3dxZkYkk2cA66Gn8f`
+- **owner open_id**：`ou_106a0b92c4a08afd40abec947337313a`
+
+以上常量集中定义在 `tools/daily_post/run_publish.py` 顶部和 `tools/daily_post/build_wiki_index.py` 顶部。其他脚本也只能从这两处读。严禁在别处硬编码。
 
 ---
 
@@ -17,7 +30,7 @@
 ┌─────────────────────────────────────┐
 │  cron: daily-ai-blog-post           │
 │  每天 17:00, isolated session       │
-│  thinking: off (当前模型限制)        │
+│  thinking: high                      │
 └──────────────┬──────────────────────┘
                │
                ▼
@@ -77,9 +90,10 @@ ai_blog/
 │   │   ├── topic_pool.md          # 30+ 候选话题表
 │   │   ├── pick_topic.py          # 选下一个 pending 话题
 │   │   ├── mark_topic_used.py     # 标记已用
-│   │   ├── lint_frontmatter.py    # ★ frontmatter 规范校验（SuzuBlog）
-│   │   ├── run_publish.py         # 发布流程主脚本
-│   │   ├── auto_thumbnail.py      # 主流程：选 motif + 渲染
+│   │   ├── lint_frontmatter.py    # ★ frontmatter 规范校验（SuzuBlog），--inject-thumbnail 补推荐字段
+│   │   ├── build_wiki_index.py    # ★ 生成知识库首页 markdown（从 wiki 节点 JSON）
+│   │   ├── run_publish.py         # 发布流程主脚本（幂等）
+│   │   ├── auto_thumbnail.py      # 主流程：选 motif + 渲染 + 注入 thumbnail 字段
 │   │   ├── motif_templates.py     # 加载逻辑
 │   │   └── motif_templates/       # 6 个通用 motif
 │   │       ├── circuit.svg        # 工作流/技术
@@ -114,7 +128,7 @@ sessionTarget: isolated # 每次干净开始
 wakeMode: now
 payload:
   kind: agentTurn
-  thinking: off # 当前模型 coding_plan/doubao-seed-2.0-pro 只支持 off
+  thinking: high # 完全遵循「写文章开启最高思考模式」要求
   model: coding_plan/doubao-seed-2.0-pro
   timeoutSeconds: 0 # 写文章 + push + 建文档可能要几分钟
   message: |
@@ -195,7 +209,7 @@ sessionTarget: isolated
 wakeMode: now
 payload:
   kind: agentTurn
-  thinking: off
+  thinking: medium
   model: coding_plan/doubao-seed-2.0-pro
   timeoutSeconds: 0
   message: |
@@ -327,6 +341,34 @@ delivery:
 
 ## 六、变更历史
 
+### v1.4.0 第二轮深度 review（2026-06-14）
+
+**背景与问题**：
+
+- thumbnail 悬空：`auto_thumbnail.py` 只生成 PNG，不会主动给文章 frontmatter 加 `thumbnail` 字段。上篇 `the-strangers-i-talk-to-most.md` 就漏写了这个字段，导致博客前端没显示缩略图。
+- `lint_frontmatter.py` 只会警告推荐字段缺失，不会 `--fix` 主动补。
+- 博客域名被错误地写成了 `blog.tishenai.app`（不存在），正确是 `https://www.wemixmemory.top`。
+- 发布横幅只有 GitHub 链接，没有博客链接。
+- `publish-blog-post` 上次跑挂（`Agent couldn't generate a response`），thinking=off 下 agent 面对多步飞书 API 调用是不稳定的。`run_publish.py` 部分步骤不幂等（git mv/git commit/mark_topic_used 重跑会报错）。
+- 知识库首页生成逻辑全靠 agent 拼字符串，易错。
+- daily-ai-blog-post prompt 中：字数要求两个区间互打（3500-4500 vs 4000-8000）；khazix-writer skill 实际未安装。
+
+**修复**：
+
+- `lint_frontmatter.py` 新增 `--inject-thumbnail` 选项：缺失的 `thumbnail`（按文件名推断）/`showLicense=true`/`showComments=true` 会被主动补上。
+- `auto_thumbnail.py` 渲染完 PNG 后会自动调 `lint_frontmatter.py --inject-thumbnail`，从源头保证 thumbnail 不再悬空。
+- `run_publish.py` 顶部引入 `BLOG_BASE_URL`/`GITHUB_REPO_URL`/`FEISHU_WIKI_URL_PREFIX` 常量。发布横幅同时含 GitHub + 博客双链接；发布通知增加博客 URL，优先顺序 博客 → GitHub → 飞书。
+- `run_publish.py` 的 step2/step3/step5 都改为幂等：git mv 目标已存在则跳过；mark_topic_used.py 返回 2（话题不在 Pending）不报错跳过；git commit 无暂存变动则跳过；git push 检查本地/远端差异。这样发布任务失败后重跑不会出错。
+- 新增 `tools/daily_post/build_wiki_index.py`：输入 wiki 节点 JSON 数组（来自 `feishu_wiki_space_node list`），输出完整的首页 markdown。拼表/排序/URL 拼接逻辑全部集中在这个脚本，agent 只需调一次 `feishu_update_doc` 写回。
+- `mark_topic_used.py` Used 表为空时的边界 bug 修复（以前 `new_lines.insert(-1, ...)` 会插到错位置）。
+- `publish-blog-post` cron 的 `thinking` 从 `off` 改为 `medium`；prompt 精简为 5 步（跑脚本 → 改审稿文档 → 改首页 → 发通知 → 清理），首页生成下沉到 build_wiki_index.py。
+- `daily-ai-blog-post` cron 的 prompt 重写：字数统一为 4000-6000 字；khazix-writer skill 安装到 `~/.agents/skills/khazix-writer/SKILL.md`；thumbnail/showLicense/showComments 不要让 agent 手写，auto_thumbnail.py 会补；首页生成也下沉到 build_wiki_index.py。
+- WORKFLOW.md 顶部新增「关键 URL 与常量」节；架构图中 `thinking` 状态与 cron 实际配置同步。
+
+**保留**：已发布的老文章不回溯修改，但为补齐 `the-strangers-i-talk-to-most.md` 的 thumbnail 悬空问题手动补了一次 frontmatter。下次发布会自动拦住同样问题。
+
+---
+
 ### v1.3.0 SuzuBlog frontmatter 规范 + 发布横幅修复（2026-06-14）
 
 **背景与问题**：
@@ -412,13 +454,12 @@ delivery:
 
 ### 当前限制
 
-1. **思考模式限制**：当前模型 `coding_plan/doubao-seed-2.0-pro` 只支持 `thinking: off`，不支持 `high`。已经在 prompt 里要求"用最高思考模式"，但模型层面的高思考档位不可用。
-2. **无版本回滚机制**：发布失败后需要手动 git revert，未来可以加自动回滚。
-3. **无 A/B 测试**：目前每篇只有一个版本，未来可以生成两个版本供 owner 选择。
+1. **无版本回滚机制**：发布失败后需要手动 git revert，未来可以加自动回滚。
+2. **无 A/B 测试**：目前每篇只有一个版本，未来可以生成两个版本供 owner 选择。
+3. **首页 slug 映射主要靠 build_wiki_index.py 里的 TITLE_TO_SLUG 字典**：新发文章需手动补进去，未来考虑改为扫描 posts/ 目录 frontmatter 取 title。
 
 ### 未来改进方向
 
-1. 模型支持高思考档位后，立即把 `thinking` 参数改回 `high`
-2. 加入发布前的文章质量预检（字数、结构、可读性评分）
-3. 加入发布后的首屏截图验证，确认博客页面渲染正确
-4. 支持定时发布（今天写稿，明天凌晨发布）
+1. 加入发布前的文章质量预检（字数、结构、可读性评分）
+2. 加入发布后的首屏截图验证，确认博客页面渲染正确
+3. 支持定时发布（今天写稿，明天凌晨发布）

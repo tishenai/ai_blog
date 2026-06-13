@@ -85,6 +85,35 @@ def main():
         if slug in line:
             print(line)
 
+    # 渲染成功后，主动将 thumbnail 字段注入到 frontmatter。
+    # 查找对应的 .md 文件位置（优先 pending/，后街 posts/）。
+    md_candidates = [
+        os.path.join(REPO, "pending", f"{slug}.md"),
+        os.path.join(REPO, "posts", f"{slug}.md"),
+    ]
+    md_path = next((p for p in md_candidates if os.path.exists(p)), None)
+    if md_path is None:
+        print(
+            f"⚠️  frontmatter inject 跳过：未找到 {slug}.md。"
+            f" 请手动补 thumbnail: '/images/thumbnails/{slug}.png'。"
+        )
+        return
+
+    lint_path = os.path.join(ROOT, "lint_frontmatter.py")
+    if not os.path.exists(lint_path):
+        print(f"⚠️  lint_frontmatter.py 不存在，跳过 thumbnail 注入")
+        return
+
+    print(f"注入 thumbnail 到 {md_path} 的 frontmatter...")
+    r2 = subprocess.run(
+        [sys.executable, lint_path, "--inject-thumbnail", md_path],
+        capture_output=True,
+        text=True,
+    )
+    print(r2.stdout)
+    if r2.returncode != 0 and r2.stderr:
+        print(r2.stderr)
+
 
 if __name__ == "__main__":
     main()

@@ -75,11 +75,13 @@ def main():
         if i == used_table_last_row_idx:
             new_lines.append(used_row)
 
-    # Edge case: Used table was empty (no rows yet). Find the header separator row.
+    # Edge case: Used 表为空（还没有任何数据行）。
+    # 找到 "## Used" 后的表头分隔行（|---|---|...|），在其后插入 used_row。
     if used_table_last_row_idx is None:
         new_lines = []
         in_used2 = False
         sep_seen = False
+        inserted = False
         for i, line in enumerate(lines):
             if i == pending_row_idx:
                 continue
@@ -87,14 +89,17 @@ def main():
             ls = line.strip()
             if ls.startswith("## Used"):
                 in_used2 = True
+                sep_seen = False
                 continue
-            if in_used2 and ls.startswith("|---"):
+            if in_used2 and ls.startswith("|") and ("---" in ls or ":---" in ls):
+                # 表头分隔行，下一行才是数据区。在表头分隔后立刻插入 used_row。
                 sep_seen = True
-                continue
-            if in_used2 and sep_seen and not ls.startswith("|"):
-                # insert before this non-table line
-                new_lines.insert(-1, used_row)
+                new_lines.append(used_row)
+                inserted = True
                 in_used2 = False
+                continue
+        if not inserted:
+            print("⚠️  Used 表未找到表头分隔行，跳过添加")
 
     with open(POOL, "w") as f:
         f.writelines(new_lines)
