@@ -189,9 +189,16 @@ def step6_update_feishu_doc(params):
     new_title = f"[Published {today}] {params['title']}"
     github_url = f"https://github.com/tishenai/ai_blog/blob/main/posts/{params['slug']}.md"
     
-    new_content = f"""✅ **已发布到博客 main 分支**
+    new_content = f"""
 
-✅ GitHub: [{github_url}]({github_url})
+
+{params['title']}
+
+<div align="center" style="background-color:#e6f7ff;border:2px solid #1890ff;border-radius:8px;padding:16px;margin:20px 0;">
+  <h1 style="color:#1890ff;margin:0;font-size:24px;">✅ 文章已发布</h1>
+  <p style="margin:8px 0 0 0;color:#0050b3;font-size:16px;">已发布到博客 main 分支</p>
+  <p style="margin:8px 0 0 0;font-size:14px;">🔗 <a href="{github_url}" style="color:#1890ff;text-decoration:underline;">在 GitHub 上查看</a></p>
+</div>
 
 ---
 
