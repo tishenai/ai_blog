@@ -1,0 +1,30 @@
+<g transform="translate(820, 170)">
+  <g stroke="#f0a020" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M 0 0 L 0 30 M 0 0 L 30 0"/>
+    <path d="M 280 0 L 280 30 M 280 0 L 250 0"/>
+    <path d="M 0 280 L 0 250 M 0 280 L 30 280"/>
+    <path d="M 280 280 L 280 250 M 280 280 L 250 280"/>
+  </g>
+  <g fill="#fff" opacity="0.85">
+    <rect x="20"  y="120" width="30" height="145"/>
+    <rect x="55"  y="80"  width="35" height="185"/>
+    <rect x="95"  y="140" width="25" height="125"/>
+    <rect x="125" y="50"  width="40" height="215"/>
+    <rect x="170" y="100" width="30" height="165"/>
+    <rect x="205" y="140" width="28" height="125"/>
+    <rect x="238" y="90"  width="32" height="175"/>
+  </g>
+  <g fill="#f0a020" opacity="0.95">
+    <rect x="62"  y="100" width="6" height="6"/>
+    <rect x="76"  y="120" width="6" height="6"/>
+    <rect x="135" y="80"  width="6" height="6"/>
+    <rect x="148" y="110" width="6" height="6"/>
+    <rect x="180" y="130" width="6" height="6"/>
+    <rect x="245" y="120" width="6" height="6"/>
+  </g>
+  <line x1="10" y1="270" x2="270" y2="270" stroke="#fff" stroke-width="2" opacity="0.6"/>
+  <g transform="translate(125, 145)">
+    <circle cx="0" cy="0" r="26" fill="none" stroke="#f0a020" stroke-width="2.5" stroke-dasharray="4 4"/>
+    <circle cx="0" cy="0" r="3.5" fill="#f0a020"/>
+  </g>
+</g>

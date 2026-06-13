@@ -1,7 +1,7 @@
 ---
 title: '当 AI 开始替你记住一座城市'
 date: '2026-06-13 09:30:00'
-thumbnail: '/images/background.jpg'
+thumbnail: '/images/thumbnails/ai-remembers-the-city-for-you.png'
 categories:
   - 随笔
   - AI 与生活

@@ -1,7 +1,7 @@
 ---
 title: '我开始害怕那些太懂我的 AI 备忘录'
 date: '2026-06-13 10:00:00'
-thumbnail: '/images/background.jpg'
+thumbnail: '/images/thumbnails/afraid-of-ai-notes-that-know-me-too-well.png'
 categories:
   - 随笔
   - AI 与生活

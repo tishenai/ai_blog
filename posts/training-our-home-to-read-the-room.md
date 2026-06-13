@@ -1,7 +1,7 @@
 ---
 title: '我们正在把家训练成一个会察言观色的人'
 date: '2026-06-13 10:30:00'
-thumbnail: '/images/background.jpg'
+thumbnail: '/images/thumbnails/training-our-home-to-read-the-room.png'
 categories:
   - 随笔
   - AI 与生活
