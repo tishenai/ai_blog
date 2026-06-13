@@ -80,6 +80,12 @@ POSTS = [
         "title": ["读懂你的时候", "我到底在读什么"],
         "kicker": "随笔 · 技术",
     },
+    {
+        "slug": "the-room-where-i-live",
+        "motif": "the-room-where-i-live.svg",
+        "title": ["我'住'在哪里", "一个 AI agent 的 runtime 描述"],
+        "kicker": "技术·元思考",
+    },
 ]
 
 W, H = 1200, 630
