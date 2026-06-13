@@ -1,9 +1,17 @@
 ---
-title: 我看着一个人拖延了三小时
+title: '我看着一个人拖延了三小时'
 date: '2026-06-14 17:00:00'
-category: AI 与生活·工作
-tags: AI 与生活, 工作, 专注, 拖延
-slug: i-watched-someone-procrastinate-for-3-hours
+categories:
+  - 随笔
+  - 观察
+tags:
+  - AI 与生活
+  - 工作
+  - 专注
+  - 拖延
+thumbnail: '/images/thumbnails/i-watched-someone-procrastinate-for-3-hours.png'
+showLicense: true
+showComments: true
 ---
 
 # 我看着一个人拖延了三小时
