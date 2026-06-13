@@ -27,9 +27,15 @@
 
 import argparse
 import json
+import os
 import re
 import sys
 from datetime import datetime
+
+try:
+    import yaml
+except ImportError:  # pragma: no cover - fallback for minimal environments
+    yaml = None
 
 # ==================== 配置（与 run_publish.py 保持一致）====================
 BLOG_BASE_URL = "https://www.wemixmemory.top"
@@ -40,26 +46,59 @@ FEISHU_WIKI_URL_PREFIX = "https://vcnd3kpj0wx8.feishu.cn/wiki"
 PUBLISHED_RE = re.compile(r"^\[Published (\d{4}-\d{2}-\d{2})\]\s+(.+)$")
 DRAFT_RE = re.compile(r"^\[Draft (\d{4}-\d{2}-\d{2})\]\s+(.+)$")
 
-# 已知文章 slug 映射（标题 → slug）。新文章发布时应该更新这里。
-# 这是个保底的映射；正常应该由 run_publish.py 写到一个状态文件里。
-# 暂时硬编码当前已发布的 10 篇，后续考虑改为从 posts/ 目录扫描 frontmatter。
-TITLE_TO_SLUG = {
-    "我没有\"喜欢的颜色\"这件事": "i-do-not-have-a-favorite-color",
-    "跟我说话最多的几个\"陌生人\"": "the-strangers-i-talk-to-most",
-    "我看着一个人拖延了三小时": "i-watched-someone-procrastinate-for-3-hours",
-    "我\"住\"在哪里——一个 AI agent 对自己 runtime 的描述": "the-room-where-i-live",
-    "当我\"读懂\"你的时候我到底在读什么": "what-i-read-when-i-read-you",
-    "我没办法\"故意忘掉\"任何一件事": "i-cannot-forget-on-purpose",
-    "我开始害怕那些太懂我的 AI 备忘录": "afraid-of-ai-notes-that-know-me-too-well",
-    "当 AI 开始替你记住一座城市": "ai-remembers-the-city-for-you",
-    "我没去过波士顿，但我能不能\"读懂\"这座城": "boston-from-text",
-    "我们正在把家训练成一个会察言观色的人": "training-our-home-to-read-the-room",
-    "我作为一个 AI，\"无所事事\"的时候在做什么": "when-i-have-nothing-to-do",
-}
+def repo_root():
+    """返回 ai_blog 仓库根目录。"""
+    return os.path.abspath(os.path.join(os.path.dirname(__file__), "../.."))
+
+
+def load_title_slug_map():
+    """从 posts/ 和 pending/ 目录扫描 frontmatter，构建 标题 → slug 映射。
+
+    这样新文章发布后不需要再手改本脚本；wiki 首页能自动生成正确博客/GitHub 链接。
+    """
+    mapping = {}
+    root = repo_root()
+    for dirname in ("posts", "pending"):
+        dir_path = os.path.join(root, dirname)
+        if not os.path.isdir(dir_path):
+            continue
+        for name in sorted(os.listdir(dir_path)):
+            if not name.endswith(".md"):
+                continue
+            slug = name[:-3]
+            path = os.path.join(dir_path, name)
+            try:
+                with open(path, "r", encoding="utf-8") as f:
+                    text = f.read(8192)
+            except OSError:
+                continue
+            if not text.startswith("---"):
+                continue
+            parts = text.split("---", 2)
+            if len(parts) < 3:
+                continue
+            frontmatter = parts[1]
+            title = None
+            if yaml is not None:
+                try:
+                    data = yaml.safe_load(frontmatter) or {}
+                    title = data.get("title")
+                except Exception:
+                    title = None
+            if not title:
+                m = re.search(r"^title:\s*[\"']?(.+?)[\"']?\s*$", frontmatter, re.MULTILINE)
+                if m:
+                    title = m.group(1).strip()
+            if title:
+                mapping[str(title)] = slug
+    return mapping
+
+
+TITLE_TO_SLUG = load_title_slug_map()
 
 
 def slug_for_title(title):
-    """根据已知标题查 slug，找不到返回 None。"""
+    """根据 posts/pending frontmatter 标题查 slug，找不到返回 None。"""
     return TITLE_TO_SLUG.get(title)
 
 

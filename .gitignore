@@ -55,3 +55,4 @@ __pycache__/
 .publish_params.json
 .feishu_doc_update.json
 .publish_notify.txt
+.publish_archive/

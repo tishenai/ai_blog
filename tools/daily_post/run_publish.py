@@ -92,16 +92,8 @@ def step1_prepare_env(params):
     print("步骤 1: 准备环境")
     print("=" * 60)
     
-    # 先 stash 掉 .publish_params.json 的更改（避免 git pull 冲突）
-    print("Stash 掉 .publish_params.json 的临时更改...")
-    run_cmd("git stash push -m 'temp: publish params' -- .publish_params.json || true")
-    
-    # git pull
+    # git pull。临时状态文件已加入 .gitignore 且必须保持未跟踪，避免污染仓库。
     run_cmd("git pull --rebase")
-    
-    # 恢复 stash 的 .publish_params.json
-    print("恢复 .publish_params.json...")
-    run_cmd("git stash pop || true")
     
     # 验证 pending 文件存在
     pending_path = f"pending/{params['slug']}.md"
@@ -357,16 +349,25 @@ def step8_send_notification(params):
 
 
 def step9_cleanup():
-    """步骤 9: 清理参数文件"""
+    """步骤 9: 归档临时状态文件。
+
+    不直接删除，避免排障信息丢失；同时规避状态文件被误提交。
+    """
     print("\n" + "=" * 60)
-    print("步骤 9: 清理参数文件")
+    print("步骤 9: 归档临时状态文件")
     print("=" * 60)
-    
-    if os.path.exists(PARAMS_FILE):
-        os.remove(PARAMS_FILE)
-        print(f"✅ 已删除: {PARAMS_FILE}")
-    else:
-        print("⚠️  参数文件已不存在，跳过清理")
+
+    archive_dir = os.path.join(WORK_DIR, ".publish_archive")
+    os.makedirs(archive_dir, exist_ok=True)
+    ts = datetime.now().strftime("%Y%m%d-%H%M%S")
+    for name in (".publish_params.json", ".feishu_doc_update.json", ".publish_notify.txt"):
+        src = os.path.join(WORK_DIR, name)
+        if not os.path.exists(src):
+            print(f"⚠️  {name} 已不存在，跳过")
+            continue
+        dst = os.path.join(archive_dir, f"{ts}-{name.lstrip('.')}")
+        os.replace(src, dst)
+        print(f"✅ 已归档: {src} -> {dst}")
 
 
 def main():
@@ -397,7 +398,7 @@ def main():
     print("   1. 调用 feishu_update_doc 更新审稿文档状态")
     print("   2. 调用 feishu_wiki_space_node list + feishu_update_doc 更新知识库首页")
     print("   3. 调用 message 工具发送飞书通知")
-    print("   4. 删除 .publish_params.json")
+    print("   4. 归档 .publish_params.json/.feishu_doc_update.json/.publish_notify.txt")
     print("\n💡 状态文件：")
     print(f"   - {WORK_DIR}/.feishu_doc_update.json (飞书文档更新参数)")
     print(f"   - {WORK_DIR}/.publish_notify.txt (通知内容)")
