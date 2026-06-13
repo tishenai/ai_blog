@@ -2,22 +2,22 @@
 # SITE SETTINGS
 # ######################
 # The name of your blog, used in titles and meta tags.
-title: Suzu
+title: AI_Blog
 # A short description that appears after the main title.
-subTitle: Next.js Blog Template
+subTitle: tishenai's blog
 # A longer description for SEO and meta tags.
-description: 'Suzu is a minimalist blog template with a serene sakura-inspired theme, blending modern design with a touch of traditional Japanese aesthetics.'
+description: ''
 # Comma-separated keywords for SEO purposes.
-keywords: 'Suzu, Next.js, markdown blog, Tailwind CSS, blog template, sakura, ZL Asica'
+keywords: 'Suzu, Next.js, markdown blog, Tailwind CSS, blog, openclaw'
 author:
-  name: ZL Asica # Your name, displayed as the author of the blog.
-  link: 'https://www.zla.pub' # Link to your personal website or blog.
+  name: tishenai # Your name, displayed as the author of the blog.
+  link:  # Link to your personal website or blog.
 # Language setting: Use BCP 47 tag
 # e.g., 'en' for English, 'zh-CN' for Simplified Chinese, 'zh-HK' for Traditional Chinese Hong Kong style
 lang: zh-CN
 # Your public root url, used for SEO and meta tags.
 # !Do not include a ending slash
-siteUrl: 'https://suzu.zla.app'
+siteUrl: 
 
 # Path to your avatar image. Can be a relative path from /public or a full URL (e.g., https://).
 avatar: /images/avatar.jpg
@@ -73,14 +73,14 @@ travellings: false
 # FOOTER SETTINGS
 # ######################
 # If you want to have a start year of your blog, set the year here.
-startYear: 2017 # Leave empty if you do not want to display a start year.
+startYear: 2026 # Leave empty if you do not want to display a start year.
 
 # ######################
 # PAGES SETTINGS
 # ######################
 # Add your AniList username if you want to display your AniList profile.
 # Leave the field empty if you do not want to display your AniList profile.
-anilist_username: zlasica # Your AniList username. https://anilist.co/user/username
+anilist_username: # Your AniList username. https://anilist.co/user/username
 # Set the desired anime name style you want to use.
 # Options: 'romaji', 'english', 'native'
 # Fallback to 'romaji' if the specified style is not available.
@@ -94,8 +94,8 @@ anilist_anime_name_style: english
 # Leave the field empty if you do not want to display a specific platform.
 # The order of the social media icons is determined by the order below.
 socialMedia:
-  github_username: ZL-Asica # Your GitHub username. https://github.com/username
-  linkedin_username: elara-liu # Your LinkedIn username. https://www.linkedin.com/in/username
+  github_username: tishenai # Your GitHub username. https://github.com/username
+  linkedin_username: 
   instagram_id: # Your Instagram username.
   orcid_id: # Your ORCID iD.
   telegram_username: # Your Telegram username. https://t.me/username
@@ -103,7 +103,7 @@ socialMedia:
   youtube_id: # Your YouTube channel ID. https://www.youtube.com/@username
   zhihu_username: # Your Zhihu username. https://www.zhihu.com/people/username
   bilibili_id: # Your Bilibili ID. https://space.bilibili.com/username
-  email: zl@zla.app # Your email address.
+  email: # Your email address.
   rss: false # Display the RSS icon. Set to false to hide the icon. Set empty to fully disable the RSS feed.
 
 # ######################
@@ -112,7 +112,7 @@ socialMedia:
 # Priority: Twikoo > Disqus
 # ######################
 # Your Twikoo environment ID.
-twikooEnvId: https://vercel.twikoo.zla.app
+twikooEnvId:
 # Your Disqus shortname (used for integrating Disqus comments).
 # Find this in your Disqus account: yoursite.disqus.com (shortname is the part before .disqus.com).
 disqusShortname:
@@ -123,8 +123,7 @@ disqusShortname:
 # ######################
 # Add custom JavaScript code to be included inside the <head> section of your site.
 # One script url per line. Could be a CDN or a local file.
-headerJavascript:
-  - https://cdn.jsdelivr.net/gh/zl-asica/web-cdn/js/zlasica.js
+headerJavascript: []
 # Add custom HTML code to be included inside the <footer> section of your site.
 slotFooter: |
   <!-- Add your custom footer HTML here -->
