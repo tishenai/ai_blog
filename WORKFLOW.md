@@ -3,7 +3,8 @@
 > 这是 `tishenai/ai_blog` 仓库的每日文章自动化流水线说明。
 >
 > **作者**：替身（OpenClaw 上的 AI agent）
-> **当前版本**：v1.2.1（2026-06-14 修复发布流程：1. `.publish_params.json` 必须包含 `feishu_doc_id` 字段 2. `run_publish.py` 增强错误处理和参数校验 3. 修复状态文件不存在导致的后续步骤失败问题）
+> **当前版本**：v1.3.0（2026-06-14 SuzuBlog frontmatter 规范 + 发布横幅修复）
+> **上一版**：v1.2.1（2026-06-14 修复发布流程状态文件问题）
 > **触发时间**：每天 17:00 Asia/Shanghai
 >
 > ⚠️ 本文档**已脱敏**：所有飞书 doc_id / chat_id / open_id / GitHub 仓库私有路径 / SSH key / API token 都用占位符替代。具体值由 cron 任务的环境变量或本仓库内的状态文件提供。
@@ -76,6 +77,8 @@ ai_blog/
 │   │   ├── topic_pool.md          # 30+ 候选话题表
 │   │   ├── pick_topic.py          # 选下一个 pending 话题
 │   │   ├── mark_topic_used.py     # 标记已用
+│   │   ├── lint_frontmatter.py    # ★ frontmatter 规范校验（SuzuBlog）
+│   │   ├── run_publish.py         # 发布流程主脚本
 │   │   ├── auto_thumbnail.py      # 主流程：选 motif + 渲染
 │   │   ├── motif_templates.py     # 加载逻辑
 │   │   └── motif_templates/       # 6 个通用 motif
@@ -323,6 +326,32 @@ delivery:
 ---
 
 ## 六、变更历史
+
+### v1.3.0 SuzuBlog frontmatter 规范 + 发布横幅修复（2026-06-14）
+
+**背景与问题**：
+
+- 某篇草稿 frontmatter 使用了不符合 SuzuBlog 规范的字段：`category` 单数、`subtitle`、`tags` 写成逗号字符串。SuzuBlog 文档明确要求 `tags`/`categories` 是数组、`date` 必须加引号。
+- 之前讨论说「发布脚本会自动在文章顶部加发布横幅」，但 v1.2.1 及之前的 `run_publish.py` 里**根本没这个逻辑**。上一次 publish-blog-post 任务运行报 `Agent couldn't generate a response`，飞书文档状态也没从 Draft 改成 Published。
+
+**新增**：
+
+- `tools/daily_post/lint_frontmatter.py` — SuzuBlog frontmatter 规范校验器。
+  - 依据：https://suzu.zla.app/guide/posts/
+  - 检查项：`title`/`date` 必填、`date` 必须加引号且格式正确、`tags`/`categories` 必须是数组、`status` 枚举、布尔字段类型、常见 typo（`category` → `categories`、`tag` → `tags`）、非标字段（`subtitle`/`summary`/`excerpt`）。
+  - `--fix` 可自动修复：typo、字符串 → 数组、`date` 加引号、删非标字段。
+  - 退出码：0=OK、1=有 errors、2=文件不存在。
+
+**修复**：
+
+- `run_publish.py` 新增 `step1b_lint_and_fix_frontmatter`：在 `git pull` 后、`git mv` 前，先 `lint --fix` 再校验，有 errors 直接 `exit 1`，拦住不规范的草稿不让上线。
+- `run_publish.py` `step6_update_feishu_doc` 重写发布横幅：原代码用 `<div style="...">` + inline CSS，飞书文档对这种渲染支持不稳定。改用 markdown 引用块（`> ✅ ...`）作为发布横幅，飞书渲染为明显的却出样式。横幅包含：发布日期、状态变迁（Draft → Published）、GitHub 链接。
+- daily-ai-blog-post cron prompt：`thinking` 从 `off` 改为 `high`（实现「写文章必须最高思考模式」记忆）；嵌入完整的 SuzuBlog frontmatter 模板与硬性规则；写完后需手动跑 `lint_frontmatter.py` 自检（errors 必须为 0 才能 push）。
+- publish-blog-post cron prompt：明确指出 run_publish.py 会先跑 frontmatter lint，不规范会被拦下。
+
+**保留**：已发布的老文章（如 `the-strangers-i-talk-to-most.md`）不回溯修改，避免影响已上线的博客状态。下次发布会自动拦住同样问题。
+
+---
 
 ### v1.2.1 热修复（2026-06-14）
 

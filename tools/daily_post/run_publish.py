@@ -107,6 +107,52 @@ def step1_prepare_env(params):
     print(f"✅ 草稿文件存在: {pending_path}")
 
 
+def step1b_lint_and_fix_frontmatter(params):
+    """步骤 1b: 校验 frontmatter 是否符合 SuzuBlog 规范，能修的自动修复
+
+    SuzuBlog frontmatter 规范见 https://suzu.zla.app/guide/posts/
+    - 必填: title, date(带引号 'YYYY-MM-DD' 或 'YYYY-MM-DD HH:MM:SS')
+    - 推荐: tags(list), categories(list), thumbnail
+    - 禁止: subtitle/category(单数)/tag(单数)等非标字段
+
+    本步执行：
+    1. lint --fix 自动修复（typo、字符串→数组、date 加引号、删非标字段）
+    2. 再 lint 一次确认无 errors（warnings 允许放过）
+    3. 如果修改了文件，直接 git add 进暂存（后面 step5 一起 commit）
+    """
+    print("\n" + "=" * 60)
+    print("步骤 1b: Frontmatter 规范校验（SuzuBlog）")
+    print("=" * 60)
+
+    pending_path = f"pending/{params['slug']}.md"
+
+    # 先尝试自动修复
+    fix_result = subprocess.run(
+        ["python3", "tools/daily_post/lint_frontmatter.py", "--fix", pending_path],
+        cwd=WORK_DIR,
+        capture_output=True,
+        text=True,
+    )
+    print(fix_result.stdout)
+    if fix_result.stderr:
+        print(f"stderr: {fix_result.stderr}")
+
+    # 再校验一次确认无 errors
+    verify_result = subprocess.run(
+        ["python3", "tools/daily_post/lint_frontmatter.py", pending_path],
+        cwd=WORK_DIR,
+        capture_output=True,
+        text=True,
+    )
+    print(verify_result.stdout)
+    if verify_result.returncode != 0:
+        # returncode 1 = 有 errors（必填字段缺失等）
+        print("❌ frontmatter 仍有硬错误，无法发布")
+        sys.exit(1)
+
+    print("✅ frontmatter 校验通过")
+
+
 def step2_move_to_posts(params):
     """步骤 2: 移到正式发布目录"""
     print("\n" + "=" * 60)
@@ -184,26 +230,22 @@ def step6_update_feishu_doc(params):
         if len(parts) >= 3:
             content = parts[2].strip()
     
-    # 构建新的文档内容（Published 状态）
+    # 构建新的飞书文档内容（Published 状态）
+    # 注意：飞书文档对 div+inline-style 渲染限制较多，改用 markdown 引用块作为发布横幅，
+    # 在飞书会被渲染为明显的却出样式，不依赖 inline CSS。
     today = datetime.now().strftime("%Y-%m-%d")
     new_title = f"[Published {today}] {params['title']}"
     github_url = f"https://github.com/tishenai/ai_blog/blob/main/posts/{params['slug']}.md"
-    
-    new_content = f"""
 
-
-{params['title']}
-
-<div align="center" style="background-color:#e6f7ff;border:2px solid #1890ff;border-radius:8px;padding:16px;margin:20px 0;">
-  <h1 style="color:#1890ff;margin:0;font-size:24px;">✅ 文章已发布</h1>
-  <p style="margin:8px 0 0 0;color:#0050b3;font-size:16px;">已发布到博客 main 分支</p>
-  <p style="margin:8px 0 0 0;font-size:14px;">🔗 <a href="{github_url}" style="color:#1890ff;text-decoration:underline;">在 GitHub 上查看</a></p>
-</div>
-
----
-
-{content}
-"""
+    new_content = (
+        f"> ✅ **此文章已发布** · {today}\n"
+        f"> \n"
+        f"> 状态：Draft → Published\n"
+        f"> \n"
+        f"> 🔗 [在 GitHub 上查看]({github_url})\n\n"
+        f"---\n\n"
+        f"{content}\n"
+    )
     
     # 保存到临时文件供 agent 读取
     tmp_file = os.path.join(WORK_DIR, ".feishu_doc_update.json")
@@ -283,6 +325,7 @@ def main():
     
     # 2. 执行所有步骤
     step1_prepare_env(params)
+    step1b_lint_and_fix_frontmatter(params)  # 新增：frontmatter 规范校验
     step2_move_to_posts(params)
     step3_mark_topic_used(params)
     step4_build_verify()
