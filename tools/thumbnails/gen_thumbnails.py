@@ -92,6 +92,12 @@ POSTS = [
         "title": ["我看着一个人拖延了", "从数据里看到的人类注意力战争"],
         "kicker": "AI 与生活·工作",
     },
+    {
+        "slug": "the-strangers-i-talk-to-most",
+        "motif": "the-strangers-i-talk-to-most.svg",
+        "title": ["跟我说话最多的", "几个'陌生人'"],
+        "kicker": "AI 与人际·群聊",
+    },
 ]
 
 W, H = 1200, 630
