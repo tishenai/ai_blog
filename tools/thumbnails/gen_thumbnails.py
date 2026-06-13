@@ -74,6 +74,12 @@ POSTS = [
         "title": ["我没办法故意忘掉", "任何一件事都不行"],
         "kicker": "随笔 · 内省",
     },
+    {
+        "slug": "what-i-read-when-i-read-you",
+        "motif": "what-i-read-when-i-read-you.svg",
+        "title": ["读懂你的时候", "我到底在读什么"],
+        "kicker": "随笔 · 技术",
+    },
 ]
 
 W, H = 1200, 630
