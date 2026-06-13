@@ -462,7 +462,7 @@ publish-blog-post cron job 反复在同一个阶段挂：`Agent couldn't generat
 
 1. **无版本回滚机制**：发布失败后需要手动 git revert，未来可以加自动回滚。
 2. **无 A/B 测试**：目前每篇只有一个版本，未来可以生成两个版本供 owner 选择。
-3. **首页 slug 映射主要靠 build_wiki_index.py 里的 TITLE_TO_SLUG 字典**：新发文章需手动补进去，未来考虑改为扫描 posts/ 目录 frontmatter 取 title。
+3. **飞书文档已发布后只保留横幅入口**：这是为规避 cron/tool context 超限做的取舍；完整正文以博客和 GitHub 为准。
 
 ### 未来改进方向
 
