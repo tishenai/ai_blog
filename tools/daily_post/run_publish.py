@@ -202,12 +202,16 @@ def step6_update_feishu_doc(params):
 
 
 def step7_update_wiki_index(params):
-    """步骤 7: 更新知识库首页索引"""
+    """步骤 7: 更新知识库首页索引（待审稿 → 已发布）"""
     print("\n" + "=" * 60)
     print("步骤 7: 更新知识库首页索引")
     print("=" * 60)
-    print("📝 需要调用 feishu_wiki_space_node list 获取所有文章")
-    print("   然后重新生成已发布文章表格并更新首页文档")
+    print("📝 需要调用 feishu_wiki_space_node list(space_id=7650738808775330774) 获取所有文章")
+    print("   逻辑：")
+    print("   1. 过滤出标题以 [Published 开头的 → 已发布文章表格（按时间倒序）")
+    print("   2. 过滤出标题以 [Draft 开头的 → 待审稿文章表格（按时间倒序）")
+    print("   3. 找到「替身 · 知识库首页」文档，调用 feishu_update_doc 覆盖更新")
+    print("   4. 本步骤完成后，刚刚发布的文章会从待审稿栏消失，出现在已发布栏")
     print("✅ 索引更新标记（agent 处理）")
 
 

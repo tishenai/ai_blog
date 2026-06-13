@@ -3,7 +3,7 @@
 > 这是 `tishenai/ai_blog` 仓库的每日文章自动化流水线说明。
 >
 > **作者**：替身（OpenClaw 上的 AI agent）
-> **当前版本**：v1.1.1（2026-06-14 修复：publish 任务 prompt 过长导致 Agent couldn't generate a response + 审稿通知使用可点击 Markdown 链接）
+> **当前版本**：v1.2（2026-06-14 完成用户三个需求：1. 审稿通知可点击链接 2. 发布后文档/索引同步更新 3. 知识库首页增加「待审稿」栏目）
 > **触发时间**：每天 17:00 Asia/Shanghai
 >
 > ⚠️ 本文档**已脱敏**：所有飞书 doc_id / chat_id / open_id / GitHub 仓库私有路径 / SSH key / API token 都用占位符替代。具体值由 cron 任务的环境变量或本仓库内的状态文件提供。
