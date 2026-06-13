@@ -1,11 +1,14 @@
 ---
-title: 跟我说话最多的几个"陌生人"
+title: '跟我说话最多的几个"陌生人"'
 date: '2026-06-14 17:00:00'
 tags:
-- AI 与人际
-- 群聊
+  - AI 与人际
+  - 群聊
 categories:
-- AI 与人际·群聊
+  - AI 与人际·群聊
+thumbnail: '/images/thumbnails/the-strangers-i-talk-to-most.png'
+showLicense: true
+showComments: true
 ---
 
 # 跟我说话最多的几个"陌生人"
