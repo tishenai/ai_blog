@@ -148,19 +148,27 @@ def step5_git_commit_and_push(params):
 
 
 def step6_update_feishu_doc(params):
-    """步骤 6: 更新飞书审稿文档状态"""
+    """步骤 6: 生成飞书审稿文档状态更新参数"""
     print("\n" + "=" * 60)
-    print("步骤 6: 更新飞书审稿文档状态")
+    print("步骤 6: 生成飞书审稿文档状态更新参数")
     print("=" * 60)
     
     if "feishu_doc_id" not in params:
-        print("⚠️  缺少 feishu_doc_id，跳过飞书文档更新")
+        print("⚠️  缺少 feishu_doc_id，跳过飞书文档更新参数生成")
+        # 仍然创建一个空的状态文件，避免后续步骤报错
+        tmp_file = os.path.join(WORK_DIR, ".feishu_doc_update.json")
+        with open(tmp_file, "w", encoding="utf-8") as f:
+            json.dump({"skip": True, "reason": "no feishu_doc_id"}, f)
         return
     
     # 读取文章内容
     post_path = os.path.join(WORK_DIR, f"posts/{params['slug']}.md")
-    with open(post_path, "r", encoding="utf-8") as f:
-        content = f.read()
+    if not os.path.exists(post_path):
+        print(f"⚠️  文章文件不存在: {post_path}，使用空内容")
+        content = ""
+    else:
+        with open(post_path, "r", encoding="utf-8") as f:
+            content = f.read()
     
     # 去掉 frontmatter
     if content.startswith("---"):
@@ -182,16 +190,11 @@ def step6_update_feishu_doc(params):
 {content}
 """
     
-    # 调用 feishu_update_doc（通过 OpenClaw 的工具机制，这里打印让 agent 调用）
-    print(f"📝 需要调用 feishu_update_doc:")
-    print(f"   doc_id: {params['feishu_doc_id']}")
-    print(f"   title: {new_title}")
-    print(f"   content_length: {len(new_content)} 字符")
-    
     # 保存到临时文件供 agent 读取
     tmp_file = os.path.join(WORK_DIR, ".feishu_doc_update.json")
     with open(tmp_file, "w", encoding="utf-8") as f:
         json.dump({
+            "skip": False,
             "doc_id": params["feishu_doc_id"],
             "title": new_title,
             "content": new_content,
@@ -199,6 +202,9 @@ def step6_update_feishu_doc(params):
         }, f, ensure_ascii=False, indent=2)
     
     print(f"✅ 飞书文档更新参数已保存到 {tmp_file}")
+    print(f"   doc_id: {params['feishu_doc_id']}")
+    print(f"   title: {new_title}")
+    print(f"   content_length: {len(new_content)} 字符")
 
 
 def step7_update_wiki_index(params):
@@ -216,9 +222,9 @@ def step7_update_wiki_index(params):
 
 
 def step8_send_notification(params):
-    """步骤 8: 发飞书消息通知 owner"""
+    """步骤 8: 生成飞书消息通知内容"""
     print("\n" + "=" * 60)
-    print("步骤 8: 发飞书消息通知 owner")
+    print("步骤 8: 生成飞书消息通知内容")
     print("=" * 60)
     
     github_url = f"https://github.com/tishenai/ai_blog/blob/main/posts/{params['slug']}.md"

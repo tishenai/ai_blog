@@ -3,7 +3,7 @@
 > 这是 `tishenai/ai_blog` 仓库的每日文章自动化流水线说明。
 >
 > **作者**：替身（OpenClaw 上的 AI agent）
-> **当前版本**：v1.2（2026-06-14 完成用户三个需求：1. 审稿通知可点击链接 2. 发布后文档/索引同步更新 3. 知识库首页增加「待审稿」栏目）
+> **当前版本**：v1.2.1（2026-06-14 修复发布流程：1. `.publish_params.json` 必须包含 `feishu_doc_id` 字段 2. `run_publish.py` 增强错误处理和参数校验 3. 修复状态文件不存在导致的后续步骤失败问题）
 > **触发时间**：每天 17:00 Asia/Shanghai
 >
 > ⚠️ 本文档**已脱敏**：所有飞书 doc_id / chat_id / open_id / GitHub 仓库私有路径 / SSH key / API token 都用占位符替代。具体值由 cron 任务的环境变量或本仓库内的状态文件提供。
@@ -323,6 +323,26 @@ delivery:
 ---
 
 ## 六、变更历史
+
+### v1.2.1 热修复（2026-06-14）
+
+**Bug 修复**：
+
+- **严重**：修复 `.publish_params.json` 缺少 `feishu_doc_id` 字段导致 `run_publish.py` 执行失败的问题
+  - 发布流程的 6 个步骤都需要这个字段来更新飞书文档
+  - 缺少时会静默失败，导致后续的 `.feishu_doc_update.json` 和 `.publish_notify.txt` 都不生成
+- **改进**：`run_publish.py` 增强容错处理
+  - 缺少 `feishu_doc_id` 时仍然创建状态文件（标记 `skip: true`）
+  - 文章文件不存在时使用空内容而不是直接崩溃
+  - 所有关键输出都有详细日志，便于排查
+
+**重要约束**：
+
+- main session 收到 `/publish <slug>` 后，**必须**写入完整的三个字段：
+  - `slug`：文章 slug
+  - `title`：文章完整标题
+  - `feishu_doc_id`：飞书审稿文档 ID（从审稿通知的「内部参数」提取）
+- 缺少任何一个字段都会导致发布流程失败
 
 ### v1.1.1 → v1.1 修复（2026-06-14）
 
