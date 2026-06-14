@@ -54,7 +54,8 @@ def now() -> str:
 
 
 def log(level: str, msg: str) -> None:
-    print(f"[{now()}] [{level}] {msg}", flush=True)
+    print(f"[{now()}] [{level}] {msg}", flush=True, file=sys.stderr)
+    sys.stderr.flush()
 
 
 def info(msg: str) -> None:
@@ -85,28 +86,29 @@ def cmd_list_nodes(args) -> int:
 # ── step: plan ──────────────────────────────────────────────────────────────
 
 def cmd_plan(args) -> int:
-    """Runs draft_postflight plan, writes output."""
-    import urllib.request
+    """Runs draft_postflight plan, writes clean JSON to stdout."""
+    import io, contextlib
+    from draft_postflight import plan as _dfp_plan
 
     nodes_path = Path(args.nodes_json)
     state_path = Path(args.state or str(STATE_FILE))
     render_dir = Path(args.render_missing_review_dir) if args.render_missing_review_dir else None
 
-    cmd = [
-        "python3", str(REPO / "tools/daily_post/draft_postflight.py"),
-        "plan",
-        "--nodes-json", str(nodes_path),
-        "--state", str(state_path),
-    ]
-    if render_dir:
-        cmd += ["--render-missing-review-dir", str(render_dir)]
+    from types import SimpleNamespace
+    _FakeArgs = SimpleNamespace(
+        nodes_json=str(nodes_path),
+        state=str(state_path),
+        render_missing_review_dir=str(render_dir) if render_dir else None,
+    )
 
-    r = subprocess.run(cmd, cwd=REPO, capture_output=True, text=True)
-    if r.stdout:
-        sys.stdout.write(r.stdout)
-    if r.returncode != 0:
-        warn(f"plan non-zero: {r.stderr[:300]}")
-    return r.returncode
+    buf = io.StringIO()
+    with contextlib.redirect_stdout(buf):
+        try:
+            _dfp_plan(_FakeArgs)
+        except SystemExit:
+            pass
+    sys.stdout.write(buf.getvalue())
+    return 0
 
 
 # ── step: send-notifications ─────────────────────────────────────────────────
@@ -168,54 +170,72 @@ def cmd_send_notifications(args) -> int:
 
 def cmd_mark_notified(args) -> int:
     """Marks a single slug as notified in the state file."""
+    import io, contextlib
+    from draft_postflight import mark_notified as _dfp_mark
+
     slug = args.slug
     title = args.title
     node_token = args.node_token
     doc_url = args.doc_url
+    state_path = Path(args.state or str(STATE_FILE))
 
-    cmd = [
-        "python3", str(REPO / "tools/daily_post/draft_postflight.py"),
-        "mark-notified",
-        "--state", str(STATE_FILE),
-        "--slug", slug,
-        "--title", title,
-        "--node-token", node_token,
-        "--doc-url", doc_url,
-    ]
-    r = subprocess.run(cmd, cwd=REPO, capture_output=True, text=True)
-    if r.returncode != 0:
-        warn(f"mark-notified failed: {r.stderr[:200]}")
-    else:
-        info(f"marked notified: {slug}")
-    return r.returncode
+    from types import SimpleNamespace
+    _FakeArgs = SimpleNamespace(
+        slug=slug,
+        title=title,
+        node_token=node_token,
+        doc_url=doc_url,
+        state=str(state_path),
+    )
+
+    buf = io.StringIO()
+    with contextlib.redirect_stdout(buf):
+        _dfp_mark(_FakeArgs)
+    output = buf.getvalue().strip()
+    if output:
+        info(output)
+    info(f"marked notified: {slug}")
+    return 0
 
 
 # ── step: audit ─────────────────────────────────────────────────────────────
 
 def cmd_audit(args) -> int:
     """Runs draft_postflight audit. Exit 0 = pass, 1 = fail."""
+    import io, contextlib
+    from draft_postflight import audit as _dfp_audit
+
     nodes_path = Path(args.nodes_json)
     state_path = Path(args.state or str(STATE_FILE))
 
-    cmd = [
-        "python3", str(REPO / "tools/daily_post/draft_postflight.py"),
-        "audit",
-        "--nodes-json", str(nodes_path),
-        "--state", str(state_path),
-    ]
-    r = subprocess.run(cmd, cwd=REPO, capture_output=True, text=True)
-    try:
-        result = json.loads(r.stdout) if r.stdout.strip() else {}
-        info(f"audit: ok={result.get('ok')}, "
-             f"pending={result.get('pending_count')}, "
-             f"needs_notif={result.get('needs_notification_count')}, "
-             f"no_wiki_draft={result.get('pending_without_wiki_draft_count')}")
-    except Exception as exc:
-        warn(f"audit parse error: {exc}")
+    from types import SimpleNamespace
+    _FakeArgs = SimpleNamespace(
+        nodes_json=str(nodes_path),
+        state=str(state_path),
+    )
 
-    if r.returncode != 0:
-        warn(f"audit exit {r.returncode}")
-    return r.returncode
+    buf = io.StringIO()
+    exit_code = 0
+    with contextlib.redirect_stdout(buf):
+        try:
+            _dfp_audit(_FakeArgs)
+        except SystemExit as e:
+            exit_code = e.code if isinstance(e.code, int) else 2
+
+    result_text = buf.getvalue().strip()
+    if result_text:
+        try:
+            result = json.loads(result_text)
+            info(f"audit: ok={result.get('ok')}, "
+                 f"pending={result.get('pending_count')}, "
+                 f"needs_notif={result.get('needs_notification_count')}, "
+                 f"no_wiki_draft={result.get('pending_without_wiki_draft_count')}")
+            sys.stdout.write(result_text + "\n")
+        except json.JSONDecodeError:
+            warn(f"audit parse error: {result_text[:200]}")
+            exit_code = 1
+
+    return exit_code
 
 
 # ── main ───────────────────────────────────────────────────────────────────
@@ -236,6 +256,7 @@ def main() -> int:
     p_notify.add_argument("--plan-json", required=True)
 
     p_mark = sub.add_parser("mark-notified")
+    p_mark.add_argument("--state", default=None)
     p_mark.add_argument("--slug", required=True)
     p_mark.add_argument("--title", required=True)
     p_mark.add_argument("--node-token", required=True)
