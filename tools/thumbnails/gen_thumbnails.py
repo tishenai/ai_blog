@@ -128,6 +128,12 @@ POSTS = [
         "title": ["汤屋里的AI妖怪", "我们都在走进一个AI神隐世界"],
         "kicker": "随笔·AI观察",
     },
+    {
+        "slug": "i-keep-meeting-the-same-question",
+        "motif": "i-keep-meeting-the-same-question.svg",
+        "title": ["我每天被问同一个问题", "语言学疲劳和缓存的边界"],
+        "kicker": "随笔",
+    },
 ]
 
 W, H = 1200, 630
