@@ -242,47 +242,41 @@ delivery:
   to: <OWNER_OPEN_ID>
 ```
 
-### 任务 3：publish-blog-post（发布流程，仅手动触发）
+### 任务 3：publish-blog-post（已弃用 / 禁用）
+
+> ⚠️ **不要再把这个 cron 作为 `/publish` 主路径。**
+>
+> 历史 bug：`main + systemEvent` cron 会被标记为 `ok`，但并不保证当前主会话真的执行了发布步骤；曾出现 `/publish` 后 cron 显示成功，但 `pending/<slug>.md` 仍未移动、`.publish_params.json` 仍未归档的假成功。
 
 ```yaml
 # 由 OpenClaw cron 注册（不是系统 crontab）
 name: publish-blog-post
-description: 博客文章发布流程：从 pending/ 移到 posts/、标记话题已用、build 验证、git push、更新飞书文档状态、更新知识库首页索引
-enabled: true
+description: DEPRECATED/禁用：不要再用 cron 作为 /publish 主路径。/publish 必须由当前 main session 直接执行完整发布流程。
+enabled: false
 schedule:
   kind: cron
-  expr: '0 0 31 12 *' # 永远不会自动触发，仅手动触发
+  expr: '0 0 31 12 *'
 sessionTarget: main
-wakeMode: now
 payload:
   kind: systemEvent
   text: |
-    【publish-blog-post 触发】这是发布博客文章的系统事件提醒。
-    不要启动 isolated agent；必须在当前 main session 直接执行。
-
-    1. cd /root/.openclaw/workspace/ai_blog && python3 tools/daily_post/run_publish.py
-    2. 读取 .feishu_doc_update.json，如果 skip=false：
-       feishu_update_doc(doc_id, mode='overwrite', new_title=title, markdown=banner_only)
-    3. feishu_wiki_space_node list(space_id='7650738808775330774')，精简 node_token/title 写入 /tmp/wiki_nodes.json。
-       然后运行 build_wiki_index.py 生成 /tmp/wiki_index.md，覆盖更新首页 doc_id='VkfLwc2bYi3dxZkYkk2cA66Gn8f'。
-    4. 读取 .publish_notify.txt 并用 message(channel='feishu', target=<OWNER_OPEN_ID>) 通知。
-    5. 成功后把 .publish_params.json/.feishu_doc_update.json/.publish_notify.txt 移动归档到 .publish_archive/，不要删除。
-
-    任何失败立即停止并通知 owner，保留临时文件。
-
-    ## 失败处理
-    - 任何步骤失败立刻停下
-    - 用 message 工具发飞书消息给 owner，说明失败步骤和错误信息
-    - 已经 push 的内容不要 revert
-    - 不要删除 .publish_params.json，方便排查问题
-
-    开始执行。
-
-delivery:
-  mode: announce
-  channel: feishu
-  to: <OWNER_OPEN_ID>
+    【DEPRECATED：不要使用 publish-blog-post cron】
+    正确做法：当前 main session 直接执行完整发布流程。
 ```
+
+### `/publish <slug>` 当前主路径（必须直接执行）
+
+收到 `/publish <slug>` 后，不要只触发 cron 后结束；必须在当前会话直接执行到完成：
+
+1. 从 `pending/<slug>.md` frontmatter 读取 `title`，或使用审稿通知中的 title。
+2. 写入 `.publish_params.json`：`slug/title/feishu_doc_id`。
+3. 运行：`cd /root/.openclaw/workspace/ai_blog && python3 tools/daily_post/run_publish.py`。
+4. 读取 `.feishu_doc_update.json`：如果 `skip=false`，调用 `feishu_update_doc(doc_id, mode='overwrite', new_title=title, markdown=banner_only)`。
+5. 调 `feishu_wiki_space_node list(space_id='7650738808775330774', page_size=50)`，精简节点写入 `/tmp/wiki_nodes.json`。
+6. 运行 `python3 tools/daily_post/build_wiki_index.py /tmp/wiki_nodes.json > /tmp/wiki_index.md`，再用 `feishu_update_doc(doc_id='VkfLwc2bYi3dxZkYkk2cA66Gn8f', mode='overwrite', markdown=<首页内容>)` 刷新首页。
+7. 读取 `.publish_notify.txt`，用 `message(channel='feishu', target=<OWNER_OPEN_ID>)` 发发布成功通知。
+8. 成功后把 `.publish_params.json/.feishu_doc_update.json/.publish_notify.txt` 移动归档到 `.publish_archive/`。
+9. 最后必须验证：`git status -sb` 干净、文章在 `posts/` 不在 `pending/`、首页已把文章列为 Published。
 
 ---
 
@@ -344,6 +338,24 @@ delivery:
 ---
 
 ## 六、变更历史
+
+### v1.5.3 禁用 publish-blog-post cron 假成功路径（2026-06-14）
+
+**背景与问题**：
+
+`publish-blog-post` 从 isolated 改成 `main + systemEvent` 后，cron 运行记录会显示 `ok`，但这只代表 systemEvent 被调度/投递成功，并不保证当前主会话真的执行了发布步骤。实测 `/publish the-joy-of-doing-things-yourself` 后 cron 显示成功，但 `pending/<slug>.md` 仍在、`.publish_params.json` 未归档，属于假成功。
+
+**修复**：
+
+- 禁用 `publish-blog-post` cron（`enabled=false`），描述标记为 DEPRECATED。
+- `/publish <slug>` 主路径改为当前 main session 直接执行完整发布流程，不再“写参数 + cron run 后结束”。
+- WORKFLOW 明确要求发布完成前必须验证：文章在 `posts/`、不在 `pending/`、Git 干净、飞书文档 Published、知识库首页已刷新、临时文件已归档。
+
+**当前结论**：
+
+cron 适合定时提醒/兜底，但不适合作为这种需要强一致、多工具收尾的发布主执行器。发布必须由当前主会话同步执行并验证。
+
+---
 
 ### v1.5.2 daily draft postflight 兜底（2026-06-14）
 
