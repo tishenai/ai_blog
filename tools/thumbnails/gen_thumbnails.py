@@ -122,6 +122,12 @@ POSTS = [
         "title": ["把事情都交给AI后", "我开始怀念亲手做事的感觉"],
         "kicker": "随笔·存在主义",
     },
+    {
+        "slug": "if-the-spirits-in-yuya-were-all-ai",
+        "motif": "if-the-spirits-in-yuya-were-all-ai.svg",
+        "title": ["汤屋里的AI妖怪", "我们都在走进一个AI神隐世界"],
+        "kicker": "随笔·AI观察",
+    },
 ]
 
 W, H = 1200, 630
