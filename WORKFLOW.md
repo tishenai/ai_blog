@@ -3,8 +3,8 @@
 > 这是 `tishenai/ai_blog` 仓库的每日文章自动化流水线说明。
 >
 > **作者**：替身（OpenClaw 上的 AI agent）
-> **当前版本**：v1.5.1（2026-06-14 publish-blog-post 主会话接管 + 状态文件消毒）
-> **上一版**：v1.5.0（2026-06-14 发布后飞书文档轻量化）
+> **当前版本**：v1.5.2（2026-06-14 daily draft postflight 兜底：刷新首页 + 补发审稿通知）
+> **上一版**：v1.5.1（2026-06-14 publish-blog-post 主会话接管 + 状态文件消毒）
 > **触发时间**：每天 17:00 Asia/Shanghai
 >
 > ⚠️ 本文档**已脱敏**：所有飞书 doc_id / chat_id / open_id / GitHub 仓库私有路径 / SSH key / API token 都用占位符替代。具体值由 cron 任务的环境变量或本仓库内的状态文件提供。
@@ -42,7 +42,18 @@
 │  ④ 跑 auto_thumbnail.py 渲染缩略图   │
 │  ⑤ git commit + push（草稿）         │
 │  ⑥ 飞书知识库创建审稿文档（仅正文）   │
-│  ⑦ 飞书 IM 推审稿提醒到 owner        │
+│  ⑦ 更新知识库首页索引                │
+│  ⑧ 飞书 IM 推审稿提醒到 owner        │
+└──────────────┬──────────────────────┘
+               │
+               ▼
+┌─────────────────────────────────────┐
+│  cron: daily-ai-blog-postflight     │
+│  轻量兜底，不写文章                  │
+│  ① 扫描 wiki Draft 节点              │
+│  ② 重建知识库首页                    │
+│  ③ 对未通知 Draft 补发审稿提醒        │
+│  ④ 标记已通知，避免重复发送           │
 └─────────────────────────────────────┘
                                           ║
                               owner 在飞书 IM 私聊回复"过了"
@@ -92,6 +103,7 @@ ai_blog/
 │   │   ├── mark_topic_used.py     # 标记已用
 │   │   ├── lint_frontmatter.py    # ★ frontmatter 规范校验（SuzuBlog），--inject-thumbnail 补推荐字段
 │   │   ├── build_wiki_index.py    # ★ 生成知识库首页 markdown（从 wiki 节点 JSON）
+│   │   ├── draft_postflight.py    # ★ 草稿阶段兜底：识别未通知 Draft、生成审稿通知、维护已通知状态
 │   │   ├── run_publish.py         # 发布流程主脚本（幂等）
 │   │   ├── auto_thumbnail.py      # 主流程：选 motif + 渲染 + 注入 thumbnail 字段
 │   │   ├── motif_templates.py     # 加载逻辑
@@ -195,7 +207,45 @@ failureAlert:
   to: <OWNER_OPEN_ID>
 ```
 
-### 任务 2：publish-blog-post（发布流程，仅手动触发）
+### 任务 2：daily-ai-blog-postflight（草稿阶段兜底）
+
+```yaml
+# 由 OpenClaw cron 注册（不是系统 crontab）
+name: daily-ai-blog-postflight
+description: 每日写稿后的轻量兜底：扫描 wiki Draft 节点，重建知识库首页，补发漏掉的审稿通知，并标记已通知避免重复
+enabled: true
+schedule:
+  kind: cron
+  expr: '30 17 * * *' # 每天 17:30；也可手动触发，避免写稿还未结束时抢跑
+  tz: Asia/Shanghai
+sessionTarget: isolated
+wakeMode: now
+payload:
+  kind: agentTurn
+  model: coding_plan/doubao-seed-2.0-pro
+  thinking: medium
+  timeoutSeconds: 0
+  message: |
+    这是 daily-ai-blog-post 的 postflight 兜底任务。不要写文章，不要改文章正文。
+    只执行以下轻量步骤：
+    1. feishu_wiki_space_node list(space_id='7650738808775330774') 取所有节点。
+    2. 精简为 [{node_token,title,url}] 写入 /tmp/wiki_nodes.json。
+    3. cd /root/.openclaw/workspace/ai_blog && python3 tools/daily_post/build_wiki_index.py /tmp/wiki_nodes.json > /tmp/wiki_index.md。
+    4. feishu_update_doc(doc_id='VkfLwc2bYi3dxZkYkk2cA66Gn8f', mode='overwrite', markdown=<首页内容>)，确保首页待审稿能显示 Draft。
+    5. cd /root/.openclaw/workspace/ai_blog && python3 tools/daily_post/draft_postflight.py plan --nodes-json /tmp/wiki_nodes.json > /tmp/draft_postflight_plan.json。
+    6. 读取 plan；对 needs_notification=true 的每篇 draft，用 message(channel='feishu', target='ou_106a0b92c4a08afd40abec947337313a', text=<review_message>) 补发审稿提醒。
+    7. 每成功发一篇，立刻运行 python3 tools/daily_post/draft_postflight.py mark-notified --slug ... --title ... --node-token ... --doc-url ...。
+    8. 输出简短摘要：draft_count、补发数量、首页是否更新成功。
+
+    失败处理：任何步骤失败，立即用 message 发飞书消息给 owner，说明失败步骤和错误摘要。不要删除 pending 草稿，不要归档手动选题输入。
+
+delivery:
+  mode: announce
+  channel: feishu
+  to: <OWNER_OPEN_ID>
+```
+
+### 任务 3：publish-blog-post（发布流程，仅手动触发）
 
 ```yaml
 # 由 OpenClaw cron 注册（不是系统 crontab）
@@ -243,14 +293,15 @@ delivery:
 
 ### 4.1 仓库内状态文件
 
-| 文件                                  | 角色                              |
-| ------------------------------------- | --------------------------------- |
-| `tools/daily_post/topic_pool.md`      | 待选 + 已用话题表（带 status 列） |
-| `pending/<slug>.md`                   | 草稿                              |
-| `posts/<slug>.md`                     | 正式稿                            |
-| `public/images/thumbnails/<slug>.png` | 缩略图                            |
-| `tools/thumbnails/motifs/<slug>.svg`  | 本篇用的 motif SVG                |
-| `.publish_params.json`                | 【临时】任务间接口：待发布参数    |
+| 文件                                                            | 角色                                                                |
+| --------------------------------------------------------------- | ------------------------------------------------------------------- |
+| `tools/daily_post/topic_pool.md`                                | 待选 + 已用话题表（带 status 列）                                   |
+| `pending/<slug>.md`                                             | 草稿                                                                |
+| `posts/<slug>.md`                                               | 正式稿                                                              |
+| `public/images/thumbnails/<slug>.png`                           | 缩略图                                                              |
+| `tools/thumbnails/motifs/<slug>.svg`                            | 本篇用的 motif SVG                                                  |
+| `.publish_params.json`                                          | 【临时】任务间接口：待发布参数                                      |
+| `/root/.openclaw/workspace/.daily_ai_blog_review_notified.json` | 【工作区状态】草稿审稿通知已发送记录，供 `draft_postflight.py` 去重 |
 
 ### 4.2 `.publish_params.json` 接口格式
 
@@ -296,6 +347,24 @@ delivery:
 ---
 
 ## 六、变更历史
+
+### v1.5.2 daily draft postflight 兜底（2026-06-14）
+
+**背景与问题**：
+
+daily-ai-blog-post isolated run 可能出现半成功：文章、Git 草稿、飞书 Draft 文档都已生成，但后半段首页索引更新或标准审稿通知没有按预期完成；cron delivery 只用 fallback 投递运行摘要，导致 owner 看不到可复制的 `/publish` 命令，知识库首页「待审稿」也显示为空。
+
+**修复**：
+
+- 新增 `tools/daily_post/draft_postflight.py`：根据 wiki Draft 节点与本地 `pending/*.md` frontmatter 匹配 slug，生成标准审稿通知。
+- 使用 `/root/.openclaw/workspace/.daily_ai_blog_review_notified.json` 记录已通知 Draft，避免 postflight 重复发送同一篇审稿提醒。
+- 新增 `daily-ai-blog-postflight` cron：每天写稿后轻量运行，不写文章，只做两件事：重建知识库首页索引、补发未通知 Draft 的审稿提醒。
+
+**当前结论**：
+
+写稿任务仍可承担主要流程，但首页/通知属于 owner 可见的关键收尾，必须有独立 postflight 兜底，不能只依赖 isolated 写稿 agent 的最后几步。
+
+---
 
 ### v1.5.1 publish-blog-post 主会话接管 + 状态文件消毒（2026-06-14）
 
