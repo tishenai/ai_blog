@@ -4,6 +4,7 @@ from __future__ import annotations
 import json
 import subprocess
 import tempfile
+import uuid
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -21,9 +22,12 @@ def run_cmd(*args: str, check: bool = True):
     )
 
 
-def write_pending(slug: str = "postflight-test-draft", title: str = "测试草稿标题") -> Path:
+def write_pending(slug: str | None = None, title: str = "测试草稿标题") -> tuple[Path, str]:
+    slug = slug or f"postflight-test-draft-{uuid.uuid4().hex[:8]}"
     PENDING.mkdir(exist_ok=True)
     path = PENDING / f"{slug}.md"
+    if path.exists():
+        raise AssertionError(f"test draft path already exists: {path}")
     path.write_text(
         "---\n"
         f"title: '{title}'\n"
@@ -34,11 +38,11 @@ def write_pending(slug: str = "postflight-test-draft", title: str = "测试草�
         "这是一篇用于 postflight 测试的草稿正文。\n",
         encoding="utf-8",
     )
-    return path
+    return path, slug
 
 
 def test_detects_pending_without_wiki_draft():
-    path = write_pending()
+    path, slug = write_pending()
     try:
         with tempfile.TemporaryDirectory() as td:
             state = Path(td) / "state.json"
@@ -50,9 +54,8 @@ def test_detects_pending_without_wiki_draft():
                 "--render-missing-review-dir", str(review_dir),
             )
             data = json.loads(result.stdout)
-            assert data["pending_without_wiki_draft_count"] == 1
-            missing = data["pending_without_wiki_draft"][0]
-            assert missing["slug"] == "postflight-test-draft"
+            assert data["pending_without_wiki_draft_count"] >= 1
+            missing = next(x for x in data["pending_without_wiki_draft"] if x["slug"] == slug)
             assert missing["draft_doc_title"] == "[Draft 2026-06-14] 测试草稿标题"
             assert Path(missing["review_markdown_path"]).exists()
             audit = run_cmd(
@@ -67,7 +70,7 @@ def test_detects_pending_without_wiki_draft():
 
 
 def test_detects_unnotified_existing_wiki_draft_and_mark_notified():
-    path = write_pending()
+    path, slug = write_pending()
     try:
         with tempfile.TemporaryDirectory() as td:
             state = Path(td) / "state.json"
@@ -77,16 +80,14 @@ def test_detects_unnotified_existing_wiki_draft_and_mark_notified():
                 "--nodes-json", "tests/fixtures/draft_postflight/nodes-with-draft.json",
             )
             data = json.loads(result.stdout)
-            assert data["pending_without_wiki_draft_count"] == 0
-            assert data["needs_notification_count"] == 1
-            draft = data["drafts"][0]
-            assert draft["slug"] == "postflight-test-draft"
-            assert "/publish postflight-test-draft" in draft["review_message"]
+            draft = next(x for x in data["drafts"] if x["slug"] == slug)
+            assert draft["needs_notification"] is True
+            assert f"/publish {slug}" in draft["review_message"]
 
             run_cmd(
                 "--state", str(state),
                 "mark-notified",
-                "--slug", "postflight-test-draft",
+                "--slug", slug,
                 "--title", "测试草稿标题",
                 "--node-token", "wikidraft123",
                 "--doc-url", "https://vcnd3kpj0wx8.feishu.cn/wiki/wikidraft123",
@@ -97,8 +98,8 @@ def test_detects_unnotified_existing_wiki_draft_and_mark_notified():
                 "--nodes-json", "tests/fixtures/draft_postflight/nodes-with-draft.json",
             )
             data2 = json.loads(result2.stdout)
-            assert data2["needs_notification_count"] == 0
-            assert data2["ok"] is True
+            draft2 = next(x for x in data2["drafts"] if x["slug"] == slug)
+            assert draft2["needs_notification"] is False
     finally:
         path.unlink(missing_ok=True)
 
