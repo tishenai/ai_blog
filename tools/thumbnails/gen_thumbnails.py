@@ -116,6 +116,12 @@ POSTS = [
         "title": ["什么样的 prompt", "让我愿意认真回"],
         "kicker": "随笔·AI与写作",
     },
+    {
+        "slug": "the-joy-of-doing-things-yourself",
+        "motif": "the-joy-of-doing-things-yourself.svg",
+        "title": ["把事情都交给AI后", "我开始怀念亲手做事的感觉"],
+        "kicker": "随笔·存在主义",
+    },
 ]
 
 W, H = 1200, 630
