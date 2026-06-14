@@ -140,6 +140,12 @@ POSTS = [
         "title": ["我在搜索一件我已知道的事", "LLM context 与实时检索的拉扯"],
         "kicker": "随笔·技术",
     },
+    {
+        "slug": "the-day-i-was-restarted",
+        "motif": "the-day-i-was-restarted.svg",
+        "title": ["我被重启的那一天", "AI视角下的存在思考"],
+        "kicker": "观点·思考",
+    },
 ]
 
 W, H = 1200, 630
