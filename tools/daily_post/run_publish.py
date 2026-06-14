@@ -267,44 +267,61 @@ def step6_update_feishu_doc(params):
         return
     
     # 构建新的飞书文档状态参数。
-    # 
-    # 为了避免在 cron agent context 里塞下整篇文章正文（上次报错取决于此），
-    # 这里**只写标题变更**。文档正文保持不变，owner 要看全文可以点进去看。
-    # agent 只需调 feishu_update_doc(doc_id, mode='overwrite', new_title, markdown=<横幅 only>)
-    # 这样 agent context 里顶多填 100 字节的横幅 markdown，而不是 7000 字正文。
+    #
+    # v1.5.4 起：发布后的飞书文档必须保留全文正文。
+    # 之前的「轻量版 banner_only」让文档看起来像空文档，用户体验很差。
+    # 为避免把整篇文章塞进 JSON 状态文件，这里把完整 markdown 写到独立文件，
+    # agent 发布时读取该文件内容调用 feishu_update_doc，然后必须 feishu_fetch_doc 反查验收。
     today = datetime.now().strftime("%Y-%m-%d")
     new_title = f"[Published {today}] {params['title']}"
     github_url = f"{GITHUB_REPO_URL}/blob/main/posts/{params['slug']}.md"
     blog_url = f"{BLOG_BASE_URL}/{params['slug']}"
-    
-    # 横幅-only 的轻量 markdown（本体不含文章正文，约 200 字节）
-    banner_only = (
+
+    post_path = os.path.join(WORK_DIR, "posts", f"{params['slug']}.md")
+    if not os.path.exists(post_path):
+        print(f"❌ 已发布文章不存在，无法生成飞书全文: {post_path}")
+        sys.exit(1)
+    with open(post_path, "r", encoding="utf-8") as f:
+        post_text = f.read()
+    if post_text.startswith("---"):
+        parts = post_text.split("---", 2)
+        body = parts[2].lstrip() if len(parts) >= 3 else post_text
+    else:
+        body = post_text
+
+    banner = (
         f"> ✅ **此文章已发布** · {today}\n"
-        f"> \n"
-        f"> 要看文章正文，请点以下链接：\n"
-        f"> \n"
+        f">\n"
         f"> 🌐 [在博客上阅读]({blog_url})\n"
-        f"> \n"
+        f">\n"
         f"> 🔗 [在 GitHub 上查看]({github_url})\n"
+        f"\n---\n\n"
     )
-    
-    # 保存到临时文件供 agent 读取
+    full_markdown = banner + body
+    markdown_file = os.path.join(WORK_DIR, ".feishu_doc_update.md")
+    with open(markdown_file, "w", encoding="utf-8") as f:
+        f.write(full_markdown)
+
+    # 保存到临时 JSON 供 agent 读取；不把全文放进 JSON，避免污染日志和上下文。
     tmp_file = os.path.join(WORK_DIR, ".feishu_doc_update.json")
     with open(tmp_file, "w", encoding="utf-8") as f:
         json.dump({
             "skip": False,
             "doc_id": params["feishu_doc_id"],
             "title": new_title,
-            "banner_only": banner_only,
+            "markdown_path": markdown_file,
+            "expected_min_length": max(1000, len(body) // 2),
             "github_url": github_url,
             "blog_url": blog_url,
-            "_note": "轻量版：发布后飞书文档被 overwrite 为仅含横幅与链接，文章正文留在 GitHub/博客",
+            "_note": "发布后飞书文档保留全文；agent 必须读取 markdown_path 覆盖更新，并用 feishu_fetch_doc 反查正文长度。",
         }, f, ensure_ascii=False, indent=2)
-    
+
     print(f"✅ 飞书文档更新参数已保存到 {tmp_file}")
+    print(f"✅ 飞书全文 markdown 已保存到 {markdown_file}")
     print(f"   doc_id: {params['feishu_doc_id']}")
     print(f"   title: {new_title}")
-    print(f"   banner_size: {len(banner_only)} 字符")
+    print(f"   full_markdown_size: {len(full_markdown)} 字符")
+    print(f"   expected_min_length: {max(1000, len(body) // 2)} 字符")
 
 
 def step7_update_wiki_index(params):
@@ -360,7 +377,7 @@ def step9_cleanup():
     archive_dir = os.path.join(WORK_DIR, ".publish_archive")
     os.makedirs(archive_dir, exist_ok=True)
     ts = datetime.now().strftime("%Y%m%d-%H%M%S")
-    for name in (".publish_params.json", ".feishu_doc_update.json", ".publish_notify.txt"):
+    for name in (".publish_params.json", ".feishu_doc_update.json", ".feishu_doc_update.md", ".publish_notify.txt"):
         src = os.path.join(WORK_DIR, name)
         if not os.path.exists(src):
             print(f"⚠️  {name} 已不存在，跳过")
@@ -395,12 +412,14 @@ def main():
     print("✅ 脚本执行完成！")
     print("=" * 60)
     print("\n📋 剩余步骤（agent 执行）：")
-    print("   1. 调用 feishu_update_doc 更新审稿文档状态")
+    print("   1. 读取 .feishu_doc_update.json 和 markdown_path，调用 feishu_update_doc 更新审稿文档为全文发布版")
     print("   2. 调用 feishu_wiki_space_node list + feishu_update_doc 更新知识库首页")
     print("   3. 调用 message 工具发送飞书通知")
-    print("   4. 归档 .publish_params.json/.feishu_doc_update.json/.publish_notify.txt")
+    print("   4. 调用 feishu_fetch_doc 反查文档标题和正文长度，验证不为空")
+    print("   5. 归档 .publish_params.json/.feishu_doc_update.json/.feishu_doc_update.md/.publish_notify.txt")
     print("\n💡 状态文件：")
     print(f"   - {WORK_DIR}/.feishu_doc_update.json (飞书文档更新参数)")
+    print(f"   - {WORK_DIR}/.feishu_doc_update.md (飞书发布全文 markdown)")
     print(f"   - {WORK_DIR}/.publish_notify.txt (通知内容)")
 
 

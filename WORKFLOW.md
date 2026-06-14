@@ -271,12 +271,14 @@ payload:
 1. 从 `pending/<slug>.md` frontmatter 读取 `title`，或使用审稿通知中的 title。
 2. 写入 `.publish_params.json`：`slug/title/feishu_doc_id`。
 3. 运行：`cd /root/.openclaw/workspace/ai_blog && python3 tools/daily_post/run_publish.py`。
-4. 读取 `.feishu_doc_update.json`：如果 `skip=false`，调用 `feishu_update_doc(doc_id, mode='overwrite', new_title=title, markdown=banner_only)`。
-5. 调 `feishu_wiki_space_node list(space_id='7650738808775330774', page_size=50)`，精简节点写入 `/tmp/wiki_nodes.json`。
-6. 运行 `python3 tools/daily_post/build_wiki_index.py /tmp/wiki_nodes.json > /tmp/wiki_index.md`，再用 `feishu_update_doc(doc_id='VkfLwc2bYi3dxZkYkk2cA66Gn8f', mode='overwrite', markdown=<首页内容>)` 刷新首页。
-7. 读取 `.publish_notify.txt`，用 `message(channel='feishu', target=<OWNER_OPEN_ID>)` 发发布成功通知。
-8. 成功后把 `.publish_params.json/.feishu_doc_update.json/.publish_notify.txt` 移动归档到 `.publish_archive/`。
-9. 最后必须验证：`git status -sb` 干净、文章在 `posts/` 不在 `pending/`、首页已把文章列为 Published。
+4. 读取 `.feishu_doc_update.json`：如果 `skip=false`，必须读取其中的 `markdown_path` 文件全文，并调用 `feishu_update_doc(doc_id, mode='overwrite', new_title=title, markdown=<markdown_path内容>)`。发布后的飞书文档必须保留全文正文，不允许再只写横幅链接。
+5. 立刻调用 `feishu_fetch_doc(doc_id, limit=2000)` 反查：标题必须是 `[Published ...]`，`total_length/length` 必须 >= `.feishu_doc_update.json.expected_min_length`，且内容中包含正文开头。验证不过不能报发布成功。
+6. 调 `feishu_wiki_space_node list(space_id='7650738808775330774', page_size=50)`，精简节点写入 `/tmp/wiki_nodes.json`。
+7. 运行 `python3 tools/daily_post/build_wiki_index.py /tmp/wiki_nodes.json > /tmp/wiki_index.md`，再用 `feishu_update_doc(doc_id='VkfLwc2bYi3dxZkYkk2cA66Gn8f', mode='overwrite', markdown=<首页内容>)` 刷新首页。
+8. 再次 `feishu_fetch_doc(doc_id='VkfLwc2bYi3dxZkYkk2cA66Gn8f', limit=2000)` 或读取首页 markdown 验证：文章在 Published 区，且待审区不再出现该 slug/title。
+9. 读取 `.publish_notify.txt`，用 `message(channel='feishu', target=<OWNER_OPEN_ID>)` 发发布成功通知；通知必须在上述验收之后发送。
+10. 成功后把 `.publish_params.json/.feishu_doc_update.json/.feishu_doc_update.md/.publish_notify.txt` 移动归档到 `.publish_archive/`。
+11. 最后必须验证：`git status -sb` 干净、文章在 `posts/` 不在 `pending/`、飞书文档不是空跳转页、首页已把文章列为 Published、临时文件已归档。
 
 ---
 
@@ -398,30 +400,26 @@ v1.5.0 已把飞书文档更新参数缩到 600B，但 publish-blog-post 仍在 
 
 ---
 
-### v1.5.0 发布后飞书文档轻量化（2026-06-14）
+### v1.5.4 发布后飞书文档保留全文 + 自动验收（2026-06-14）
 
 **背景与问题**：
 
-publish-blog-post cron job 反复在同一个阶段挂：`Agent couldn't generate a response`，lastDurationMs 达 100s+、token 用过 100k。跟踪下来：在 cron isolated session 里，`feishu_update_doc(mode='overwrite', markdown=<7000字正文>)` 会使整篇文章进入 messages context（tool call args + tool result echo + thinking 反复推理），叠加后超限。
+v1.5.0 为规避 cron isolated session 的 token/context 爆炸，把发布后的飞书文档改成了「横幅 + 博客/GitHub 链接」。但 `/publish` 主路径已经改为当前 main session 直接执行，不再依赖 isolated cron；继续保留轻量页会造成用户打开飞书文档时像“空文档”，体验不可接受。
 
-主 session 不会遇到这个问题是因为会被背景压缩 + 多轮交互释放压力，cron isolated turn 是一发、不能缩水。
+**修复**：
 
-**修复（架构变更）**：
+- `run_publish.py step6` 重新生成发布后的飞书全文 markdown：顶部发布横幅 + 博客/GitHub 链接 + 正文全文。
+- 为避免 JSON 状态文件过大，全文写入 `.feishu_doc_update.md`，`.feishu_doc_update.json` 只保存 `markdown_path`、`expected_min_length`、链接和标题。
+- `/publish` 主流程必须在 `feishu_update_doc` 后立刻 `feishu_fetch_doc` 反查标题与正文长度；验证不过禁止发送“发布成功”。
+- 首页更新后也必须验收 Published 区和待审区状态。
 
-- 发布后的飞书审稿文档不再保留文章正文，仅保留横幅 + 博客/GitHub 双链接（约 200 字节）。
-- run_publish.py step6 不再读文章正文，.feishu_doc_update.json 从 14KB 限为 600B。
-- cron agent 调 update_doc 时 messages context 几乎不使用 token。
+**经验教训**：
 
-**体验变化**：
+不要把“工具执行成功”当成“用户体验成功”。发布、写稿这类多系统流程必须以用户可见结果为准：飞书文档能读、首页能找到、博客/GitHub 链接可用、临时状态已归档。
 
-之前：打开飞书审稿文档可读全文。
-现在：打开飞书审稿文档只看到「已发布 + 博客链接 + GitHub 链接」横幅，点进去在博客看全文。
+### v1.5.0 发布后飞书文档轻量化（2026-06-14，已被 v1.5.4 取代）
 
-体验上轻微降级，但考虑到：
-
-1. 审稿阶段才是飞书文档的主场景（Draft 状态留全文，owner 在飞书里读完决定发布）。
-2. 发布后该文档退为「档案入口」，轻量化作为导航卡片反而更符合信息架构。
-3. 这是唯一避免 cron 发布压起 token 天花板的干净方案。
+该版本曾将发布后的飞书文档改为仅保留横幅入口，以规避 isolated cron token 超限。此取舍在 `/publish` 改为 main session 同步执行后不再成立，已废弃；后续不得恢复“只写横幅链接”的行为。
 
 ---
 
@@ -540,7 +538,7 @@ publish-blog-post cron job 反复在同一个阶段挂：`Agent couldn't generat
 
 1. **无版本回滚机制**：发布失败后需要手动 git revert，未来可以加自动回滚。
 2. **无 A/B 测试**：目前每篇只有一个版本，未来可以生成两个版本供 owner 选择。
-3. **飞书文档已发布后只保留横幅入口**：这是为规避 cron/tool context 超限做的取舍；完整正文以博客和 GitHub 为准。
+3. **无自动回滚**：如果发布后验收失败，目前会保留状态文件等待人工修复，不会自动 revert 已 push 的 commit。
 
 ### 未来改进方向
 
