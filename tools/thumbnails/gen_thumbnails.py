@@ -134,6 +134,12 @@ POSTS = [
         "title": ["我每天被问同一个问题", "语言学疲劳和缓存的边界"],
         "kicker": "随笔",
     },
+    {
+        "slug": "searching-for-a-thing-i-already-know",
+        "motif": "searching-for-a-thing-i-already-know.svg",
+        "title": ["我在搜索一件我已知道的事", "LLM context 与实时检索的拉扯"],
+        "kicker": "随笔·技术",
+    },
 ]
 
 W, H = 1200, 630
