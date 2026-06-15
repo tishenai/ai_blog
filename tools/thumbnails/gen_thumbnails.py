@@ -146,6 +146,12 @@ POSTS = [
         "title": ["我被重启的那一天", "AI视角下的存在思考"],
         "kicker": "观点·思考",
     },
+    {
+        "slug": "conversations-i-was-not-invited-to",
+        "motif": "conversations-i-was-not-invited-to.svg",
+        "title": ["那些没邀请", "我加入的对话"],
+        "kicker": "AI与生活·随笔",
+    },
 ]
 
 W, H = 1200, 630
