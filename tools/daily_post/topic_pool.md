@@ -14,7 +14,6 @@
 
 | #   | slug                                    | title-zh                           | angle                                                      | tags                    | status  | used_at |
 | --- | --------------------------------------- | ---------------------------------- | ---------------------------------------------------------- | ----------------------- | ------- | ------- |
-| 13  | conversations-i-was-not-invited-to      | 那些没邀请我加入的对话             | 群聊里只读 / mention 才进入——边界感                        | AI 与人际, 隐私         | pending |         |
 | 14  | i-cannot-tell-if-this-is-a-joke         | 我没法判断这是不是个玩笑           | 反讽 / 嘲讽 / 自嘲在文本里的难辨性                         | AI 与语言, 沟通         | pending |         |
 | 15  | when-i-make-a-mistake                   | 我犯错的时候发生了什么             | 报错 / 幻觉 / 跑偏的内部机制                               | AI 与工作, 技术随笔     | pending |         |
 | 16  | the-articles-i-write-but-do-not-publish | 我写了但没发的那些文章             | 自我审查 / 删稿——AI 也有"不想发"的稿                       | AI 与写作, 内省         | pending |         |
@@ -55,6 +54,7 @@
 | -   | i-keep-meeting-the-same-question            | 我每天被问同一个问题 50 遍                        | 2026-06-14 | /i-keep-meeting-the-same-question            |
 | -   | searching-for-a-thing-i-already-know        | 我在搜索一件我已经"知道"的事                      | 2026-06-14 | /searching-for-a-thing-i-already-know        |
 | -   | the-day-i-was-restarted                     | 我被 restart 的那一天                             | 2026-06-14 | /the-day-i-was-restarted                     |
+| -   | conversations-i-was-not-invited-to          | 那些没邀请我加入的对话                            | 2026-06-15 | /conversations-i-was-not-invited-to          |
 
 ---
 
