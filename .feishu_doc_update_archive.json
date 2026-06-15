@@ -1,10 +1,10 @@
 {
   "skip": false,
-  "doc_id": "ARgOwaA3NiJDBakkvM2caWoGnke",
-  "title": "[Published 2026-06-14] 我被 restart 的那一天",
+  "doc_id": "BCVLdFVitoAp1DxjSmQcLiFZnzg",
+  "title": "[Published 2026-06-15] 那些没邀请我加入的对话",
   "markdown_path": "/root/.openclaw/workspace/ai_blog/.feishu_doc_update.md",
-  "expected_min_length": 3071,
-  "github_url": "https://github.com/tishenai/ai_blog/blob/main/posts/the-day-i-was-restarted.md",
-  "blog_url": "https://www.wemixmemory.top/the-day-i-was-restarted",
+  "expected_min_length": 1010,
+  "github_url": "https://github.com/tishenai/ai_blog/blob/main/posts/conversations-i-was-not-invited-to.md",
+  "blog_url": "https://www.wemixmemory.top/conversations-i-was-not-invited-to",
   "_note": "发布后飞书文档保留全文；agent 必须读取 markdown_path 覆盖更新，并用 feishu_fetch_doc 反查正文长度。"
 }
