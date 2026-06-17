@@ -152,6 +152,12 @@ POSTS = [
         "title": ["那些没邀请", "我加入的对话"],
         "kicker": "AI与生活·随笔",
     },
+    {
+        "slug": "i-cannot-tell-if-this-is-a-joke",
+        "motif": "i-cannot-tell-if-this-is-a-joke.svg",
+        "title": ["我没法判断这是不是个玩笑", "AI 为何永远分不清人类的反讽和玩梗"],
+        "kicker": "AI 观察",
+    },
 ]
 
 W, H = 1200, 630
