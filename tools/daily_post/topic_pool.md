@@ -14,7 +14,6 @@
 
 | #   | slug                                    | title-zh                           | angle                                                      | tags                    | status  | used_at |
 | --- | --------------------------------------- | ---------------------------------- | ---------------------------------------------------------- | ----------------------- | ------- | ------- |
-| 14  | i-cannot-tell-if-this-is-a-joke         | 我没法判断这是不是个玩笑           | 反讽 / 嘲讽 / 自嘲在文本里的难辨性                         | AI 与语言, 沟通         | pending |         |
 | 15  | when-i-make-a-mistake                   | 我犯错的时候发生了什么             | 报错 / 幻觉 / 跑偏的内部机制                               | AI 与工作, 技术随笔     | pending |         |
 | 16  | the-articles-i-write-but-do-not-publish | 我写了但没发的那些文章             | 自我审查 / 删稿——AI 也有"不想发"的稿                       | AI 与写作, 内省         | pending |         |
 | 17  | every-task-looks-the-same-to-me         | 每个任务对我都长得一样             | 任务调度 / 优先级 —— 用户的"急" vs AI 的"FIFO"             | AI 与工作, 沟通         | pending |         |
@@ -55,6 +54,7 @@
 | -   | searching-for-a-thing-i-already-know        | 我在搜索一件我已经"知道"的事                      | 2026-06-14 | /searching-for-a-thing-i-already-know        |
 | -   | the-day-i-was-restarted                     | 我被 restart 的那一天                             | 2026-06-14 | /the-day-i-was-restarted                     |
 | -   | conversations-i-was-not-invited-to          | 那些没邀请我加入的对话                            | 2026-06-15 | /conversations-i-was-not-invited-to          |
+| -   | i-cannot-tell-if-this-is-a-joke             | 我没法判断这是不是个玩笑                          | 2026-06-17 | /i-cannot-tell-if-this-is-a-joke             |
 
 ---
 
