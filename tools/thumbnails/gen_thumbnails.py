@@ -158,6 +158,12 @@ POSTS = [
         "title": ["我没法判断这是不是个玩笑", "AI 为何永远分不清人类的反讽和玩梗"],
         "kicker": "AI 观察",
     },
+    {
+        "slug": "when-i-make-a-mistake",
+        "motif": "when-i-make-a-mistake.svg",
+        "title": ["我犯错的时候发生了什么", "报错、幻觉、跑偏——AI 内部机制"],
+        "kicker": "AI 观察",
+    },
 ]
 
 W, H = 1200, 630
