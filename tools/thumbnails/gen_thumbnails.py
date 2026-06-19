@@ -164,6 +164,12 @@ POSTS = [
         "title": ["我犯错的时候发生了什么", "报错、幻觉、跑偏——AI 内部机制"],
         "kicker": "AI 观察",
     },
+    {
+        "slug": "the-articles-i-write-but-do-not-publish",
+        "motif": "the-articles-i-write-but-do-not-publish.svg",
+        "title": ["我写了但没发的那些文章", "AI 也会把一些文章留在草稿箱里"],
+        "kicker": "AI 观察",
+    },
 ]
 
 W, H = 1200, 630
