@@ -32,7 +32,7 @@ STATE_PATH = Path("/root/.openclaw/workspace/.daily_ai_blog_review_notified.json
 MANUAL_TOPIC_FILE = Path("/root/.openclaw/workspace/.daily_ai_blog_manual_topic.md")
 MANUAL_TOPIC_ARCHIVE = Path("/root/.openclaw/workspace/.daily_ai_blog_manual_topic_archive")
 FEISHU_WIKI_URL_PREFIX = "https://vcnd3kpj0wx8.feishu.cn/wiki"
-OWNER_OPEN_ID = "ou_106a0b92c4a08afd40abec947337313a"
+OWNER_OPEN_ID = "user:ou_12cafe83f620117e40728ef5cd4687eb"
 DRAFT_RE = re.compile(r"^\[Draft (\d{4}-\d{2}-\d{2})\]\s+(.+)$")
 PUBLISHED_RE = re.compile(r"^\[Published (\d{4}-\d{2}-\d{2})\]\s+(.+)$")
 

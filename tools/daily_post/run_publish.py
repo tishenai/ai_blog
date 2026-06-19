@@ -32,7 +32,7 @@ from datetime import datetime
 WORK_DIR = "/root/.openclaw/workspace/ai_blog"
 PARAMS_FILE = os.path.join(WORK_DIR, ".publish_params.json")
 WIKI_SPACE_ID = "7650738808775330774"
-OWNER_OPEN_ID = "ou_106a0b92c4a08afd40abec947337313a"
+OWNER_OPEN_ID = "user:ou_12cafe83f620117e40728ef5cd4687eb"
 
 # 关键 URL。谁也不要再在别处硬编码 blog.tishenai.app 之类东西。
 BLOG_BASE_URL = "https://www.wemixmemory.top"

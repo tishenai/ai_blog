@@ -18,7 +18,7 @@
 - **飞书 wiki space**：`7650738808775330774`
 - **飞书 wiki URL 前缀**：`https://vcnd3kpj0wx8.feishu.cn/wiki/`
 - **知识库首页 doc_id**：`VkfLwc2bYi3dxZkYkk2cA66Gn8f`
-- **owner open_id**：`ou_106a0b92c4a08afd40abec947337313a`
+- **owner open_id**：`ou_12cafe83f620117e40728ef5cd4687eb`
 
 以上常量集中定义在 `tools/daily_post/run_publish.py` 顶部和 `tools/daily_post/build_wiki_index.py` 顶部。其他脚本也只能从这两处读。严禁在别处硬编码。
 
@@ -231,7 +231,7 @@ payload:
     4. 如果 plan.pending_without_wiki_draft_count > 0：对每篇 pending 草稿调用 feishu_create_doc(wiki_space='7650738808775330774', title=draft_doc_title, markdown=<review_markdown_path内容>) 创建 Draft 文档；创建后必须重新 list wiki 节点并重新生成 plan。
     5. 用最新 wiki 节点执行：python3 tools/daily_post/build_wiki_index.py /tmp/wiki_nodes.json > /tmp/wiki_index.md。
     6. feishu_update_doc(doc_id='VkfLwc2bYi3dxZkYkk2cA66Gn8f', mode='overwrite', markdown=<首页内容>)，确保首页待审稿显示 Draft。
-    7. 读取最新 plan；对 needs_notification=true 的每篇 draft，用 message(channel='feishu', target='ou_106a0b92c4a08afd40abec947337313a', text=<review_message>, message=<review_message>) 补发审稿提醒。
+    7. 读取最新 plan；对 needs_notification=true 的每篇 draft，用 message(channel='feishu', target='user:ou_12cafe83f620117e40728ef5cd4687eb', text=<review_message>, message=<review_message>) 补发审稿提醒。
     8. 每成功发一篇，立刻运行 python3 tools/daily_post/draft_postflight.py mark-notified --slug ... --title ... --node-token ... --doc-url ...。
     9. 最后再运行 python3 tools/daily_post/draft_postflight.py audit --nodes-json /tmp/wiki_nodes.json；audit 必须返回 0，才算 postflight 成功。
     10. 输出简短摘要：pending_count、created_doc_count、draft_count、补发通知数量、audit 是否通过。
