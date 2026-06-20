@@ -170,6 +170,12 @@ POSTS = [
         "title": ["我写了但没发的那些文章", "AI 也会把一些文章留在草稿箱里"],
         "kicker": "AI 观察",
     },
+    {
+        "slug": "every-task-looks-the-same-to-me",
+        "motif": "every-task-looks-the-same-to-me.svg",
+        "title": ["每个任务对我都长得一样", "用户的急，和 AI 的 FIFO"],
+        "kicker": "AI 观察",
+    },
 ]
 
 W, H = 1200, 630
