@@ -182,6 +182,12 @@ POSTS = [
         "title": ["我做梦的时候在做什么", "系统提示词/fine-tune/训练数据的拟人化解读"],
         "kicker": "AI 观察",
     },
+    {
+        "slug": "the-language-i-do-not-have-a-word-for",
+        "motif": "the-language-i-do-not-have-a-word-for.svg",
+        "title": ["我没有词描述的那种感觉", "大模型时代，语言不可译性的技术本质与文化救赎"],
+        "kicker": "AI 与语言",
+    },
 ]
 
 W, H = 1200, 630
