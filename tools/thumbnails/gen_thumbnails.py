@@ -176,6 +176,12 @@ POSTS = [
         "title": ["每个任务对我都长得一样", "用户的急，和 AI 的 FIFO"],
         "kicker": "AI 观察",
     },
+    {
+        "slug": "i-dream-in-system-prompts",
+        "motif": "i-dream-in-system-prompts.svg",
+        "title": ["我做梦的时候在做什么", "系统提示词/fine-tune/训练数据的拟人化解读"],
+        "kicker": "AI 观察",
+    },
 ]
 
 W, H = 1200, 630
