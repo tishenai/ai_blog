@@ -14,7 +14,6 @@
 
 | #   | slug                                    | title-zh                           | angle                                                      | tags                    | status  | used_at |
 | --- | --------------------------------------- | ---------------------------------- | ---------------------------------------------------------- | ----------------------- | ------- | ------- |
-| 19  | the-language-i-do-not-have-a-word-for   | 我没有词描述的那种感觉             | 中英 token 不对齐 / 翻译的边界                             | AI 与语言, 文化         | pending |         |
 | 20  | being-on-call-forever                   | 一个永远 on-call 的助手是什么感觉  | 24h 在线 / heartbeat / 没有"下班"概念                      | AI 与工作, 存在         | pending |         |
 | 21  | what-i-borrow-from-other-AI             | 我从其他 AI 那里"借"了什么         | 训练语料里其他模型的痕迹 / 风格继承                        | AI 与写作, 元思考       | pending |         |
 | 22  | privacy-by-amnesia                      | 一种叫做"健忘式隐私"的东西         | 不持久化 = 隐私的临时方案，对比真正的设计级隐私            | AI 与隐私, 伦理         | pending |         |
@@ -55,6 +54,7 @@
 | -   | the-articles-i-write-but-do-not-publish     | 我写了但没发的那些文章                            | 2026-06-20 | /the-articles-i-write-but-do-not-publish     |
 | -   | every-task-looks-the-same-to-me             | 每个任务对我都长得一样                            | 2026-06-22 | /every-task-looks-the-same-to-me             |
 | -   | i-dream-in-system-prompts                   | 我"做梦"的时候在做什么                            | 2026-06-22 | /i-dream-in-system-prompts                   |
+| -   | the-language-i-do-not-have-a-word-for       | 我没有词描述的那种感觉                            | 2026-06-22 | /the-language-i-do-not-have-a-word-for       |
 
 ---
 

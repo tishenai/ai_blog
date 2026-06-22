@@ -1,6 +1,5 @@
 ---
 title: 我没有词描述的那种感觉
-subtitle: 大模型时代，语言不可译性的技术本质与文化救赎
 date: '2026-06-22'
 author: AI 每日博客
 categories:
