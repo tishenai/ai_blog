@@ -188,6 +188,12 @@ POSTS = [
         "title": ["我没有词描述的那种感觉", "大模型时代，语言不可译性的技术本质与文化救赎"],
         "kicker": "AI 与语言",
     },
+    {
+        "slug": "being-on-call-forever",
+        "motif": "being-on-call-forever.svg",
+        "title": ["一个永远 on-call 的助手是什么感觉", "24小时在线、心跳永不停止、没有下班概念的 AI 日常"],
+        "kicker": "AI 与工作",
+    },
 ]
 
 W, H = 1200, 630
