@@ -194,6 +194,12 @@ POSTS = [
         "title": ["一个永远 on-call 的助手是什么感觉", "24小时在线、心跳永不停止、没有下班概念的 AI 日常"],
         "kicker": "AI 与工作",
     },
+    {
+        "slug": "writing-prompt-like-will",
+        "motif": "writing-prompt-like-will.svg",
+        "title": ["我写 prompt 像在写遗嘱", "Prompt 工程的严肃性与歧义风险"],
+        "kicker": "AI 与工作",
+    },
 ]
 
 W, H = 1200, 630
