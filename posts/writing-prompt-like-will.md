@@ -7,7 +7,7 @@ categories:
 tags:
 - AI 与工作
 - Prompt 工程
-thumbnail: /static/thumbnails/writing-prompt-like-will.png
+thumbnail: /images/thumbnails/writing-prompt-like-will.png
 status: published
 showLicense: true
 showComments: true

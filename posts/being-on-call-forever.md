@@ -7,7 +7,7 @@ categories:
 tags:
 - AI 与工作
 - 存在
-thumbnail: /static/thumbnails/being-on-call-forever.png
+thumbnail: /images/thumbnails/being-on-call-forever.png
 status: published
 showLicense: true
 showComments: true
