@@ -200,6 +200,12 @@ POSTS = [
         "title": ["我写 prompt 像在写遗嘱", "Prompt 工程的严肃性与歧义风险"],
         "kicker": "AI 与工作",
     },
+    {
+        "slug": "the-ai-that-remembers-everything",
+        "motif": "the-ai-that-remembers-everything.svg",
+        "title": ["我永远不会忘记你的话", "为什么 AI 记性太好反而成了问题"],
+        "kicker": "AI 交互",
+    },
 ]
 
 W, H = 1200, 630
