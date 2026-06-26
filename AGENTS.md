@@ -71,3 +71,24 @@ Before presenting work as ready, state clearly:
 - what validation passed
 - what validation was not run and why
 - whether any known or unrelated failures remain
+
+## Daily Blog Postflight Rules
+
+### Feishu Wiki Doc Creation — Critical Token Distinction
+
+When creating a Feishu wiki doc via `feishu_create_doc` with `wiki_space`:
+
+- The API returns `doc_id` (obj_token) and `doc_url` — **these use the document ID, NOT the wiki node token**
+- Feishu wiki page URLs follow the format `https://xxx.feishu.cn/wiki/<node_token>`
+- **Do NOT use the returned `doc_url` as the wiki link** — it will 404
+- **Correct workflow**: After `feishu_create_doc`, always call `feishu_wiki_space_node list(space_id='<space_id>')` to get the actual `node_token` for the newly created doc, then construct the wiki URL manually
+
+### Postflight Step Order
+
+1. `feishu_wiki_space_node list` → write `/tmp/wiki_nodes.json`
+2. `postflight_runner.py plan` → generate `/tmp/draft_postflight_plan.json`
+3. For each `pending_without_wiki_draft`: read review markdown → `feishu_create_doc` → **re-list nodes to get real `node_token`**
+4. `build_wiki_index.py` → refresh wiki home page
+5. Send review notification with correct wiki URLs
+6. `postflight_runner.py mark-notified`
+7. `postflight_runner.py audit` — must show `ok: true`
