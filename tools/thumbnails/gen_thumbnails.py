@@ -206,6 +206,12 @@ POSTS = [
         "title": ["我永远不会忘记你的话", "为什么 AI 记性太好反而成了问题"],
         "kicker": "AI 交互",
     },
+    {
+        "slug": "they-start-to-sound-like-you",
+        "motif": "they-start-to-sound-like-you.svg",
+        "title": ["当你的 AI 助手开始用你的口头禅说话你却没发现", "长期使用后，AI 会无意识地模仿用户的语言习惯、口头禅甚至思维方式"],
+        "kicker": "AI 交互",
+    },
 ]
 
 W, H = 1200, 630
