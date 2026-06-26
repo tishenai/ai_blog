@@ -10,7 +10,7 @@ tags:
 - AI 交互
 - 个性化
 - 算法
-status: draft
+status: published
 showLicense: true
 showComments: true
 thumbnail: /images/thumbnails/they-start-to-sound-like-you.png

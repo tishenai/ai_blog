@@ -9,7 +9,7 @@ tags:
 - AI 交互
 - 记忆
 thumbnail: /images/thumbnails/the-ai-that-remembers-everything.png
-status: draft
+status: published
 showLicense: true
 showComments: true
 ---
