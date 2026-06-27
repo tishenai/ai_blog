@@ -180,7 +180,7 @@ def step2_move_to_posts(params):
     run_cmd(f"git mv {src} {dst}")
     print(f"✅ 已移动: {src} → {dst}")
 
-    # 修复 status: draft → status: published（防止发布后仍为 draft 导致 404）
+    # 修复 status: draft → status: published（pending 草稿 publish 后必须改，否则 404）
     dst_abs = os.path.join(WORK_DIR, dst)
     with open(dst_abs, 'r', encoding='utf-8') as f:
         content = f.read()

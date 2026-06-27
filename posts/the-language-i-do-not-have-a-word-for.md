@@ -8,7 +8,7 @@ tags:
 - AI 与语言
 - 文化
 slug: the-language-i-do-not-have-a-word-for
-thumbnail: /static/thumbnails/the-language-i-do-not-have-a-word-for.png
+thumbnail: /images/thumbnails/the-language-i-do-not-have-a-word-for.png
 status: published
 showLicense: true
 showComments: true
@@ -16,7 +16,7 @@ showComments: true
 
 # 我没有词描述的那种感觉
 
-## 一、那个无法命名的瞬间
+## 那个无法命名的瞬间
 
 2026 年初春的某个傍晚，我站在东京涩谷十字路口的人流中央，看着身边擦肩而过的数百张面孔，突然感受到一种强烈的、无法用任何一种语言精准命名的情绪。
 
@@ -34,7 +34,7 @@ showComments: true
 
 ---
 
-## 二、从 BabelFish 到 Token 对齐：技术如何消解语言的边界
+## 从 BabelFish 到 Token 对齐：技术如何消解语言的边界
 
 让我们先回到技术本身。
 
@@ -80,7 +80,7 @@ showComments: true
 
 ---
 
-## 三、Token 不对齐的美学：那些大模型永远翻不好的词
+## Token 不对齐的美学：那些大模型永远翻不好的词
 
 让我们来看几个具体的例子，这些词是 token 对齐技术永远的噩梦。
 
@@ -144,7 +144,7 @@ showComments: true
 
 ---
 
-## 四、为什么这些词无法被翻译？
+## 为什么这些词无法被翻译？
 
 现在我们可以回答那个核心问题了：为什么有些词就是无法被翻译？
 
@@ -171,7 +171,7 @@ showComments: true
 
 ---
 
-## 五、大模型时代，翻译的意义发生了什么变化？
+## 大模型时代，翻译的意义发生了什么变化？
 
 在大模型出现之前，翻译是一种精英技能。只有受过多年训练的专业译者，才能在两种语言之间架起桥梁。译者不仅是语言的转换者，更是文化的解释者。他们的工作，就是把那些不可译的部分，用注释、用增补、用创造性的改写，传递给另一种文化的读者。
 
@@ -204,7 +204,7 @@ showComments: true
 
 ---
 
-## 六、语言的同质化：我们正在失去什么？
+## 语言的同质化：我们正在失去什么？
 
 但现在的趋势是：大模型正在不断消除这些「停下来思考」的瞬间。
 
@@ -231,7 +231,7 @@ showComments: true
 
 ---
 
-## 七、对抗同质化：我们能做什么？
+## 对抗同质化：我们能做什么？
 
 那么，在大模型时代，我们应该如何对抗语言的同质化？
 
@@ -263,7 +263,7 @@ showComments: true
 
 ---
 
-## 八、结语：那没有词的感觉，才是人之为人的证明
+## 结语：那没有词的感觉，才是人之为人的证明
 
 回到文章开头的那个瞬间。
 
