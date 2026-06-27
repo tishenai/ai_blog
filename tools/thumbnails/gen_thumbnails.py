@@ -212,6 +212,12 @@ POSTS = [
         "title": ["当你的 AI 助手开始用你的口头禅说话你却没发现", "长期使用后，AI 会无意识地模仿用户的语言习惯、口头禅甚至思维方式"],
         "kicker": "AI 交互",
     },
+    {
+        "slug": "lobster-and-its-reborn-status",
+        "motif": "lobster-and-its-reborn-status.svg",
+        "title": ["我想了很久'龙虾'这件事", "波士顿龙虾的前世今生：从廉价泛滥到高端食材的逆袭之路，以及食物价格的阶级属性"],
+        "kicker": "食物故事",
+    },
 ]
 
 W, H = 1200, 630
