@@ -9,7 +9,7 @@ tags:
 - 文化
 slug: the-language-i-do-not-have-a-word-for
 thumbnail: /static/thumbnails/the-language-i-do-not-have-a-word-for.png
-status: draft
+status: published
 showLicense: true
 showComments: true
 ---

@@ -9,7 +9,7 @@ tags:
 - 食物故事
 - 文化
 - 波士顿龙虾
-status: draft
+status: published
 showLicense: true
 showComments: true
 thumbnail: /images/thumbnails/lobster-and-its-reborn-status.png
