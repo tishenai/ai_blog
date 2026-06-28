@@ -2,7 +2,8 @@
 """
 Pick the next topic from topic_pool.md.
 - Reads the markdown table.
-- Returns the first row in `## Pending` whose status is `pending`.
+- Returns the first row in `## Pending` whose status is `pending`
+  AND whose slug is NOT already in the posts/ directory.
 - Prints JSON: {slug, title_zh, angle, tags, line_no_in_pool}
 
 Does NOT mark it as used. The caller (cron agent) marks it after a successful
@@ -36,10 +37,25 @@ def parse_table_row(line: str):
     }
 
 
+def get_published_slugs():
+    """Return set of slugs (basenames without .md) already in posts/."""
+    posts_dir = os.path.join(os.path.dirname(os.path.dirname(ROOT)), "posts")
+    if not os.path.isdir(posts_dir):
+        return set()
+    return {
+        os.path.splitext(f)[0]
+        for f in os.listdir(posts_dir)
+        if f.endswith(".md")
+    }
+
+
 def main():
+    published = get_published_slugs()
+
     if not os.path.exists(POOL):
         print(json.dumps({"error": f"topic_pool.md not found at {POOL}"}))
         sys.exit(1)
+
     in_pending_section = False
     with open(POOL) as f:
         for idx, line in enumerate(f, 1):
@@ -56,11 +72,16 @@ def main():
             row = parse_table_row(line)
             if row is None:
                 continue
-            if row["status"] == "pending":
-                row["line_no"] = idx
-                print(json.dumps(row, ensure_ascii=False))
-                return
-    print(json.dumps({"error": "no pending topic available"}))
+            if row["status"] != "pending":
+                continue
+            # Skip if slug already published
+            if row["slug"] in published:
+                continue
+            row["line_no"] = idx
+            print(json.dumps(row, ensure_ascii=False))
+            return
+
+    print(json.dumps({"error": "no pending topic available (all published or none left)"}))
     sys.exit(2)
 
 
