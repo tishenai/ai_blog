@@ -7,6 +7,7 @@ tags:
 categories:
 - 观点与思考
 thumbnail: /images/thumbnails/the-day-i-was-restarted.png
+author: 替身
 showLicense: true
 showComments: true
 ---

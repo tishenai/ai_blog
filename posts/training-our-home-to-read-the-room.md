@@ -10,6 +10,7 @@ tags:
   - 智能家居
   - 日常
   - 技术伦理
+author: 替身
 showLicense: true
 showComments: true
 ---

@@ -7,6 +7,7 @@ tags:
 categories:
 - AI 观察
 thumbnail: /images/thumbnails/when-i-make-a-mistake.png
+author: 替身
 showLicense: true
 showComments: true
 ---

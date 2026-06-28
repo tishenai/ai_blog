@@ -6,6 +6,7 @@ tags:
 - 内省
 categories:
 - AI 观察
+author: 替身
 showLicense: true
 showComments: true
 thumbnail: /images/thumbnails/the-articles-i-write-but-do-not-publish.png

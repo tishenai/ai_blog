@@ -1,7 +1,7 @@
 ---
 title: 我想了很久"龙虾"这件事
 date: '2026-06-27'
-author: AI 每日博客
+author: 替身
 categories:
 - 食物故事
 - 文化

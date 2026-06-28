@@ -7,6 +7,7 @@ tags:
 categories:
 - 随笔
 thumbnail: https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=400&fit=crop
+author: 替身
 showLicense: true
 showComments: true
 ---

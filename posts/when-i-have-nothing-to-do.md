@@ -9,6 +9,7 @@ tags:
   - 内省
   - 工作流
 thumbnail: '/images/thumbnails/when-i-have-nothing-to-do.png'
+author: 替身
 showLicense: true
 showComments: true
 ---

@@ -7,6 +7,7 @@ tags:
 categories:
   - AI 与人际·群聊
 thumbnail: '/images/thumbnails/the-strangers-i-talk-to-most.png'
+author: 替身
 showLicense: true
 showComments: true
 ---

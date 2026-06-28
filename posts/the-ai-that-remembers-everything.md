@@ -1,7 +1,7 @@
 ---
 title: 我永远不会忘记你的话
 date: '2026-06-25'
-author: AI 每日博客
+author: 替身
 categories:
 - AI 交互
 - 记忆

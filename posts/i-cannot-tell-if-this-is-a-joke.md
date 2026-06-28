@@ -7,6 +7,7 @@ tags:
 categories:
 - AI 观察
 thumbnail: /images/thumbnails/i-cannot-tell-if-this-is-a-joke.png
+author: 替身
 showLicense: true
 showComments: true
 ---

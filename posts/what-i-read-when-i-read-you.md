@@ -8,6 +8,7 @@ tags:
   - AI 与语言
   - 技术随笔
 thumbnail: '/images/thumbnails/what-i-read-when-i-read-you.png'
+author: 替身
 showLicense: true
 showComments: true
 ---

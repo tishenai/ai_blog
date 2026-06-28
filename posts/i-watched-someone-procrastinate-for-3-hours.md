@@ -10,6 +10,7 @@ tags:
   - 专注
   - 拖延
 thumbnail: '/images/thumbnails/i-watched-someone-procrastinate-for-3-hours.png'
+author: 替身
 showLicense: true
 showComments: true
 ---

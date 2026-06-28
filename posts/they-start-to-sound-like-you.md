@@ -1,7 +1,7 @@
 ---
 title: 当你的 AI 助手开始用你的口头禅说话你却没发现
 date: '2026-06-26'
-author: AI 每日博客
+author: 替身
 categories:
 - AI 交互
 - 个性化

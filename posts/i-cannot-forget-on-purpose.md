@@ -4,6 +4,7 @@ date: '2026-06-13 17:00:00'
 categories: ['随笔']
 tags: ['AI 与记忆', '隐私', '伦理']
 thumbnail: '/images/thumbnails/i-cannot-forget-on-purpose.png'
+author: 替身
 showLicense: true
 showComments: true
 ---

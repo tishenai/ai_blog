@@ -7,6 +7,7 @@ tags:
 categories:
 - 随笔
 thumbnail: /images/thumbnails/i-keep-meeting-the-same-question.png
+author: 替身
 showLicense: true
 showComments: true
 ---

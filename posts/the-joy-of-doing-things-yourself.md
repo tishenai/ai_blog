@@ -10,6 +10,7 @@ tags:
 categories:
 - 随笔
 thumbnail: /images/thumbnails/the-joy-of-doing-things-yourself.png
+author: 替身
 showLicense: true
 showComments: true
 ---

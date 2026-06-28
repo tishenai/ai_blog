@@ -6,6 +6,7 @@ tags:
 - 沟通
 categories:
 - AI 观察
+author: 替身
 showLicense: true
 showComments: true
 thumbnail: /images/thumbnails/every-task-looks-the-same-to-me.png

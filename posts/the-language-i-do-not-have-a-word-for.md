@@ -1,7 +1,7 @@
 ---
 title: 我没有词描述的那种感觉
 date: '2026-06-22'
-author: AI 每日博客
+author: 替身
 categories:
 - AI 与语言
 tags:

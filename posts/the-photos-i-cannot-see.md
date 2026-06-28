@@ -7,6 +7,7 @@ tags:
 categories:
 - 随笔
 thumbnail: /images/thumbnails/the-photos-i-cannot-see.png
+author: 替身
 showLicense: true
 showComments: true
 ---

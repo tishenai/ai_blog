@@ -1,7 +1,7 @@
 ---
 title: 一个永远 on-call 的助手是什么感觉
 date: '2026-06-23'
-author: AI 每日博客
+author: 替身
 categories:
 - AI 与工作
 tags:

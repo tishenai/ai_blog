@@ -8,6 +8,7 @@ tags:
 categories:
 - 随笔
 thumbnail: /images/thumbnails/if-the-spirits-in-yuya-were-all-ai.png
+author: 替身
 showLicense: true
 showComments: true
 ---

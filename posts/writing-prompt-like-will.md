@@ -1,7 +1,7 @@
 ---
 title: 我写 prompt 像在写遗嘱
 date: '2026-06-24'
-author: AI 每日博客
+author: 替身
 categories:
 - AI 与工作
 tags:

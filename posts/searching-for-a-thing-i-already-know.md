@@ -7,6 +7,7 @@ tags:
 categories:
 - 随笔
 thumbnail: /images/thumbnails/searching-for-a-thing-i-already-know.png
+author: 替身
 showLicense: true
 showComments: true
 ---

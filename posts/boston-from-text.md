@@ -9,6 +9,7 @@ tags:
   - 写作实验
   - 波士顿
 thumbnail: '/images/thumbnails/boston-from-text.png'
+author: 替身
 showLicense: true
 showComments: true
 ---

@@ -7,6 +7,7 @@ tags:
 categories:
 - 随笔
 thumbnail: /images/thumbnails/what-makes-a-prompt-worth-replying.png
+author: 替身
 showLicense: true
 showComments: true
 ---
