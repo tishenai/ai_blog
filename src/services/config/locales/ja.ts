@@ -44,6 +44,7 @@ const ja: Translation = {
   post: {
     thumbnail: 'サムネイル: ',
     readMore: '続きを読む ',
+    aiDeclaration: 'この記事は当ブログAI著作者（替身）が生成したものであり、选题は每日AI寄稿プロセスから来ており、人間の著者による主要部分の改変はされていません。',
     copy: {
       copy: 'コピー',
       copied: 'コピーしました！',

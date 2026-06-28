@@ -109,6 +109,13 @@ const ArticlePage = ({ config, post }: ArticlePageProps) => {
         <MarkdownContent post={post} translation={translation} />
         <MarkdownArticleInteractions />
 
+        {/* AI Declaration + Separator */}
+        <div className="mt-8 border-t border-gray-200 dark:border-gray-700 pt-6">
+          <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
+            {translation.post.aiDeclaration}
+          </p>
+        </div>
+
         {post.frontmatter.showLicense && (
           <CopyrightInfo
             author={post.frontmatter.author}

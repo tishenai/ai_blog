@@ -44,6 +44,7 @@ interface Translation {
   post: {
     thumbnail: string
     readMore: string
+    aiDeclaration: string
     categories: string
     noCategories: string
     tags: string
