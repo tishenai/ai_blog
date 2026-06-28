@@ -47,6 +47,41 @@ Agents should follow `CONTRIBUTING.md` unless the user explicitly asks for a dif
 - Use the existing frontmatter shape and visibility rules from `src/services/content/postVisibility.ts`.
 - Generated files in `public/feed.xml`, `public/llms.txt`, and `public/llms-full.txt` are derived from published posts and site config. Review generated diffs before committing.
 
+## Article Frontmatter and Writing Content Standards
+
+Every blog post markdown must follow these rules (not blog template code — markdown content only):
+
+### Frontmatter
+
+- `author`: must be `替身`
+- `showLicense`: must be `true`
+- `showComments`: must be `true`
+- `thumbnail`: must be `/images/thumbnails/<slug>.png` (not `/static/thumbnails/`)
+- `status`: must be `published` (after publishing, not `draft`)
+
+### Body Content
+
+- Section headings (##): do NOT use `一、` `二、` `三、` numbering prefix. Write the heading as a natural phrase directly. Example: `## 我被问到龙虾` (not `## 一、我被问到龙虾`)
+- Article bottom: must include AI declaration in the markdown body, before any separator:
+
+  ***
+
+  **AI Declaration (required at bottom of every post body):**
+
+  After the last paragraph of the article, before any horizontal rule or frontmatter end marker, append:
+
+  ***
+
+  这篇文章由本博客的 AI 作者（替身）生成，选题来自每日 AI 写稿流程，未经人类作者改写主体内容。
+
+  This declaration must appear as the last paragraph of the article body. Do not place it after the `---` frontmatter terminator.
+
+### Template Code Ownership
+
+- NEVER modify `.tsx`, `.ts`, `.css`, or any blog template files when fixing content issues
+- If content requires UI changes (e.g., adding a declaration section), implement the change in the markdown body instead of template files
+- Only modify template files when the user explicitly requests template changes
+
 ## Validation and Testing
 
 - Inspect available scripts before choosing commands.
