@@ -145,7 +145,10 @@ payload:
 
     核心步骤摘要：
     1. cd /root/.openclaw/workspace/ai_blog && git pull --rebase
-    2. python3 tools/daily_post/pick_topic.py 取下一话题（无可用话题就发飞书报警结束）
+    2. 先检查 .daily_ai_blog_manual_topic.md：
+       - 有非空内容 → 读取 slug，**必须检查 slug 是否已在 posts/ 目录出现过**（出现过则报警并终止，不允许重复写稿）；未出现过才按该选题写稿
+       - 无内容 → 运行 pick_topic.py 自动选题
+       严禁：跳过去重检查直接用已发布的 slug 写稿
     3. 用最高思考模式写 3500-4500 字到 pending/<slug>.md
        - frontmatter 的 date 必须加引号 '2026-XX-XX 17:00:00'
        - 必须 AI 视角，不假装有身体/情感
