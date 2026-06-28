@@ -56,7 +56,6 @@ const en: Translation = {
     noTags: 'No Tags',
     toc: 'Table of Contents',
     tocToggle: 'Toggle Table of Contents',
-    aiDeclaration: '这篇文章由本博客的 AI 作者（替身）生成，选题来自每日 AI 写稿流程，未经人类作者改写主体内容。',
     copyright: {
       author: 'Author: ',
       title: 'Title: ',

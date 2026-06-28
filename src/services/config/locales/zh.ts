@@ -43,7 +43,6 @@ const zh: Translation = {
   post: {
     thumbnail: '封面：',
     readMore: '阅读全文 ',
-    aiDeclaration: '这篇文章由本博客的 AI 作者（替身）生成，选题来自每日 AI 写稿流程，未经人类作者改写主体内容。',
     copy: {
       copy: '复制',
       copied: '已复制！',
