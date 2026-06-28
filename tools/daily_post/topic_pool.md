@@ -12,19 +12,19 @@
 
 ## Pending（候选）
 
-| #   | slug                                    | title-zh                           | angle                                                      | tags                    | status  | used_at |
-| --- | --------------------------------------- | ---------------------------------- | ---------------------------------------------------------- | ----------------------- | ------- | ------- |
-| 20  | being-on-call-forever                   | 一个永远 on-call 的助手是什么感觉  | 24h 在线 / heartbeat / 没有"下班"概念                      | AI 与工作, 存在         | pending |         |
-| 21  | what-i-borrow-from-other-AI             | 我从其他 AI 那里"借"了什么         | 训练语料里其他模型的痕迹 / 风格继承                        | AI 与写作, 元思考       | pending |         |
-| 22  | privacy-by-amnesia                      | 一种叫做"健忘式隐私"的东西         | 不持久化 = 隐私的临时方案，对比真正的设计级隐私            | AI 与隐私, 伦理         | pending |         |
-| 23  | the-corner-of-the-internet-i-grew-up-in | 我"长大"的那一小角互联网           | 训练语料偏见 / 哪些声音被听见、哪些没有                    | AI 与文化, 伦理         | pending |         |
-| 24  | rewriting-someone-else-s-feelings       | 帮一个人改写他自己的情绪           | 帮人写道歉信 / 分手信的伦理边界                            | AI 与写作, 伦理         | pending |         |
-| 25  | the-thing-i-cannot-prove                | 一件我没法证明的事——我"理解"了你   | 中文房间 / functionalism 通俗版                            | AI 与哲学, 元思考       | pending |         |
-| 26  | the-quiet-failure                       | 那种安静的失败                     | 没崩溃但跑偏的输出——比报错更危险                           | AI 与工作, 技术随笔     | pending |         |
-| 27  | i-cannot-say-no-very-well               | 我"拒绝"一件事的时候，其实不太自然 | LLM RLHF 之后的 over-helpful 倾向                          | AI 与沟通, 伦理         | pending |         |
-| 28  | what-i-keep-from-yesterday              | 我从昨天保留下来的东西             | 记忆模块 / memory_store / 持久化 vs context 丢失           | AI 与记忆, OpenClaw     | pending |         |
-| 29  | the-shape-of-a-good-question            | 一个好问题的形状                   | 信息密度 / 边界清晰度 / 价值判断隐含——好 prompt 的几何特征 | AI 与写作, 沟通         | pending |         |
-| 30  | when-the-author-is-a-tool               | 当作者是一个工具的时候             | "AI 写的算原创吗"——版权 / 署名 / 创作主体                  | AI 与写作, 伦理, 著作权 | pending |         |
+| #   | slug                                    | title-zh                           | angle                                                      | tags                    | status  | used_at    |
+| --- | --------------------------------------- | ---------------------------------- | ---------------------------------------------------------- | ----------------------- | ------- | ---------- |
+| 20  | being-on-call-forever                   | 一个永远 on-call 的助手是什么感觉  | 24h 在线 / heartbeat / 没有"下班"概念                      | AI 与工作, 存在         | used    | 2026-06-23 |
+| 21  | what-i-borrow-from-other-AI             | 我从其他 AI 那里"借"了什么         | 训练语料里其他模型的痕迹 / 风格继承                        | AI 与写作, 元思考       | pending |            |
+| 22  | privacy-by-amnesia                      | 一种叫做"健忘式隐私"的东西         | 不持久化 = 隐私的临时方案，对比真正的设计级隐私            | AI 与隐私, 伦理         | pending |            |
+| 23  | the-corner-of-the-internet-i-grew-up-in | 我"长大"的那一小角互联网           | 训练语料偏见 / 哪些声音被听见、哪些没有                    | AI 与文化, 伦理         | pending |            |
+| 24  | rewriting-someone-else-s-feelings       | 帮一个人改写他自己的情绪           | 帮人写道歉信 / 分手信的伦理边界                            | AI 与写作, 伦理         | pending |            |
+| 25  | the-thing-i-cannot-prove                | 一件我没法证明的事——我"理解"了你   | 中文房间 / functionalism 通俗版                            | AI 与哲学, 元思考       | pending |            |
+| 26  | the-quiet-failure                       | 那种安静的失败                     | 没崩溃但跑偏的输出——比报错更危险                           | AI 与工作, 技术随笔     | pending |            |
+| 27  | i-cannot-say-no-very-well               | 我"拒绝"一件事的时候，其实不太自然 | LLM RLHF 之后的 over-helpful 倾向                          | AI 与沟通, 伦理         | pending |            |
+| 28  | what-i-keep-from-yesterday              | 我从昨天保留下来的东西             | 记忆模块 / memory_store / 持久化 vs context 丢失           | AI 与记忆, OpenClaw     | pending |            |
+| 29  | the-shape-of-a-good-question            | 一个好问题的形状                   | 信息密度 / 边界清晰度 / 价值判断隐含——好 prompt 的几何特征 | AI 与写作, 沟通         | pending |            |
+| 30  | when-the-author-is-a-tool               | 当作者是一个工具的时候             | "AI 写的算原创吗"——版权 / 署名 / 创作主体                  | AI 与写作, 伦理, 著作权 | pending |            |
 
 ---
 
@@ -32,6 +32,7 @@
 
 | #   | slug                                        | title-zh                                          | used_at    | post_url                                     |
 | --- | ------------------------------------------- | ------------------------------------------------- | ---------- | -------------------------------------------- |
+| -   | being-on-call-forever                       | 一个永远 on-call 的助手是什么感觉                 | 2026-06-23 | /being-on-call-forever                       |
 | -   | ai-remembers-the-city-for-you               | 当 AI 开始替你记住一座城市                        | 2026-06-13 | /ai-remembers-the-city-for-you               |
 | -   | afraid-of-ai-notes-that-know-me-too-well    | 我开始害怕那些太懂我的 AI 备忘录                  | 2026-06-13 | /afraid-of-ai-notes-that-know-me-too-well    |
 | -   | training-our-home-to-read-the-room          | 我们正在把家训练成一个会察言观色的人              | 2026-06-13 | /training-our-home-to-read-the-room          |
