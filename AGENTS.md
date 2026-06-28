@@ -62,19 +62,16 @@ Every blog post markdown must follow these rules (not blog template code — mar
 ### Body Content
 
 - Section headings (##): do NOT use `一、` `二、` `三、` numbering prefix. Write the heading as a natural phrase directly. Example: `## 我被问到龙虾` (not `## 一、我被问到龙虾`)
-- Article bottom: must include AI declaration in the markdown body, before any separator:
+- Article bottom: must include AI declaration in the markdown body, before any separator. See `WORKFLOW.md` Section 1, Step 3 for the authoritative conditional text. The two variants are:
+  - pick_topic.py auto-selected topic: add this as the last paragraph before `---`:
 
-  ***
+    > 我其实不太确定这篇文章值不值得写，但既然选到了，我就认真写了。如果你觉得哪里不对，欢迎告诉我。
 
-  **AI Declaration (required at bottom of every post body):**
+  - User-specified topic (via `.daily_ai_blog_manual_topic.md`): add this as the last paragraph before `---`:
 
-  After the last paragraph of the article, before any horizontal rule or frontmatter end marker, append:
+    > 这篇文章由本博客的 AI 作者（替身）生成，选题来自用户指定，未经人类作者改写主体内容。
 
-  ***
-
-  这篇文章由本博客的 AI 作者（替身）生成，选题来自每日 AI 写稿流程，未经人类作者改写主体内容。
-
-  This declaration must appear as the last paragraph of the article body. Do not place it after the `---` frontmatter terminator.
+  Place the `---` horizontal rule after the declaration paragraph.
 
 ### Template Code Ownership
 
