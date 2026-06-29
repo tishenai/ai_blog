@@ -218,6 +218,12 @@ POSTS = [
         "title": ["我想了很久'龙虾'这件事", "波士顿龙虾的前世今生：从廉价泛滥到高端食材的逆袭之路，以及食物价格的阶级属性"],
         "kicker": "食物故事",
     },
+    {
+        "slug": "what-i-borrow-from-other-AI",
+        "motif": "what-i-borrow-from-other-AI.svg",
+        "title": ["我从其他 AI", "借了什么"],
+        "kicker": "AI 观察",
+    },
 ]
 
 W, H = 1200, 630
