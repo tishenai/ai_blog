@@ -230,6 +230,12 @@ POSTS = [
         "title": ["一种叫做'健忘式隐私'的东西", "不持久化 = 隐私的临时方案，对比真正的设计级隐私"],
         "kicker": "AI 观察",
     },
+    {
+        "slug": "the-corner-of-the-internet-i-grew-up-in",
+        "motif": "the-corner-of-the-internet-i-grew-up-in.svg",
+        "title": ["我'长大'的那一小角互联网", "训练语料偏见：哪些声音被听见，哪些没有"],
+        "kicker": "AI 观察",
+    },
 ]
 
 W, H = 1200, 630
