@@ -6,7 +6,7 @@ tags:
 - 元思考
 categories:
 - AI 观察
-status: draft
+status: published
 thumbnail: /images/thumbnails/what-i-borrow-from-other-AI.png
 showLicense: true
 showComments: true
