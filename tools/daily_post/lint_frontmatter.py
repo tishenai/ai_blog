@@ -124,6 +124,28 @@ def lint(path, fix=False, inject_thumbnail=False):
     if "title" in data and not isinstance(data["title"], str):
         errors.append("title 必须是字符串")
 
+    # title 含中文/curly 引号时禁止套外层双引号（会导致 YAML 解析成嵌套引号字符串）
+    # 正确写法：title: 我从其他 AI 那里"借"了什么
+    # 错误写法：title: "我从其他 AI 那里"借"了什么"
+    if "title" in data and isinstance(data["title"], str):
+        t = data["title"]
+        # 检查是否含有中文引号或 curly double quotes
+        if any(c in t for c in ['"', '"', '"', '"']):
+            # 用 source 直接检查 frontmatter 原文是否用了 "title: \"...\"" 的格式
+            fm_lines = fm_str.split("\n")
+            for line in fm_lines:
+                stripped = line.strip()
+                if stripped.startswith("title:"):
+                    # 外层有双引号包裹 → 错误格式
+                    after_colon = stripped[len("title:"):].strip()
+                    if after_colon.startswith('"') and after_colon.endswith('"') and len(after_colon) >= 2:
+                        errors.append(
+                            "title 含中文/curly 引号时禁止套外层双引号。"
+                            "正确格式：title: 我从其他 AI 那里\"借\"了什么"
+                            "（去掉 title: 后面的引号，直接裸写）"
+                        )
+                    break
+
     # date 格式
     if "date" in data:
         date_val = data["date"]

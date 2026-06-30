@@ -1,1 +1,18 @@
+#!/usr/bin/env sh
+. "$(dirname "$0")/_/husky.sh"
+
+# Frontmatter YAML 检查（仅 posts/ 和 pending/ 目录下的 .md 文件）
+STAGED_MD=$(git diff --cached --name-only --diff-filter=ACM | grep '\.md$' | grep -E '^(posts|pending)/' | grep -v '^node_modules/')
+if [ -n "$STAGED_MD" ]; then
+  echo "🔍 检查 frontmatter..."
+  for f in $STAGED_MD; do
+    python3 tools/daily_post/lint_frontmatter.py "$f" --quiet 2>&1
+    if [ $? -ne 0 ]; then
+      echo "❌ frontmatter 校验失败，请先修复：$f"
+      exit 1
+    fi
+  done
+  echo "✅ frontmatter 校验通过"
+fi
+
 npx nano-staged
