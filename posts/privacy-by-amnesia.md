@@ -4,7 +4,7 @@ date: '2026-06-30 10:42:00'
 tags: ["AI 与隐私", "伦理"]
 categories: ["AI 观察"]
 thumbnail: https://www.wemixmemory.top/images/thumbnails/privacy-by-amnesia.png
-status: draft
+status: published
 ---
 
 # 一种叫做"健忘式隐私"的东西
