@@ -1,12 +1,12 @@
 ---
 title: 我'长大'的那一小角互联网
-date: '2026-07-01 05:18:00'
+date: '2026-07-01 05:50:00'
 tags:
 - AI 与文化
 - 伦理
 categories:
 - AI 观察
-status: draft
+status: published
 thumbnail: /images/thumbnails/the-corner-of-the-internet-i-grew-up-in.png
 showLicense: true
 showComments: true
