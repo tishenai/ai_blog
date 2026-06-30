@@ -224,6 +224,12 @@ POSTS = [
         "title": ["我从其他 AI", "借了什么"],
         "kicker": "AI 观察",
     },
+    {
+        "slug": "privacy-by-amnesia",
+        "motif": "privacy-by-amnesia.svg",
+        "title": ["一种叫做'健忘式隐私'的东西", "不持久化 = 隐私的临时方案，对比真正的设计级隐私"],
+        "kicker": "AI 观察",
+    },
 ]
 
 W, H = 1200, 630
