@@ -639,3 +639,70 @@ cron prompt 也改为严格步骤式。agent 只负责：
 - audit 是硬验收，exit 非 0 会让 cron 状态变为 failed
 
 验收标准：只有 audit exit 0 才算 postflight 成功。
+
+---
+
+### v1.7.0 daily-ai-blog-post/postflight 拆分为「本地 + Feishu」两部分（2026-06-30）
+
+**根因**：isolated session 执行飞书 API（`feishu_create_doc`、`feishu_wiki_space_node list`、`feishu_update_doc`）时，返回 `need_user_authorization`。飞书 OAuth user token 只存在于用户 DM 会话中，isolated cron session 无法继承。
+
+**修复架构**：
+
+**daily-ai-blog-post（17:00）**：拆为 Part A + Part B
+
+- Part A（isolated session）：`git pull` → 选题 → 写稿 → `lint` → 缩略图 → `pnpm build` → `git push`
+- Part B：通过 `sessions_send(sessionKey=DM session key, message=Part B prompt)` 发给 DM session
+- DM session（有 OAuth token）：执行 `feishu_create_doc` → `feishu_wiki_space_node list` → `build_wiki_index` → `feishu_update_doc` → 审稿通知 → `mark-notified` → `audit`
+
+**daily-ai-blog-postflight（17:30）**：发给 DM session 执行
+
+- cron isolated session 不做任何事，只把 prompt 发给 DM session
+- DM session（有 OAuth）：全量 postflight 步骤
+
+**关键修复点**：
+
+- cron isolated session 只做本地文件/Git 操作，不调用飞书 API
+- 飞书步骤通过 `sessions_send` 路由到 DM session
+- DM session 与用户 DM 是同一 session，有 OAuth user token
+- 两个 cron 的 `sessionTarget` 均绑定 DM session
+
+**验证**：明天 17:00 以新架构运行，观察 Part B 是否正常路由到 DM session。
+
+**当前三个 cron 运行状态**：
+
+| 任务                       | enabled  | 触发时间   | 实际行为                                                               |
+| -------------------------- | -------- | ---------- | ---------------------------------------------------------------------- |
+| `daily-ai-blog-post`       | ✅ true  | 每天 17:00 | Part A 做本地 → `sessions_send` Part B 给 DM session → DM 执行飞书步骤 |
+| `daily-ai-blog-postflight` | ✅ true  | 每天 17:30 | DM session 执行全量 postflight（isolated 只发消息不做事）              |
+| `publish-blog-post`        | ❌ false | 不触发     | 已禁用                                                                 |
+
+**WORKFLOW 架构图**（同步更新）：
+
+```
+17:00 cron trigger
+  → isolated session:
+      git pull → 选题 → 写稿 → lint → thumbnail → build → git push
+      → sessions_send(Part B) ──────────────────────────┐
+                                                       ↓
+                                                  DM session（有 OAuth）
+                                                       ↓
+                                            feishu_create_doc
+                                            feishu_wiki_space_node list
+                                            build_wiki_index
+                                            feishu_update_doc
+                                            审稿通知
+                                            mark-notified
+                                            audit ✅
+
+17:30 cron trigger
+  → DM session（有 OAuth）
+      feishu_wiki_space_node list
+      postflight_runner.py plan
+      feishu_create_doc（如缺 Draft）
+      build_wiki_index
+      补发通知（如需要）
+      mark-notified
+      audit ✅
+```
+
+> 注：DM session = `agent:a-mqkbn00dptw9jo:feishu:a-mqkbn00dptw9jo:direct:ou_12cafe83f620117e40728ef5cd4687eb`
