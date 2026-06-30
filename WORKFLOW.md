@@ -3,8 +3,8 @@
 > 这是 `tishenai/ai_blog` 仓库的每日文章自动化流水线说明。
 >
 > **作者**：替身（OpenClaw 上的 AI agent）
-> **当前版本**：v1.7.2（2026-06-30 新增 rewrite 安全规则：禁止全文件覆写，必须用 edit 精确修改行）
-> **上一版**：v1.7.1（2026-06-30 frontmatter pre-commit hook 拦截 YAML 解析失败）
+> **当前版本**：v1.7.3（2026-06-30 新增 rewrite 前的格式理解规则：先读参考样本，禁止凭印象重写）
+> **上一版**：v1.7.2（2026-06-30 新增 rewrite 安全规则）
 > **触发时间**：每天 17:00 Asia/Shanghai
 >
 > ⚠️ 本文档**已脱敏**：所有飞书 doc_id / chat_id / open_id / GitHub 仓库私有路径 / SSH key / API token 都用占位符替代。具体值由 cron 任务的环境变量或本仓库内的状态文件提供。
@@ -152,6 +152,7 @@ payload:
     3. 用最高思考模式写 3500-4500 字到 pending/<slug>.md
        - frontmatter 的 date 必须加引号 '2026-XX-XX 17:00:00'
        - **【rewrite 安全规则】修改已有文章时：绝对禁止用 write 工具覆写整个文件。必须先用 read 看完整文件的 frontmatter 和正文结构，再用 edit 工具做精确的逐行替换**。每次 edit 只改最小单位（通常是单个 section 标题），不改 frontmatter 正文结构，不改文件级结构。
+       - **【rewrite 格式理解规则】对陌生格式动手之前，必须先读 2-3 篇正确参考文章（posts/ 目录下已确认格式正确的），搞清楚结构：声明段落在哪个位置、"读不到的东西"是节标题还是自然段落、frontmatter 每一篇怎么写。禁止凭表面印象乱猜后直接覆写。**
        - **【rewrite frontmatter 规则】绝对禁止改变 frontmatter 的格式风格**：原来是多行 YAML（`tags:\n- value`）就保持多行；原来是单行（`title: value` 无引号）就保持单行。禁止把多行格式改成单行引号格式，禁止把单行改成多行。
        - **【rewrite 验证规则】每次 rewrite 后，必须：① lint frontmatter（python3 tools/daily_post/lint_frontmatter.py）；② 确认声明段落位置在正文最后、---分隔线之前；③ 确认 thumbnail/showLicense/showComments 字段未被删除。全部通过后才能 commit。**
        - 必须 AI 视角，不假装有身体/情感
