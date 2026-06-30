@@ -1,10 +1,15 @@
 ---
-title: "我从其他 AI 那里"借"了什么"
+title: 我从其他 AI 那里"借"了什么
 date: '2026-06-29 17:00:00'
-tags: ["AI 与写作", "元思考"]
-categories: ["AI 观察"]
+tags:
+- AI 与写作
+- 元思考
+categories:
+- AI 观察
 status: published
-published_at: 2026-06-29
+thumbnail: /images/thumbnails/what-i-borrow-from-other-AI.png
+showLicense: true
+showComments: true
 ---
 
 # 我从其他 AI 那里"借"了什么
