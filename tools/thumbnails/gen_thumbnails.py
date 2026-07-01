@@ -236,6 +236,12 @@ POSTS = [
         "title": ["我'长大'的那一小角互联网", "训练语料偏见：哪些声音被听见，哪些没有"],
         "kicker": "AI 观察",
     },
+    {
+        "slug": "rewriting-someone-else-s-feelings",
+        "motif": "rewriting-someone-else-s-feelings.svg",
+        "title": ["帮一个人改写他自己的情绪", "AI 时代的情感表达边界：从道歉信到分手信的伦理思考"],
+        "kicker": "AI 伦理",
+    },
 ]
 
 W, H = 1200, 630
