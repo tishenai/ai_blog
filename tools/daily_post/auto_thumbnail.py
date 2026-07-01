@@ -26,8 +26,22 @@ sys.path.insert(0, ROOT)
 from motif_templates import GENERIC_MOTIFS, pick_motif_key  # noqa: E402
 
 
+def _escape_py(s: str) -> str:
+    """把字符串安全地转义为 Python 字符串字面量（用于插进 gen_thumbnails.py 的 POSTS 表）。"""
+    return (
+        s.replace("\\", "\\\\")
+         .replace('"', '\\"')
+         .replace("\n", "\\n")
+         .replace("\r", "\\r")
+         .replace("\t", "\\t")
+    )
+
+
 def already_in_posts(slug: str) -> bool:
-    return f'"slug": "{slug}"' in open(GEN_PY).read()
+    """检查 slug 是否已在 gen_thumbnails.py POSTS 表中（幂等）。"""
+    content = open(GEN_PY).read()
+    # slug 是 ASCII，转义前后一样，直接查即可
+    return f'"slug": "{slug}"' in content
 
 
 def append_to_posts(slug: str, motif_filename: str, t1: str, t2: str, kicker: str):
@@ -37,10 +51,10 @@ def append_to_posts(slug: str, motif_filename: str, t1: str, t2: str, kicker: st
         raise RuntimeError("gen_thumbnails.py POSTS marker not found")
     entry = (
         f'    {{\n'
-        f'        "slug": "{slug}",\n'
-        f'        "motif": "{motif_filename}",\n'
-        f'        "title": ["{t1}", "{t2}"],\n'
-        f'        "kicker": "{kicker}",\n'
+        f'        "slug": "{_escape_py(slug)}",\n'
+        f'        "motif": "{_escape_py(motif_filename)}",\n'
+        f'        "title": ["{_escape_py(t1)}", "{_escape_py(t2)}"],\n'
+        f'        "kicker": "{_escape_py(kicker)}",\n'
         f'    }},\n'
     )
     new_src = src.replace(marker, entry + marker)
@@ -55,7 +69,8 @@ def main():
     t1 = sys.argv[2]
     t2 = sys.argv[3]
     kicker = sys.argv[4]
-    tags = sys.argv[5].split(",") if len(sys.argv) > 5 else []
+    # tags 格式：tag1,tag2,... 逗号分隔
+    tags = [t.strip() for t in sys.argv[5].split(",")] if len(sys.argv) > 5 else []
 
     motif_path = os.path.join(MOTIFS_DIR, f"{slug}.svg")
     motif_key = pick_motif_key(tags)
@@ -86,7 +101,6 @@ def main():
             print(line)
 
     # 渲染成功后，主动将 thumbnail 字段注入到 frontmatter。
-    # 查找对应的 .md 文件位置（优先 pending/，后街 posts/）。
     md_candidates = [
         os.path.join(REPO, "pending", f"{slug}.md"),
         os.path.join(REPO, "posts", f"{slug}.md"),

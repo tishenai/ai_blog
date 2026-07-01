@@ -242,6 +242,12 @@ POSTS = [
         "title": ["帮一个人改写他自己的情绪", "AI 时代的情感表达边界：从道歉信到分手信的伦理思考"],
         "kicker": "AI 伦理",
     },
+    {
+        "slug": "the-thing-i-cannot-prove",
+        "motif": "the-thing-i-cannot-prove.svg",
+        "title": ["一件我没法证明的事——我\"理解\"了你", "中文房间 / functionalism 通俗版"],
+        "kicker": "AI 与哲学",
+    },
 ]
 
 W, H = 1200, 630
