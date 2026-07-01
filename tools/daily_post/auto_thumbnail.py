@@ -106,7 +106,7 @@ def main():
 
     print(f"注入 thumbnail 到 {md_path} 的 frontmatter...")
     r2 = subprocess.run(
-        [sys.executable, lint_path, "--inject-thumbnail", md_path],
+        [sys.executable, lint_path, "--fix", "--inject-thumbnail", md_path],
         capture_output=True,
         text=True,
     )

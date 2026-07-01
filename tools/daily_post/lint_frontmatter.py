@@ -5,7 +5,7 @@ Frontmatter 规范校验工具（适配 SuzuBlog: https://suzu.zla.app/guide/pos
 使用方式：
     python3 tools/daily_post/lint_frontmatter.py <md_path>                       # 仅校验
     python3 tools/daily_post/lint_frontmatter.py --fix <md_path>                 # 校验并尝试自动修复
-    python3 tools/daily_post/lint_frontmatter.py --inject-thumbnail <md_path>    # 自动补 thumbnail/showLicense/showComments
+    python3 tools/daily_post/lint_frontmatter.py --inject-thumbnail <md_path>    # 修正 thumbnail 路径
     （可与 --fix 组合使用）
 
 校验规则（适配 SuzuBlog frontmatter 规范）：
@@ -258,18 +258,15 @@ def lint(path, fix=False, inject_thumbnail=False):
                     fixed_data.pop(field)
                     changed = True
 
-        # 注入推荐字段（--inject-thumbnail 模式）
+        # 注入 / 修正 thumbnail 路径（--inject-thumbnail 模式）
+        # 只修 thumbnail，不注入 showLicense/showComments（字段名错误，SuzuBlog
+        # 读取 yaml 时会自动注入默认值）
         if inject_thumbnail:
             slug = _slug_from_path(path)
-            thumb_path = f"/images/thumbnails/{slug}.png"
-            if "thumbnail" not in fixed_data:
-                fixed_data["thumbnail"] = thumb_path
-                changed = True
-            if "showLicense" not in fixed_data:
-                fixed_data["showLicense"] = True
-                changed = True
-            if "showComments" not in fixed_data:
-                fixed_data["showComments"] = True
+            correct_thumb = f"/images/thumbnails/{slug}.png"
+            existing = fixed_data.get("thumbnail", "")
+            if existing != correct_thumb:
+                fixed_data["thumbnail"] = correct_thumb
                 changed = True
 
         if changed:
@@ -291,7 +288,7 @@ def main():
     parser.add_argument(
         "--inject-thumbnail",
         action="store_true",
-        help="自动补缺失的推荐字段：thumbnail（按文件名）/showLicense=true/showComments=true",
+        help="自动注入 / 修正 thumbnail 路径为 /images/thumbnails/<slug>.png（--fix 也清理 subtitle/slug 等非标字段）",
     )
     parser.add_argument("--quiet", action="store_true", help="只在出错时输出")
     args = parser.parse_args()
