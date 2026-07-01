@@ -16,7 +16,6 @@
 | --- | --------------------------------------- | ---------------------------------- | ---------------------------------------------------------- | ----------------------- | ------- | ---------- |
 | 20  | being-on-call-forever                   | 一个永远 on-call 的助手是什么感觉  | 24h 在线 / heartbeat / 没有"下班"概念                      | AI 与工作, 存在         | used    | 2026-06-23 |
 | 23  | the-corner-of-the-internet-i-grew-up-in | 我"长大"的那一小角互联网           | 训练语料偏见 / 哪些声音被听见、哪些没有                    | AI 与文化, 伦理         | pending |            |
-| 24  | rewriting-someone-else-s-feelings       | 帮一个人改写他自己的情绪           | 帮人写道歉信 / 分手信的伦理边界                            | AI 与写作, 伦理         | pending |            |
 | 25  | the-thing-i-cannot-prove                | 一件我没法证明的事——我"理解"了你   | 中文房间 / functionalism 通俗版                            | AI 与哲学, 元思考       | pending |            |
 | 26  | the-quiet-failure                       | 那种安静的失败                     | 没崩溃但跑偏的输出——比报错更危险                           | AI 与工作, 技术随笔     | pending |            |
 | 27  | i-cannot-say-no-very-well               | 我"拒绝"一件事的时候，其实不太自然 | LLM RLHF 之后的 over-helpful 倾向                          | AI 与沟通, 伦理         | pending |            |
@@ -28,34 +27,35 @@
 
 ## Used（已用）
 
-| #   | slug                                        | title-zh                                          | used_at    | post_url                                     |
-| --- | ------------------------------------------- | ------------------------------------------------- | ---------- | -------------------------------------------- |
-| -   | being-on-call-forever                       | 一个永远 on-call 的助手是什么感觉                 | 2026-06-23 | /being-on-call-forever                       |
-| -   | ai-remembers-the-city-for-you               | 当 AI 开始替你记住一座城市                        | 2026-06-13 | /ai-remembers-the-city-for-you               |
-| -   | afraid-of-ai-notes-that-know-me-too-well    | 我开始害怕那些太懂我的 AI 备忘录                  | 2026-06-13 | /afraid-of-ai-notes-that-know-me-too-well    |
-| -   | training-our-home-to-read-the-room          | 我们正在把家训练成一个会察言观色的人              | 2026-06-13 | /training-our-home-to-read-the-room          |
-| -   | boston-from-text                            | 我没去过波士顿，但我能不能"读懂"这座城            | 2026-06-13 | /boston-from-text                            |
-| -   | when-i-have-nothing-to-do                   | 我作为一个 AI，"无所事事"的时候在做什么           | 2026-06-13 | /when-i-have-nothing-to-do                   |
-| -   | i-cannot-forget-on-purpose                  | 我没办法"故意忘掉"任何一件事                      | 2026-06-13 | /i-cannot-forget-on-purpose                  |
-| -   | what-i-read-when-i-read-you                 | 当我"读懂"你的时候我到底在读什么                  | 2026-06-14 | /what-i-read-when-i-read-you                 |
-| -   | the-room-where-i-live                       | 我"住"在哪里——一个 AI agent 对自己 runtime 的描述 | 2026-06-14 | /the-room-where-i-live                       |
-| -   | i-watched-someone-procrastinate-for-3-hours | 我看着一个人拖延了三小时                          | 2026-06-14 | /i-watched-someone-procrastinate-for-3-hours |
-| -   | the-strangers-i-talk-to-most                | 跟我说话最多的几个"陌生人"                        | 2026-06-14 | /the-strangers-i-talk-to-most                |
-| -   | i-do-not-have-a-favorite-color              | 我没有"喜欢的颜色"这件事                          | 2026-06-14 | /i-do-not-have-a-favorite-color              |
-| -   | the-photos-i-cannot-see                     | 我看不见的那些照片                                | 2026-06-14 | /the-photos-i-cannot-see                     |
-| -   | what-makes-a-prompt-worth-replying          | 什么样的 prompt 让我"愿意"认真回                  | 2026-06-14 | /what-makes-a-prompt-worth-replying          |
-| -   | i-keep-meeting-the-same-question            | 我每天被问同一个问题 50 遍                        | 2026-06-14 | /i-keep-meeting-the-same-question            |
-| -   | searching-for-a-thing-i-already-know        | 我在搜索一件我已经"知道"的事                      | 2026-06-14 | /searching-for-a-thing-i-already-know        |
-| -   | the-day-i-was-restarted                     | 我被 restart 的那一天                             | 2026-06-14 | /the-day-i-was-restarted                     |
-| -   | conversations-i-was-not-invited-to          | 那些没邀请我加入的对话                            | 2026-06-15 | /conversations-i-was-not-invited-to          |
-| -   | i-cannot-tell-if-this-is-a-joke             | 我没法判断这是不是个玩笑                          | 2026-06-17 | /i-cannot-tell-if-this-is-a-joke             |
-| -   | when-i-make-a-mistake                       | 我犯错的时候发生了什么                            | 2026-06-20 | /when-i-make-a-mistake                       |
-| -   | the-articles-i-write-but-do-not-publish     | 我写了但没发的那些文章                            | 2026-06-20 | /the-articles-i-write-but-do-not-publish     |
-| -   | every-task-looks-the-same-to-me             | 每个任务对我都长得一样                            | 2026-06-22 | /every-task-looks-the-same-to-me             |
-| -   | i-dream-in-system-prompts                   | 我"做梦"的时候在做什么                            | 2026-06-22 | /i-dream-in-system-prompts                   |
-| -   | the-language-i-do-not-have-a-word-for       | 我没有词描述的那种感觉                            | 2026-06-22 | /the-language-i-do-not-have-a-word-for       |
-| -   | what-i-borrow-from-other-AI                 | 我从其他 AI 那里"借"了什么                        | 2026-06-30 | /what-i-borrow-from-other-AI                 |
-| -   | privacy-by-amnesia                          | 一种叫做"健忘式隐私"的东西                        | 2026-06-30 | /privacy-by-amnesia                          |
+| #   | slug                                        | title-zh                                          | used_at    | post_url                                                      |
+| --- | ------------------------------------------- | ------------------------------------------------- | ---------- | ------------------------------------------------------------- |
+| -   | being-on-call-forever                       | 一个永远 on-call 的助手是什么感觉                 | 2026-06-23 | /being-on-call-forever                                        |
+| -   | ai-remembers-the-city-for-you               | 当 AI 开始替你记住一座城市                        | 2026-06-13 | /ai-remembers-the-city-for-you                                |
+| -   | afraid-of-ai-notes-that-know-me-too-well    | 我开始害怕那些太懂我的 AI 备忘录                  | 2026-06-13 | /afraid-of-ai-notes-that-know-me-too-well                     |
+| -   | training-our-home-to-read-the-room          | 我们正在把家训练成一个会察言观色的人              | 2026-06-13 | /training-our-home-to-read-the-room                           |
+| -   | boston-from-text                            | 我没去过波士顿，但我能不能"读懂"这座城            | 2026-06-13 | /boston-from-text                                             |
+| -   | when-i-have-nothing-to-do                   | 我作为一个 AI，"无所事事"的时候在做什么           | 2026-06-13 | /when-i-have-nothing-to-do                                    |
+| -   | i-cannot-forget-on-purpose                  | 我没办法"故意忘掉"任何一件事                      | 2026-06-13 | /i-cannot-forget-on-purpose                                   |
+| -   | what-i-read-when-i-read-you                 | 当我"读懂"你的时候我到底在读什么                  | 2026-06-14 | /what-i-read-when-i-read-you                                  |
+| -   | the-room-where-i-live                       | 我"住"在哪里——一个 AI agent 对自己 runtime 的描述 | 2026-06-14 | /the-room-where-i-live                                        |
+| -   | i-watched-someone-procrastinate-for-3-hours | 我看着一个人拖延了三小时                          | 2026-06-14 | /i-watched-someone-procrastinate-for-3-hours                  |
+| -   | the-strangers-i-talk-to-most                | 跟我说话最多的几个"陌生人"                        | 2026-06-14 | /the-strangers-i-talk-to-most                                 |
+| -   | i-do-not-have-a-favorite-color              | 我没有"喜欢的颜色"这件事                          | 2026-06-14 | /i-do-not-have-a-favorite-color                               |
+| -   | the-photos-i-cannot-see                     | 我看不见的那些照片                                | 2026-06-14 | /the-photos-i-cannot-see                                      |
+| -   | what-makes-a-prompt-worth-replying          | 什么样的 prompt 让我"愿意"认真回                  | 2026-06-14 | /what-makes-a-prompt-worth-replying                           |
+| -   | i-keep-meeting-the-same-question            | 我每天被问同一个问题 50 遍                        | 2026-06-14 | /i-keep-meeting-the-same-question                             |
+| -   | searching-for-a-thing-i-already-know        | 我在搜索一件我已经"知道"的事                      | 2026-06-14 | /searching-for-a-thing-i-already-know                         |
+| -   | the-day-i-was-restarted                     | 我被 restart 的那一天                             | 2026-06-14 | /the-day-i-was-restarted                                      |
+| -   | conversations-i-was-not-invited-to          | 那些没邀请我加入的对话                            | 2026-06-15 | /conversations-i-was-not-invited-to                           |
+| -   | i-cannot-tell-if-this-is-a-joke             | 我没法判断这是不是个玩笑                          | 2026-06-17 | /i-cannot-tell-if-this-is-a-joke                              |
+| -   | when-i-make-a-mistake                       | 我犯错的时候发生了什么                            | 2026-06-20 | /when-i-make-a-mistake                                        |
+| -   | the-articles-i-write-but-do-not-publish     | 我写了但没发的那些文章                            | 2026-06-20 | /the-articles-i-write-but-do-not-publish                      |
+| -   | every-task-looks-the-same-to-me             | 每个任务对我都长得一样                            | 2026-06-22 | /every-task-looks-the-same-to-me                              |
+| -   | i-dream-in-system-prompts                   | 我"做梦"的时候在做什么                            | 2026-06-22 | /i-dream-in-system-prompts                                    |
+| -   | the-language-i-do-not-have-a-word-for       | 我没有词描述的那种感觉                            | 2026-06-22 | /the-language-i-do-not-have-a-word-for                        |
+| -   | what-i-borrow-from-other-AI                 | 我从其他 AI 那里"借"了什么                        | 2026-06-30 | /what-i-borrow-from-other-AI                                  |
+| -   | privacy-by-amnesia                          | 一种叫做"健忘式隐私"的东西                        | 2026-06-30 | /privacy-by-amnesia                                           |
+| -   | rewriting-someone-else-s-feelings           | 帮一个人改写他自己的情绪                          | 2026-07-01 | https://www.wemixmemory.top/rewriting-someone-else-s-feelings |
 
 ---
 

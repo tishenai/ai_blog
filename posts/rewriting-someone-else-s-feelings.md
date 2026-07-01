@@ -7,10 +7,8 @@ categories:
 tags:
 - AI 与写作
 - 伦理
-status: draft
+status: published
 thumbnail: /thumbnails/rewriting-someone-else-s-feelings.png
-showLicense: true
-showComments: true
 ---
 
 # 帮一个人改写他自己的情绪：AI 时代的情感表达边界
