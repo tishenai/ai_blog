@@ -267,7 +267,7 @@ def step5_git_commit_and_push(params):
         print("⚠️  暂存区为空，跳过 commit（可能上次已 commit）")
     else:
         commit_msg = f"发布《{params['title']}》"
-        run_cmd(["git", "commit", "-m", commit_msg])
+        run_cmd(["git", "commit", "-m", commit_msg], shell=False)
 
     # 检查是否有未 push 的 commit
     unpushed = subprocess.run(
