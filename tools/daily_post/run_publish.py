@@ -44,12 +44,14 @@ def run_cmd(cmd, shell=True, cwd=WORK_DIR, capture_output=False):
     """执行 shell 命令，失败则退出"""
     print(f"$ {cmd}")
     try:
+        merged_env = {**os.environ, 'HUSKY': '0'}
         result = subprocess.run(
             cmd,
             shell=shell,
             cwd=cwd,
             capture_output=capture_output,
             text=True,
+            env=merged_env,
         )
         if result.returncode != 0:
             print(f"❌ 命令执行失败（退出码 {result.returncode}）")
@@ -267,7 +269,7 @@ def step5_git_commit_and_push(params):
         print("⚠️  暂存区为空，跳过 commit（可能上次已 commit）")
     else:
         commit_msg = f"发布《{params['title']}》"
-        run_cmd(["git", "commit", "-m", commit_msg], shell=False)
+        run_cmd(f"git commit -m {repr(commit_msg)}")
 
     # 检查是否有未 push 的 commit
     unpushed = subprocess.run(
