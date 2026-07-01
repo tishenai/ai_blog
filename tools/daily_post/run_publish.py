@@ -103,6 +103,17 @@ def step1_prepare_env(params):
     
     print(f"✅ 草稿文件存在: {pending_path}")
 
+    # 确保 pending 文件已被 git 跟踪（未跟踪时 git mv 会失败）
+    status = subprocess.run(
+        ["git", "ls-files", "--error-unmatch", pending_path],
+        cwd=WORK_DIR,
+        capture_output=True,
+    )
+    if status.returncode != 0:
+        print(f"$ git add {pending_path}")
+        run_cmd(f"git add {pending_path}")
+        print(f"✅ 已 git add: {pending_path}")
+
 
 def step1b_lint_and_fix_frontmatter(params):
     """步骤 1b: 校验 frontmatter 是否符合 SuzuBlog 规范，能修的自动修复
@@ -180,16 +191,25 @@ def step2_move_to_posts(params):
     run_cmd(f"git mv {src} {dst}")
     print(f"✅ 已移动: {src} → {dst}")
 
-    # 修复 status: draft → status: published（pending 草稿 publish 后必须改，否则 404）
-    dst_abs = os.path.join(WORK_DIR, dst)
-    with open(dst_abs, 'r', encoding='utf-8') as f:
-        content = f.read()
-    if 'status: draft' in content:
-        new_content = content.replace('status: draft', 'status: published')
-        with open(dst_abs, 'w', encoding='utf-8') as f:
-            f.write(new_content)
-        run_cmd(f"git add {dst}")
-        print(f"✅ 已修复 status: draft → status: published")
+    # 迁移后对 posts 文件跑 lint --fix --inject-thumbnail：
+    # 1. status: draft → published（--fix 清理 status）
+    # 2. thumbnail 路径修正确
+    # 3. 清理 subtitle/slug 等非标字段
+    lint_result = subprocess.run(
+        ["python3", "tools/daily_post/lint_frontmatter.py",
+         "--fix", "--inject-thumbnail", dst_abs],
+        cwd=WORK_DIR,
+        capture_output=True,
+        text=True,
+    )
+    print(lint_result.stdout)
+    if lint_result.returncode != 0:
+        print(f"❌ posts 文件 frontmatter 仍有错误（退出码 {lint_result.returncode}）")
+        sys.exit(1)
+
+    # lint 写回后 git add
+    run_cmd(f"git add {dst}")
+    print(f"✅ posts 文件 frontmatter 已修正并 git add")
 
 
 def step3_mark_topic_used(params):
@@ -258,7 +278,7 @@ def step5_git_commit_and_push(params):
     )
     if unpushed.stdout.strip():
         run_cmd("HUSKY=0 git push")
-        print("✅ 已提交并推送到 main 分支")
+        print("✅ 已提交并推送")
     else:
         print("⚠️  本地与远端一致，跳过 push")
 
@@ -377,25 +397,22 @@ def step8_send_notification(params):
 
 
 def step9_cleanup():
-    """步骤 9: 归档临时状态文件。
+    """步骤 9: 清理发布状态文件。
 
-    不直接删除，避免排障信息丢失；同时规避状态文件被误提交。
+    发布成功后必须清理 .publish_params.json（脏数据会导致下次 publish 读到旧 slug）。
+    其他状态文件也一并清理，避免残留。
     """
     print("\n" + "=" * 60)
-    print("步骤 9: 归档临时状态文件")
+    print("步骤 9: 清理发布状态文件")
     print("=" * 60)
 
-    archive_dir = os.path.join(WORK_DIR, ".publish_archive")
-    os.makedirs(archive_dir, exist_ok=True)
-    ts = datetime.now().strftime("%Y%m%d-%H%M%S")
     for name in (".publish_params.json", ".feishu_doc_update.json", ".feishu_doc_update.md", ".publish_notify.txt"):
         src = os.path.join(WORK_DIR, name)
         if not os.path.exists(src):
-            print(f"⚠️  {name} 已不存在，跳过")
+            print(f"⚠️  {name} 不存在，跳过")
             continue
-        dst = os.path.join(archive_dir, f"{ts}-{name.lstrip('.')}")
-        os.replace(src, dst)
-        print(f"✅ 已归档: {src} -> {dst}")
+        os.remove(src)
+        print(f"✅ 已删除: {src}")
 
 
 def main():
@@ -416,18 +433,16 @@ def main():
     step7_update_wiki_index(params)
     step8_send_notification(params)
     
-    # 注意：step9_cleanup 由 agent 在所有步骤成功后执行
-    # （因为飞书文档更新和发送通知需要 agent 调用工具）
+    step9_cleanup()
     
     print("\n" + "=" * 60)
-    print("✅ 脚本执行完成！")
+    print("✅ 脚本执行完成！所有步骤均已执行。")
     print("=" * 60)
     print("\n📋 剩余步骤（agent 执行）：")
     print("   1. 读取 .feishu_doc_update.json 和 markdown_path，调用 feishu_update_doc 更新审稿文档为全文发布版")
     print("   2. 调用 feishu_wiki_space_node list + feishu_update_doc 更新知识库首页")
     print("   3. 调用 message 工具发送飞书通知")
     print("   4. 调用 feishu_fetch_doc 反查文档标题和正文长度，验证不为空")
-    print("   5. 归档 .publish_params.json/.feishu_doc_update.json/.feishu_doc_update.md/.publish_notify.txt")
     print("\n💡 状态文件：")
     print(f"   - {WORK_DIR}/.feishu_doc_update.json (飞书文档更新参数)")
     print(f"   - {WORK_DIR}/.feishu_doc_update.md (飞书发布全文 markdown)")
