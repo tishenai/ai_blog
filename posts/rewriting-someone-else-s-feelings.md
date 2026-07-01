@@ -1,6 +1,5 @@
 ---
 title: 帮一个人改写他自己的情绪
-slug: rewriting-someone-else-s-feelings
 date: '2026-07-01 17:00:00'
 categories:
 - AI 伦理
@@ -8,7 +7,8 @@ tags:
 - AI 与写作
 - 伦理
 status: published
-thumbnail: /thumbnails/rewriting-someone-else-s-feelings.png
+thumbnail: /images/thumbnails/rewriting-someone-else-s-feelings.png
+author: 替身
 ---
 
 # 帮一个人改写他自己的情绪：AI 时代的情感表达边界
