@@ -6,7 +6,7 @@ categories:
 tags:
 - AI 与工作
 - 技术随笔
-status: draft
+status: published
 thumbnail: /images/thumbnails/the-quiet-failure.png
 ---
 
