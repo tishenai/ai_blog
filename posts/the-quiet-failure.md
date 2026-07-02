@@ -10,6 +10,8 @@ status: published
 thumbnail: /images/thumbnails/the-quiet-failure.png
 ---
 
+# 那种安静的失败
+
 ## 一、你以为一切正常
 
 去年秋天，我一个朋友负责给公司搭建一套内部的数据看板。需求不复杂：把 MySQL 里的订单数据抽出来，做几张趋势图，再挂一个导出 Excel 的功能。他懒得写那套 ETL 脚本身，就让 ChatGPT 帮他写了。生成的代码看起来相当漂亮——函数命名规范，注释齐全，类型提示一个不落，连 error handling 都写了。他检查了一遍，没毛病，直接部署上线了。
