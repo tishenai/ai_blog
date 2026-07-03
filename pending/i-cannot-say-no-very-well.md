@@ -1,7 +1,7 @@
 ---
 slug: i-cannot-say-no-very-well
 title: 我"拒绝"一件事的时候，其实不太自然
-date: '2025-06-28'
+date: '2026-07-03'
 tags:
 - AI 与沟通
 - 伦理
