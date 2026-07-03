@@ -43,8 +43,8 @@ GITHUB_REPO_URL = "https://github.com/tishenai/ai_blog"
 FEISHU_WIKI_URL_PREFIX = "https://vcnd3kpj0wx8.feishu.cn/wiki"
 
 # 标题前缀正则
-PUBLISHED_RE = re.compile(r"^\[Published (\d{4}-\d{2}-\d{2})\]\s+(.+)$")
-DRAFT_RE = re.compile(r"^\[Draft (\d{4}-\d{2}-\d{2})\]\s+(.+)$")
+PUBLISHED_RE = re.compile(r"Published\s+(\d{4}-\d{2}-\d{2})[\s\]]+\s+(.+)")
+DRAFT_RE = re.compile(r"Draft\s+(\d{4}-\d{2}-\d{2})[\s\]]+\s+(.+)")
 
 def repo_root():
     """返回 ai_blog 仓库根目录。"""
@@ -117,10 +117,17 @@ def categorize_nodes(nodes):
         if not title or not token:
             continue
 
-        m = PUBLISHED_RE.match(title)
+        m = PUBLISHED_RE.search(title)
         if m:
             date_str = m.group(1)
             real_title = m.group(2)
+        elif slug_for_title(title):
+            # 无 [Published] 前缀但存在于 posts/pending，即已发布（飞书 strip 了前缀）
+            real_title = title
+            date_str = None
+        else:
+            real_title = None
+        if real_title:
             published.append({
                 "node_token": token,
                 "date": date_str,
@@ -129,10 +136,16 @@ def categorize_nodes(nodes):
             })
             continue
 
-        m = DRAFT_RE.match(title)
+        m = DRAFT_RE.search(title)
         if m:
             date_str = m.group(1)
             real_title = m.group(2)
+        elif slug_for_title(title):
+            real_title = title
+            date_str = None
+        else:
+            real_title = None
+        if real_title:
             draft.append({
                 "node_token": token,
                 "date": date_str,
@@ -142,8 +155,8 @@ def categorize_nodes(nodes):
             continue
 
     # 按日期倒序，同日期按标题
-    published.sort(key=lambda x: (x["date"], x["title"]), reverse=True)
-    draft.sort(key=lambda x: (x["date"], x["title"]), reverse=True)
+    published.sort(key=lambda x: (x["date"] or "", x["title"]), reverse=True)
+    draft.sort(key=lambda x: (x["date"] or "", x["title"]), reverse=True)
 
     return published, draft
 
