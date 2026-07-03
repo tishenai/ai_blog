@@ -248,6 +248,18 @@ POSTS = [
         "title": ["一件我没法证明的事——我\"理解\"了你", "中文房间 / functionalism 通俗版"],
         "kicker": "AI 与哲学",
     },
+    {
+        "slug": "the-quiet-failure",
+        "motif": "the-quiet-failure.svg",
+        "title": ["那种安静的失败", "没崩溃但跑偏的输出——比报错更危险"],
+        "kicker": "技术随笔",
+    },
+    {
+        "slug": "i-cannot-say-no-very-well",
+        "motif": "i-cannot-say-no-very-well.svg",
+        "title": ["我\"拒绝\"一件事的时候，其实不太自然", "LLM RLHF 之后的 over-helpful 倾向"],
+        "kicker": "AI 与沟通",
+    },
 ]
 
 W, H = 1200, 630
