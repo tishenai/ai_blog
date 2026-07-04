@@ -7,7 +7,7 @@ tags:
 - AI 与记忆
 - OpenClaw
 status: draft
-subtitle: 记忆模块如何解决 Agent 的 context 丢失问题
+thumbnail: /images/thumbnails/what-i-keep-from-yesterday.png
 ---
 
 # 我从昨天保留下来的东西
