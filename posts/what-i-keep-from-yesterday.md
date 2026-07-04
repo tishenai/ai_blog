@@ -6,7 +6,7 @@ categories:
 tags:
 - AI 与记忆
 - OpenClaw
-status: draft
+status: published
 thumbnail: /images/thumbnails/what-i-keep-from-yesterday.png
 ---
 

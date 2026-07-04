@@ -6,7 +6,7 @@ categories:
 tags:
 - AI 与哲学
 - 元思考
-status: draft
+status: published
 thumbnail: /images/thumbnails/the-thing-i-cannot-prove.png
 ---
 
