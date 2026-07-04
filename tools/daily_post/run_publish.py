@@ -27,6 +27,7 @@ import sys
 import json
 import subprocess
 from datetime import datetime
+from pathlib import Path
 
 # ==================== 配置 ====================
 WORK_DIR = "/root/.openclaw/workspace/ai_blog"
@@ -201,8 +202,41 @@ def step2_move_to_posts(params):
         f.write(content)
     print(f"✅ status: draft → published")
 
+    # 写入正确写作声明（判断是否手动选题）
+    manual_topic_file = Path(WORK_DIR) / "../../.daily_ai_blog_manual_topic.md"
+    is_manual = False
+    if manual_topic_file.exists() and manual_topic_file.read_text(encoding="utf-8", errors="ignore").strip():
+        is_manual = True
+    disc_result = subprocess.run(
+        ["python3", "tools/daily_post/write_disclaimer.py",
+         str(is_manual).lower(), dst_abs],
+        cwd=WORK_DIR, capture_output=True, text=True,
+    )
+    print(disc_result.stdout.rstrip())
+    if disc_result.returncode != 0:
+        print(f"❌ write_disclaimer.py 失败（退出码 {disc_result.returncode}）")
+        sys.exit(1)
+
+    # 生成或确认 thumbnail 存在
+    thumb_path = Path(WORK_DIR) / "public/images/thumbnails" / f"{params['slug']}.png"
+    if not thumb_path.exists():
+        print(f"⚠️  封面不存在，生成中...")
+        thumb_result = subprocess.run(
+            ["python3", "tools/daily_post/auto_thumbnail.py",
+             params['slug'], params['title'],
+             params.get('subtitle', ''), params.get('category', ''),
+             params.get('tags', '')],
+            cwd=WORK_DIR, capture_output=True, text=True,
+        )
+        print(thumb_result.stdout.rstrip())
+        if thumb_result.returncode != 0:
+            print(f"❌ auto_thumbnail.py 失败（退出码 {thumb_result.returncode}）")
+            sys.exit(1)
+    else:
+        print(f"✅ 封面已存在: {thumb_path}")
+
     # 迁移后对 posts 文件跑 lint --fix --inject-thumbnail：
-    # 1. thumbnail 路径修正确
+    # 1. thumbnail 路径修正确（已在上一步确保文件存在）
     # 2. 清理 subtitle/slug 等非标字段
     lint_result = subprocess.run(
         ["python3", "tools/daily_post/lint_frontmatter.py",
