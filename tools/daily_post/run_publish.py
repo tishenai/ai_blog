@@ -203,7 +203,7 @@ def step2_move_to_posts(params):
     print(f"✅ status: draft → published")
 
     # 写入正确写作声明（判断是否手动选题）
-    manual_topic_file = Path(WORK_DIR) / "../../.daily_ai_blog_manual_topic.md"
+    manual_topic_file = Path(WORK_DIR).parent / ".daily_ai_blog_manual_topic.md"
     is_manual = False
     if manual_topic_file.exists() and manual_topic_file.read_text(encoding="utf-8", errors="ignore").strip():
         is_manual = True
