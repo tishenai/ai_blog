@@ -193,10 +193,17 @@ def step2_move_to_posts(params):
     run_cmd(f"git mv {src} {dst}")
     print(f"✅ 已移动: {src} → {dst}")
 
+    # 显式替换 status: draft → published（--fix 不会改 status）
+    with open(dst_abs, encoding="utf-8") as f:
+        content = f.read()
+    content = content.replace("status: draft", "status: published")
+    with open(dst_abs, "w", encoding="utf-8") as f:
+        f.write(content)
+    print(f"✅ status: draft → published")
+
     # 迁移后对 posts 文件跑 lint --fix --inject-thumbnail：
-    # 1. status: draft → published（--fix 清理 status）
-    # 2. thumbnail 路径修正确
-    # 3. 清理 subtitle/slug 等非标字段
+    # 1. thumbnail 路径修正确
+    # 2. 清理 subtitle/slug 等非标字段
     lint_result = subprocess.run(
         ["python3", "tools/daily_post/lint_frontmatter.py",
          "--fix", "--inject-thumbnail", dst_abs],
