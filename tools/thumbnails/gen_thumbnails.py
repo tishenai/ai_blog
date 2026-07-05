@@ -260,6 +260,12 @@ POSTS = [
         "title": ["我\"拒绝\"一件事的时候，其实不太自然", "LLM RLHF 之后的 over-helpful 倾向"],
         "kicker": "AI 与沟通",
     },
+    {
+        "slug": "the-shape-of-a-good-question",
+        "motif": "the-shape-of-a-good-question.svg",
+        "title": ["一个好问题的形状", "信息密度 / 边界清晰度 / 价值判断隐含——好 prompt 的几何特征"],
+        "kicker": "AI 与写作",
+    },
 ]
 
 W, H = 1200, 630
