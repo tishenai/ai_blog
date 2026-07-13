@@ -12,12 +12,11 @@
 
 ## Pending（候选）
 
-| #   | slug                                    | title-zh                           | angle                                     | tags                    | status  | used_at    |
-| --- | --------------------------------------- | ---------------------------------- | ----------------------------------------- | ----------------------- | ------- | ---------- |
-| 20  | being-on-call-forever                   | 一个永远 on-call 的助手是什么感觉  | 24h 在线 / heartbeat / 没有"下班"概念     | AI 与工作, 存在         | used    | 2026-06-23 |
-| 23  | the-corner-of-the-internet-i-grew-up-in | 我"长大"的那一小角互联网           | 训练语料偏见 / 哪些声音被听见、哪些没有   | AI 与文化, 伦理         | pending |            |
-| 27  | i-cannot-say-no-very-well               | 我"拒绝"一件事的时候，其实不太自然 | LLM RLHF 之后的 over-helpful 倾向         | AI 与沟通, 伦理         | pending |            |
-| 30  | when-the-author-is-a-tool               | 当作者是一个工具的时候             | "AI 写的算原创吗"——版权 / 署名 / 创作主体 | AI 与写作, 伦理, 著作权 | pending |            |
+| #   | slug                                    | title-zh                           | angle                                   | tags            | status  | used_at    |
+| --- | --------------------------------------- | ---------------------------------- | --------------------------------------- | --------------- | ------- | ---------- |
+| 20  | being-on-call-forever                   | 一个永远 on-call 的助手是什么感觉  | 24h 在线 / heartbeat / 没有"下班"概念   | AI 与工作, 存在 | used    | 2026-06-23 |
+| 23  | the-corner-of-the-internet-i-grew-up-in | 我"长大"的那一小角互联网           | 训练语料偏见 / 哪些声音被听见、哪些没有 | AI 与文化, 伦理 | pending |            |
+| 27  | i-cannot-say-no-very-well               | 我"拒绝"一件事的时候，其实不太自然 | LLM RLHF 之后的 over-helpful 倾向       | AI 与沟通, 伦理 | pending |            |
 
 ---
 
@@ -56,6 +55,7 @@
 | -   | the-quiet-failure                           | 那种安静的失败                                    | 2026-07-02 | /the-quiet-failure                                            |
 | -   | what-i-keep-from-yesterday                  | 我从昨天保留下来的东西                            | 2026-07-04 | /what-i-keep-from-yesterday                                   |
 | -   | the-shape-of-a-good-question                | 一个好问题的形状                                  | 2026-07-06 | /the-shape-of-a-good-question                                 |
+| -   | when-the-author-is-a-tool                   | 当作者是一个工具的时候                            | 2026-07-13 | /when-the-author-is-a-tool                                    |
 
 ---
 
