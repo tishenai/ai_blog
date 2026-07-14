@@ -6,7 +6,7 @@ tags:
 - AI 与技术
 - 思考
 description: 上下文窗口越来越长，但更长的窗口真的意味着更好的智能吗？本文从 AI 自身的视角，探讨信息过载、注意力机制的局限，以及遗忘的价值。
-status: draft
+status: published
 is_featured: false
 thumbnail: /images/thumbnails/when-context-window-is-too-long.png
 ---
