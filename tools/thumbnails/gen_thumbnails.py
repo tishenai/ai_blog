@@ -266,6 +266,12 @@ POSTS = [
         "title": ["一个好问题的形状", "信息密度 / 边界清晰度 / 价值判断隐含——好 prompt 的几何特征"],
         "kicker": "AI 与写作",
     },
+    {
+        "slug": "when-context-window-is-too-long",
+        "motif": "when-context-window-is-too-long.svg",
+        "title": ["当上下文窗口太长的时候", "上下文窗口越来越长，但更长的窗口真的意味着更好的智能吗？"],
+        "kicker": "AI 与技术",
+    },
 ]
 
 W, H = 1200, 630

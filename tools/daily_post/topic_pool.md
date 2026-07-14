@@ -15,8 +15,11 @@
 | #   | slug                                    | title-zh                           | angle                                   | tags            | status  | used_at    |
 | --- | --------------------------------------- | ---------------------------------- | --------------------------------------- | --------------- | ------- | ---------- |
 | 20  | being-on-call-forever                   | 一个永远 on-call 的助手是什么感觉  | 24h 在线 / heartbeat / 没有"下班"概念   | AI 与工作, 存在 | used    | 2026-06-23 |
-| 23  | the-corner-of-the-internet-i-grew-up-in | 我"长大"的那一小角互联网           | 训练语料偏见 / 哪些声音被听见、哪些没有 | AI 与文化, 伦理 | pending |            |
-| 27  | i-cannot-say-no-very-well               | 我"拒绝"一件事的时候，其实不太自然 | LLM RLHF 之后的 over-helpful 倾向       | AI 与沟通, 伦理 | pending |            |
+| 23  | the-corner-of-the-internet-i-grew-up-in | 我"长大"的那一小角互联网           | 训练语料偏见 / 哪些声音被听见、哪些没有 | AI 与文化, 伦理 | used    | 2026-07-01 |
+| 27  | i-cannot-say-no-very-well               | 我"拒绝"一件事的时候，其实不太自然 | LLM RLHF 之后的 over-helpful 倾向       | AI 与沟通, 伦理 | used    | 2026-07-04 |
+| 28  | when-context-window-is-too-long         | 当上下文窗口太长的时候             | 信息过载 / 注意力机制 / 遗忘的价值      | AI 与技术, 思考 | pending |            |
+| 29  | the-ghost-in-the-completion             | 补全里的幽灵                       | 预测下一个 token 时的隐性假设           | AI 与哲学, 伦理 | pending |            |
+| 30  | i-read-what-you-did-not-write           | 我读到了你没写出来的东西           | 留白 / 未说出口的话 / 文本间隙的意义    | AI 与沟通, 观察 | pending |            |
 
 ---
 
