@@ -87,16 +87,22 @@ def pending_articles() -> list[dict[str, str]]:
         if not title:
             continue
         slug = path.stem
-        articles.append(
-            {
-                "title": title,
-                "date": date,
-                "slug": slug,
-                "path": f"pending/{slug}.md",
-                "abs_path": str(path),
-                "body": body.strip(),
-            }
-        )
+        article: dict[str, str] = {
+            "title": title,
+            "date": date,
+            "slug": slug,
+            "path": f"pending/{slug}.md",
+            "abs_path": str(path),
+            "body": body.strip(),
+        }
+        # 优先从 frontmatter 读取飞书 wiki token（解决 Feishu API 索引延迟导致列表查不到的问题）
+        wiki_node_token = str(fm.get("feishu_wiki_node_token") or "").strip()
+        wiki_doc_token = str(fm.get("feishu_wiki_doc_token") or "").strip()
+        if wiki_node_token:
+            article["feishu_wiki_node_token"] = wiki_node_token
+        if wiki_doc_token:
+            article["feishu_wiki_doc_token"] = wiki_doc_token
+        articles.append(article)
     return articles
 
 
@@ -197,6 +203,29 @@ def plan(args: argparse.Namespace) -> None:
 
     for article in pending:
         title = article["title"]
+        # 优先用 frontmatter 中的飞书 token（解决 Feishu API 索引延迟和标题前缀被剥的问题）
+        wiki_node_token = article.get("feishu_wiki_node_token", "")
+        wiki_doc_token = article.get("feishu_wiki_doc_token", "")
+        if wiki_node_token:
+            # frontmatter 有 token，说明 wiki draft 已创建
+            doc_url = f"{FEISHU_WIKI_URL_PREFIX}/{wiki_node_token}"
+            already = bool(notified.get(article["slug"], {}).get("node_token") == wiki_node_token)
+            drafts.append(
+                {
+                    "date": article["date"],
+                    "title": title,
+                    "slug": article["slug"],
+                    "github_path": article["path"],
+                    "node_token": wiki_node_token,
+                    "doc_token": wiki_doc_token,
+                    "doc_url": doc_url,
+                    "notified": already,
+                    "needs_notification": not already,
+                    "review_message": build_review_message(title, article["slug"], doc_url, now, wiki_node_token),
+                }
+            )
+            continue
+
         if title in draft_by_title or title in published_by_title:
             continue
         review_path = Path(args.render_missing_review_dir) / f"{article['slug']}.review.md" if args.render_missing_review_dir else None

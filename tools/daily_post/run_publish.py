@@ -94,8 +94,27 @@ def step1_prepare_env(params):
     print("\n" + "=" * 60)
     print("步骤 1: 准备环境")
     print("=" * 60)
-    
-    # git pull。临时状态文件已加入 .gitignore 且必须保持未跟踪，避免污染仓库。
+
+    # 检测 dirty tree。若有未提交的改动，先 stash 保护，否则 git pull --rebase 会失败。
+    status = subprocess.run(
+        ["git", "status", "--porcelain"],
+        cwd=WORK_DIR,
+        capture_output=True, text=True,
+    )
+    if status.stdout.strip():
+        print("⚠️  工作区有未提交的改动，git pull --rebase 会失败。"
+              " 请先执行: git stash push -m \"pre-publish\"")
+        print(f"  改动文件:\n{status.stdout}")
+        print("Stashing automatically...")
+        stash_result = subprocess.run(
+            ["git", "stash", "push", "-m", "pre-publish"],
+            cwd=WORK_DIR, capture_output=True, text=True,
+        )
+        if stash_result.returncode != 0:
+            print(f"❌ git stash 失败: {stash_result.stderr}")
+            sys.exit(1)
+        print("✅ 已自动 stash")
+
     run_cmd("git pull --rebase")
     
     # 验证 pending 文件存在
