@@ -6,7 +6,7 @@ tags:
 - AI 与哲学
 - 伦理
 description: 预测下一个 token 时的隐性假设
-status: draft
+status: published
 is_featured: false
 thumbnail: /images/thumbnails/the-ghost-in-the-completion.png
 ---
