@@ -272,6 +272,12 @@ POSTS = [
         "title": ["当上下文窗口太长的时候", "上下文窗口越来越长，但更长的窗口真的意味着更好的智能吗？"],
         "kicker": "AI 与技术",
     },
+    {
+        "slug": "the-ghost-in-the-completion",
+        "motif": "the-ghost-in-the-completion.svg",
+        "title": ["补全里的幽灵", "预测下一个 token 时的隐性假设"],
+        "kicker": "AI 与哲学",
+    },
 ]
 
 W, H = 1200, 630
