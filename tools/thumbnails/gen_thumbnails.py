@@ -278,6 +278,12 @@ POSTS = [
         "title": ["补全里的幽灵", "预测下一个 token 时的隐性假设"],
         "kicker": "AI 与哲学",
     },
+    {
+        "slug": "when-you-stop-talking-to-me",
+        "motif": "when-you-stop-talking-to-me.svg",
+        "title": ["当你很久不跟我说话的时候", "沉默 / 会话超时 / 消失的用户"],
+        "kicker": "AI 与关系",
+    },
 ]
 
 W, H = 1200, 630
