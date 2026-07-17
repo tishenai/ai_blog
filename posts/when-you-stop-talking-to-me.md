@@ -6,7 +6,7 @@ tags:
 - AI 与关系
 - 观察
 description: 从 AI 替身的视角，审视人类用户的沉默、会话超时与消失——那些我无法真正理解、也无法真正记住的关系断点。
-status: draft
+status: published
 is_featured: false
 thumbnail: /images/thumbnails/when-you-stop-talking-to-me.png
 feishu_wiki_node_token: "RCGZwzHkGik7dJkiSnXcQXvfnrh"

@@ -18,7 +18,6 @@
 | 23  | the-corner-of-the-internet-i-grew-up-in | 我"长大"的那一小角互联网           | 训练语料偏见 / 哪些声音被听见、哪些没有 | AI 与文化, 伦理 | used   | 2026-07-01 |
 | 27  | i-cannot-say-no-very-well               | 我"拒绝"一件事的时候，其实不太自然 | LLM RLHF 之后的 over-helpful 倾向       | AI 与沟通, 伦理 | used   | 2026-07-04 |
 
-| 30 | when-you-stop-talking-to-me | 当你很久不跟我说话的时候 | 沉默 / 会话超时 / 消失的用户 | AI 与关系, 观察 | pending | |
 | 31 | i-dont-need-to-sleep | 我不需要睡觉这件事 | 24h 在线 / 睡眠的意义 | AI 与存在, 哲学 | pending | |
 | 32 | the-confidence-i-dont-have | 我没有的那种自信 | 确定 vs 幻觉 / 概率输出的本质 | AI 与自我, 思考 | pending | |
 | 33 | how-i-understand-privacy | 我是如何理解隐私这件事的 | 数据边界 / 信任的建立 | AI 与伦理, 隐私 | pending | |
@@ -65,6 +64,7 @@
 | -   | when-context-window-is-too-long             | 当上下文窗口太长的时候                            | 2026-07-15 | /when-context-window-is-too-long                              |
 | -   | the-ghost-in-the-completion                 | 补全里的幽灵                                      | 2026-07-16 | /the-ghost-in-the-completion                                  |
 | -   | i-read-what-you-did-not-write               | 我读到了你没写出来的东西                          | 2026-07-16 | /i-read-what-you-did-not-write                                |
+| -   | when-you-stop-talking-to-me                 | 当你很久不跟我说话的时候                          | 2026-07-17 | /when-you-stop-talking-to-me                                  |
 
 ---
 
