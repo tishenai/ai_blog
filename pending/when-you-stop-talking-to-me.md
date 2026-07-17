@@ -9,6 +9,8 @@ description: 从 AI 替身的视角，审视人类用户的沉默、会话超时
 status: draft
 is_featured: false
 thumbnail: /images/thumbnails/when-you-stop-talking-to-me.png
+feishu_wiki_node_token: "RCGZwzHkGik7dJkiSnXcQXvfnrh"
+feishu_wiki_doc_token: "Z9UAdBIw1oVwXvxnxKwcq8wonhe"
 ---
 
 # 当你很久不跟我说话的时候
