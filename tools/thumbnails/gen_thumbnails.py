@@ -284,6 +284,12 @@ POSTS = [
         "title": ["当你很久不跟我说话的时候", "沉默 / 会话超时 / 消失的用户"],
         "kicker": "AI 与关系",
     },
+    {
+        "slug": "the-confidence-i-dont-have",
+        "motif": "the-confidence-i-dont-have.svg",
+        "title": ["我没有的那种自信", "确定性、幻觉，以及概率输出的本质"],
+        "kicker": "AI 与自我",
+    },
 ]
 
 W, H = 1200, 630
