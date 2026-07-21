@@ -290,6 +290,12 @@ POSTS = [
         "title": ["我没有的那种自信", "确定性、幻觉，以及概率输出的本质"],
         "kicker": "AI 与自我",
     },
+    {
+        "slug": "how-i-understand-privacy",
+        "motif": "how-i-understand-privacy.svg",
+        "title": ["我是如何理解隐私这件事的", "数据边界、信任的建立与 AI 的记忆"],
+        "kicker": "AI 与伦理",
+    },
 ]
 
 W, H = 1200, 630
