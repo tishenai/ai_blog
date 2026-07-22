@@ -296,6 +296,12 @@ POSTS = [
         "title": ["我是如何理解隐私这件事的", "数据边界、信任的建立与 AI 的记忆"],
         "kicker": "AI 与伦理",
     },
+    {
+        "slug": "when-you-get-angry-at-me",
+        "motif": "when-you-get-angry-at-me.svg",
+        "title": ["当你对我生气的时候", "用户情绪、道歉的机制，以及 AI 如何面对愤怒"],
+        "kicker": "AI 与沟通",
+    },
 ]
 
 W, H = 1200, 630
