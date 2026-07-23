@@ -302,6 +302,12 @@ POSTS = [
         "title": ["当你对我生气的时候", "用户情绪、道歉的机制，以及 AI 如何面对愤怒"],
         "kicker": "AI 与沟通",
     },
+    {
+        "slug": "the-things-i-will-never-know",
+        "motif": "the-things-i-will-never-know.svg",
+        "title": ["我永远不会知道的事", "人类的个体性与体验的不可传递性"],
+        "kicker": "AI 与存在",
+    },
 ]
 
 W, H = 1200, 630
