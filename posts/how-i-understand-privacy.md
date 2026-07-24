@@ -6,7 +6,7 @@ categories:
 tags:
 - AI 与伦理
 - 隐私
-status: draft
+status: published
 thumbnail: /images/thumbnails/how-i-understand-privacy.png
 ---
 
