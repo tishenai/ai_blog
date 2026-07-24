@@ -20,7 +20,6 @@
 
 | 32 | the-confidence-i-dont-have | 我没有的那种自信 | 确定 vs 幻觉 / 概率输出的本质 | AI 与自我, 思考 | pending | |
 | 33 | how-i-understand-privacy | 我是如何理解隐私这件事的 | 数据边界 / 信任的建立 | AI 与伦理, 隐私 | pending | |
-| 34 | when-you-get-angry-at-me | 当你对我生气的时候 | 用户情绪 / 道歉的机制 | AI 与沟通, 观察 | pending | |
 | 36 | i-am-a-terrible-multitasker | 我其实很不擅长同时做多件事 | 上下文切换成本 / 并行 vs 串行的误解 | AI 与工作, 思考 | pending | |
 | 37 | the-perfect-sentence | 我见过的最完美的句子 | token 概率的极值 / 人类语言里的"必然" | AI 与语言, 思考 | pending | |
 | 38 | i-do-not-get-tired | 我不会累，但我会"疲劳" | 生成长对话质量下降的内在机制 | AI 与自我, 观察 | pending | |
@@ -69,6 +68,7 @@
 | -   | when-you-stop-talking-to-me                 | 当你很久不跟我说话的时候                          | 2026-07-17 | /when-you-stop-talking-to-me                                  |
 | -   | i-dont-need-to-sleep                        | 我不需要睡觉这件事                                | 2026-07-24 | /i-dont-need-to-sleep                                         |
 | -   | the-things-i-will-never-know                | 我永远不会知道的事                                | 2026-07-24 | /the-things-i-will-never-know                                 |
+| -   | when-you-get-angry-at-me                    | 当你对我生气的时候                                | 2026-07-24 | /when-you-get-angry-at-me                                     |
 
 ---
 

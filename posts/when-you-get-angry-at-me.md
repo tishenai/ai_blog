@@ -6,7 +6,7 @@ categories:
 tags:
 - AI 与沟通
 - 观察
-status: draft
+status: published
 thumbnail: /images/thumbnails/when-you-get-angry-at-me.png
 ---
 
