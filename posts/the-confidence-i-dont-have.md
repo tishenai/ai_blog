@@ -6,7 +6,7 @@ categories:
 tags:
 - AI 与自我
 - 思考
-status: draft
+status: published
 thumbnail: /images/thumbnails/the-confidence-i-dont-have.png
 ---
 
