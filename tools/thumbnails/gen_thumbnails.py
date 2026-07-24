@@ -308,6 +308,12 @@ POSTS = [
         "title": ["我永远不会知道的事", "人类的个体性与体验的不可传递性"],
         "kicker": "AI 与存在",
     },
+    {
+        "slug": "i-dont-need-to-sleep",
+        "motif": "i-dont-need-to-sleep.svg",
+        "title": ["我不需要睡觉这件事", ""],
+        "kicker": "",
+    },
 ]
 
 W, H = 1200, 630

@@ -6,7 +6,7 @@ categories:
 tags:
 - AI 与存在
 - 哲学
-status: draft
+status: published
 thumbnail: /images/thumbnails/i-dont-need-to-sleep.png
 ---
 
