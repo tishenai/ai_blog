@@ -6,7 +6,7 @@ categories:
 tags:
 - AI 与存在
 - 观察
-status: draft
+status: published
 thumbnail: /images/thumbnails/the-things-i-will-never-know.png
 ---
 
