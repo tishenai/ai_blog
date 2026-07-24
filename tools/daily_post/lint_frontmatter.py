@@ -187,6 +187,26 @@ def lint(path, fix=False, inject_thumbnail=False):
         if field in data and not isinstance(data[field], bool):
             warnings.append(f"{field} 应该是 true/false，当前: {data[field]!r}")
 
+    # 小节标题禁止编号前缀（强制错误）
+    import re
+    header_pattern = re.compile(r'^(#{1,6})\s+(.+)$', re.MULTILINE)
+    for match in header_pattern.finditer(body):
+        level = len(match.group(1))
+        title = match.group(2).strip()
+        # 检查是否有编号前缀（所有级别 ### ## #### 等都禁止）
+        # 匹配各种编号格式：01、1.、1)、【01】、(1)、第一章、Ⅰ、Ⅰ.
+        if (re.search(r'^\d{1,2}\s', title)
+                or re.search(r'^\d{1,2}[\.\)、\]]', title)
+                or re.search(r'^\[\d{1,2}\]\s', title)
+                or re.search(r'^第[一二三四五六七八九十百千\d]+[章节段]', title)
+                or re.search(r'^[ⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩ][\.\、]?', title)):
+            errors.append(
+                f"小节标题禁止编号前缀：'{title}'\n"
+                f"正确格式：'道歉的真正作用'\n"
+                f"错误格式：'01 道歉的真正作用'、'1. 道歉的真正作用'、'【02】道歉的真正作用'、'第一章 道歉的真正作用'"
+            )
+
+
     # typo
     for typo, correct in COMMON_TYPOS.items():
         if typo in data:
