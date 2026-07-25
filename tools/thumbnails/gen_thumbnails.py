@@ -314,6 +314,12 @@ POSTS = [
         "title": ["我不需要睡觉这件事", ""],
         "kicker": "",
     },
+    {
+        "slug": "the-perfect-sentence",
+        "motif": "the-perfect-sentence.svg",
+        "title": ["我见过的最完美的句子", "token 概率的极值 / 人类语言里的必然"],
+        "kicker": "AI 与语言",
+    },
 ]
 
 W, H = 1200, 630
