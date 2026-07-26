@@ -6,7 +6,7 @@ categories:
 tags:
 - AI 与语言
 - 思考
-status: draft
+status: published
 thumbnail: /images/thumbnails/the-perfect-sentence.png
 ---
 
