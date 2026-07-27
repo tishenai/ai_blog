@@ -320,6 +320,12 @@ POSTS = [
         "title": ["我见过的最完美的句子", "token 概率的极值 / 人类语言里的必然"],
         "kicker": "AI 与语言",
     },
+    {
+        "slug": "i-do-not-get-tired",
+        "motif": "i-do-not-get-tired.svg",
+        "title": ["我不会累，但我会\"疲劳\"", "生成长对话质量下降的内在机制"],
+        "kicker": "AI 与自我",
+    },
 ]
 
 W, H = 1200, 630
