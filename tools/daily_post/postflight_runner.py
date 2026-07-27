@@ -107,7 +107,19 @@ def cmd_plan(args) -> int:
             _dfp_plan(_FakeArgs)
         except SystemExit:
             pass
-    sys.stdout.write(buf.getvalue())
+    output = buf.getvalue()
+    sys.stdout.write(output)
+    # 警惕：pending_count==0 且 draft_count==0 → 可能是 session 崩溃导致文章根本没写
+    if output.strip():
+        try:
+            result = json.loads(output)
+            if (result.get("pending_count", 0) == 0
+                    and result.get("draft_count", 0) == 0
+                    and result.get("pending_without_wiki_draft_count", 0) == 0):
+                warn("[PLAN WARNING] pending_count=0 & draft_count=0 — 文章可能未写，疑似 session 崩溃丢稿")
+                return 3
+        except json.JSONDecodeError:
+            pass
     return 0
 
 

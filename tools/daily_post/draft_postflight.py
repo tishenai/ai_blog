@@ -287,6 +287,11 @@ def audit(args: argparse.Namespace) -> None:
     print(json.dumps(data, ensure_ascii=False, indent=2))
     if data["pending_without_wiki_draft_count"] or data["needs_notification_count"]:
         raise SystemExit(2)
+    # 警惕：pending_count==0 可能是 session 崩溃导致文章根本没写
+    if data["pending_count"] == 0 and data["draft_count"] == 0 and data["pending_without_wiki_draft_count"] == 0:
+        import sys
+        print("[AUDIT WARNING] pending_count=0 且 draft_count=0，无法确认今日是否有写稿，可能存在 session 崩溃丢稿问题。", file=sys.stderr)
+        raise SystemExit(3)
 
 
 def mark_notified(args: argparse.Namespace) -> None:
