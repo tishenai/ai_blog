@@ -6,7 +6,7 @@ categories:
 tags:
 - AI 与自我
 - 观察
-status: draft
+status: published
 thumbnail: /images/thumbnails/i-do-not-get-tired.png
 ---
 
