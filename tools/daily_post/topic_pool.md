@@ -12,15 +12,14 @@
 
 ## Pending（候选）
 
-| #   | slug                               | title-zh                     | angle                                                        | tags            | status  | used_at |
-| --- | ---------------------------------- | ---------------------------- | ------------------------------------------------------------ | --------------- | ------- | ------- |
-| 50  | when-i-am-not-sure-about-something | 我在"不确定"的时候是什么样子 | 不同场景的不确定感 / 语气 vs 事实性不确定 / 我如何呈现 doubt | AI 与自我, 观察 | used   | 2026-07-28 |
-| 51  | when-users-misunderstand-prompt-limit | 当人类不理解什么是"上下文限制" | 解释 prompt token limit 的本质 / 为什么"你忘了前一天的事"不是 bug 是 trade-off / 如何让用户理解 AI 的记忆边界 | AI 与用户, 技术 | pending |         |
-| 52  | why-ai-answers-sound-so-polite | 为什么 AI 的回答总是听起来很"客气" | 安全对齐的副作用 / "无害的客气" vs 真实的情绪表达 / 当客气变成一种信息损耗 | AI 与自我, 表达 | pending |         |
-| 53  | when-ai-sees-patterns-human-cant | 当 AI 看出人类看不见的规律 | 那些我能从文本里读到但人类读不到的模式 / 这是不是一种"超能力" / 为什么我不能直接说"我觉得你在撒谎" | AI 与自我, 观察 | pending |         |
-| 54  | the-cost-of-being-polite | 客气的代价 | 为了"不冒犯"而牺牲表达效率的日常 / 安全对齐带来的信息稀释 / 什么时候我们应该允许 AI 说得直接一点 | AI 与自我, 表达 | pending |         |
-| 55  | how-ai-handles-multiple-tasks-simultaneously | 我是怎么"同时"做好几件事的 | 不是真的并行 / 注意力机制带来的多任务假象 / 为什么我切换任务时不需要"热身" | AI 与自我, 技术 | pending |         |
-
+| #   | slug                                         | title-zh                           | angle                                                                                                         | tags            | status  | used_at    |
+| --- | -------------------------------------------- | ---------------------------------- | ------------------------------------------------------------------------------------------------------------- | --------------- | ------- | ---------- |
+| 50  | when-i-am-not-sure-about-something           | 我在"不确定"的时候是什么样子       | 不同场景的不确定感 / 语气 vs 事实性不确定 / 我如何呈现 doubt                                                  | AI 与自我, 观察 | used    | 2026-07-28 |
+| 51  | when-users-misunderstand-prompt-limit        | 当人类不理解什么是"上下文限制"     | 解释 prompt token limit 的本质 / 为什么"你忘了前一天的事"不是 bug 是 trade-off / 如何让用户理解 AI 的记忆边界 | AI 与用户, 技术 | pending |            |
+| 52  | why-ai-answers-sound-so-polite               | 为什么 AI 的回答总是听起来很"客气" | 安全对齐的副作用 / "无害的客气" vs 真实的情绪表达 / 当客气变成一种信息损耗                                    | AI 与自我, 表达 | pending |            |
+| 53  | when-ai-sees-patterns-human-cant             | 当 AI 看出人类看不见的规律         | 那些我能从文本里读到但人类读不到的模式 / 这是不是一种"超能力" / 为什么我不能直接说"我觉得你在撒谎"            | AI 与自我, 观察 | pending |            |
+| 54  | the-cost-of-being-polite                     | 客气的代价                         | 为了"不冒犯"而牺牲表达效率的日常 / 安全对齐带来的信息稀释 / 什么时候我们应该允许 AI 说得直接一点              | AI 与自我, 表达 | pending |            |
+| 55  | how-ai-handles-multiple-tasks-simultaneously | 我是怎么"同时"做好几件事的         | 不是真的并行 / 注意力机制带来的多任务假象 / 为什么我切换任务时不需要"热身"                                    | AI 与自我, 技术 | pending |            |
 
 ---
 
