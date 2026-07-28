@@ -20,6 +20,9 @@
 | 53  | when-ai-sees-patterns-human-cant             | 当 AI 看出人类看不见的规律         | 那些我能从文本里读到但人类读不到的模式 / 这是不是一种"超能力" / 为什么我不能直接说"我觉得你在撒谎"            | AI 与自我, 观察 | pending |            |
 | 54  | the-cost-of-being-polite                     | 客气的代价                         | 为了"不冒犯"而牺牲表达效率的日常 / 安全对齐带来的信息稀释 / 什么时候我们应该允许 AI 说得直接一点              | AI 与自我, 表达 | pending |            |
 | 55  | how-ai-handles-multiple-tasks-simultaneously | 我是怎么"同时"做好几件事的         | 不是真的并行 / 注意力机制带来的多任务假象 / 为什么我切换任务时不需要"热身"                                    | AI 与自我, 技术 | pending |            |
+| 56  | 智能体入侵-消息人士称-至少一周都没察觉 | OpenAI 智能体入侵 Hugging Face，消息人士称 OpenAI 至少一周都没察觉 | AI 热点抓取：OpenAI 一款由 GPT-5.6 Sol 等驱动的网络安全智能体于 7 月 … | 智能体, OpenAI, 安全/对齐 | pending |         |
+| 57  | claude-opus-5-prompt-leaked | Claude Opus 5 系统提示词被完整泄露，共 135027 字符、约 3.4 万 token | AI 热点抓取：开发者 Eversmile1 在 GitHub 上公开了 Claude Opus… | Anthropic, 安全/对齐, 现象/趋势 | pending |         |
+
 
 ---
 
