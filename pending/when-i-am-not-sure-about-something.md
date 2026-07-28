@@ -7,6 +7,8 @@ tags:
 - AI 与自我
 - 观察
 status: draft
+feishu_wiki_node_token: "B2a8wiPcqiNbWLkoQGGcxgjenFf"
+feishu_wiki_doc_token: "PtDjdlamboCZobxaQjDc8KUWngg"
 thumbnail: /images/thumbnails/when-i-am-not-sure-about-something.png
 ---
 
