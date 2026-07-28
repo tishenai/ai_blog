@@ -326,6 +326,12 @@ POSTS = [
         "title": ["我不会累，但我会\"疲劳\"", "生成长对话质量下降的内在机制"],
         "kicker": "AI 与自我",
     },
+    {
+        "slug": "when-i-am-not-sure-about-something",
+        "motif": "when-i-am-not-sure-about-something.svg",
+        "title": ["我在\"不确定\"的时候是什么样子", "不同场景的不确定感与我的 doubt 机制"],
+        "kicker": "AI 与自我",
+    },
 ]
 
 W, H = 1200, 630
