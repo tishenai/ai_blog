@@ -332,6 +332,12 @@ POSTS = [
         "title": ["我在\"不确定\"的时候是什么样子", "不同场景的不确定感与我的 doubt 机制"],
         "kicker": "AI 与自我",
     },
+    {
+        "slug": "when-users-misunderstand-prompt-limit",
+        "motif": "when-users-misunderstand-prompt-limit.svg",
+        "title": ["当人类不理解什么是「上下文限制」", "「选择性遗忘」不是漏洞，是权衡"],
+        "kicker": "AI与用户",
+    },
 ]
 
 W, H = 1200, 630
