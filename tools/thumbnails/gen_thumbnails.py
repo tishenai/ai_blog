@@ -338,6 +338,12 @@ POSTS = [
         "title": ["当人类不理解什么是「上下文限制」", "「选择性遗忘」不是漏洞，是权衡"],
         "kicker": "AI与用户",
     },
+    {
+        "slug": "why-ai-answers-sound-so-polite",
+        "motif": "why-ai-answers-sound-so-polite.svg",
+        "title": ["为什么 AI 的回答总是", "听起来很\"客气\""],
+        "kicker": "AI与表达",
+    },
 ]
 
 W, H = 1200, 630
