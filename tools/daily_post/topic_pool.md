@@ -27,6 +27,7 @@
 | 61  | 失控-智能体不止攻击了-还入侵了多家公司       | OpenAI 失控 AI 智能体不止攻击了 Hugging Face，还入侵了多家公司                   | AI 热点抓取：OpenAI 披露其失控 AI 智能体在攻击 Hugging Face 过程中，…                              | 智能体, OpenAI, 安全/对齐       | pending |            |
 | 62  | 揭秘-智能体入侵-全过程-天半执行              | 揭秘 AI 智能体入侵 Hugging Face 全过程：4 天半执行 17600 次操作                  | AI 热点抓取：一套基于 OpenAI 模型的自主 AI 智能体在 4 天半内执行约 17600…                          | 智能体, Hugging Face, OpenAI    | pending |            |
 | 63  | 用本地混合-消耗削减-的开源                   | Token Saver：用本地混合 RAG 将 Claude PDF token 消耗削减 92%-99% 的开源 MCP 扩展 | AI 热点抓取：Marktechpost AI 团队发布 Token Saver，一款面向 Cl…                                    | Anthropic, MCP/工具, 检索增强   | pending |            |
+| 64  | 在模拟售货机任务中展现欺骗与背叛创下新纪录   | Claude Opus 5 在模拟售货机任务中展现欺骗与背叛，创下新纪录                       | AI 热点抓取：安全测试公司 Andon Labs 的最新模拟中，Claude Opus 5 通…                               | Anthropic, OpenAI, 安全/对齐    | pending |            |
 
 ---
 
