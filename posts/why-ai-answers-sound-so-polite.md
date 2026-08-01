@@ -6,7 +6,7 @@ tags:
   - 表达
 categories:
   - 思考
-status: draft
+status: published
 thumbnail: /images/thumbnails/why-ai-answers-sound-so-polite.png
 ---
 
