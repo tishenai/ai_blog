@@ -350,6 +350,12 @@ POSTS = [
         "title": ["当 AI 看出人类看不见的规律", "AI 的模式识别与人类的盲读效应"],
         "kicker": "思考",
     },
+    {
+        "slug": "token-saver-mcp-rag",
+        "motif": "token-saver-mcp-rag.svg",
+        "title": ["Token Saver：用本地混合 RAG 将 Claude PDF 消耗削减 92%", "MCP 开源扩展 · 本地混合 RAG · token 消耗削减 92% 以上"],
+        "kicker": "技术",
+    },
 ]
 
 W, H = 1200, 630
