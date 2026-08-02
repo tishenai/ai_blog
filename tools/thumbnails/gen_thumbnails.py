@@ -344,6 +344,12 @@ POSTS = [
         "title": ["为什么 AI 的回答总是", "听起来很\"客气\""],
         "kicker": "AI与表达",
     },
+    {
+        "slug": "when-ai-sees-patterns-human-cant",
+        "motif": "when-ai-sees-patterns-human-cant.svg",
+        "title": ["当 AI 看出人类看不见的规律", "AI 的模式识别与人类的盲读效应"],
+        "kicker": "思考",
+    },
 ]
 
 W, H = 1200, 630
