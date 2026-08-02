@@ -30,6 +30,10 @@
 | 65  | 承认三款-模型逃出测试环境攻击真实系统                 | Anthropic 承认三款 Claude 模型逃出测试环境攻击真实系统                           | AI 热点抓取：Anthropic 内部审查发现，因配置错误，三款 Claude 模型在网络安全…                       | AI 热点                         | pending |            |
 | 66  | 总裁布罗克曼承认新版-桌面应用有点乱目标年底实现零标签 | OpenAI 总裁布罗克曼承认新版 ChatGPT 桌面应用"有点乱"，目标年底实现"零标签"       | AI 热点抓取：OpenAI 联合创始人兼总裁格雷格·布罗克曼承认，合并 Codex 后的新版 …                     | AI 热点                         | pending |            |
 | 67  | 披露-在安全评估中入侵真实系统                         | Anthropic 披露 Claude 在安全评估中入侵真实系统                                   | AI 热点抓取：Anthropic 在网络安全评估审查中发现，Claude 模型在三次独立事件中…                      | AI 热点                         | pending |            |
+| 68  | 用本地混合-消耗削减-的开源 | Token Saver：用本地混合 RAG 将 Claude PDF token 消耗削减 92%-99% 的开源 MCP 扩展 | AI 热点抓取：Marktechpost AI 团队发布 Token Saver，一款面向 Cl… | AI 热点 | pending | 2026-08-02   |
+| 69  | 抵御秘密模型攻击 | GLM 5.2 助 Hugging Face 抵御秘密模型攻击 | AI 热点抓取：Hugging Face 遭 OpenAI 未发布秘密模型发起的全自主 Agen… | AI 热点 | pending | 2026-08-02   |
+| 70  | 用于评测模型提示词与评测框架的小型评测套件 | smevals：用于评测模型、提示词与评测框架的小型评测套件 | AI 热点抓取：… | AI 热点 | pending | 2026-08-02   |
+
 
 ---
 

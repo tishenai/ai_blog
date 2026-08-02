@@ -311,6 +311,19 @@ def mark_notified(args: argparse.Namespace) -> None:
     save_json(state_path, state)
     print(f"marked notified: {args.slug}")
 
+    # 同时写入 .publish_params.json，这样 /publish 命令可以直接调 run_publish.py
+    publish_params = {
+        "slug": args.slug,
+        "title": args.title,
+        "feishu_doc_id": args.node_token,
+        "node_token": args.node_token,
+        "doc_url": args.doc_url,
+    }
+    params_path = Path("/root/.openclaw/workspace/ai_blog/.publish_params.json")
+    with open(params_path, "w", encoding="utf-8") as f:
+        json.dump(publish_params, f, ensure_ascii=False, indent=2)
+    print(f"wrote .publish_params.json for /publish {args.slug}")
+
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Plan/mark draft review postflight notifications")
