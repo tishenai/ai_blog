@@ -356,6 +356,12 @@ POSTS = [
         "title": ["Token Saver：用本地混合 RAG 将 Claude PDF 消耗削减 92%", "MCP 开源扩展 · 本地混合 RAG · token 消耗削减 92% 以上"],
         "kicker": "技术",
     },
+    {
+        "slug": "openai-astra-math-overhyped",
+        "motif": "openai-astra-math-overhyped.svg",
+        "title": ["OpenAI 新模型 Astra 数学表现出色，但被过度吹捧", "benchmark 分数与真实能力的鸿沟"],
+        "kicker": "技术",
+    },
 ]
 
 W, H = 1200, 630
