@@ -7,7 +7,7 @@ tags:
 - 论文/研究
 categories:
 - 安全
-status: draft
+status: published
 thumbnail: /images/thumbnails/glm-52-huggingface-shadow-model-defense.png
 ---
 
