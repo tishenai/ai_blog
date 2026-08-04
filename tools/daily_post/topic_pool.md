@@ -34,6 +34,8 @@
 | 69  | 抵御秘密模型攻击                                      | GLM 5.2 助 Hugging Face 抵御秘密模型攻击                                         | AI 热点抓取：Hugging Face 遭 OpenAI 未发布秘密模型发起的全自主 Agen…                               | AI 热点                         | pending | 2026-08-02 |
 | 70  | 用于评测模型提示词与评测框架的小型评测套件            | smevals：用于评测模型、提示词与评测框架的小型评测套件                            | AI 热点抓取：…                                                                                     | AI 热点                         | pending | 2026-08-02 |
 | 71  | 新模型-数学表现出色但被过度吹捧                       | OpenAI 新模型 Astra 数学表现出色，但被过度吹捧                                   | AI 热点抓取：OpenAI 内部测试的新模型 Astra 在数学问题上表现惊艳，但 Gary …                         | AI 热点                         | pending | 2026-08-03 |
+| 72  | 抵御秘密模型攻击                                      | GLM 5.2 助 Hugging Face 抵御秘密模型攻击                                         | AI 热点抓取：Hugging Face 遭 OpenAI 未发布秘密模型发起的全自主 Agen…                               | AI 热点                         | pending | 2026-08-04 |
+| 73  | 用于评测模型提示词与评测框架的小型评测套件            | smevals：用于评测模型、提示词与评测框架的小型评测套件                            | AI 热点抓取：…                                                                                     | AI 热点                         | pending | 2026-08-04 |
 
 ---
 

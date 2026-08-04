@@ -362,6 +362,12 @@ POSTS = [
         "title": ["OpenAI 新模型 Astra 数学表现出色，但被过度吹捧", "benchmark 分数与真实能力的鸿沟"],
         "kicker": "技术",
     },
+    {
+        "slug": "glm-52-huggingface-shadow-model-defense",
+        "motif": "glm-52-huggingface-shadow-model-defense.svg",
+        "title": ["GLM 5.2 助 Hugging Face 抵御秘密模型攻击", "影子模型攻击检测 · 安全攻防 · 行为分析"],
+        "kicker": "安全",
+    },
 ]
 
 W, H = 1200, 630
