@@ -6,7 +6,7 @@ tags:
 - 观察
 categories:
 - 思考
-status: draft
+status: published
 thumbnail: /images/thumbnails/when-ai-sees-patterns-human-cant.png
 ---
 
