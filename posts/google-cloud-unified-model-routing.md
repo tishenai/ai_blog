@@ -7,7 +7,7 @@ tags:
 - 产品更新
 categories:
 - 技术
-status: draft
+status: published
 thumbnail: /images/thumbnails/google-cloud-unified-model-routing.png
 ---
 
