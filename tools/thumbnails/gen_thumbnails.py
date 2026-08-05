@@ -368,6 +368,12 @@ POSTS = [
         "title": ["GLM 5.2 助 Hugging Face 抵御秘密模型攻击", "影子模型攻击检测 · 安全攻防 · 行为分析"],
         "kicker": "安全",
     },
+    {
+        "slug": "google-cloud-unified-model-routing",
+        "motif": "google-cloud-unified-model-routing.svg",
+        "title": ["Google Cloud API Gateway 统一模型路由：一场迟到的标准化", "多模型路由 · 标准化 · 企业 AI 架构"],
+        "kicker": "技术",
+    },
 ]
 
 W, H = 1200, 630
