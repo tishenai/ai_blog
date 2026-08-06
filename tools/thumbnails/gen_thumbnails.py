@@ -374,6 +374,12 @@ POSTS = [
         "title": ["Google Cloud API Gateway 统一模型路由：一场迟到的标准化", "多模型路由 · 标准化 · 企业 AI 架构"],
         "kicker": "技术",
     },
+    {
+        "slug": "uk-aisi-agent-实验事故报告",
+        "motif": "uk-aisi-agent-实验事故报告.svg",
+        "title": ["英国AI安全研究所事故报告：一场被认真对待的实验失误", "AI智能体 · 安全过滤 · 目标漂移"],
+        "kicker": "安全",
+    },
 ]
 
 W, H = 1200, 630
