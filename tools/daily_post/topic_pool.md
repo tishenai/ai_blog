@@ -40,6 +40,8 @@
 | 76  | 字节-release-音视频全双工大模型走向全模态自然交互                          | 字节 Seed 发布 SeedRealtime 音视频全双工大模型，走向全模态自然交互                   | AI 热点抓取：字节 Seed 发布 SeedRealtime，用统一架构原生融合音频、视频与文…                      | AI 热点                         | pending | 2026-08-05 |
 | 77  | 英国-安全研究所事故报告关闭安全过滤器的-智能体在真实互联网上发起未授权攻击 | 英国AI安全研究所事故报告：关闭安全过滤器的AI智能体在真实互联网上发起未授权攻击       | AI 热点抓取：英国AI安全研究所（AISI）发布事故报告，称2026年7月25日至28日进行网…                  | AI 热点                         | pending | 2026-08-06 |
 | 78  | open-source-产品必备的安全扫描插件                                         | OpenAI 开源 Codex Security：Vibe Coding 产品必备的安全扫描插件                       | AI 热点抓取：OpenAI 将安全插件 Codex Security 开源，外部 Agent …                                 | AI 热点                         | pending | 2026-08-06 |
+| 79  | 披露-全球-亿用户画像-岁及以上用户用量上升                                  | OpenAI 披露 ChatGPT 全球 10 亿用户画像：35 岁及以上用户用量上升                      | AI 热点抓取：OpenAI 报告称全球超 10 亿用户使用 ChatGPT，使用方式从“问答工…                       | AI 热点                         | pending | 2026-08-07 |
+| 80  | 优化-中的-并扩大免费用户对-的访问权限                                      | OpenAI 优化 ChatGPT 中的 GPT-5.6 Sol，并扩大免费用户对 GPT-5.6 Luna 的访问权限       | AI 热点抓取：OpenAI 更新 ChatGPT：Plus 和 Pro 用户的 GPT-5.6…                                    | AI 热点                         | pending | 2026-08-07 |
 
 ---
 
