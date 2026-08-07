@@ -7,7 +7,7 @@ tags:
   - 安全事件
 categories:
   - 安全
-status: draft
+status: published
 thumbnail: /images/thumbnails/uk-aisi-agent-实验事故报告.png
 ---
 
