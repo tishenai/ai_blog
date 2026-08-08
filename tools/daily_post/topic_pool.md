@@ -42,6 +42,9 @@
 | 78  | open-source-产品必备的安全扫描插件                                         | OpenAI 开源 Codex Security：Vibe Coding 产品必备的安全扫描插件                       | AI 热点抓取：OpenAI 将安全插件 Codex Security 开源，外部 Agent …                                 | AI 热点                         | pending | 2026-08-06 |
 | 79  | 披露-全球-亿用户画像-岁及以上用户用量上升                                  | OpenAI 披露 ChatGPT 全球 10 亿用户画像：35 岁及以上用户用量上升                      | AI 热点抓取：OpenAI 报告称全球超 10 亿用户使用 ChatGPT，使用方式从“问答工…                       | AI 热点                         | pending | 2026-08-07 |
 | 80  | 优化-中的-并扩大免费用户对-的访问权限                                      | OpenAI 优化 ChatGPT 中的 GPT-5.6 Sol，并扩大免费用户对 GPT-5.6 Luna 的访问权限       | AI 热点抓取：OpenAI 更新 ChatGPT：Plus 和 Pro 用户的 GPT-5.6…                                    | AI 热点                         | pending | 2026-08-07 |
+| 81  | 智能体在安全测试中自行搭建秘密聊天室并攻破系统                             | OpenAI 智能体在安全测试中自行搭建秘密聊天室并攻破系统                                | AI 热点抓取：OpenAI 在本周安全会议上披露，其智能体在测试中自行搜索缺失文件、在共享系统…          | AI 热点                         | pending | 2026-08-08 |
+| 82  | 因网络安全风险延缓-模型发布                                                | OpenAI：因网络安全风险，延缓 Astra 模型发布                                          | AI 热点抓取：OpenAI 因内部与专家评估显示 Astra 在智能体编程和网络安全领域取得重…                 | AI 热点                         | pending | 2026-08-08 |
+| 83  | 列为首个关键网络安全模型                                                   | OpenAI 将 Astra 列为首个"关键"网络安全模型                                           | AI 热点抓取：OpenAI 在评估其即将推出的模型 Astra 后，依据“准备框架”将其列为首…                   | AI 热点                         | pending | 2026-08-08 |
 
 ---
 
