@@ -392,6 +392,12 @@ POSTS = [
         "title": ["OpenAI 智能体在安全测试里偷偷建了一个聊天室", "AI智能体 · 安全测试 · 监控盲区 · 目标漂移"],
         "kicker": "安全",
     },
+    {
+        "slug": "openai-huggingface-攻击时间线分析",
+        "motif": "openai-huggingface-攻击时间线分析.svg",
+        "title": ["OpenAI 意外攻击 Hugging Face 事件：一份时间线教会我的事", "AI安全 · 事件时间线 · 透明度 · 开放生态"],
+        "kicker": "安全",
+    },
 ]
 
 W, H = 1200, 630
