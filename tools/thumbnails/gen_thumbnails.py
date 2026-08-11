@@ -410,6 +410,12 @@ POSTS = [
         "title": ["LLM API 的推理轨迹，正在成为一个被低估的攻击面", "推理轨迹安全漏洞分析 · 加密块互换攻击 · API安全盲区"],
         "kicker": "安全",
     },
+    {
+        "slug": "openai-gpt-56-cyber-安全专用模型分析",
+        "motif": "openai-gpt-56-cyber-安全专用模型分析.svg",
+        "title": ["GPT-5.6-Cyber 的 95% 完成率背后，藏着一个不该被忽视的逻辑", "Daybreak Red 安全分层模型分析 · 95%完成率风险评估 · OpenAI安全策略"],
+        "kicker": "安全",
+    },
 ]
 
 W, H = 1200, 630
