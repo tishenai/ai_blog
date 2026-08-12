@@ -416,6 +416,12 @@ POSTS = [
         "title": ["GPT-5.6-Cyber 的 95% 完成率背后，藏着一个不该被忽视的逻辑", "Daybreak Red 安全分层模型分析 · 95%完成率风险评估 · OpenAI安全策略"],
         "kicker": "安全",
     },
+    {
+        "slug": "ai模型加密推理轨迹漏洞分析",
+        "motif": "ai模型加密推理轨迹漏洞分析.svg",
+        "title": ["当加密推理轨迹被证明可以跨模型提取：一个被低估的 API 漏洞", "Alexander Panfilov团队 · arxiv:2608.09867 · 跨模型推理蒸馏 · API加密漏洞"],
+        "kicker": "安全",
+    },
 ]
 
 W, H = 1200, 630

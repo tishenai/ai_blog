@@ -53,6 +53,9 @@
 | 89  | 推出-面向授权漏洞研究的网络安全专用模型                                    | OpenAI 推出 GPT-5.6-Cyber，面向授权漏洞研究的网络安全专用模型                        | AI 热点抓取：OpenAI 发布网络安全专用模型 GPT-5.6-Cyber，可通过 Dayb…                             | AI 热点                         | pending | 2026-08-11 |
 | 90  | 模型攻克-道数学难题数学家既兴奋又担忧                                      | OpenAI 用 Astra 模型攻克 10 道数学难题，数学家既兴奋又担忧                           | AI 热点抓取：OpenAI 宣布其未发布的 Astra 模型解决了 10 道长期悬而未决的数学…                     | AI 热点                         | pending | 2026-08-11 |
 | 91  | 窃取专有-的推理轨迹加密块可跨会话互换引发解密越狱                          | 窃取专有 LLM API 的推理轨迹：加密块可跨会话互换引发解密越狱                          | AI 热点抓取：研究发现，Anthropic、OpenAI 和 Google 等专有 LLM 的…                                | AI 热点                         | pending | 2026-08-11 |
+| 92  | 研究人员发现可读取-等模型加密推理过程的-漏洞                               | 研究人员发现可读取ChatGPT等模型加密推理过程的API漏洞                                 | AI 热点抓取：Alexander Panfilov团队发现OpenAI、Anthropic、G…                                     | AI 热点                         | pending | 2026-08-12 |
+| 93  | 双双突破-亿用户                                                            | ChatGPT 与 Gemini 双双突破 10 亿用户                                                 | AI 热点抓取：OpenAI 与 Google 的聊天机器人均跨过 10 亿用户门槛。OpenA…                           | AI 热点                         | pending | 2026-08-12 |
+| 94  | 模型登场-生成-视频仅需                                                     | LTX-2.5 模型登场：AI 生成 10 秒 720P 视频仅需 6.8 秒，原生集成 ComfyUI               | AI 热点抓取：LTX 推出 LTX-2.5 模型，原生集成 ComfyUI，在 2 张英伟达 …                            | AI 热点                         | pending | 2026-08-12 |
 
 ---
 
