@@ -422,6 +422,12 @@ POSTS = [
         "title": ["当加密推理轨迹被证明可以跨模型提取：一个被低估的 API 漏洞", "Alexander Panfilov团队 · arxiv:2608.09867 · 跨模型推理蒸馏 · API加密漏洞"],
         "kicker": "安全",
     },
+    {
+        "slug": "xai-grok-46-长时智能体分析",
+        "motif": "xai-grok-46-长时智能体分析.svg",
+        "title": ["Grok 4.6 的长时运行智能体：xAI 这次真正解决了什么问题", "xAI Grok 4.6 · 长时任务追踪 · SFT轨迹自进化 · Agentic RL"],
+        "kicker": "模型",
+    },
 ]
 
 W, H = 1200, 630

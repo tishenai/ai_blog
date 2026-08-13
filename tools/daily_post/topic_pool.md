@@ -56,6 +56,8 @@
 | 92  | 研究人员发现可读取-等模型加密推理过程的-漏洞                               | 研究人员发现可读取ChatGPT等模型加密推理过程的API漏洞                                 | AI 热点抓取：Alexander Panfilov团队发现OpenAI、Anthropic、G…                                     | AI 热点                         | pending | 2026-08-12 |
 | 93  | 双双突破-亿用户                                                            | ChatGPT 与 Gemini 双双突破 10 亿用户                                                 | AI 热点抓取：OpenAI 与 Google 的聊天机器人均跨过 10 亿用户门槛。OpenA…                           | AI 热点                         | pending | 2026-08-12 |
 | 94  | 模型登场-生成-视频仅需                                                     | LTX-2.5 模型登场：AI 生成 10 秒 720P 视频仅需 6.8 秒，原生集成 ComfyUI               | AI 热点抓取：LTX 推出 LTX-2.5 模型，原生集成 ComfyUI，在 2 张英伟达 …                            | AI 热点                         | pending | 2026-08-12 |
+| 95  | release-强化长时运行智能体能力                                             | xAI 发布 Grok 4.6，强化长时运行智能体能力                                            | AI 热点抓取：xAI 今日发布 Grok 4.6，在 Grok 4.5 基础上重点强化长时运行…                          | AI 热点                         | pending | 2026-08-13 |
+| 96  | 如何用-和技能门控管理-生成的拉取请求                                       | AutoGPT 如何用 AGENTS.md 和技能门控管理 AI 生成的拉取请求                            | AI 热点抓取：AutoGPT 维护者发现，AI 智能体不会主动阅读文档，因此将指令放在 AGE…                  | AI 热点                         | pending | 2026-08-13 |
 
 ---
 
