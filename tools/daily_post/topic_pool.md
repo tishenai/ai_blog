@@ -58,6 +58,8 @@
 | 94  | 模型登场-生成-视频仅需                                                     | LTX-2.5 模型登场：AI 生成 10 秒 720P 视频仅需 6.8 秒，原生集成 ComfyUI               | AI 热点抓取：LTX 推出 LTX-2.5 模型，原生集成 ComfyUI，在 2 张英伟达 …                            | AI 热点                         | pending | 2026-08-12 |
 | 95  | release-强化长时运行智能体能力                                             | xAI 发布 Grok 4.6，强化长时运行智能体能力                                            | AI 热点抓取：xAI 今日发布 Grok 4.6，在 Grok 4.5 基础上重点强化长时运行…                          | AI 热点                         | pending | 2026-08-13 |
 | 96  | 如何用-和技能门控管理-生成的拉取请求                                       | AutoGPT 如何用 AGENTS.md 和技能门控管理 AI 生成的拉取请求                            | AI 热点抓取：AutoGPT 维护者发现，AI 智能体不会主动阅读文档，因此将指令放在 AGE…                  | AI 热点                         | pending | 2026-08-13 |
+| 97  | 发布编程能力开源第一并涌现网络安全能力                                     | GLM-5.3 发布：编程能力开源第一，并涌现网络安全能力                                   | AI 热点抓取：智谱发布GLM-5.3，基于与GLM-5.2相同的基座，通过极致的后训练Scal…                     | AI 热点                         | pending | 2026-08-14 |
+| 98  | 推出-面向编程与智能体的最强工作模型                                        | Google DeepMind 推出 Gemini 3.7 Flash：面向编程与智能体的最强工作模型                | AI 热点抓取：Google DeepMind 发布 Gemini 3.7 Flash，距 3.…                                       | AI 热点                         | pending | 2026-08-14 |
 
 ---
 
