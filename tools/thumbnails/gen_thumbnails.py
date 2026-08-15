@@ -434,6 +434,12 @@ POSTS = [
         "title": ["GLM-5.3 的编程开源第一，和它涌现出的网络安全能力", "GLM-5.3 开源编程第一 · 能力涌现逻辑 · 本地部署安全优势"],
         "kicker": "开源",
     },
+    {
+        "slug": "openai-anthropic价格战中国模型格局分析",
+        "motif": "openai-anthropic价格战中国模型格局分析.svg",
+        "title": ["OpenAI 降价 80% 背后：AI 定价权正在从美国转向中国", "GPT-5.6 Luna降价80% · Claude Opus 5发布 · 中国模型价格优势 · 订阅制松动"],
+        "kicker": "市场",
+    },
 ]
 
 W, H = 1200, 630

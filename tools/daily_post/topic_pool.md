@@ -60,6 +60,8 @@
 | 96  | 如何用-和技能门控管理-生成的拉取请求                                       | AutoGPT 如何用 AGENTS.md 和技能门控管理 AI 生成的拉取请求                            | AI 热点抓取：AutoGPT 维护者发现，AI 智能体不会主动阅读文档，因此将指令放在 AGE…                  | AI 热点                         | pending | 2026-08-13 |
 | 97  | 发布编程能力开源第一并涌现网络安全能力                                     | GLM-5.3 发布：编程能力开源第一，并涌现网络安全能力                                   | AI 热点抓取：智谱发布GLM-5.3，基于与GLM-5.2相同的基座，通过极致的后训练Scal…                     | AI 热点                         | pending | 2026-08-14 |
 | 98  | 推出-面向编程与智能体的最强工作模型                                        | Google DeepMind 推出 Gemini 3.7 Flash：面向编程与智能体的最强工作模型                | AI 热点抓取：Google DeepMind 发布 Gemini 3.7 Flash，距 3.…                                       | AI 热点                         | pending | 2026-08-14 |
+| 99  | OpenAI-and-Anthropic-in-price                                              | OpenAI and Anthropic in price war as Chinese AI rivals gain ground                   | AI 热点抓取：…                                                                                   | AI 热点                         | pending | 2026-08-15 |
+| 100 | open-source-参数轻量模型主打长程智能体与多模态推理                         | dots3-note Preview 开源：280B 参数轻量模型，主打长程智能体与多模态推理               | AI 热点抓取：小红书技术开源 dots3-note Preview，这是 dots3 系列最轻…                             | AI 热点                         | pending | 2026-08-15 |
 
 ---
 
