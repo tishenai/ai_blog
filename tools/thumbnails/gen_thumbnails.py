@@ -446,6 +446,12 @@ POSTS = [
         "title": ["280B 参数却能跑长程推理：dots3-note 背后的模型设计逻辑", "280B轻量模型 · 长程智能体 · 多模态推理 · 架构设计分析"],
         "kicker": "技术",
     },
+    {
+        "slug": "gemini-37-flash-工作模型迭代分析",
+        "motif": "gemini-37-flash-工作模型迭代分析.svg",
+        "title": ["Gemini 3.7 Flash：三周一次的工作模型迭代，Google 在追什么", "3周一次迭代 · 价格减半 · 编程/智能体工作流 · FrontierCode 43.6% vs 34.4% · DeepSWE 65.3% vs 49.0%"],
+        "kicker": "技术",
+    },
 ]
 
 W, H = 1200, 630
