@@ -452,6 +452,12 @@ POSTS = [
         "title": ["Gemini 3.7 Flash：三周一次的工作模型迭代，Google 在追什么", "3周一次迭代 · 价格减半 · 编程/智能体工作流 · FrontierCode 43.6% vs 34.4% · DeepSWE 65.3% vs 49.0%"],
         "kicker": "技术",
     },
+    {
+        "slug": "openrouter-activity-成本分析仪表盘分析",
+        "motif": "openrouter-activity-成本分析仪表盘分析.svg",
+        "title": ["OpenRouter Activity 仪表盘：AI 成本可视化终于走到了「按智能体」这一步", "5大核心指标 · Trends 视图识别失控智能体 · 真实案例：preview模型6200美元/月浪费 · 仪表盘+API双通道 · Guardrails prompt injection可视化"],
+        "kicker": "技术",
+    },
 ]
 
 W, H = 1200, 630
