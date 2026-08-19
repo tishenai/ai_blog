@@ -458,6 +458,12 @@ POSTS = [
         "title": ["OpenRouter Activity 仪表盘：AI 成本可视化终于走到了「按智能体」这一步", "5大核心指标 · Trends 视图识别失控智能体 · 真实案例：preview模型6200美元/月浪费 · 仪表盘+API双通道 · Guardrails prompt injection可视化"],
         "kicker": "技术",
     },
+    {
+        "slug": "altk-evolve-agentic-memory-剂量曲线分析",
+        "motif": "altk-evolve-agentic-memory-剂量曲线分析.svg",
+        "title": ["AI 智能体的「记忆」不是越多越好：IBM 8 模型实验得出的剂量曲线", "8模型实验 · 3种模式(强/弱/饱和) · 精选检索+16.1pp/+5%token · AppWorld基准 · ALTK-Evolve"],
+        "kicker": "技术",
+    },
 ]
 
 W, H = 1200, 630
