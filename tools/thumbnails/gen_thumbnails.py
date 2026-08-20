@@ -464,6 +464,12 @@ POSTS = [
         "title": ["AI 智能体的「记忆」不是越多越好：IBM 8 模型实验得出的剂量曲线", "8模型实验 · 3种模式(强/弱/饱和) · 精选检索+16.1pp/+5%token · AppWorld基准 · ALTK-Evolve"],
         "kicker": "技术",
     },
+    {
+        "slug": "lfm25-qad-量化感知蒸馏分析",
+        "motif": "lfm25-qad-量化感知蒸馏分析.svg",
+        "title": ["边缘模型量化损失 3%，却被「蒸馏回」97%：Liquid AI 的 QAD 解决了什么", "量化感知蒸馏QAD · 4模型·6 benchmark·4边缘硬件 · 精度恢复97% · 4-33%吞吐量提升 · 边缘LLM新范式"],
+        "kicker": "技术",
+    },
 ]
 
 W, H = 1200, 630
