@@ -78,6 +78,9 @@
 | 114 | 如何担任-故障的一线响应者                                                  | Claude Tag 如何担任 Anthropic CI/CD 故障的一线响应者                                  | AI 热点抓取：Anthropic 的 CI 工程师用 Claude Tag 构建了值班智能体，…                             | AI 热点                         | pending | 2026-08-20 |
 | 115 | 一个实用的深度思考-用双向钢人论证让-帮你挖出最本质的答案                   | 一个实用的深度思考Prompt：用"双向钢人论证"让AI帮你挖出最本质的答案                    | AI 热点抓取：作者基于Reddit上“让Claude真正开始思考”的帖子，引入逻辑学中的“钢人…                  | AI 热点                         | pending | 2026-08-20 |
 | 116 | release-系列-量化检查点恢复-精度损失                                       | Liquid AI 发布 LFM2.5 系列 QAD Q4_0 量化检查点，恢复 97% 精度损失                     | AI 热点抓取：Liquid AI 发布基于量化感知蒸馏（QAD）训练的 LFM2.5-230M…                            | AI 热点                         | pending | 2026-08-20 |
+| 117 | 智能体记忆并非越多越好八款模型评测显示剂量需按能力校准                     | 智能体记忆并非越多越好：八款模型评测显示剂量需按能力校准                              | AI 热点抓取：智能体记忆并非可随意开启的功能，而是需按模型能力校准的剂量。强模型适合注入完整指…   | AI 热点                         | pending | 2026-08-21 |
+| 118 | 如何开展-教学                                                              | Anthropic 如何开展 AI 教学                                                            | AI 热点抓取：Anthropic 发布 Claude Academy，为全球数百万用户提供 A…                              | AI 热点                         | pending | 2026-08-21 |
+| 119 | release-系列-草稿模型推理速度最高提升                                      | Hugging Face 发布 LFM2.5 系列 DSpark 草稿模型，推理速度最高提升 3.18 倍               | AI 热点抓取：Hugging Face 发布 LFM2.5 系列三款模型的 DSpark 草稿…                                | AI 热点                         | pending | 2026-08-21 |
 
 (skipped: 重复 n=100)
 

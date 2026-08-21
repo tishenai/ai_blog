@@ -470,6 +470,18 @@ POSTS = [
         "title": ["边缘模型量化损失 3%，却被「蒸馏回」97%：Liquid AI 的 QAD 解决了什么", "量化感知蒸馏QAD · 4模型·6 benchmark·4边缘硬件 · 精度恢复97% · 4-33%吞吐量提升 · 边缘LLM新范式"],
         "kicker": "技术",
     },
+    {
+        "slug": "mistral-agentic-search-多步检索分析",
+        "motif": "mistral-agentic-search-多步检索分析.svg",
+        "title": ["Mistral Agentic Search：传统 RAG 在长文档上退场，下一步是导航", "多步检索导航 · FinanceBench 86%(+59.3pp) · OfficeQA Pro 51.9%(+45.6pp) · p90延迟255s→154s · 5个工具(search/open/navigate/read/grep)"],
+        "kicker": "技术",
+    },
+    {
+        "slug": "ai-智能体记忆需要按能力校准八模型实验给出的剂量处方",
+        "motif": "ai-智能体记忆需要按能力校准八模型实验给出的剂量处方.svg",
+        "title": ["AI 智能体记忆需要按能力校准", "八模型实验给出的剂量处方"],
+        "kicker": "AI 智能体 · 记忆机制",
+    },
 ]
 
 W, H = 1200, 630
