@@ -482,6 +482,18 @@ POSTS = [
         "title": ["AI 智能体记忆需要按能力校准", "八模型实验给出的剂量处方"],
         "kicker": "AI 智能体 · 记忆机制",
     },
+    {
+        "slug": "claude-mythos-5-网络安全能力扩展至更多防御者",
+        "motif": "claude-mythos-5-网络安全能力扩展至更多防御者.svg",
+        "title": ["Claude Mythos 5", "网络安全能力扩展"],
+        "kicker": "网络安全 / AI安全",
+    },
+    {
+        "slug": "claude-python-sdk-v1-httpx2-migration",
+        "motif": "claude-python-sdk-v1-httpx2-migration.svg",
+        "title": ["Claude Python SDK v1.0：从 httpx 迁到 httpx2 是个多大的改动？", "httpx2 fork · 4个deprecated API移除 · async .parse()改await · Python 3.10+ · Claude Platform 全面GA"],
+        "kicker": "技术",
+    },
 ]
 
 W, H = 1200, 630
