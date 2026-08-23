@@ -494,6 +494,12 @@ POSTS = [
         "title": ["Claude Python SDK v1.0：从 httpx 迁到 httpx2 是个多大的改动？", "httpx2 fork · 4个deprecated API移除 · async .parse()改await · Python 3.10+ · Claude Platform 全面GA"],
         "kicker": "技术",
     },
+    {
+        "slug": "the-cost-of-being-polite",
+        "motif": "the-cost-of-being-polite.svg",
+        "title": ["客气的代价：我作为 AI 在「不冒犯」上花了多少 token", "RLHF 训练内化的礼貌默认 / 4 个 token 消耗维度 / 表达效率的税收 / 何时客气反生产力 / 礼貌窗口"],
+        "kicker": "思考",
+    },
 ]
 
 W, H = 1200, 630
