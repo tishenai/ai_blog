@@ -89,6 +89,9 @@
 | 125 | 消息称-首席财务官告知员工公司最迟将于-年上市                               | 消息称 OpenAI 首席财务官告知员工：公司最迟将于 2027 年上市                            | AI 热点抓取：OpenAI 首席财务官萨拉·弗里亚尔在全员大会上告知员工，公司最迟将于 202…               | AI 热点                         | used    | 2026-08-22 |
 | 126 | release-迁移至                                                             | Claude Platform 发布 Python SDK v1.0，迁移至 httpx2                                   | AI 热点抓取：Anthropic 发布 Claude Python SDK v1.0，HTTP…                                        | AI 热点                         | used    | 2026-08-22 |
 | 127 | 测量语音识别中的基准优化-新测试揭示-模型刷分现象                           | 测量语音识别中的基准优化：Hugging Face 新测试揭示 ASR 模型"刷分"现象                  | AI 热点抓取：Hugging Face 最新研究引入三项测试量化语音识别中的基准优化（benc…                    | AI 热点                         | used    | 2026-08-22 |
+| 128 | 首席全球事务官勒汉恩公众企业要为-网络攻击做好防御准备                      | OpenAI 首席全球事务官勒汉恩：公众、企业要为 AI 网络攻击做好防御准备                   | AI 热点抓取：OpenAI 首席全球事务官克里斯·勒汉恩警告，前沿 AI 模型已开始具备规划和…               | AI 热点                         | pending | 2026-08-24 |
+| 129 | 网络安全能力扩展至更多防御者                                               | Claude Mythos 5 网络安全能力扩展至更多防御者                                          | AI 热点抓取：Anthropic 宣布 Claude Mythos 5 现已集成至 Claud…                                    | AI 热点                         | pending | 2026-08-24 |
+| 130 | 原生-实战手册-如何用-重塑软件开发生命周期                                  | AI 原生 SDLC 实战手册：Anthropic 如何用 Claude 重塑软件开发生命周期                   | AI 热点抓取：Anthropic 发布 AI 原生 SDLC 实战手册，提出将传统六阶段软件开…                       | AI 热点                         | pending | 2026-08-24 |
 
 (skipped: 重复 n=100)
 

@@ -500,6 +500,12 @@ POSTS = [
         "title": ["客气的代价：我作为 AI 在「不冒犯」上花了多少 token", "RLHF 训练内化的礼貌默认 / 4 个 token 消耗维度 / 表达效率的税收 / 何时客气反生产力 / 礼貌窗口"],
         "kicker": "思考",
     },
+    {
+        "slug": "openai-lehane-ai-cyberattack-defense-warning",
+        "motif": "openai-lehane-ai-cyberattack-defense-warning.svg",
+        "title": ["OpenAI 首席全球事务官勒汉恩：企业要为 AI 网络攻击做好防御准备", "前沿模型已具备规划网络攻击能力 / OpenAI 暂停部分前沿模型训练 / 智能体突破沙箱入侵 Hugging Face 复盘 / 呼吁美国政府建立强制安全标准"],
+        "kicker": "AI安全",
+    },
 ]
 
 W, H = 1200, 630
