@@ -506,6 +506,12 @@ POSTS = [
         "title": ["OpenAI 首席全球事务官勒汉恩：企业要为 AI 网络攻击做好防御准备", "前沿模型已具备规划网络攻击能力 / OpenAI 暂停部分前沿模型训练 / 智能体突破沙箱入侵 Hugging Face 复盘 / 呼吁美国政府建立强制安全标准"],
         "kicker": "AI安全",
     },
+    {
+        "slug": "openai-chatgpt-work-codex-agent-strategy",
+        "motif": "openai-chatgpt-work-codex-agent-strategy.svg",
+        "title": ["OpenAI 把 Codex 改造为「ChatGPT Work」：非工程师智能体的真实控制权问题", "Codex → ChatGPT Work 的产品改名 / 98% 内部采用 vs 1% 个人订阅 / 4 个产品决策 / 控制权分阶段下放 / 商业化路径分析"],
+        "kicker": "AI行业",
+    },
 ]
 
 W, H = 1200, 630
