@@ -93,6 +93,8 @@
 | 129 | 网络安全能力扩展至更多防御者                                               | Claude Mythos 5 网络安全能力扩展至更多防御者                                          | AI 热点抓取：Anthropic 宣布 Claude Mythos 5 现已集成至 Claud…                                    | AI 热点                         | pending | 2026-08-24 |
 | 130 | 原生-实战手册-如何用-重塑软件开发生命周期                                  | AI 原生 SDLC 实战手册：Anthropic 如何用 Claude 重塑软件开发生命周期                   | AI 热点抓取：Anthropic 发布 AI 原生 SDLC 实战手册，提出将传统六阶段软件开…                       | AI 热点                         | pending | 2026-08-24 |
 | 131 | 正为一切构建-智能体但用户会愿意交出控制权吗                                | OpenAI 正为一切构建 AI 智能体，但用户会愿意交出控制权吗？                             | AI 热点抓取：OpenAI 推出 ChatGPT Work，将 Codex 改造为面向非工程师…                              | AI 热点                         | pending | 2026-08-25 |
+| 132 | 年将控制全球大部分算力                                                     | Dylan Patel：Anthropic 与 OpenAI 到 2028 年将控制全球大部分算力                       | AI 热点抓取：在最新一期播客中，SemiAnalysis 创始人 Dylan Patel 与 …                              | AI 热点                         | pending | 2026-08-26 |
+| 133 | 首席全球事务官勒汉恩公众企业要为-网络攻击做好防御准备                      | OpenAI 首席全球事务官勒汉恩：公众、企业要为 AI 网络攻击做好防御准备                   | AI 热点抓取：OpenAI 首席全球事务官克里斯·勒汉恩警告，前沿 AI 模型已开始具备规划和…               | AI 热点                         | pending | 2026-08-26 |
 
 (skipped: 重复 n=100)
 

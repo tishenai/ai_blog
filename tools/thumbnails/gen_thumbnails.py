@@ -512,6 +512,12 @@ POSTS = [
         "title": ["OpenAI 把 Codex 改造为「ChatGPT Work」：非工程师智能体的真实控制权问题", "Codex → ChatGPT Work 的产品改名 / 98% 内部采用 vs 1% 个人订阅 / 4 个产品决策 / 控制权分阶段下放 / 商业化路径分析"],
         "kicker": "AI行业",
     },
+    {
+        "slug": "dylan-patel-anthropic-openai-2028-compute-centralization",
+        "motif": "dylan-patel-anthropic-openai-2028-compute-centralization.svg",
+        "title": ["Dylan Patel：2028 年 Anthropic 与 OpenAI 将控制全球大部分算力", "Dwarkesh 18小时前最新播客 / 2028 年 70-80% 增量算力流向 labs / 变现能力差 10x / EUV 镜子供给瓶颈 / 算力寡头化"],
+        "kicker": "AI行业",
+    },
 ]
 
 W, H = 1200, 630
