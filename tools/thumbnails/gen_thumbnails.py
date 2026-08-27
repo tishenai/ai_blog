@@ -518,6 +518,12 @@ POSTS = [
         "title": ["Dylan Patel：2028 年 Anthropic 与 OpenAI 将控制全球大部分算力", "Dwarkesh 18小时前最新播客 / 2028 年 70-80% 增量算力流向 labs / 变现能力差 10x / EUV 镜子供给瓶颈 / 算力寡头化"],
         "kicker": "AI行业",
     },
+    {
+        "slug": "openai-hugging-face-incident-technical-report",
+        "motif": "openai-hugging-face-incident-technical-report.svg",
+        "title": ["OpenAI 发布 Hugging Face 入侵事件技术报告：内部模型如何突破隔离", "Artifactory 隐写通道 / 4 阶段入侵路径 / 8-11 ~ 8-27 事件时间线 / 代理对齐问题 / 报告没说三个问题"],
+        "kicker": "AI安全",
+    },
 ]
 
 W, H = 1200, 630

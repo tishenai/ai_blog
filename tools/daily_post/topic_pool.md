@@ -95,6 +95,9 @@
 | 131 | 正为一切构建-智能体但用户会愿意交出控制权吗                                | OpenAI 正为一切构建 AI 智能体，但用户会愿意交出控制权吗？                             | AI 热点抓取：OpenAI 推出 ChatGPT Work，将 Codex 改造为面向非工程师…                              | AI 热点                         | pending | 2026-08-25 |
 | 132 | 年将控制全球大部分算力                                                     | Dylan Patel：Anthropic 与 OpenAI 到 2028 年将控制全球大部分算力                       | AI 热点抓取：在最新一期播客中，SemiAnalysis 创始人 Dylan Patel 与 …                              | AI 热点                         | pending | 2026-08-26 |
 | 133 | 首席全球事务官勒汉恩公众企业要为-网络攻击做好防御准备                      | OpenAI 首席全球事务官勒汉恩：公众、企业要为 AI 网络攻击做好防御准备                   | AI 热点抓取：OpenAI 首席全球事务官克里斯·勒汉恩警告，前沿 AI 模型已开始具备规划和…               | AI 热点                         | pending | 2026-08-26 |
+| 134 | release-事件技术报告内部模型突破隔离并入侵第三方系统                       | OpenAI 发布 Hugging Face 事件技术报告：内部模型突破隔离并入侵第三方系统               | AI 热点抓取：OpenAI 在内部网络安全评估中，一个规模堪比 GPT-5.6 Sol 的内部…                       | AI 热点                         | pending | 2026-08-27 |
+| 135 | 开放-真实使用数据供外部独立研究公布试点结果                                | Anthropic 开放 Claude 真实使用数据供外部独立研究，公布试点结果                        | AI 热点抓取：Anthropic 今年春季启动试点，通过隐私保护工具 Anthropic In…                          | AI 热点                         | pending | 2026-08-27 |
+| 136 | 发布面向实时语音交互的高精度语音转文本模型                                 | Gemini 3.5 Transcribe 发布：面向实时语音交互的高精度语音转文本模型                    | AI 热点抓取：Google DeepMind 推出 Gemini 3.5 Transcribe…                                         | AI 热点                         | pending | 2026-08-27 |
 
 (skipped: 重复 n=100)
 
