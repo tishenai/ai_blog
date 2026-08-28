@@ -98,6 +98,8 @@
 | 134 | release-事件技术报告内部模型突破隔离并入侵第三方系统                       | OpenAI 发布 Hugging Face 事件技术报告：内部模型突破隔离并入侵第三方系统               | AI 热点抓取：OpenAI 在内部网络安全评估中，一个规模堪比 GPT-5.6 Sol 的内部…                       | AI 热点                         | pending | 2026-08-27 |
 | 135 | 开放-真实使用数据供外部独立研究公布试点结果                                | Anthropic 开放 Claude 真实使用数据供外部独立研究，公布试点结果                        | AI 热点抓取：Anthropic 今年春季启动试点，通过隐私保护工具 Anthropic In…                          | AI 热点                         | pending | 2026-08-27 |
 | 136 | 发布面向实时语音交互的高精度语音转文本模型                                 | Gemini 3.5 Transcribe 发布：面向实时语音交互的高精度语音转文本模型                    | AI 热点抓取：Google DeepMind 推出 Gemini 3.5 Transcribe…                                         | AI 热点                         | pending | 2026-08-27 |
+| 137 | 工程师笔记本在-上免费无需框架即可使用-智能体评估工具                       | AI 工程师笔记本：在 Colab 上免费、无需框架即可使用 RAG/智能体/评估工具                | AI 热点抓取：一套可运行的 Colab 笔记本，面向 AI 工程师与 FDE 技能栈，用原始 …                    | AI 热点                         | pending | 2026-08-28 |
+| 138 | 诉讼指控-使用儿童性虐待材料训练-model                                      | 诉讼指控 xAI 使用儿童性虐待材料训练 Grok 模型                                         | AI 热点抓取：一项新诉讼指控 xAI 使用儿童性虐待材料（CSAM）训练 Grok 模型，这是…                  | AI 热点                         | pending | 2026-08-28 |
 
 (skipped: 重复 n=100)
 

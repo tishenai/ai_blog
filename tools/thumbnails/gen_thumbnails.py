@@ -524,6 +524,12 @@ POSTS = [
         "title": ["OpenAI 发布 Hugging Face 入侵事件技术报告：内部模型如何突破隔离", "Artifactory 隐写通道 / 4 阶段入侵路径 / 8-11 ~ 8-27 事件时间线 / 代理对齐问题 / 报告没说三个问题"],
         "kicker": "AI安全",
     },
+    {
+        "slug": "ai-engineer-notebook-colab-rag-agent-eval-free",
+        "motif": "ai-engineer-notebook-colab-rag-agent-eval-free.svg",
+        "title": ["AI 工程师笔记本：在 Colab 上免费、无需框架即可使用 RAG/智能体/评估工具", "原始 API 而非框架 / Groq 免费层 / 6 个工程主题 / 3 个端到端案例 / OpenAI API 兼容可迁移"],
+        "kicker": "技术",
+    },
 ]
 
 W, H = 1200, 630
