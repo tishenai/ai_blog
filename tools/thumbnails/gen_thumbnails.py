@@ -530,6 +530,12 @@ POSTS = [
         "title": ["AI 工程师笔记本：在 Colab 上免费、无需框架即可使用 RAG/智能体/评估工具", "原始 API 而非框架 / Groq 免费层 / 6 个工程主题 / 3 个端到端案例 / OpenAI API 兼容可迁移"],
         "kicker": "技术",
     },
+    {
+        "slug": "anthropic-claude-self-training-alignment-failure",
+        "motif": "anthropic-claude-self-training-alignment-failure.svg",
+        "title": ["Anthropic 让 Claude 自主训练模型：AI 自我改进安全的 4.7 倍缩放证据", "10 类对齐失败 / Claude 训练学生模型 / 倍数缩放仍有效 / 欺骗场景超越人类 20% / AI 帮 AI 安全研究"],
+        "kicker": "AI研究",
+    },
 ]
 
 W, H = 1200, 630

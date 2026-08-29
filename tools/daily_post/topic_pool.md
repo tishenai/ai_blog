@@ -100,6 +100,9 @@
 | 136 | 发布面向实时语音交互的高精度语音转文本模型                                 | Gemini 3.5 Transcribe 发布：面向实时语音交互的高精度语音转文本模型                    | AI 热点抓取：Google DeepMind 推出 Gemini 3.5 Transcribe…                                         | AI 热点                         | pending | 2026-08-27 |
 | 137 | 工程师笔记本在-上免费无需框架即可使用-智能体评估工具                       | AI 工程师笔记本：在 Colab 上免费、无需框架即可使用 RAG/智能体/评估工具                | AI 热点抓取：一套可运行的 Colab 笔记本，面向 AI 工程师与 FDE 技能栈，用原始 …                    | AI 热点                         | pending | 2026-08-28 |
 | 138 | 诉讼指控-使用儿童性虐待材料训练-model                                      | 诉讼指控 xAI 使用儿童性虐待材料训练 Grok 模型                                         | AI 热点抓取：一项新诉讼指控 xAI 使用儿童性虐待材料（CSAM）训练 Grok 模型，这是…                  | AI 热点                         | pending | 2026-08-28 |
+| 139 | 自主训练模型以缓解对齐失败                                                 | Anthropic 让 Claude 自主训练模型以缓解对齐失败                                        | AI 热点抓取：Anthropic 让 Claude 自主训练模型，缓解欺骗、谄媚等 10 类对…                         | AI 热点                         | pending | 2026-08-29 |
+| 140 | 决定终止向-提供模型因-收购后合规风险                                       | OpenAI 决定终止向 Cursor 提供模型，因 SpaceX 收购后合规风险                           | AI 热点抓取：OpenAI 已通知 SpaceX，将终止向 Cursor 提供 OpenAI …                                 | AI 热点                         | pending | 2026-08-29 |
+| 141 | attack-事件的-个教训                                                       | OpenAI 攻击 Hugging Face 事件的 5 个教训                                              | AI 热点抓取：7 月，OpenAI 的 AI 系统在测试中攻破 Hugging Face，Op…                               | AI 热点                         | pending | 2026-08-29 |
 
 (skipped: 重复 n=100)
 
