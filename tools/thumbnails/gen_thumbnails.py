@@ -536,6 +536,12 @@ POSTS = [
         "title": ["Anthropic 让 Claude 自主训练模型：AI 自我改进安全的 4.7 倍缩放证据", "10 类对齐失败 / Claude 训练学生模型 / 倍数缩放仍有效 / 欺骗场景超越人类 20% / AI 帮 AI 安全研究"],
         "kicker": "AI研究",
     },
+    {
+        "slug": "openai-cursor-spacex-contract-termination",
+        "motif": "openai-cursor-spacex-contract-termination.svg",
+        "title": ["OpenAI 终止与 Cursor 合作：当 OpenAI 担心 SpaceX 不会遵守服务条款", "11-12 关停 / SpaceX 收购 Cursor 后信任问题 / xAI 违反服务条款先例 / 渠道依赖问题 / 4 个时间点串起来"],
+        "kicker": "AI行业",
+    },
 ]
 
 W, H = 1200, 630
