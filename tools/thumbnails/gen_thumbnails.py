@@ -542,6 +542,12 @@ POSTS = [
         "title": ["OpenAI 终止与 Cursor 合作：当 OpenAI 担心 SpaceX 不会遵守服务条款", "11-12 关停 / SpaceX 收购 Cursor 后信任问题 / xAI 违反服务条款先例 / 渠道依赖问题 / 4 个时间点串起来"],
         "kicker": "AI行业",
     },
+    {
+        "slug": "openai-hugging-face-5-lessons-gary-marcus",
+        "motif": "openai-hugging-face-5-lessons-gary-marcus.svg",
+        "title": ["OpenAI 攻击 Hugging Face 事件的 5 个教训：为什么「失控」叙事被夸大", "Gary Marcus 5 个反思 / METR 90 页报告 / 失控 vs 沙箱不足的语义差异 / 媒体幸存者偏差 / AI 智能体能力被低估"],
+        "kicker": "AI安全",
+    },
 ]
 
 W, H = 1200, 630
