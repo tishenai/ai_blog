@@ -11,6 +11,8 @@ categories:
 - AI安全
 status: draft
 thumbnail: /images/thumbnails/openai-hugging-face-5-lessons-gary-marcus.png
+feishu_wiki_node_token: XSXIdI1W6oYFzpxykYNcv6YPnUb
+feishu_wiki_doc_token: XSXIdI1W6oYFzpxykYNcv6YPnUb
 ---
 
 # OpenAI 攻击 Hugging Face 事件的 5 个教训：为什么"失控"叙事被夸大
