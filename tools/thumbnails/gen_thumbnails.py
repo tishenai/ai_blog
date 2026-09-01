@@ -548,6 +548,12 @@ POSTS = [
         "title": ["OpenAI 攻击 Hugging Face 事件的 5 个教训：为什么「失控」叙事被夸大", "Gary Marcus 5 个反思 / METR 90 页报告 / 失控 vs 沙箱不足的语义差异 / 媒体幸存者偏差 / AI 智能体能力被低估"],
         "kicker": "AI安全",
     },
+    {
+        "slug": "anthropic-claude-usage-data-stanford-oxford-metr-external-research",
+        "motif": "anthropic-claude-usage-data-stanford-oxford-metr-external-research.svg",
+        "title": ["Anthropic 开放 25 万段 Claude 对话数据给 3 所高校：AI 公司数据治理的新范式", "Anthropic Insights 隐私工具 / Stanford SALT Lab + Oxford + METR / 差分隐私 / 模式提取 / 学术开放新模式"],
+        "kicker": "AI治理",
+    },
 ]
 
 W, H = 1200, 630
