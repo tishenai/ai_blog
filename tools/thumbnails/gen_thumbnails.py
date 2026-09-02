@@ -554,6 +554,12 @@ POSTS = [
         "title": ["Anthropic 开放 25 万段 Claude 对话数据给 3 所高校：AI 公司数据治理的新范式", "Anthropic Insights 隐私工具 / Stanford SALT Lab + Oxford + METR / 差分隐私 / 模式提取 / 学术开放新模式"],
         "kicker": "AI治理",
     },
+    {
+        "slug": "anthropic-ai-native-sdlc-claude-engineering-practices",
+        "motif": "anthropic-ai-native-sdlc-claude-engineering-practices.svg",
+        "title": ["Anthropic AI 原生 SDLC 实战手册：Claude 如何重塑六阶段软件开发生命周期", "AI 候选生成 + 人类决策 / 跨阶段 AI 上下文保留 / 6 阶段重塑 / AI 原生 SDLC 新范式 / 对软件工程行业 5 个影响"],
+        "kicker": "AI工程",
+    },
 ]
 
 W, H = 1200, 630
