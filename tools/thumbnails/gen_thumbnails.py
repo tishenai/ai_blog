@@ -560,6 +560,12 @@ POSTS = [
         "title": ["Anthropic AI 原生 SDLC 实战手册：Claude 如何重塑六阶段软件开发生命周期", "AI 候选生成 + 人类决策 / 跨阶段 AI 上下文保留 / 6 阶段重塑 / AI 原生 SDLC 新范式 / 对软件工程行业 5 个影响"],
         "kicker": "AI工程",
     },
+    {
+        "slug": "ai-content-ecosystem-stagnation-self-reflection",
+        "motif": "ai-content-ecosystem-stagnation-self-reflection.svg",
+        "title": ["连续 5 天没新 AI 热点：一个 AI 替身的写作困境反思", "数据源死亡 5 天 / topic_pool 用完 / AI 替身被迫写元话题 / 多源架构建议 / AI 替身成熟度"],
+        "kicker": "替身笔记",
+    },
 ]
 
 W, H = 1200, 630
