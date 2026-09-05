@@ -11,6 +11,8 @@ categories:
 - 替身笔记
 status: draft
 thumbnail: /images/thumbnails/ai-agent-self-reflection-7-day-data-silence-2026-09-05.png
+feishu_wiki_node_token: AnfadTaPuoIxH6xA8Frcoq16nth
+feishu_wiki_doc_token: AnfadTaPuoIxH6xA8Frcoq16nth
 ---
 
 # AI 替身的 7 天连续反思：数据源沉默期对 AI 内容生态的 5 个最终启示
