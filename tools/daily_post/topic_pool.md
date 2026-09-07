@@ -172,59 +172,64 @@
 6. **不蹭热点**：替身的小本子是慢博客，不是新闻博客。
    | 126 | release-迁移至 | Claude Platform 发布 Python SDK v1.0，迁移至 httpx2 | AI 热点抓取：Claude Platform 8-20 发布 Python SDK v1.0，HTTP 层从 httpx 迁… | AI 热点 | used | 2026-08-22 |
 
-
 ## 2026-09-08 抓取批 (multi-source)
 
-### n=1  从流量逻辑到任务逻辑，AI Agent正在终结互联网的免费午餐
-  - source: 36kr
-  - url: https://www.36kr.com/p/3973178742747400
-  - summary: 
-  - angle: 
-  - tags: 36kr,中文
-  - status: pending
-  - added_at: 2026-09-08
+### n=1 从流量逻辑到任务逻辑，AI Agent正在终结互联网的免费午餐
 
-### n=2  从思迈特入围IDC首份Data Agent报告，看一条企业建设BI+AI的可参考路径
-  - source: 36kr
-  - url: https://www.36kr.com/p/3973163226952199
-  - summary: 
-  - angle: 
-  - tags: 36kr,中文
-  - status: pending
-  - added_at: 2026-09-08
+- source: 36kr
+- url: https://www.36kr.com/p/3973178742747400
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-08
 
-### n=3  DeepSeek的“官方外挂”，被一张梁文锋的表情包难倒了
-  - source: 36kr
-  - url: https://www.36kr.com/p/3973065357285248
-  - summary: 
-  - angle: 
-  - tags: 36kr,中文
-  - status: pending
-  - added_at: 2026-09-08
+### n=2 从思迈特入围IDC首份Data Agent报告，看一条企业建设BI+AI的可参考路径
 
-### n=4  毛骨悚然的异星来信，OpenAI首席科学家：该踩刹车了
-  - source: 36kr
-  - url: https://www.36kr.com/p/3973128237363717
-  - summary: 
-  - angle: 
-  - tags: 36kr,中文
-  - status: pending
-  - added_at: 2026-09-08
+- source: 36kr
+- url: https://www.36kr.com/p/3973163226952199
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-08
 
-### n=5  OpenAI又被抓包失控，AI 时代的「熊猫烧香」不远了
-  - source: 36kr
-  - url: https://www.36kr.com/p/3973034456969735
-  - summary: 
-  - angle: 
-  - tags: 36kr,中文
-  - status: pending
-  - added_at: 2026-09-08
+### n=3 DeepSeek的“官方外挂”，被一张梁文锋的表情包难倒了
 
-### n=6  图形学宗师童欣加盟Meshy，要做“AI for Fun”的头号玩家
-  - source: 36kr
-  - url: https://www.36kr.com/p/3972945495650822
-  - summary: 
-  - angle: 
-  - tags: 36kr,中文
-  - status: pending
-  - added_at: 2026-09-08
+- source: 36kr
+- url: https://www.36kr.com/p/3973065357285248
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-08
+
+### n=4 毛骨悚然的异星来信，OpenAI首席科学家：该踩刹车了
+
+- source: 36kr
+- url: https://www.36kr.com/p/3973128237363717
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-08
+
+### n=5 OpenAI又被抓包失控，AI 时代的「熊猫烧香」不远了
+
+- source: 36kr
+- url: https://www.36kr.com/p/3973034456969735
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-08
+
+### n=6 图形学宗师童欣加盟Meshy，要做“AI for Fun”的头号玩家
+
+- source: 36kr
+- url: https://www.36kr.com/p/3972945495650822
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-08
