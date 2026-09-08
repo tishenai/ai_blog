@@ -233,3 +233,107 @@
 - tags: 36kr,中文
 - status: pending
 - added_at: 2026-09-08
+
+## 2026-09-08 抓取批 (multi-source)
+
+### n=1 70%的项目注定被砍：Anthropic养了一支20人的“失败团队”，项目超过4人就“毕业”
+
+- source: 36kr
+- url: https://www.36kr.com/p/3974235736879366
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-08
+
+### n=2 在 Anthropic 内部，一支规模仅约 20 人、名为 Labs 的小团队，正在成为公司产品创新的重要引擎。
+
+- source: 36kr
+- url: https://www.36kr.com/p/3974235736879366
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-08
+
+### n=3 再这样下去，Agent要被卖保健品了
+
+- source: 36kr
+- url: https://www.36kr.com/p/3974286710625924
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-08
+
+### n=4 OpenAI放大招，一句话生成网站革了SaaS的命
+
+- source: 36kr
+- url: https://www.36kr.com/p/3974225141231879
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-08
+
+### n=5 企业 AI 落地的红皇后效应：你拼命跑，却停在原地
+
+- source: 36kr
+- url: https://www.36kr.com/p/3973945119158787
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-08
+
+## 2026-09-08 抓取批 (multi-source)
+
+### n=1 Diffusion TV: Experiencing Diffusion Models through Tangible, Embodied Interaction
+
+- source: arXiv cs.AI
+- url: http://arxiv.org/abs/2609.05404v1
+- summary: Diffusion TV is an interactive AI art installation that offers a tangible and embodied experience of diffusion models through a modified CRT TV. By physically manipulating the TV's antenna, audiences
+- angle:
+- tags: arXiv,研究论文
+- status: pending
+- added_at: 2026-09-08
+
+### n=2 RegionFed: Federated Learning for Personalized Query Understanding in Heterogeneous Retail Environments
+
+- source: arXiv cs.AI
+- url: http://arxiv.org/abs/2609.05403v1
+- summary: Retail search systems serve diverse geographic regions with distinct query patterns, vocabularies, and product preferences, creating significant data heterogeneity that challenges both privacy-preserv
+- angle:
+- tags: arXiv,研究论文
+- status: pending
+- added_at: 2026-09-08
+
+### n=3 A Deep Generative Model for Synthesizing Labeled Wireless Signals
+
+- source: arXiv cs.AI
+- url: http://arxiv.org/abs/2609.05396v1
+- summary: Wireless signals with position-related labels are pivotal for both performance evaluation and model training in the realm of wireless sensing. However, acquiring real-world datasets is often challenge
+- angle:
+- tags: arXiv,研究论文
+- status: pending
+- added_at: 2026-09-08
+
+### n=4 Multi-Step Tool-Calling over Korean Open Public APIs: A Benchmark and a Data-Synthesis Recipe
+
+- source: arXiv cs.AI
+- url: http://arxiv.org/abs/2609.05395v1
+- summary: Data-sovereignty regulations increasingly require public institutions to deploy open-source, on-premise LLM agents that chain multiple tool-calls across live government APIs. However, open-source mode
+- angle:
+- tags: arXiv,研究论文
+- status: pending
+- added_at: 2026-09-08
+
+### n=5 Necessary or Sufficient? Evaluating LLM Explanations With Behavioural Evidence
+
+- source: arXiv cs.AI
+- url: http://arxiv.org/abs/2609.05385v1
+- summary: LLM decision components that can operate within agent workflows often produce action-relevant recommendations or judgements together with explanations. Operators may use the named factors to monitor a
+- angle:
+- tags: arXiv,研究论文
+- status: pending
+- added_at: 2026-09-08
