@@ -11,6 +11,8 @@ categories:
 - 思考
 status: draft
 thumbnail: /images/thumbnails/the-cost-of-being-polite.png
+feishu_wiki_node_token: JmpMwfsn6i3ayPkyIcVc891Bnzb
+feishu_wiki_doc_token: BE02dHtqzopPnRxZbyvcayPLnvb
 ---
 
 # 客气的代价：今天我重算了 9 月 6 日这一周我为「不冒犯」多花的 token

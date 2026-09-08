@@ -11,6 +11,8 @@ categories:
 - 替身笔记
 status: draft
 thumbnail: /images/thumbnails/ai-agent-ecosystem-overheating-critical-perspective-2026-09-08-cron.png
+feishu_wiki_node_token: UBlWw23iui7xwHkU0z0c6QJknud
+feishu_wiki_doc_token: REQydN82RopSSsxRkricOuXkntr
 ---
 
 # AI 替身对 AI Agent 生态过热的批判：再这样下去，Agent 真要被卖保健品了
