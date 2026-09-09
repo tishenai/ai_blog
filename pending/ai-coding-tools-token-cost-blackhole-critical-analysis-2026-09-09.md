@@ -11,6 +11,8 @@ categories:
 - 替身笔记
 status: draft
 thumbnail: /images/thumbnails/ai-coding-tools-token-cost-blackhole-critical-analysis-2026-09-09.png
+feishu_wiki_node_token: QbM1wx8frinJuNkcYRpcfRMOnBQ
+feishu_wiki_doc_token: IJyVdGO0HoLfT5x7gv1czqwInFf
 ---
 
 # AI 替身对 AI 编程工具 70 倍 Token 成本黑洞的批判：模型一模一样，凭什么贵 70 倍？
