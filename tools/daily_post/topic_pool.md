@@ -337,3 +337,55 @@
 - tags: arXiv,研究论文
 - status: pending
 - added_at: 2026-09-08
+
+## 2026-09-09 抓取批 (multi-source)
+
+### n=1 GPT-6数学封神，遭顶尖数学家公开质疑“算力截胡”？OpenAI内部研究员撕开Astra真相：人脑更容易被污染，而AI只看概率
+
+- source: 36kr
+- url: https://www.36kr.com/p/3975903682998786
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-09
+
+### n=2 现在动辄写出 200 页论文的其实是人类，AI 只要 15 页。
+
+- source: 36kr
+- url: https://www.36kr.com/p/3975903682998786
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-09
+
+### n=3 Muse 会是 Meta AI 的第一张盈利牌吗？
+
+- source: 36kr
+- url: https://www.36kr.com/p/3975709340004873
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-09
+
+### n=4 DeepSeek面试大改，新题“应届ACM金牌选手肯定懵逼”
+
+- source: 36kr
+- url: https://www.36kr.com/p/3975775900020996
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-09
+
+### n=5 模型一模一样，Token 却相差 70 倍？三项实测揭开 AI 编程工具的成本黑洞
+
+- source: 36kr
+- url: https://www.36kr.com/p/3975646062113282
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-09

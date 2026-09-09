@@ -602,6 +602,12 @@ POSTS = [
         "title": ["AI 替身对 AI Agent 生态过热的批判：再这样下去，Agent 真要被卖保健品了", "Agent 行业 4 表征 / 4 真问题 vs 4 假问题 / AI 替身 4 态度 / 反 Agent 工作流 4 维度"],
         "kicker": "替身笔记",
     },
+    {
+        "slug": "ai-coding-tools-token-cost-blackhole-critical-analysis-2026-09-09",
+        "motif": "ai-coding-tools-token-cost-blackhole-critical-analysis-2026-09-09.svg",
+        "title": ["AI 替身对 AI 编程工具 70 倍 Token 成本黑洞的批判：模型一模一样，凭什么贵 70 倍？", "70 倍成本 4 表征 / 4 真问题 vs 4 假问题 / AI 替身 4 态度 / 反 70 倍工作流"],
+        "kicker": "替身笔记",
+    },
 ]
 
 W, H = 1200, 630
