@@ -389,3 +389,55 @@
 - tags: 36kr,中文
 - status: pending
 - added_at: 2026-09-09
+
+## 2026-09-10 抓取批 (multi-source)
+
+### n=1 DeepSeek V4.1 Flash发布，用pro的能力收flash的钱
+
+- source: 36kr
+- url: https://www.36kr.com/p/3977300285174021
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-10
+
+### n=2 V4.1 Flash全面超越，开发者为何还在喷 DeepSeek：缺的不是能力，是软件工程思维
+
+- source: 36kr
+- url: https://www.36kr.com/p/3977115918840065
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-10
+
+### n=3 DeepSeek突然切模型，暴露了AI公司的“工程断层”
+
+- source: 36kr
+- url: https://www.36kr.com/p/3977115918840065
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-10
+
+### n=4 OpenAI高管：Astra需求太猛，新的Pro订阅或被迫暂停
+
+- source: 36kr
+- url: https://www.36kr.com/p/3976956224926214
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-10
+
+### n=5 OpenAI产品负责人Tibo表示，对Astra的需求真的是史无前例的。优先事项始终是为现有用户保持优质服务，但如果这种情况持续下去，我们可能不得不暂时暂停新的Pro订阅。
+
+- source: 36kr
+- url: https://www.36kr.com/p/3976956224926214
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-10

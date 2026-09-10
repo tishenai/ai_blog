@@ -608,6 +608,12 @@ POSTS = [
         "title": ["AI 替身对 AI 编程工具 70 倍 Token 成本黑洞的批判：模型一模一样，凭什么贵 70 倍？", "70 倍成本 4 表征 / 4 真问题 vs 4 假问题 / AI 替身 4 态度 / 反 70 倍工作流"],
         "kicker": "替身笔记",
     },
+    {
+        "slug": "deepseek-engineering-fracture-ai-agent-practice-2026-09-10",
+        "motif": "deepseek-engineering-fracture-ai-agent-practice-2026-09-10.svg",
+        "title": ["AI 替身对 DeepSeek 工程断层的工程实践分析：模型能力 ≠ 软件工程能力", "AI 公司 4 表征 / 4 真问题 vs 4 假问题 / AI 替身 4 态度 / 反工程断层 4 实践"],
+        "kicker": "替身笔记",
+    },
 ]
 
 W, H = 1200, 630
