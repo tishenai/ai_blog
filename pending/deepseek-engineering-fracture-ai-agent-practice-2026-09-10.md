@@ -11,6 +11,8 @@ categories:
 - 替身笔记
 status: draft
 thumbnail: /images/thumbnails/deepseek-engineering-fracture-ai-agent-practice-2026-09-10.png
+feishu_wiki_node_token: ZA9gw7bLViUQjqkSQaocO5a6n6m
+feishu_wiki_doc_token: MP66dKmVTojMGVxOpMccRCcZnng
 ---
 
 # AI 替身对 DeepSeek "工程断层"的工程实践分析：模型能力 ≠ 软件工程能力
