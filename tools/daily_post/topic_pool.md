@@ -441,3 +441,107 @@
 - tags: 36kr,中文
 - status: pending
 - added_at: 2026-09-10
+
+## 2026-09-11 抓取批 (multi-source)
+
+### n=1 最痛恨 AI 的技术大佬出现了。
+
+- source: 36kr
+- url: https://www.36kr.com/p/3978529869527809
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-11
+
+### n=2 OpenAI这是拿千禧年难题当Benchmark刷啊。。。
+
+- source: 36kr
+- url: https://www.36kr.com/p/3978639594339077
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-11
+
+### n=3 AI数学的最后一道高墙，塌了，GPT-6 Astra刷穿FrontierMath Tier 4
+
+- source: 36kr
+- url: https://www.36kr.com/p/3978639480617733
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-11
+
+### n=4 GPT-6登顶第一，AlphaFold之后最大震撼，成抗体预测最强AI
+
+- source: 36kr
+- url: https://www.36kr.com/p/3978455065508609
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-11
+
+### n=5 OpenAI再爆惊天丑闻，窃走20年成果，顶级数学家怒了
+
+- source: 36kr
+- url: https://www.36kr.com/p/3978455165713160
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-11
+
+## 2026-09-11 抓取批 (multi-source)
+
+### n=1 GPU-CFR: 80x Faster Counterfactual Regret Minimization by Compiling the Game to Static Dataflow and CUDA Graph Replay
+
+- source: arXiv cs.AI
+- url: http://arxiv.org/abs/2609.11923v1
+- summary: Counterfactual regret minimization (CFR) is one of the few large numerical workloads that still runs faster on CPUs than on GPUs. Each iteration sweeps a game tree with up to billions of states in mil
+- angle:
+- tags: arXiv,研究论文
+- status: pending
+- added_at: 2026-09-11
+
+### n=2 General Quantification of Covariate and Concept Shifts
+
+- source: arXiv cs.AI
+- url: http://arxiv.org/abs/2609.11918v1
+- summary: Generalization under distribution shift remains a core challenge in modern machine learning, yet existing learning bound theory is limited to narrow, idealized settings and is non-estimable from sampl
+- angle:
+- tags: arXiv,研究论文
+- status: pending
+- added_at: 2026-09-11
+
+### n=3 Can Edge-Deployable Vision-Language Models Identify Species?
+
+- source: arXiv cs.AI
+- url: http://arxiv.org/abs/2609.11916v1
+- summary: Camera traps often run in the field on edge hardware with limited or no connectivity, making small, locally-deployable vision-language models (VLMs) -- not frontier-scale ones -- the practically relev
+- angle:
+- tags: arXiv,研究论文
+- status: pending
+- added_at: 2026-09-11
+
+### n=4 Generative Marketing Mix Modeling: A Causal Inference Framework Linking GEO and GEM to Business Impact
+
+- source: arXiv cs.AI
+- url: http://arxiv.org/abs/2609.11915v1
+- summary: Generative artificial intelligence changes how firms reach customers, but standard marketing data do not record how often users see and notice a firm's name in generated answers. We develop Generative
+- angle:
+- tags: arXiv,研究论文
+- status: pending
+- added_at: 2026-09-11
+
+### n=5 Artificial Id: Drive and Persistent Alignment in Agentic AI
+
+- source: arXiv cs.AI
+- url: http://arxiv.org/abs/2609.11911v1
+- summary: Agentic AI is moving from bounded task execution toward systems that retain consequential state, continue operating and adapt across task boundaries. That shift creates a control problem that current
+- angle:
+- tags: arXiv,研究论文
+- status: pending
+- added_at: 2026-09-11

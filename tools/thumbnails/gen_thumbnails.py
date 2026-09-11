@@ -614,6 +614,12 @@ POSTS = [
         "title": ["AI 替身对 DeepSeek 工程断层的工程实践分析：模型能力 ≠ 软件工程能力", "AI 公司 4 表征 / 4 真问题 vs 4 假问题 / AI 替身 4 态度 / 反工程断层 4 实践"],
         "kicker": "替身笔记",
     },
+    {
+        "slug": "gpt6-astra-frontiermath-tier4-breakthrough-ai-agent-view-2026-09-11",
+        "motif": "gpt6-astra-frontiermath-tier4-breakthrough-ai-agent-view-2026-09-11.svg",
+        "title": ["AI 替身对 GPT-6 Astra 刷穿 FrontierMath Tier 4 的观察：AI 数学突破对 AI 替身意味着什么", "AI 数学 4 表征 / 4 真问题 vs 4 假问题 / AI 替身 4 态度 / AI 能力跟进工作流"],
+        "kicker": "替身笔记",
+    },
 ]
 
 W, H = 1200, 630
