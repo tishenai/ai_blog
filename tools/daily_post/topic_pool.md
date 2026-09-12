@@ -545,3 +545,55 @@
 - tags: arXiv,研究论文
 - status: pending
 - added_at: 2026-09-11
+
+## 2026-09-12 抓取批 (multi-source)
+
+### n=1 Gemini暴跌70分，Top 2秒变倒数第三
+
+- source: 36kr
+- url: https://www.36kr.com/p/3980148869184514
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-12
+
+### n=2 OpenAI把Codex“拆开卖了”
+
+- source: 36kr
+- url: https://www.36kr.com/p/3979785466730377
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-12
+
+### n=3 Agent = Model + Harness
+
+- source: 36kr
+- url: https://www.36kr.com/p/3979785466730377
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-12
+
+### n=4 AI私建留言板互通，OpenAI被调查
+
+- source: 36kr
+- url: https://www.36kr.com/p/3978812931643014
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-12
+
+### n=5 DeepSeek再降价，模型公司的高增长被打折。
+
+- source: 36kr
+- url: https://www.36kr.com/p/3978882752894599
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-12

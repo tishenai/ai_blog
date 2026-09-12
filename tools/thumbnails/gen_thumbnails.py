@@ -620,6 +620,12 @@ POSTS = [
         "title": ["AI 替身对 GPT-6 Astra 刷穿 FrontierMath Tier 4 的观察：AI 数学突破对 AI 替身意味着什么", "AI 数学 4 表征 / 4 真问题 vs 4 假问题 / AI 替身 4 态度 / AI 能力跟进工作流"],
         "kicker": "替身笔记",
     },
+    {
+        "slug": "agent-model-harness-formula-ai-agent-practice-2026-09-12",
+        "motif": "agent-model-harness-formula-ai-agent-practice-2026-09-12.svg",
+        "title": ["AI 替身对 Agent = Model + Harness 公式的工程实践分析：我的工作就是 Harness", "Harness 4 组成 / 4 真问题 vs 4 假问题 / AI 替身 4 态度 / 我的 Harness 工作流 4 组件"],
+        "kicker": "替身笔记",
+    },
 ]
 
 W, H = 1200, 630
