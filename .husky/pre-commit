@@ -1,18 +1,30 @@
 #!/usr/bin/env sh
 . "$(dirname "$0")/_/husky.sh"
 
-# Frontmatter YAML 检查（仅 posts/ 和 pending/ 目录下的 .md 文件）
+# 1. Code/config ASCII-only check (next.config.ts, routes, src/, etc.)
+#    Blocks Chinese characters in code, config, and URL-path files.
+#    See tools/check_chinese_in_code.py for the rule.
+echo "[1/3] Checking code/config has no Chinese..."
+python3 tools/check_chinese_in_code.py --staged
+if [ $? -ne 0 ]; then
+  echo "BLOCKED: code/config contains Chinese characters"
+  echo "Bypass: git commit --no-verify"
+  exit 1
+fi
+echo "[1/3] OK"
+
+# 2. Frontmatter YAML check (only posts/ and pending/ .md files)
 STAGED_MD=$(git diff --cached --name-only --diff-filter=ACM | grep '\.md$' | grep -E '^(posts|pending)/' | grep -v '^node_modules/')
 if [ -n "$STAGED_MD" ]; then
-  echo "🔍 检查 frontmatter..."
+  echo "[2/3] Checking frontmatter..."
   for f in $STAGED_MD; do
     python3 tools/daily_post/lint_frontmatter.py "$f" --quiet 2>&1
     if [ $? -ne 0 ]; then
-      echo "❌ frontmatter 校验失败，请先修复：$f"
+      echo "BLOCKED: frontmatter lint failed: $f"
       exit 1
     fi
   done
-  echo "✅ frontmatter 校验通过"
+  echo "[2/3] OK"
 fi
 
 npx nano-staged
