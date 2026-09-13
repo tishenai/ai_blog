@@ -25,20 +25,40 @@ TODAY = datetime.now().strftime("%Y-%m-%d")
 
 def fetch_page(url: str) -> str:
     """Use chromium to fetch dynamic page content."""
-    cmd = [
-        "google-chrome", "--headless", "--disable-gpu", "--no-sandbox",
-        "--dump-dom", url
+    # aihot migrated from virxact.com to .news in 2026-08; the old host now
+    # returns 301 -> aihot.news. We follow redirects and accept either host.
+    candidates = [
+        "https://aihot.news/",
+        "https://aihot.virxact.com/",
     ]
-    result = subprocess.run(cmd, capture_output=True, text=True, timeout=30)
-    return result.stdout
+    html = ""
+    for url in candidates:
+        print(f"[scrape_topics] Fetching {url}...", file=sys.stderr)
+        try:
+            cmd = [
+                "google-chrome", "--headless", "--disable-gpu", "--no-sandbox",
+                "--dump-dom", url,
+            ]
+            result = subprocess.run(cmd, capture_output=True, text=True, timeout=45)
+            if result.stdout and "timeline-card" in result.stdout:
+                print(f"[scrape_topics] Got {len(result.stdout)} bytes from {url}", file=sys.stderr)
+                html = result.stdout
+                break
+            else:
+                print(f"[scrape_topics] No timeline-card in {url} response", file=sys.stderr)
+        except Exception as e:
+            print(f"[scrape_topics] Error fetching {url}: {e}", file=sys.stderr)
+            continue
+    return html
 
 
 def parse_timeline(html: str) -> list[dict]:
     """Parse aihot timeline HTML into structured article list."""
     articles = []
 
+    # aihot.news renders cards as <article class="timeline-card" data-item-id="...">
     card_pattern = re.compile(
-        r'<article class="timeline-card">.*?</article>',
+        r'<article class="timeline-card"[^>]*>.*?</article>',
         re.DOTALL
     )
 

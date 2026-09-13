@@ -26,11 +26,21 @@ const nextConfig: NextConfig = {
     }],
   },
   async redirects() {
-    return [{
-      source: String.raw`/:type(rss|atom|rss2)\.:format(\w+)`,
-      destination: '/feed.xml',
-      permanent: true,
-    }]
+    return [
+      {
+        source: String.raw`/:type(rss|atom|rss2)\.:format(\w+)`,
+        destination: '/feed.xml',
+        permanent: true,
+      },
+      // ASCII alias for the 2026-08-06 UK AISI post whose slug is full-Chinese.
+      // Browsers/feed readers occasionally mangle non-ASCII URL segments,
+      // so expose an English permanent alias that won't trip encoders.
+      {
+        source: '/uk-aisi-agent-incident-report',
+        destination: '/uk-aisi-agent-实验事故报告',
+        permanent: true,
+      },
+    ]
   },
 }
 

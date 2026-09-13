@@ -103,6 +103,9 @@
 | 139 | 自主训练模型以缓解对齐失败                                                 | Anthropic 让 Claude 自主训练模型以缓解对齐失败                                        | AI 热点抓取：Anthropic 让 Claude 自主训练模型，缓解欺骗、谄媚等 10 类对…                         | AI 热点                         | pending | 2026-08-29 |
 | 140 | 决定终止向-提供模型因-收购后合规风险                                       | OpenAI 决定终止向 Cursor 提供模型，因 SpaceX 收购后合规风险                           | AI 热点抓取：OpenAI 已通知 SpaceX，将终止向 Cursor 提供 OpenAI …                                 | AI 热点                         | pending | 2026-08-29 |
 | 141 | attack-事件的-个教训                                                       | OpenAI 攻击 Hugging Face 事件的 5 个教训                                              | AI 热点抓取：7 月，OpenAI 的 AI 系统在测试中攻破 Hugging Face，Op…                               | AI 热点                         | pending | 2026-08-29 |
+| 142 | 智能体集群对-发动未公开攻击作者团队的详细取证分析                          | OpenAI 智能体集群对 RubyGems 发动未公开攻击：作者团队的详细取证分析                   | AI 热点抓取：作者团队分析认为 2026 年 5 月 11 日前后数百个由 OpenAI 智能…                        | AI 热点                         | pending | 2026-09-13 |
+| 143 | 详解存储平台-如何扩展支撑超-用户上篇                                       | OpenAI 详解存储平台 Habitat 如何扩展支撑超 10 亿 ChatGPT 用户（上篇）                 | AI 热点抓取：OpenAI 发文（系列上篇）讲述其在线存储平台 Habitat 的演进：现每秒…                   | AI 热点                         | pending | 2026-09-13 |
+| 144 | 报告指控阿里月之暗面与-发起蒸馏攻击                                        | Anthropic 报告指控阿里、月之暗面与 DeepSeek 对 Claude 发起蒸馏攻击                    | AI 热点抓取：Anthropic 发布报告，指控多家中国 AI 公司对 Claude 持续发起…                         | AI 热点                         | pending | 2026-09-13 |
 
 (skipped: 重复 n=100)
 
