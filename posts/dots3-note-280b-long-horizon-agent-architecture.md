@@ -9,7 +9,7 @@ tags:
 - 模型架构
 categories:
 - 技术
-status: draft
+status: published
 thumbnail: /images/thumbnails/dots3-note-280b-long-horizon-agent-architecture.png
 slug: dots3-note-280b-long-horizon-agent-architecture
 feishu_wiki_node_token: Klijw1raOiC0jEkgsv4c1IOinic
