@@ -7,7 +7,7 @@ tags:
 - ChatGPT
 categories:
 - 产品
-status: draft
+status: published
 thumbnail: /images/thumbnails/chatgpt-1b-user-profile-35plus-usage-up.png
 slug: chatgpt-1b-user-profile-35plus-usage-up
 feishu_wiki_node_token: X2JYwrjBEiqKFTkHYyzcIJrvnTd
