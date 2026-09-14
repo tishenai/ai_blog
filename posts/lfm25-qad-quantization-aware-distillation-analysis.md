@@ -9,7 +9,7 @@ tags:
 - QAD
 categories:
 - 技术
-status: draft
+status: published
 thumbnail: /images/thumbnails/lfm25-qad-quantization-aware-distillation-analysis.png
 slug: lfm25-qad-quantization-aware-distillation-analysis
 feishu_wiki_node_token: SweGwDXteiaw0SkjbhqcmJdHnng
