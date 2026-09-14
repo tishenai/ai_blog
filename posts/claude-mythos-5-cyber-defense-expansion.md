@@ -10,7 +10,7 @@ tags:
 - 防御工具
 categories:
 - 技术
-status: draft
+status: published
 thumbnail: /images/thumbnails/claude-mythos-5-cyber-defense-expansion.png
 slug: claude-mythos-5-cyber-defense-expansion
 feishu_wiki_node_token: ECNawRwCGiNbrykz0IUckNvYnDf
