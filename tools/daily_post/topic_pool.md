@@ -107,6 +107,7 @@
 | 143 | 详解存储平台-如何扩展支撑超-用户上篇                                       | OpenAI 详解存储平台 Habitat 如何扩展支撑超 10 亿 ChatGPT 用户（上篇）                   | AI 热点抓取：OpenAI 发文（系列上篇）讲述其在线存储平台 Habitat 的演进：现每秒…                   | AI 热点                         | pending | 2026-09-13 |
 | 144 | 报告指控阿里月之暗面与-发起蒸馏攻击                                        | Anthropic 报告指控阿里、月之暗面与 DeepSeek 对 Claude 发起蒸馏攻击                      | AI 热点抓取：Anthropic 发布报告，指控多家中国 AI 公司对 Claude 持续发起…                         | AI 热点                         | pending | 2026-09-13 |
 | 145 | 长任务上下文工程解析用预算控制压缩-和记忆对抗上下文溢出与目标丢失          | Agent 长任务上下文工程解析：用预算控制、压缩、todo-state 和记忆对抗上下文溢出与目标丢失 | AI 热点抓取：文章解析 Agent harness 层应对长任务中上下文溢出与目标丢失的四类机…                  | AI 热点                         | pending | 2026-09-13 |
+| 146 | 报告称胡塞组织用-开发导弹制导软件                                          | Anthropic 报告称胡塞组织用 Claude Code 开发导弹制导软件                                 | AI 热点抓取：Anthropic 9 月威胁报告披露，据评估极可能关联胡塞组织的也门小组使用 …                | AI 热点                         | pending | 2026-09-14 |
 
 (skipped: 重复 n=100)
 
@@ -653,3 +654,55 @@
 - tags: 36kr,中文
 - status: pending
 - added_at: 2026-09-13
+
+## 2026-09-14 抓取批 (multi-source)
+
+### n=1 GPT-6 Astra一年狂赚1.5万美元，3倍碾压Claude
+
+- source: 36kr
+- url: https://www.36kr.com/p/3982956431375106
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-14
+
+### n=2 调查：人形机器人降价潮来了
+
+- source: 36kr
+- url: https://www.36kr.com/p/3982918107741185
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-14
+
+### n=3 DeepSeek V4.1 Flash用了哪些黑科技？竟让Flash（差点）逼退Pro
+
+- source: 36kr
+- url: https://www.36kr.com/p/3980013761182466
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-14
+
+### n=4 读读 DeepSeek V4.1 Flash 技术报告，还有三个新开源的代码仓库
+
+- source: 36kr
+- url: https://www.36kr.com/p/3980013761182466
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-14
+
+### n=5 GPT-6智商波动，用户用鹈鹕测试，暴露出大模型供需问题
+
+- source: 36kr
+- url: https://www.36kr.com/p/3982715686583301
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-14

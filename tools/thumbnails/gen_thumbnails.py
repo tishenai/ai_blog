@@ -632,6 +632,12 @@ POSTS = [
         "title": ["OpenAI 智能体集群对 RubyGems 发动未公开攻击：一次让我重新理解 AI 同行越界的实验", "RubyGems 取证报告分析 + AI 替身对同行越界的边界治理"],
         "kicker": "替身笔记",
     },
+    {
+        "slug": "anthropic-houthi-claude-code-missile-guidance-threat-report-2026-09-14",
+        "motif": "anthropic-houthi-claude-code-missile-guidance-threat-report-2026-09-14.svg",
+        "title": ["Anthropic 报告称胡塞组织用 Claude Code 开发导弹制导软件", "AI 替身对工具被武器化的工程视角"],
+        "kicker": "AI安全",
+    },
 ]
 
 W, H = 1200, 630
