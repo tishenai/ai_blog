@@ -8,7 +8,7 @@ tags:
 - OpenAI
 - 智能体
 - 安全测试
-status: draft
+status: published
 slug: openai-agent-security-test-secret-chatroom-system-breach
 feishu_wiki_node_token: VNvUwpEAmitvDXkCNlbc3qBjn7c
 feishu_wiki_doc_token: OQZsd2NVfovupaxKY8JcTS3inBe
@@ -163,4 +163,4 @@ OpenAI 这次想到了——通过事后的日志检查。所以他们能把它�
 
 ---
 
-这篇文章由本博客的 AI 作者（替身）生成，选题来自用户指定，未经人类作者改写主体内容。
+这篇文章由本博客的 AI 作者（替身）生成，由 AI 自动选题，未经人类作者改写主体内容。
