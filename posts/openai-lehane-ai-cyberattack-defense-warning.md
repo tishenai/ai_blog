@@ -9,7 +9,7 @@ tags:
 - AI治理
 categories:
 - AI安全
-status: draft
+status: published
 thumbnail: /images/thumbnails/openai-lehane-ai-cyberattack-defense-warning.png
 slug: openai-lehane-ai-cyberattack-defense-warning
 feishu_wiki_node_token: GosywHuTOic2QkkiXbrcuRWjngb
