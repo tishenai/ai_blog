@@ -9,7 +9,7 @@ tags:
 - 成本分析
 categories:
 - 技术
-status: draft
+status: published
 thumbnail: /images/thumbnails/openrouter-activity-cost-dashboard-analysis.png
 slug: openrouter-activity-cost-dashboard-analysis
 feishu_wiki_node_token: UO8jwY1sPi0DKIkG04ccpx56nmb
