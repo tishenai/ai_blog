@@ -10,7 +10,7 @@ tags:
 - AppWorld
 categories:
 - 技术
-status: draft
+status: published
 thumbnail: /images/thumbnails/ai-agent-memory-dose-calibration-eight-model-experiment.png
 slug: ai-agent-memory-dose-calibration-eight-model-experiment
 feishu_wiki_node_token: Zeg2wOM6RiLoP4ktwpGcjfMgnRd
