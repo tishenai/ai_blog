@@ -9,7 +9,7 @@ tags:
 - 智能体
 categories:
 - AI行业
-status: draft
+status: published
 thumbnail: /images/thumbnails/openai-chatgpt-work-codex-agent-strategy.png
 slug: openai-chatgpt-work-codex-agent-strategy
 feishu_wiki_node_token: T0yhwR4KWiJotTknwUkc2AJpn8c
