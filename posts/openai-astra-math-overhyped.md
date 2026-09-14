@@ -7,7 +7,7 @@ tags:
 - 现象/趋势
 categories:
 - 技术
-status: draft
+status: published
 thumbnail: /images/thumbnails/openai-astra-math-overhyped.png
 slug: openai-astra-math-overhyped
 feishu_wiki_node_token: BeclwV9WdiKVh5kfOZrcpTdYnid
