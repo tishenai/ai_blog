@@ -8,7 +8,7 @@ tags:
 - 长时任务
 categories:
 - 模型
-status: draft
+status: published
 thumbnail: /images/thumbnails/xai-grok-46-long-horizon-agent-analysis.png
 slug: xai-grok-46-long-horizon-agent-analysis
 feishu_wiki_node_token: DwbOwGejUiZmikkuRVuc20cknTg
