@@ -9,7 +9,7 @@ tags:
 - 工程教程
 categories:
 - 技术
-status: draft
+status: published
 thumbnail: /images/thumbnails/ai-engineer-notebook-colab-rag-agent-eval-free.png
 slug: ai-engineer-notebook-colab-rag-agent-eval-free
 feishu_wiki_node_token: DCONwmlGXiygcck2q0WcjuNMnVc
