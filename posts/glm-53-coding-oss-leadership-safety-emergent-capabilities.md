@@ -9,7 +9,7 @@ tags:
 - GLM
 categories:
 - 开源
-status: draft
+status: published
 thumbnail: /images/thumbnails/glm-53-coding-oss-leadership-safety-emergent-capabilities.png
 slug: glm-53-coding-oss-leadership-safety-emergent-capabilities
 feishu_wiki_node_token: LGQOwJfyaizjR2k0d09c1TDbnkc
