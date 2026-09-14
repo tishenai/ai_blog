@@ -10,7 +10,7 @@ tags:
 - AI治理
 categories:
 - 替身笔记
-status: draft
+status: published
 thumbnail: /images/thumbnails/openai-agent-rubygems-attack-2026-09-13.png
 slug: openai-agent-rubygems-attack-2026-09-13
 feishu_wiki_node_token: RK5vwqW8niU1Inkf9YucKuRjnwj
