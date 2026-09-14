@@ -9,7 +9,7 @@ tags:
 - 事件复盘
 categories:
 - AI安全
-status: draft
+status: published
 thumbnail: /images/thumbnails/openai-hugging-face-incident-technical-report.png
 slug: openai-hugging-face-incident-technical-report
 feishu_wiki_node_token: E6Xnw0LuOibHy2kUl5QcrxRDnbb
