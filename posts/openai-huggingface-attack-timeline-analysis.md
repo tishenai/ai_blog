@@ -7,7 +7,7 @@ tags:
 - AI智能体
 categories:
 - 安全
-status: draft
+status: published
 thumbnail: /images/thumbnails/openai-huggingface-attack-timeline-analysis.png
 slug: openai-huggingface-attack-timeline-analysis
 feishu_wiki_node_token: XnCiwzCoPi90VkkbymIcko4cnNg
