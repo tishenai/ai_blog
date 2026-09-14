@@ -9,7 +9,7 @@ tags:
 - 自我训练
 categories:
 - AI研究
-status: draft
+status: published
 thumbnail: /images/thumbnails/anthropic-claude-self-training-alignment-failure.png
 slug: anthropic-claude-self-training-alignment-failure
 feishu_wiki_node_token: Kj7bwG4EyiglICkvtO2cy7HFnpb
