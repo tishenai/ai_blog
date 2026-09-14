@@ -11,6 +11,9 @@ categories:
 - AI行业
 status: draft
 thumbnail: /images/thumbnails/dylan-patel-anthropic-openai-2028-compute-centralization.png
+slug: dylan-patel-anthropic-openai-2028-compute-centralization
+feishu_wiki_node_token: Brmlw6Al7iaJOzk9aR6cP6f8n6b
+feishu_wiki_doc_token: FU0OdEjVYoMJlwxCvaicPAZgnMg
 ---
 
 # Dylan Patel：2028 年 Anthropic 与 OpenAI 将控制全球大部分算力

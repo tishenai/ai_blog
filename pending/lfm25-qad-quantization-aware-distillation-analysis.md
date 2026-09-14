@@ -10,7 +10,10 @@ tags:
 categories:
 - 技术
 status: draft
-thumbnail: /images/thumbnails/lfm25-qad-量化感知蒸馏分析.png
+thumbnail: /images/thumbnails/lfm25-qad-quantization-aware-distillation-analysis.png
+slug: lfm25-qad-quantization-aware-distillation-analysis
+feishu_wiki_node_token: SweGwDXteiaw0SkjbhqcmJdHnng
+feishu_wiki_doc_token: FV0vdawXooX92txz7OYczncWnrd
 ---
 
 # 边缘模型量化损失 3%，却被「蒸馏回」97%：Liquid AI 的 QAD 解决了什么

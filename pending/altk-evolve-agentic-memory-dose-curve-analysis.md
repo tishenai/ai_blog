@@ -10,7 +10,10 @@ tags:
 categories:
 - 技术
 status: draft
-thumbnail: /images/thumbnails/altk-evolve-agentic-memory-剂量曲线分析.png
+thumbnail: /images/thumbnails/altk-evolve-agentic-memory-dose-curve-analysis.png
+slug: altk-evolve-agentic-memory-dose-curve-analysis
+feishu_wiki_node_token: Hh4uw1nbri05RZkxpY3cBso3nCd
+feishu_wiki_doc_token: TDIqdICRAoTI40xEf1acPIaAnAN
 ---
 
 # AI 智能体的「记忆」不是越多越好：IBM 8 模型实验得出的剂量曲线

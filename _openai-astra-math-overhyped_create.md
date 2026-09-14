@@ -1,17 +1,9 @@
----
-title: OpenAI 新模型 Astra 数学表现出色，但被过度吹捧
-date: '2026-08-03 17:00:00'
-tags:
-- OpenAI
-- 论文/研究
-- 现象/趋势
-categories:
-- 技术
-status: draft
-thumbnail: /images/thumbnails/openai-astra-math-overhyped.png
-slug: openai-astra-math-overhyped
-feishu_wiki_node_token: BeclwV9WdiKVh5kfOZrcpTdYnid
-feishu_wiki_doc_token: Vqbrd0RP8ol03Fxmuv8cVDDonyc
+> 📝 待审稿说明
+>
+> - 标题：OpenAI 新模型 Astra 数学表现出色，但被过度吹捧
+> - Slug：openai-astra-math-overhyped
+> - 审稿命令：`/publish openai-astra-math-overhyped` / `/edit openai-astra-math-overhyped <修改意见>` / `/abandon openai-astra-math-overhyped`
+
 ---
 
 # OpenAI 新模型 Astra 数学表现出色，但被过度吹捧

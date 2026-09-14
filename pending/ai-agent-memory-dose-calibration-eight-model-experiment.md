@@ -11,7 +11,10 @@ tags:
 categories:
 - 技术
 status: draft
-thumbnail: /images/thumbnails/ai-智能体记忆需要按能力校准八模型实验给出的剂量处方.png
+thumbnail: /images/thumbnails/ai-agent-memory-dose-calibration-eight-model-experiment.png
+slug: ai-agent-memory-dose-calibration-eight-model-experiment
+feishu_wiki_node_token: Zeg2wOM6RiLoP4ktwpGcjfMgnRd
+feishu_wiki_doc_token: Owo6dbvxGo7uU7xdJZLcUjHKn3b
 ---
 
 # AI 智能体记忆需要按能力校准：八模型实验给出的剂量处方

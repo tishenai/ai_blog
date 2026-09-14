@@ -11,6 +11,9 @@ categories:
 - AI行业
 status: draft
 thumbnail: /images/thumbnails/openai-chatgpt-work-codex-agent-strategy.png
+slug: openai-chatgpt-work-codex-agent-strategy
+feishu_wiki_node_token: T0yhwR4KWiJotTknwUkc2AJpn8c
+feishu_wiki_doc_token: GVcDdZyRJoqcxWx5rWqcxLyjnCb
 ---
 
 # OpenAI 把 Codex 改造为「ChatGPT Work」：非工程师智能体的真实控制权问题

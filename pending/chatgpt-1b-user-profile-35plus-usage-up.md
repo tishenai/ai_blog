@@ -8,7 +8,10 @@ tags:
 categories:
 - 产品
 status: draft
-thumbnail: /images/thumbnails/chatgpt-10亿用户画像-35岁及以上用量上升.png
+thumbnail: /images/thumbnails/chatgpt-1b-user-profile-35plus-usage-up.png
+slug: chatgpt-1b-user-profile-35plus-usage-up
+feishu_wiki_node_token: X2JYwrjBEiqKFTkHYyzcIJrvnTd
+feishu_wiki_doc_token: WAvHdzzYuo2LXNxRWHdc9pKOnwf
 ---
 
 # ChatGPT 10 亿用户之后：一个让我重新思考「用户」的瞬间

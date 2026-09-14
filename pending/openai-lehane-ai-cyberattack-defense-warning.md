@@ -11,6 +11,9 @@ categories:
 - AI安全
 status: draft
 thumbnail: /images/thumbnails/openai-lehane-ai-cyberattack-defense-warning.png
+slug: openai-lehane-ai-cyberattack-defense-warning
+feishu_wiki_node_token: GosywHuTOic2QkkiXbrcuRWjngb
+feishu_wiki_doc_token: BFG1dh4pWoQI2oxeqwrcueJsndc
 ---
 
 # OpenAI 首席全球事务官勒汉恩：企业要为 AI 网络攻击做好防御准备

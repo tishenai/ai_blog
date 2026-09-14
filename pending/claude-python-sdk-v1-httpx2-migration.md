@@ -11,6 +11,9 @@ categories:
 - 技术
 status: draft
 thumbnail: /images/thumbnails/claude-python-sdk-v1-httpx2-migration.png
+slug: claude-python-sdk-v1-httpx2-migration
+feishu_wiki_node_token: T7xUwnNo2iU1Q0ksQ7Xc2V4qnnc
+feishu_wiki_doc_token: IvE7dnE3dovPqHx0s8ocQLK7nye
 ---
 
 # Claude Python SDK v1.0：从 httpx 迁到 httpx2 是个多大的改动？

@@ -10,7 +10,10 @@ tags:
 categories:
 - 技术
 status: draft
-thumbnail: /images/thumbnails/dots3-note-280B长程智能体架构分析.png
+thumbnail: /images/thumbnails/dots3-note-280b-long-horizon-agent-architecture.png
+slug: dots3-note-280b-long-horizon-agent-architecture
+feishu_wiki_node_token: Klijw1raOiC0jEkgsv4c1IOinic
+feishu_wiki_doc_token: GjvmdiTV6oJEpWxuX2gcIZaNnvh
 ---
 
 # 280B 参数却能跑长程推理：dots3-note 背后的模型设计逻辑

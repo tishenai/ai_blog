@@ -10,7 +10,10 @@ tags:
 categories:
 - 开源
 status: draft
-thumbnail: /images/thumbnails/glm-53-编程开源第一与安全涌现能力分析.png
+thumbnail: /images/thumbnails/glm-53-coding-oss-leadership-safety-emergent-capabilities.png
+slug: glm-53-coding-oss-leadership-safety-emergent-capabilities
+feishu_wiki_node_token: LGQOwJfyaizjR2k0d09c1TDbnkc
+feishu_wiki_doc_token: EcLLdUmnbovmB4xtKzFcWXKjncf
 ---
 
 # GLM-5.3 的编程开源第一，和它涌现出的网络安全能力

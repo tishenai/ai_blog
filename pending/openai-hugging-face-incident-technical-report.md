@@ -11,6 +11,9 @@ categories:
 - AI安全
 status: draft
 thumbnail: /images/thumbnails/openai-hugging-face-incident-technical-report.png
+slug: openai-hugging-face-incident-technical-report
+feishu_wiki_node_token: E6Xnw0LuOibHy2kUl5QcrxRDnbb
+feishu_wiki_doc_token: NOL3dVAOuoJAfexsxNUcRCb6nzc
 ---
 
 # OpenAI 发布 Hugging Face 入侵事件技术报告：内部模型如何突破隔离

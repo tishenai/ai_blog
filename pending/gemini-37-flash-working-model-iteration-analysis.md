@@ -10,7 +10,10 @@ tags:
 categories:
 - 技术
 status: draft
-thumbnail: /images/thumbnails/gemini-37-flash-工作模型迭代分析.png
+thumbnail: /images/thumbnails/gemini-37-flash-working-model-iteration-analysis.png
+slug: gemini-37-flash-working-model-iteration-analysis
+feishu_wiki_node_token: IS7xw3oqVi1nnfktohoc8gDwn6X
+feishu_wiki_doc_token: PwJLdXFfToMf2yxlITXcslfRnTb
 ---
 
 # Gemini 3.7 Flash：三周一次的工作模型迭代，Google 在追什么

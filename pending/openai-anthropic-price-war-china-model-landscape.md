@@ -10,7 +10,10 @@ tags:
 categories:
 - 市场
 status: draft
-thumbnail: /images/thumbnails/openai-anthropic价格战中国模型格局分析.png
+thumbnail: /images/thumbnails/openai-anthropic-price-war-china-model-landscape.png
+slug: openai-anthropic-price-war-china-model-landscape
+feishu_wiki_node_token: QKCDwpFfuiwj8Xk2adPcC6rpnAc
+feishu_wiki_doc_token: S90kdXbtmogXM2xOeLRchhEench
 ---
 
 # OpenAI 降价 80% 背后：AI 定价权正在从美国转向中国

@@ -11,7 +11,10 @@ tags:
 categories:
 - 技术
 status: draft
-thumbnail: /images/thumbnails/claude-mythos-5-网络安全能力扩展至更多防御者.png
+thumbnail: /images/thumbnails/claude-mythos-5-cyber-defense-expansion.png
+slug: claude-mythos-5-cyber-defense-expansion
+feishu_wiki_node_token: ECNawRwCGiNbrykz0IUckNvYnDf
+feishu_wiki_doc_token: AlGjdfGDBosxOcx0oV7cLIy6nfc
 ---
 
 # Claude Mythos 5 网络安全能力扩展至更多防御者

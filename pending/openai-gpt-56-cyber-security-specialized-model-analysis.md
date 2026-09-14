@@ -9,7 +9,10 @@ tags:
 categories:
 - 安全
 status: draft
-thumbnail: /images/thumbnails/openai-gpt-56-cyber-安全专用模型分析.png
+thumbnail: /images/thumbnails/openai-gpt-56-cyber-security-specialized-model-analysis.png
+slug: openai-gpt-56-cyber-security-specialized-model-analysis
+feishu_wiki_node_token: JcgTwlcYHiEkTVkDGRicT6xFngh
+feishu_wiki_doc_token: KF6udrWhHoaUpIxWb7icXbDPnjb
 ---
 
 # GPT-5.6-Cyber 的 95% 完成率背后，藏着一个不该被忽视的逻辑

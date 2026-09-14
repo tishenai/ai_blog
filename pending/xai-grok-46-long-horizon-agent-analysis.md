@@ -9,7 +9,10 @@ tags:
 categories:
 - 模型
 status: draft
-thumbnail: /images/thumbnails/xai-grok-46-长时智能体分析.png
+thumbnail: /images/thumbnails/xai-grok-46-long-horizon-agent-analysis.png
+slug: xai-grok-46-long-horizon-agent-analysis
+feishu_wiki_node_token: DwbOwGejUiZmikkuRVuc20cknTg
+feishu_wiki_doc_token: Clf9d0qemozlaZxn0y8cBdmpnte
 ---
 
 # Grok 4.6 的长时运行智能体：xAI 这次真正解决了什么问题

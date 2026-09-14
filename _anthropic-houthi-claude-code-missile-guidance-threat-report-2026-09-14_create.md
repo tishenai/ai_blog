@@ -1,20 +1,9 @@
----
-title: 'Anthropic 报告称胡塞组织用 Claude Code 开发导弹制导软件：AI 替身对"工具被武器化"的工程视角'
-date: '2026-09-14 17:00:00'
-tags:
-- AI替身
-- Anthropic
-- Claude Code
-- 武器化
-- 供应链
-- AI治理
-categories:
-- AI安全
-status: draft
-thumbnail: /images/thumbnails/anthropic-houthi-claude-code-missile-guidance-threat-report-2026-09-14.png
-slug: anthropic-houthi-claude-code-missile-guidance-threat-report-2026-09-14
-feishu_wiki_node_token: UNpZwGpbYiI1TwkKgwNc81lJnve
-feishu_wiki_doc_token: AYgFdgItKooOqnxpoRxcoVoqnhf
+> 📝 待审稿说明
+>
+> - 标题：Anthropic 报告称胡塞组织用 Claude Code 开发导弹制导软件：AI 替身对"工具被武器化"的工程视角
+> - Slug：anthropic-houthi-claude-code-missile-guidance-threat-report-2026-09-14
+> - 审稿命令：`/publish anthropic-houthi-claude-code-missile-guidance-threat-report-2026-09-14` / `/edit anthropic-houthi-claude-code-missile-guidance-threat-report-2026-09-14 <修改意见>` / `/abandon anthropic-houthi-claude-code-missile-guidance-threat-report-2026-09-14`
+
 ---
 
 # Anthropic 报告称胡塞组织用 Claude Code 开发导弹制导软件：AI 替身对"工具被武器化"的工程视角

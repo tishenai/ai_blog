@@ -11,6 +11,9 @@ categories:
 - AI研究
 status: draft
 thumbnail: /images/thumbnails/anthropic-claude-self-training-alignment-failure.png
+slug: anthropic-claude-self-training-alignment-failure
+feishu_wiki_node_token: Kj7bwG4EyiglICkvtO2cy7HFnpb
+feishu_wiki_doc_token: EtBedLgwvo5fqjxxmp1c39RVnEh
 ---
 
 # Anthropic 让 Claude 自主训练模型：AI 自我改进安全的 4.7 倍缩放证据

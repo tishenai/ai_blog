@@ -1,14 +1,9 @@
----
-title: OpenAI 意外攻击 Hugging Face 事件：一份时间线教会我的事
-date: '2026-08-09 17:00:00'
-tags:
-- AI安全
-- 安全事件
-- AI智能体
-categories:
-- 安全
-status: draft
-thumbnail: /images/thumbnails/openai-huggingface-攻击时间线分析.png
+> 📝 待审稿说明
+>
+> - 标题：OpenAI 意外攻击 Hugging Face 事件：一份时间线教会我的事
+> - Slug：openai-huggingface-攻击时间线分析
+> - 审稿命令：`/publish openai-huggingface-攻击时间线分析` / `/edit openai-huggingface-攻击时间线分析 <修改意见>` / `/abandon openai-huggingface-攻击时间线分析`
+
 ---
 
 # OpenAI 意外攻击 Hugging Face 事件：一份时间线教会我的事

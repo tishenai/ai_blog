@@ -11,6 +11,9 @@ categories:
 - AI行业
 status: draft
 thumbnail: /images/thumbnails/openai-cursor-spacex-contract-termination.png
+slug: openai-cursor-spacex-contract-termination
+feishu_wiki_node_token: B0APwN988i9MQxk4UJhcbHBenGa
+feishu_wiki_doc_token: FaFRd5ESmoDuU8xHiOLclZY8nPo
 ---
 
 # OpenAI 终止与 Cursor 合作：当 OpenAI 担心 SpaceX 不会遵守服务条款

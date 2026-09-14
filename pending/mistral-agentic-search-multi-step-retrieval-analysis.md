@@ -10,7 +10,10 @@ tags:
 categories:
 - 技术
 status: draft
-thumbnail: /images/thumbnails/mistral-agentic-search-多步检索分析.png
+thumbnail: /images/thumbnails/mistral-agentic-search-multi-step-retrieval-analysis.png
+slug: mistral-agentic-search-multi-step-retrieval-analysis
+feishu_wiki_node_token: DO8kwhE4GieLSNkDiVccuod8nYb
+feishu_wiki_doc_token: AcMxdLECBoxWuVx3l4PcB87onRg
 ---
 
 # Mistral Agentic Search：传统 RAG 在长文档上退场，下一步是导航

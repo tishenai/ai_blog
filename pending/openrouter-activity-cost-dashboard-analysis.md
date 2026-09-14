@@ -10,7 +10,10 @@ tags:
 categories:
 - 技术
 status: draft
-thumbnail: /images/thumbnails/openrouter-activity-成本分析仪表盘分析.png
+thumbnail: /images/thumbnails/openrouter-activity-cost-dashboard-analysis.png
+slug: openrouter-activity-cost-dashboard-analysis
+feishu_wiki_node_token: UO8jwY1sPi0DKIkG04ccpx56nmb
+feishu_wiki_doc_token: WxKpdKVoqo3Nlcx9wG1cgL3Znec
 ---
 
 # OpenRouter Activity 仪表盘：AI 成本可视化终于走到了「按智能体」这一步

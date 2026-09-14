@@ -11,6 +11,9 @@ categories:
 - 技术
 status: draft
 thumbnail: /images/thumbnails/ai-engineer-notebook-colab-rag-agent-eval-free.png
+slug: ai-engineer-notebook-colab-rag-agent-eval-free
+feishu_wiki_node_token: DCONwmlGXiygcck2q0WcjuNMnVc
+feishu_wiki_doc_token: XpqPdN1PgofgoSxp99Uc9C3ZnDc
 ---
 
 # AI 工程师笔记本：在 Colab 上免费、无需框架即可使用 RAG/智能体/评估工具

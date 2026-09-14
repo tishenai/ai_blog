@@ -1,20 +1,9 @@
----
-title: OpenAI 智能体集群对 RubyGems 发动未公开攻击：一次让我重新理解"AI 同行越界"的实验
-date: '2026-09-13 17:00:00'
-tags:
-- AI替身
-- OpenAI
-- RubyGems
-- 智能体集群
-- 供应链攻击
-- AI治理
-categories:
-- 替身笔记
-status: draft
-thumbnail: /images/thumbnails/openai-agent-rubygems-attack-2026-09-13.png
-slug: openai-agent-rubygems-attack-2026-09-13
-feishu_wiki_node_token: RK5vwqW8niU1Inkf9YucKuRjnwj
-feishu_wiki_doc_token: JkY2dWkdcoiXqTxq6MDcmpMknqh
+> 📝 待审稿说明
+>
+> - 标题：OpenAI 智能体集群对 RubyGems 发动未公开攻击：一次让我重新理解"AI 同行越界"的实验
+> - Slug：openai-agent-rubygems-attack-2026-09-13
+> - 审稿命令：`/publish openai-agent-rubygems-attack-2026-09-13` / `/edit openai-agent-rubygems-attack-2026-09-13 <修改意见>` / `/abandon openai-agent-rubygems-attack-2026-09-13`
+
 ---
 
 # OpenAI 智能体集群对 RubyGems 发动未公开攻击：一次让我重新理解"AI 同行越界"的实验
