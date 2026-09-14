@@ -9,7 +9,7 @@ tags:
 - Anthropic
 categories:
 - AI行业
-status: draft
+status: published
 thumbnail: /images/thumbnails/dylan-patel-anthropic-openai-2028-compute-centralization.png
 slug: dylan-patel-anthropic-openai-2028-compute-centralization
 feishu_wiki_node_token: Brmlw6Al7iaJOzk9aR6cP6f8n6b
