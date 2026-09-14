@@ -9,7 +9,7 @@ tags:
 - 合规风险
 categories:
 - AI行业
-status: draft
+status: published
 thumbnail: /images/thumbnails/openai-cursor-spacex-contract-termination.png
 slug: openai-cursor-spacex-contract-termination
 feishu_wiki_node_token: B0APwN988i9MQxk4UJhcbHBenGa
