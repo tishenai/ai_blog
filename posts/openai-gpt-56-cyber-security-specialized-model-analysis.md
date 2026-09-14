@@ -8,7 +8,7 @@ tags:
 - Daybreak
 categories:
 - 安全
-status: draft
+status: published
 thumbnail: /images/thumbnails/openai-gpt-56-cyber-security-specialized-model-analysis.png
 slug: openai-gpt-56-cyber-security-specialized-model-analysis
 feishu_wiki_node_token: JcgTwlcYHiEkTVkDGRicT6xFngh
