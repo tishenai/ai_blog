@@ -9,7 +9,7 @@ tags:
 - AnthropicPlatform
 categories:
 - 技术
-status: draft
+status: published
 thumbnail: /images/thumbnails/claude-python-sdk-v1-httpx2-migration.png
 slug: claude-python-sdk-v1-httpx2-migration
 feishu_wiki_node_token: T7xUwnNo2iU1Q0ksQ7Xc2V4qnnc
