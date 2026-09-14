@@ -10,7 +10,7 @@ tags:
 - AI治理
 categories:
 - AI安全
-status: draft
+status: published
 thumbnail: /images/thumbnails/anthropic-houthi-claude-code-missile-guidance-threat-report-2026-09-14.png
 slug: anthropic-houthi-claude-code-missile-guidance-threat-report-2026-09-14
 feishu_wiki_node_token: UNpZwGpbYiI1TwkKgwNc81lJnve
