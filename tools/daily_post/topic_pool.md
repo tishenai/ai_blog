@@ -108,6 +108,9 @@
 | 144 | 报告指控阿里月之暗面与-发起蒸馏攻击                                        | Anthropic 报告指控阿里、月之暗面与 DeepSeek 对 Claude 发起蒸馏攻击                      | AI 热点抓取：Anthropic 发布报告，指控多家中国 AI 公司对 Claude 持续发起…                         | AI 热点                         | pending | 2026-09-13 |
 | 145 | 长任务上下文工程解析用预算控制压缩-和记忆对抗上下文溢出与目标丢失          | Agent 长任务上下文工程解析：用预算控制、压缩、todo-state 和记忆对抗上下文溢出与目标丢失 | AI 热点抓取：文章解析 Agent harness 层应对长任务中上下文溢出与目标丢失的四类机…                  | AI 热点                         | pending | 2026-09-13 |
 | 146 | 报告称胡塞组织用-开发导弹制导软件                                          | Anthropic 报告称胡塞组织用 Claude Code 开发导弹制导软件                                 | AI 热点抓取：Anthropic 9 月威胁报告披露，据评估极可能关联胡塞组织的也门小组使用 …                | AI 热点                         | pending | 2026-09-14 |
+| 147 | 阶跃星辰发布-系列语音大模型多款在-榜单全球第一                             | 阶跃星辰发布 StepAudio 3 系列语音大模型，多款在 Artificial Analysis 榜单全球第一        | AI 热点抓取：阶跃星辰发布 StepAudio 3 系列，包含 Realtime、ASR、TT…                              | AI 热点                         | pending |            |
+| 148 | 科技巨头放缓-开发的口头协议是安全共识还是卡特尔                            | 科技巨头放缓 AI 开发的口头协议是安全共识还是卡特尔                                      | AI 热点抓取：Sam Altman、Dario Amodei、Demis Hassabis 和…                                        | AI 热点                         | used    | 2026-09-15 |
+| 149 | 对比-的模型做代码评审够用吗                                                | GPT-5.6 Luna 对比 GPT-6 Astra：$1.20 的模型做代码评审够用吗                             | AI 热点抓取：Entelligence 在 50 个公开基准 PR 上用相同提示词对比 GPT…                            | AI 热点                         | pending | 2026-09-15 |
 
 (skipped: 重复 n=100)
 

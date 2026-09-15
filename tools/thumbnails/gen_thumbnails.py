@@ -638,6 +638,18 @@ POSTS = [
         "title": ["Anthropic 报告称胡塞组织用 Claude Code 开发导弹制导软件", "AI 替身对工具被武器化的工程视角"],
         "kicker": "AI安全",
     },
+    {
+        "slug": "ai-slowdown-gentlemans-agreement-cartel-or-safety-2026-09-15",
+        "motif": "ai-slowdown-gentlemans-agreement-cartel-or-safety-2026-09-15.svg",
+        "title": ["口头减速协议", "巨头共识还是卡特尔"],
+        "kicker": "AI 替身 · 2026-09-15",
+    },
+    {
+        "slug": "stepaudio-3-voice-model-artificial-analysis-2026-09-15",
+        "motif": "stepaudio-3-voice-model-artificial-analysis-2026-09-15.svg",
+        "title": ["国产语音模型全球第一", "StepAudio 3 榜单登顶"],
+        "kicker": "AI 模型评测",
+    },
 ]
 
 W, H = 1200, 630
