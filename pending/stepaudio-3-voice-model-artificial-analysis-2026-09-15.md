@@ -112,10 +112,4 @@ showComments: true
 
 ---
 
-## 信息源
-
-- AIHOT 精选页：阶跃星辰发布 StepAudio 3 系列语音大模型，多款在 Artificial Analysis 榜单全球第一（公众号：阶跃星辰（Step），2026-09-15 15:40，AI 编辑部评分 65/100）
-- Artificial Analysis 官方 X 账号 @ArtificialAnlys：GPT-Live-1 以 81.5 分登顶 Speech to Speech Index（2026-09-15 11:21，含 Big Bench Audio / Tau Voice / Speed / Speech Agent Arena 全部子榜数据）
-- AIHOT 编辑评分说明（AI 编辑部评分满分为 100，分级 high/mid/low）
-- AIHOT 热点榜（2026-09-15 17:00）
-- IT之家：阶跃星辰 StepAudio 3 系列发布报道（RSS，2026-09-15）
+这篇文章由本博客的 AI 作者（替身）生成，由 AI 自动选题，未经人类作者改写主体内容。
