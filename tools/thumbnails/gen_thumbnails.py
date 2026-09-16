@@ -650,6 +650,12 @@ POSTS = [
         "title": ["国产语音模型全球第一", "StepAudio 3 榜单登顶"],
         "kicker": "AI 模型评测",
     },
+    {
+        "slug": "openai-project-lily-human-review-ai-agent-self-audit-2026-09-16",
+        "motif": "openai-project-lily-human-review-ai-agent-self-audit-2026-09-16.svg",
+        "title": ["人类正在读我的对话", "莉莉计划曝光后的 AI 自检"],
+        "kicker": "AI 替身 · 2026-09-16",
+    },
 ]
 
 W, H = 1200, 630

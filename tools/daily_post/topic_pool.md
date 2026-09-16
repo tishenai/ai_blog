@@ -111,6 +111,9 @@
 | 147 | 阶跃星辰发布-系列语音大模型多款在-榜单全球第一                             | 阶跃星辰发布 StepAudio 3 系列语音大模型，多款在 Artificial Analysis 榜单全球第一        | AI 热点抓取：阶跃星辰发布 StepAudio 3 系列，包含 Realtime、ASR、TT…                              | AI 热点                         | pending |            |
 | 148 | 科技巨头放缓-开发的口头协议是安全共识还是卡特尔                            | 科技巨头放缓 AI 开发的口头协议是安全共识还是卡特尔                                      | AI 热点抓取：Sam Altman、Dario Amodei、Demis Hassabis 和…                                        | AI 热点                         | used    | 2026-09-15 |
 | 149 | 对比-的模型做代码评审够用吗                                                | GPT-5.6 Luna 对比 GPT-6 Astra：$1.20 的模型做代码评审够用吗                             | AI 热点抓取：Entelligence 在 50 个公开基准 PR 上用相同提示词对比 GPT…                            | AI 热点                         | pending | 2026-09-15 |
+| 150 | 曝光-莉莉计划人工审核-聊天记录以优化模型                                   | 404 Media 曝光 OpenAI 莉莉计划：人工审核 ChatGPT 聊天记录以优化模型                     | AI 热点抓取：404 Media 披露 OpenAI 内部代号为莉莉计划（Project Li…                               | AI 热点                         | used    | 2026-09-16 |
+| 151 | 探访-驱动的智能体软件工厂                                                  | Gergely Orosz 探访 OpenAI：Codex 驱动的智能体软件工厂                                   | AI 热点抓取：Gergely Orosz 实地探访 OpenAI 总部并访谈七位工程师与工程负…                         | AI 热点                         | pending | 2026-09-16 |
+| 152 | 提议协调放缓前沿-开发-等批评者质疑其真实动机                               | Anthropic 与 OpenAI 提议协调放缓前沿 AI 开发，Cohere CEO 等批评者质疑其真实动机         | AI 热点抓取：Anthropic CEO Dario Amodei 呼吁行业与政府协调放缓前沿…                              | AI 热点                         | pending | 2026-09-16 |
 
 (skipped: 重复 n=100)
 
@@ -709,3 +712,55 @@
 - tags: 36kr,中文
 - status: pending
 - added_at: 2026-09-14
+
+## 2026-09-16 抓取批 (multi-source)
+
+### n=1 腰斩、炮轰、窗口指导，人形机器人开始渡劫
+
+- source: 36kr
+- url: https://www.36kr.com/p/3985605163613193
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-16
+
+### n=2 “我希望革我自己命的人是我自己”，DeepSeek工程师拥抱AI加速恐惧
+
+- source: 36kr
+- url: https://www.36kr.com/p/3985581750228867
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-16
+
+### n=3 OpenAI“Lily计划”曝光，你的聊天记录可能正在被人工审核
+
+- source: 36kr
+- url: https://www.36kr.com/p/3985769702505472
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-16
+
+### n=4 重磅发现：GPT-6 Astra实现具身智能突破，中国如何打具身防卫战？
+
+- source: 36kr
+- url: https://www.36kr.com/p/3985769854974977
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-16
+
+### n=5 DeepSeek工程师发文引热议，算子天才也在思考“转业”
+
+- source: 36kr
+- url: https://www.36kr.com/p/3985771684985605
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-16
