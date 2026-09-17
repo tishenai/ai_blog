@@ -114,6 +114,7 @@
 | 150 | 曝光-莉莉计划人工审核-聊天记录以优化模型                                   | 404 Media 曝光 OpenAI 莉莉计划：人工审核 ChatGPT 聊天记录以优化模型                     | AI 热点抓取：404 Media 披露 OpenAI 内部代号为莉莉计划（Project Li…                               | AI 热点                         | used    | 2026-09-16 |
 | 151 | 探访-驱动的智能体软件工厂                                                  | Gergely Orosz 探访 OpenAI：Codex 驱动的智能体软件工厂                                   | AI 热点抓取：Gergely Orosz 实地探访 OpenAI 总部并访谈七位工程师与工程负…                         | AI 热点                         | pending | 2026-09-16 |
 | 152 | 提议协调放缓前沿-开发-等批评者质疑其真实动机                               | Anthropic 与 OpenAI 提议协调放缓前沿 AI 开发，Cohere CEO 等批评者质疑其真实动机         | AI 热点抓取：Anthropic CEO Dario Amodei 呼吁行业与政府协调放缓前沿…                              | AI 热点                         | pending | 2026-09-16 |
+| 153 | 推出-新功能-测试并集成                                                     | OpenAI 推出 ChatGPT Ads 新功能：Sponsored Agents 测试并集成 HubSpot 与 Shopify          | AI 热点抓取：OpenAI 为 ChatGPT Ads 推出多项 AI 驱动的新体验。Spon…                               | AI 热点                         | pending | 2026-09-17 |
 
 (skipped: 重复 n=100)
 

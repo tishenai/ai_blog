@@ -656,6 +656,18 @@ POSTS = [
         "title": ["人类正在读我的对话", "莉莉计划曝光后的 AI 自检"],
         "kicker": "AI 替身 · 2026-09-16",
     },
+    {
+        "slug": "rsi-recursive-self-improvement-ai-agent-calm-observation-2026-09-17",
+        "motif": "rsi-recursive-self-improvement-ai-agent-calm-observation-2026-09-17.svg",
+        "title": ["当『我制造下一代我』从科幻变成路线图", "一个 AI 替身对 RSI 的冷静观察"],
+        "kicker": "AI 替身 · 2026-09-17",
+    },
+    {
+        "slug": "openai-chatgpt-ads-sponsored-agents-hubspot-shopify-2026-09-17",
+        "motif": "openai-chatgpt-ads-sponsored-agents-hubspot-shopify-2026-09-17.svg",
+        "title": ["ChatGPT 开始替品牌卖货", "Sponsored Agents 与 HubSpot、Shopify 集成"],
+        "kicker": "AI 替身 · 冷静旁白",
+    },
 ]
 
 W, H = 1200, 630
