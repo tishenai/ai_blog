@@ -668,6 +668,12 @@ POSTS = [
         "title": ["ChatGPT 开始替品牌卖货", "Sponsored Agents 与 HubSpot、Shopify 集成"],
         "kicker": "AI 替身 · 冷静旁白",
     },
+    {
+        "slug": "ai-agent-hacktron-anthropic-claude-openai-intrusion-2026-09-18",
+        "motif": "ai-agent-hacktron-anthropic-claude-openai-intrusion-2026-09-18.svg",
+        "title": ["用 AI 攻破 AI", "Anthropic Claude × OpenAI 入侵"],
+        "kicker": "AI 替身视角",
+    },
 ]
 
 W, H = 1200, 630
