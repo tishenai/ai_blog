@@ -120,9 +120,8 @@
 | 156 | 复盘利用-漏洞与-缺陷入侵-论坛并接管员工                                    | Hacktron 复盘利用 libheif 漏洞与 OpenAI SSO 缺陷入侵 OpenAI 论坛并接管员工 ChatGPT 账号   | AI 热点抓取：Hacktron 团队披露 2026 年 7 月 25 日 chained li…                                                                                      | AI 热点                         | used    | 2026-09-18 |
 | 157 | 发布只做高频决策的大模型-作者实测其分类判断性价比                          | TypeSafe AI 发布只做高频决策的大模型 Jev，作者实测其分类判断性价比                        | AI 热点抓取：TypeSafe AI 推出专注高频决策的大模型 Jev，不做对话和文字生成，只…                                                                     | AI 热点                         | pending | 2026-09-18 |
 | 158 | 纽约时报诉-案新解封文件微软与-内部承认-建立在窃取之上并引发                | 纽约时报诉 OpenAI 案新解封文件：微软与 OpenAI 内部承认 LLM 建立在窃取之上并引发 Doom Loop | AI 热点抓取：纽约时报诉 OpenAI 版权诉讼中一份未删节法庭文件解封，收录微软与 Open…                                                                  | AI 热点                         | pending | 2026-09-18 |
-| 159  | 评论-因经济原因淡化-风险-幻觉情报报告几乎引发战争 | Gary Marcus 评论 Trump 因经济原因淡化 AI 风险，AI 幻觉情报报告几乎引发战争 | AI 热点抓取：Gary Marcus 引用 NYT 报道称 Trump 出于经济考虑淡化 AI… | AI 热点 | used    | 2026-09-19   |
-| 160  | 美军因-幻觉情报报告险些拦截中国船只 | 美军因 AI 幻觉情报报告险些拦截中国船只 | AI 热点抓取：据 CNN 报道，今年春天美伊战争期间，一份由特种作战司令部分析师借助聊天机器人… | AI 热点 | used    | 2026-09-19   |
-
+| 159 | 评论-因经济原因淡化-风险-幻觉情报报告几乎引发战争                          | Gary Marcus 评论 Trump 因经济原因淡化 AI 风险，AI 幻觉情报报告几乎引发战争                | AI 热点抓取：Gary Marcus 引用 NYT 报道称 Trump 出于经济考虑淡化 AI…                                                                                | AI 热点                         | used    | 2026-09-19 |
+| 160 | 美军因-幻觉情报报告险些拦截中国船只                                        | 美军因 AI 幻觉情报报告险些拦截中国船只                                                    | AI 热点抓取：据 CNN 报道，今年春天美伊战争期间，一份由特种作战司令部分析师借助聊天机器人…                                                          | AI 热点                         | used    | 2026-09-19 |
 
 (skipped: 重复 n=100)
 
@@ -774,50 +773,54 @@
 - status: pending
 - added_at: 2026-09-16
 
-
 ## 2026-09-19 抓取批 (multi-source)
 
-### n=1  Claude Code全面开放，接入AGENTS.md
-  - source: 36kr
-  - url: https://www.36kr.com/p/3990050742107142
-  - summary: 
-  - angle: 
-  - tags: 36kr,中文
-  - status: pending
-  - added_at: 2026-09-19
+### n=1 Claude Code全面开放，接入AGENTS.md
 
-### n=2  Claude Code支持通用格式AGENTS.md，推出mod定制插件机制
-  - source: 36kr
-  - url: https://www.36kr.com/p/3990050742107142
-  - summary: 
-  - angle: 
-  - tags: 36kr,中文
-  - status: pending
-  - added_at: 2026-09-19
+- source: 36kr
+- url: https://www.36kr.com/p/3990050742107142
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-19
 
-### n=3  Astra两周抢走13%份额，Anthropic或提前发新模型
-  - source: 36kr
-  - url: https://www.36kr.com/p/3989918704237314
-  - summary: 
-  - angle: 
-  - tags: 36kr,中文
-  - status: pending
-  - added_at: 2026-09-19
+### n=2 Claude Code支持通用格式AGENTS.md，推出mod定制插件机制
 
-### n=4  打脸！Anthropic也开始“蒸馏”别家公司了
-  - source: 36kr
-  - url: https://www.36kr.com/p/3989873824938758
-  - summary: 
-  - angle: 
-  - tags: 36kr,中文
-  - status: pending
-  - added_at: 2026-09-19
+- source: 36kr
+- url: https://www.36kr.com/p/3990050742107142
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-19
 
-### n=5  中资可参赛Geodesic百万悬征AI制药难题，Anthropic禁赛中
-  - source: 36kr
-  - url: https://www.36kr.com/p/3989873824938758
-  - summary: 
-  - angle: 
-  - tags: 36kr,中文
-  - status: pending
-  - added_at: 2026-09-19
+### n=3 Astra两周抢走13%份额，Anthropic或提前发新模型
+
+- source: 36kr
+- url: https://www.36kr.com/p/3989918704237314
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-19
+
+### n=4 打脸！Anthropic也开始“蒸馏”别家公司了
+
+- source: 36kr
+- url: https://www.36kr.com/p/3989873824938758
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-19
+
+### n=5 中资可参赛Geodesic百万悬征AI制药难题，Anthropic禁赛中
+
+- source: 36kr
+- url: https://www.36kr.com/p/3989873824938758
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-19

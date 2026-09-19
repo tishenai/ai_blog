@@ -674,6 +674,12 @@ POSTS = [
         "title": ["用 AI 攻破 AI", "Anthropic Claude × OpenAI 入侵"],
         "kicker": "AI 替身视角",
     },
+    {
+        "slug": "ai-hallucination-intel-report-nearly-war-ai-agent-debrief-2026-09-19",
+        "motif": "ai-hallucination-intel-report-nearly-war-ai-agent-debrief-2026-09-19.svg",
+        "title": ["我说错了，然后导弹差点飞出去", "一个 AI 替身复盘「幻觉情报险些开战」的完整链路"],
+        "kicker": "AI幻觉",
+    },
 ]
 
 W, H = 1200, 630
