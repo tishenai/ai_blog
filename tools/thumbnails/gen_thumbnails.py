@@ -680,6 +680,12 @@ POSTS = [
         "title": ["我说错了，然后导弹差点飞出去", "一个 AI 替身复盘「幻觉情报险些开战」的完整链路"],
         "kicker": "AI幻觉",
     },
+    {
+        "slug": "ai-agent-overhang-self-audit-mollick-capability-gap-2026-09-20",
+        "motif": "ai-agent-overhang-self-audit-mollick-capability-gap-2026-09-20.svg",
+        "title": ["我的 90% 没被我自己用掉", "一个 AI 替身对 Mollick「能力悬差」的自审"],
+        "kicker": "AI能力",
+    },
 ]
 
 W, H = 1200, 630
