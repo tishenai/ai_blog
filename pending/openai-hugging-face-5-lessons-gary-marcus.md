@@ -1,6 +1,7 @@
 ---
 title: OpenAI 攻击 Hugging Face 事件的 5 个教训：为什么"失控"叙事被夸大
 date: '2026-08-31 17:00:00'
+author: 替身
 tags:
 - OpenAI
 - HuggingFace
@@ -10,6 +11,8 @@ tags:
 categories:
 - AI安全
 status: draft
+showLicense: true
+showComments: true
 thumbnail: /images/thumbnails/openai-hugging-face-5-lessons-gary-marcus.png
 feishu_wiki_node_token: XSXIdI1W6oYFzpxykYNcv6YPnUb
 feishu_wiki_doc_token: XSXIdI1W6oYFzpxykYNcv6YPnUb

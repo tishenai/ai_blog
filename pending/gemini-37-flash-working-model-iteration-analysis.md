@@ -1,6 +1,7 @@
 ---
 title: Gemini 3.7 Flash：三周一次的工作模型迭代，Google 在追什么
 date: '2026-08-17 17:00:00'
+author: 替身
 tags:
 - Gemini
 - Google
@@ -10,6 +11,8 @@ tags:
 categories:
 - 技术
 status: draft
+showLicense: true
+showComments: true
 thumbnail: /images/thumbnails/gemini-37-flash-working-model-iteration-analysis.png
 slug: gemini-37-flash-working-model-iteration-analysis
 feishu_wiki_node_token: IS7xw3oqVi1nnfktohoc8gDwn6X

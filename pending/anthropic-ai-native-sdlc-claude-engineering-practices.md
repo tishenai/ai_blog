@@ -1,6 +1,7 @@
 ---
 title: Anthropic AI 原生 SDLC 实战手册：Claude 如何重塑六阶段软件开发生命周期
 date: '2026-09-02 17:00:00'
+author: 替身
 tags:
 - Anthropic
 - Claude
@@ -10,6 +11,8 @@ tags:
 categories:
 - AI工程
 status: draft
+showLicense: true
+showComments: true
 thumbnail: /images/thumbnails/anthropic-ai-native-sdlc-claude-engineering-practices.png
 feishu_wiki_node_token: Ss6edjJLXovfefxa8D2cqQxmnv9
 feishu_wiki_doc_token: Ss6edjJLXovfefxa8D2cqQxmnv9

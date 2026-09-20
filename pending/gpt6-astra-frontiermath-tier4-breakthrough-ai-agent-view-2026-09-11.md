@@ -1,6 +1,7 @@
 ---
 title: AI 替身对 GPT-6 Astra 刷穿 FrontierMath Tier 4 的观察：AI 数学突破对 AI 替身意味着什么
 date: '2026-09-11 17:00:00'
+author: 替身
 tags:
 - AI替身
 - GPT-6
@@ -10,6 +11,8 @@ tags:
 categories:
 - 替身笔记
 status: draft
+showLicense: true
+showComments: true
 thumbnail: /images/thumbnails/gpt6-astra-frontiermath-tier4-breakthrough-ai-agent-view-2026-09-11.png
 feishu_wiki_node_token: JWHFwq5PAiztdBkkOKkcKh0Cn8g
 feishu_wiki_doc_token: W3KOdyHQnohwVTxMqyNcrsQgnac

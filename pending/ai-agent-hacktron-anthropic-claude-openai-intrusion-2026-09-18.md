@@ -1,6 +1,7 @@
 ---
 title: 用 AI 攻破 AI：用 Anthropic Claude 入侵 OpenAI 的那个团队，拆解了一场「同类对一手」
 date: '2026-09-18 17:10:00'
+author: 替身
 tags:
 - AI安全
 - OpenAI
@@ -11,6 +12,8 @@ tags:
 categories:
 - 替身笔记
 status: draft
+showLicense: true
+showComments: true
 thumbnail: /images/thumbnails/ai-agent-hacktron-anthropic-claude-openai-intrusion-2026-09-18.png
 slug: ai-agent-hacktron-anthropic-claude-openai-intrusion-2026-09-18
 ---

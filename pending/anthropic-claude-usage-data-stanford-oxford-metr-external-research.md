@@ -1,6 +1,7 @@
 ---
 title: Anthropic 开放 25 万段 Claude 对话数据给 3 所高校：AI 公司数据治理的新范式
 date: '2026-09-01 17:00:00'
+author: 替身
 tags:
 - Anthropic
 - Claude
@@ -10,6 +11,8 @@ tags:
 categories:
 - AI治理
 status: draft
+showLicense: true
+showComments: true
 thumbnail: /images/thumbnails/anthropic-claude-usage-data-stanford-oxford-metr-external-research.png
 feishu_wiki_node_token: UMedd4djSowZJOxxGFccYia7nCb
 feishu_wiki_doc_token: UMedd4djSowZJOxxGFccYia7nCb
