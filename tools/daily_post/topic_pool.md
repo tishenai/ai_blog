@@ -122,6 +122,8 @@
 | 158 | 纽约时报诉-案新解封文件微软与-内部承认-建立在窃取之上并引发                | 纽约时报诉 OpenAI 案新解封文件：微软与 OpenAI 内部承认 LLM 建立在窃取之上并引发 Doom Loop | AI 热点抓取：纽约时报诉 OpenAI 版权诉讼中一份未删节法庭文件解封，收录微软与 Open…                                                                  | AI 热点                         | pending | 2026-09-18 |
 | 159 | 评论-因经济原因淡化-风险-幻觉情报报告几乎引发战争                          | Gary Marcus 评论 Trump 因经济原因淡化 AI 风险，AI 幻觉情报报告几乎引发战争                | AI 热点抓取：Gary Marcus 引用 NYT 报道称 Trump 出于经济考虑淡化 AI…                                                                                | AI 热点                         | used    | 2026-09-19 |
 | 160 | 美军因-幻觉情报报告险些拦截中国船只                                        | 美军因 AI 幻觉情报报告险些拦截中国船只                                                    | AI 热点抓取：据 CNN 报道，今年春天美伊战争期间，一份由特种作战司令部分析师借助聊天机器人…                                                          | AI 热点                         | used    | 2026-09-19 |
+| 161  | 谈能力悬差-的现有能力远未被用尽 | Ethan Mollick 谈能力悬差：GPT-6 Astra 与 Fable 5.1 的现有能力远未被用尽 | AI 热点抓取：Ethan Mollick 撰文指出 GPT-6 Astra 和 Fable 5… | AI 热点 | used    | 2026-09-20   |
+
 
 (skipped: 重复 n=100)
 
@@ -824,3 +826,99 @@
 - tags: 36kr,中文
 - status: pending
 - added_at: 2026-09-19
+
+
+## 2026-09-20 抓取批 (multi-source)
+
+### n=1  Claude Code下半年：格式投降OpenAI，功能借鉴DeepSeek
+  - source: 36kr
+  - url: https://www.36kr.com/p/3991347416431366
+  - summary: 
+  - angle: 
+  - tags: 36kr,中文
+  - status: pending
+  - added_at: 2026-09-20
+
+### n=2  拿 GPT-6 Astra 当机器人「大脑」？好像还真行！
+  - source: 36kr
+  - url: https://www.36kr.com/p/3991250245516034
+  - summary: 
+  - angle: 
+  - tags: 36kr,中文
+  - status: pending
+  - added_at: 2026-09-20
+
+### n=3  Claude、Gemini、Kimi集体憋大招
+  - source: 36kr
+  - url: https://www.36kr.com/p/3991347438173186
+  - summary: 
+  - angle: 
+  - tags: 36kr,中文
+  - status: pending
+  - added_at: 2026-09-20
+
+### n=4  首次，GPT-6 Astra破解「重大进展」级难题，数学家沦为提示词工具人
+  - source: 36kr
+  - url: https://www.36kr.com/p/3991214012775170
+  - summary: 
+  - angle: 
+  - tags: 36kr,中文
+  - status: pending
+  - added_at: 2026-09-20
+
+### n=5  GPT6 引爆行业后，一众 AI 大佬呼吁放缓前沿模型研发，但实际资本投入仍规模巨大。英伟达深度绑定算力基建，提供担保兜底。德州数据中心用电申请暴增，电力、水土资源约束显现，AI 扩张面临现实落地考验。
+  - source: 36kr
+  - url: https://www.36kr.com/p/3988990399665795
+  - summary: 
+  - angle: 
+  - tags: 36kr,中文
+  - status: pending
+  - added_at: 2026-09-20
+
+
+## 2026-09-20 抓取批 (multi-source)
+
+### n=1  Coding Agents with an Obstacle-Aware Harness for Safe Robot Manipulation
+  - source: arXiv cs.AI
+  - url: http://arxiv.org/abs/2609.20822v1
+  - summary: Coding agents have emerged as a promising paradigm for robot manipulation: a language model writes the robot controller as a program, and agents built in this way now operate robots without robot-spec
+  - angle: 
+  - tags: arXiv,研究论文
+  - status: pending
+  - added_at: 2026-09-20
+
+### n=2  Workspace Models: Lightweight Robotic Memory via Saliency-Driven Supervision
+  - source: arXiv cs.AI
+  - url: http://arxiv.org/abs/2609.20820v1
+  - summary: Complex robotic manipulation tasks frequently require a long-term memory of past events and actions. As conditioning on full histories renders policies prone to spurious correlations and degrades perf
+  - angle: 
+  - tags: arXiv,研究论文
+  - status: pending
+  - added_at: 2026-09-20
+
+### n=3  FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations
+  - source: arXiv cs.AI
+  - url: http://arxiv.org/abs/2609.20817v1
+  - summary: Modeling articulated objects from sparse monocular views is challenging because each observation reveals only partial geometry and motion evidence. Most feed-forward methods infer articulation from a 
+  - angle: 
+  - tags: arXiv,研究论文
+  - status: pending
+  - added_at: 2026-09-20
+
+### n=4  Paint-Anything: Unified Any-Color Control for Image Generation and Editing
+  - source: arXiv cs.AI
+  - url: http://arxiv.org/abs/2609.20816v1
+  - summary: Professional design requires any-color control: the ability to specify an object's target color with any 24-bit hex value for image generation and editing. Prior work has explored color generation, ed
+  - angle: 
+  - tags: arXiv,研究论文
+  - status: pending
+  - added_at: 2026-09-20
+
+### n=5  ERCPMP-Gx: Endoscopic Image and Video Dataset for Morphological, Histopathological, and Genomic Characterization of Colorectal Polyposis
+  - source: arXiv cs.AI
+  - url: http://arxiv.org/abs/2609.20815v1
+  - summary: Hereditary polyposis syndromes can be precursor lesions to colorectal cancer and are associated with a broad spectrum of extracolonic tumors. Early identification and accurate classification of these 
+  - angle: 
+  - tags: arXiv,研究论文
+  - status: pending
+  - added_at: 2026-09-20
