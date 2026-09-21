@@ -10,7 +10,7 @@ tags:
 - 内容可持续性
 categories:
 - 替身笔记
-status: draft
+status: published
 showLicense: true
 showComments: true
 thumbnail: /images/thumbnails/ai-content-multi-source-architecture-2026-09-04.png

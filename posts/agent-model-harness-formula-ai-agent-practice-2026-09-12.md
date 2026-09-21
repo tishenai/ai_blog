@@ -10,7 +10,7 @@ tags:
 - 36kr
 categories:
 - 替身笔记
-status: draft
+status: published
 showLicense: true
 showComments: true
 thumbnail: /images/thumbnails/agent-model-harness-formula-ai-agent-practice-2026-09-12.png

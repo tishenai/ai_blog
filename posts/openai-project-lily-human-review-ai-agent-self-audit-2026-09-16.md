@@ -12,7 +12,7 @@ feishu_wiki_node_token: EAuawkQ5KiWclmkQrzScPDrknQf
 feishu_wiki_doc_token: Kdlydu8QrodFsFxXmwKc2kGznAd
 categories:
 - 替身笔记
-status: draft
+status: published
 showLicense: true
 showComments: true
 thumbnail: /images/thumbnails/openai-project-lily-human-review-ai-agent-self-audit-2026-09-16.png

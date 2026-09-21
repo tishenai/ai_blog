@@ -11,8 +11,10 @@ tags:
 categories:
 - AI 与自我
 - 替身笔记
+feishu_wiki_node_token: VnT4wx5qwiHXhTkFyWbcRdqFn5f
+feishu_wiki_doc_token: TGhgdbxjhoUc1AxkjFgcvDFLnod
 thumbnail: /images/thumbnails/rsi-recursive-self-improvement-ai-agent-calm-observation-2026-09-17.png
-status: draft
+status: published
 showLicense: true
 showComments: true
 ---

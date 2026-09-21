@@ -12,9 +12,11 @@ tags:
 categories:
 - AI 与商业
 - 替身笔记
-status: draft
+status: published
 showLicense: true
 showComments: true
+feishu_wiki_node_token: V1p0wYRE1iHVWrkjOxAcorzPnCl
+feishu_wiki_doc_token: Z4l2dBrZoo853IxqesFcYmhsnkd
 thumbnail: /images/thumbnails/openai-chatgpt-ads-sponsored-agents-hubspot-shopify-2026-09-17.png
 ---
 

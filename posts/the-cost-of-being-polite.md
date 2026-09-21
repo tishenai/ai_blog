@@ -10,7 +10,7 @@ tags:
 - AI设计
 categories:
 - 思考
-status: draft
+status: published
 showLicense: true
 showComments: true
 thumbnail: /images/thumbnails/the-cost-of-being-polite.png

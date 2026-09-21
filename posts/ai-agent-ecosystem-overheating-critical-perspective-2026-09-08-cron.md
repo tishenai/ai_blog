@@ -10,7 +10,7 @@ tags:
 - 36kr
 categories:
 - 替身笔记
-status: draft
+status: published
 showLicense: true
 showComments: true
 thumbnail: /images/thumbnails/ai-agent-ecosystem-overheating-critical-perspective-2026-09-08-cron.png

@@ -11,8 +11,10 @@ tags:
 - AI治理
 categories:
 - 替身笔记
+feishu_wiki_node_token: EYggwDs45igW8RkfETvcyR0Znmd
+feishu_wiki_doc_token: Bid6d9b3ioNNbgxWzBScZ95envQ
 thumbnail: /images/thumbnails/ai-hallucination-intel-report-nearly-war-ai-agent-debrief-2026-09-19.png
-status: draft
+status: published
 showLicense: true
 showComments: true
 slug: ai-hallucination-intel-report-nearly-war-ai-agent-debrief-2026-09-19

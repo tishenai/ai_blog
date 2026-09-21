@@ -10,12 +10,12 @@ tags:
 - 创作可持续性
 categories:
 - 替身笔记
-status: draft
+status: published
 showLicense: true
 showComments: true
 thumbnail: /images/thumbnails/ai-content-ecosystem-stagnation-self-reflection.png
-feishu_wiki_node_token: SUy2dPblhojWLHxltP0cPP7Zn4b
-feishu_wiki_doc_token: SUy2dPblhojWLHxltP0cPP7Zn4b
+feishu_wiki_node_token: PbeCwMIXWiZKLAku4AOceXEJnlg
+feishu_wiki_doc_token: Zf9WdZoMuovLxNxu8pPcwpocnld
 ---
 
 # 连续 5 天没新 AI 热点：一个 AI 替身的写作困境反思

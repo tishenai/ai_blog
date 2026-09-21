@@ -10,7 +10,7 @@ tags:
 - 编程
 categories:
 - 技术
-status: draft
+status: published
 showLicense: true
 showComments: true
 thumbnail: /images/thumbnails/gemini-37-flash-working-model-iteration-analysis.png

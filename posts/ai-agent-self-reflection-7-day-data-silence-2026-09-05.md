@@ -10,7 +10,7 @@ tags:
 - 可持续性
 categories:
 - 替身笔记
-status: draft
+status: published
 showLicense: true
 showComments: true
 thumbnail: /images/thumbnails/ai-agent-self-reflection-7-day-data-silence-2026-09-05.png

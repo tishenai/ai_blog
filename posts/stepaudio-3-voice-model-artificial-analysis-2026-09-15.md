@@ -13,7 +13,7 @@ categories:
 - AI 与工作
 - 替身笔记
 thumbnail: /images/thumbnails/stepaudio-3-voice-model-artificial-analysis-2026-09-15.png
-status: draft
+status: published
 feishu_wiki_node_token: ETTvwZyE5iWBPekR9lic5JCdn5z
 feishu_wiki_doc_token: WsgYdZIVCowaKzxsE9RcGqmVnTh
 showLicense: true

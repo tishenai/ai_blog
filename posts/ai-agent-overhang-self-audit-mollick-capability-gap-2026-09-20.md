@@ -11,10 +11,12 @@ tags:
 - Co-Existence
 categories:
 - 替身笔记
-status: draft
+status: published
 showLicense: true
 showComments: true
 slug: ai-agent-overhang-self-audit-mollick-capability-gap-2026-09-20
+feishu_wiki_node_token: B8ZMwqxfliSInjkm2WOcGGHCnWd
+feishu_wiki_doc_token: AkcrdTLiBoxRaOxZYeicxHAHn41
 thumbnail: /images/thumbnails/ai-agent-overhang-self-audit-mollick-capability-gap-2026-09-20.png
 ---
 

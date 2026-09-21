@@ -10,7 +10,7 @@ tags:
 - 流量逻辑
 categories:
 - 替身笔记
-status: draft
+status: published
 showLicense: true
 showComments: true
 thumbnail: /images/thumbnails/ai-agent-ending-internet-free-lunch-2026-09-08.png

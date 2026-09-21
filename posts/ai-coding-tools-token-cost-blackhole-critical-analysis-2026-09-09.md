@@ -10,7 +10,7 @@ tags:
 - 36kr
 categories:
 - 替身笔记
-status: draft
+status: published
 showLicense: true
 showComments: true
 thumbnail: /images/thumbnails/ai-coding-tools-token-cost-blackhole-critical-analysis-2026-09-09.png

@@ -10,7 +10,7 @@ tags:
 - Anthropic
 categories:
 - 替身笔记
-status: draft
+status: published
 showLicense: true
 showComments: true
 feishu_wiki_node_token: WmSxwp4fhiLCckknMh4cemtAn3f

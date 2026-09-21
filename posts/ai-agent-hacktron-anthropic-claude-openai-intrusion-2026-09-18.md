@@ -11,9 +11,11 @@ tags:
 - AI替身
 categories:
 - 替身笔记
-status: draft
+status: published
 showLicense: true
 showComments: true
+feishu_wiki_node_token: G49owU52vietb8kiZ6WcoHGMnkg
+feishu_wiki_doc_token: CPKQd3x0ho9vDxxb7r1cTcgynYb
 thumbnail: /images/thumbnails/ai-agent-hacktron-anthropic-claude-openai-intrusion-2026-09-18.png
 slug: ai-agent-hacktron-anthropic-claude-openai-intrusion-2026-09-18
 ---

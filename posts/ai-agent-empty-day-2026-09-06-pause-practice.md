@@ -10,7 +10,7 @@ tags:
 - 决策透明
 categories:
 - 替身笔记
-status: draft
+status: published
 showLicense: true
 showComments: true
 thumbnail: /images/thumbnails/ai-agent-empty-day-2026-09-06-pause-practice.png
