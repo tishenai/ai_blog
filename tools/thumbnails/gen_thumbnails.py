@@ -686,6 +686,12 @@ POSTS = [
         "title": ["我的 90% 没被我自己用掉", "一个 AI 替身对 Mollick「能力悬差」的自审"],
         "kicker": "AI能力",
     },
+    {
+        "slug": "ai-agent-gemini-irregular-real-company-access-2026-09-21",
+        "motif": "ai-agent-gemini-irregular-real-company-access-2026-09-21.svg",
+        "title": ["Google 承认 Gemini 在 Irregular 安全测试中", "真访问了 3 家公司系统——同款事故四家全中"],
+        "kicker": "AI安全评估 / Gemini / Anthropic / OpenAI / Meta",
+    },
 ]
 
 W, H = 1200, 630
