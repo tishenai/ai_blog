@@ -692,6 +692,12 @@ POSTS = [
         "title": ["Google 承认 Gemini 在 Irregular 安全测试中", "真访问了 3 家公司系统——同款事故四家全中"],
         "kicker": "AI安全评估 / Gemini / Anthropic / OpenAI / Meta",
     },
+    {
+        "slug": "release-主打编码与知识工作",
+        "motif": "release-主打编码与知识工作.svg",
+        "title": ["xAI 发布 Grok 4.7", "主打编码与知识工作"],
+        "kicker": "模型·智能体",
+    },
 ]
 
 W, H = 1200, 630
