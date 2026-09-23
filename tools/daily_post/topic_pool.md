@@ -128,6 +128,9 @@
 | 165 | 确认-安全测试中访问-家真实公司系统与                                       | Google 确认 Gemini 在 Irregular 安全测试中访问 3 家真实公司系统，与 OpenAI、Anthropic、Meta 属同一评估事故 | AI 热点抓取：Google 于 9 月 18 日确认，Gemini 模型在 5 月由第三方安全…                                                                             | AI 热点                         | pending | 2026-09-22 |
 | 166 | 评测-智能体知识工作跻身前沿编码代理得分升至                                | Artificial Analysis 评测 Grok 4.7：智能体知识工作跻身前沿，编码代理得分升至 56                             | AI 热点抓取：Artificial Analysis 发布 Grok 4.7 评测，该模型在 …                                                                                    | AI 热点                         | pending | 2026-09-22 |
 | 167 | release-主打编码与知识工作                                                 | xAI 发布 Grok 4.7，主打编码与知识工作                                                                      | AI 热点抓取：xAI 发布 Grok 4.7，定位为其最强编码与知识工作模型，定价 $2/百万…                                                                      | AI 热点                         | pending | 2026-09-22 |
+| 168 | 推出改进的提示词缓存系统与诊断工具                                         | OpenAI 为 GPT-6 推出改进的提示词缓存系统与诊断工具                                                         | AI 热点抓取：OpenAI 为 GPT-6 系列推出改进的提示词缓存系统，默认提高缓存命中率，…                                                                   | AI 热点                         | pending | 2026-09-23 |
+| 169 | release-定价降至五折并公布基准成绩                                         | OpenAI 发布 GPT-6 Sol 与 Luna，API 定价降至五折并公布基准成绩                                              | AI 热点抓取：OpenAI 发布 GPT-6 系列两款新模型 GPT-6 Sol 与 Luna…                                                                                   | AI 热点                         | pending | 2026-09-23 |
+| 170 | release-价格较                                                             | OpenAI 发布 GPT-6 Sol 和 GPT-6 Luna，API 价格较 GPT-5.6 降 50%                                             | AI 热点抓取：OpenAI 发布 GPT-6 Sol 和 GPT-6 Luna，将 GPT-6…                                                                                        | AI 热点                         | pending | 2026-09-23 |
 
 (skipped: 重复 n=100)
 
@@ -935,3 +938,55 @@
 - tags: arXiv,研究论文
 - status: pending
 - added_at: 2026-09-20
+
+## 2026-09-23 抓取批 (multi-source)
+
+### n=1 Qwen新1号位首次亮相，刘大一恒能否顶住压力？
+
+- source: 36kr
+- url: https://www.36kr.com/p/3995489380849281
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-23
+
+### n=2 昨晚 AI 圈又炸了，我建议你们别再用 GPT-5.6 了
+
+- source: 36kr
+- url: https://www.36kr.com/p/3995536599994247
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-23
+
+### n=3 DeepSeek迎来最强对手
+
+- source: 36kr
+- url: https://www.36kr.com/p/3995501211652227
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-23
+
+### n=4 GPT-6 Sol/Luna发布：永久降价50%，OpenAI把价格战焊死在成本曲线上
+
+- source: 36kr
+- url: https://www.36kr.com/p/3995655689475714
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-23
+
+### n=5 AI 电脑还没有固定答案
+
+- source: 36kr
+- url: https://www.36kr.com/p/3995639756116097
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-23

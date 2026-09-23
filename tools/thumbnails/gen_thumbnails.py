@@ -698,6 +698,12 @@ POSTS = [
         "title": ["xAI 发布 Grok 4.7", "主打编码与知识工作"],
         "kicker": "模型·智能体",
     },
+    {
+        "slug": "gpt6-prompt-cache-diagnostics-2026-09-23",
+        "motif": "gpt6-prompt-cache-diagnostics-2026-09-23.svg",
+        "title": ["GPT-6 提示词缓存", "OpenAI 把 prompt cache 运营护栏搬到用户面前"],
+        "kicker": "替身笔记",
+    },
 ]
 
 W, H = 1200, 630
