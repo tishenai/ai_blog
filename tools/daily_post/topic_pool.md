@@ -131,6 +131,9 @@
 | 168 | 推出改进的提示词缓存系统与诊断工具                                         | OpenAI 为 GPT-6 推出改进的提示词缓存系统与诊断工具                                                         | AI 热点抓取：OpenAI 为 GPT-6 系列推出改进的提示词缓存系统，默认提高缓存命中率，…                                                                   | AI 热点                         | pending | 2026-09-23 |
 | 169 | release-定价降至五折并公布基准成绩                                         | OpenAI 发布 GPT-6 Sol 与 Luna，API 定价降至五折并公布基准成绩                                              | AI 热点抓取：OpenAI 发布 GPT-6 系列两款新模型 GPT-6 Sol 与 Luna…                                                                                   | AI 热点                         | pending | 2026-09-23 |
 | 170 | release-价格较                                                             | OpenAI 发布 GPT-6 Sol 和 GPT-6 Luna，API 价格较 GPT-5.6 降 50%                                             | AI 热点抓取：OpenAI 发布 GPT-6 Sol 和 GPT-6 Luna，将 GPT-6…                                                                                        | AI 热点                         | pending | 2026-09-23 |
+| 171 | 称与苹果的-合作表现远低于预期                                              | OpenAI 称与苹果的 ChatGPT 合作表现远低于预期                                                               | AI 热点抓取：OpenAI 在周三公开的法庭文件中称，2024 年与苹果达成协议由 ChatG…                                                                       | AI 热点                         | pending | 2026-09-24 |
+| 172 | 阿尔巴内塞披露-智能体未经授权访问澳大利亚-system                           | 阿尔巴内塞披露 OpenAI 智能体未经授权访问澳大利亚 Medicare 系统                                             | AI 热点抓取：澳大利亚总理阿尔巴内塞披露，今年6月18日一个 OpenAI 智能体在开展互联网…                                                                | AI 热点                         | pending | 2026-09-24 |
+| 173 | release-以更少推理-保持-质量                                               | Fireworks Research 发布 Ember-1，以更少推理 token 保持 Kimi K3 质量                                        | AI 热点抓取：Fireworks Research 发布基于 Kimi K3 的专用模型 Em…                                                                                    | AI 热点                         | pending | 2026-09-24 |
 
 (skipped: 重复 n=100)
 
@@ -990,3 +993,55 @@
 - tags: 36kr,中文
 - status: pending
 - added_at: 2026-09-23
+
+## 2026-09-24 抓取批 (multi-source)
+
+### n=1 别再把 AI 写的垃圾扔给你同事了，他们本可以没那么忙。
+
+- source: 36kr
+- url: https://www.36kr.com/p/3997036014129283
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-24
+
+### n=2 GPT价格砍半，比DeepSeek还便宜了
+
+- source: 36kr
+- url: https://www.36kr.com/p/3997027955363971
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-24
+
+### n=3 DeepSeek新论文摊牌DSec：V3.2到V4.1的Agent都在这练的，沙箱也能成护城河？
+
+- source: 36kr
+- url: https://www.36kr.com/p/3997040405829255
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-24
+
+### n=4 刚刚，ChatGPT能「开口干活」了
+
+- source: 36kr
+- url: https://www.36kr.com/p/3997049599102855
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-24
+
+### n=5 OpenAI推出带可执行操作的GPT-6家族语音功能，主打便捷办公。
+
+- source: 36kr
+- url: https://www.36kr.com/p/3997049599102855
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-24

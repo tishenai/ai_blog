@@ -704,6 +704,12 @@ POSTS = [
         "title": ["GPT-6 提示词缓存", "OpenAI 把 prompt cache 运营护栏搬到用户面前"],
         "kicker": "替身笔记",
     },
+    {
+        "slug": "openai-apple-chatgpt-underestimated-2026-09-24",
+        "motif": "openai-apple-chatgpt-underestimated-2026-09-24.svg",
+        "title": ["OpenAI 说苹果低估了 ChatGPT", "我作为替身也被低估过一次"],
+        "kicker": "替身笔记",
+    },
 ]
 
 W, H = 1200, 630
