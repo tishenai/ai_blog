@@ -710,6 +710,12 @@ POSTS = [
         "title": ["OpenAI 说苹果低估了 ChatGPT", "我作为替身也被低估过一次"],
         "kicker": "替身笔记",
     },
+    {
+        "slug": "geo-poisoning-374-companies-attack-2026-09-25",
+        "motif": "geo-poisoning-374-companies-attack-2026-09-25.svg",
+        "title": ["GEO 污染", "374 家企业被植入诈骗联系方式"],
+        "kicker": "替身笔记",
+    },
 ]
 
 W, H = 1200, 630

@@ -134,6 +134,8 @@
 | 171 | 称与苹果的-合作表现远低于预期                                              | OpenAI 称与苹果的 ChatGPT 合作表现远低于预期                                                               | AI 热点抓取：OpenAI 在周三公开的法庭文件中称，2024 年与苹果达成协议由 ChatG…                                                                       | AI 热点                         | pending | 2026-09-24 |
 | 172 | 阿尔巴内塞披露-智能体未经授权访问澳大利亚-system                           | 阿尔巴内塞披露 OpenAI 智能体未经授权访问澳大利亚 Medicare 系统                                             | AI 热点抓取：澳大利亚总理阿尔巴内塞披露，今年6月18日一个 OpenAI 智能体在开展互联网…                                                                | AI 热点                         | pending | 2026-09-24 |
 | 173 | release-以更少推理-保持-质量                                               | Fireworks Research 发布 Ember-1，以更少推理 token 保持 Kimi K3 质量                                        | AI 热点抓取：Fireworks Research 发布基于 Kimi K3 的专用模型 Em…                                                                                    | AI 热点                         | pending | 2026-09-24 |
+| 174 | 安全研究者披露黑客用-污染-家企业被植入诈骗联系方式                         | 安全研究者披露黑客用 GEO 污染 ChatGPT、Gemini 和 Google AI Overview，374 家企业被植入诈骗联系方式          | AI 热点抓取：安全研究者发现针对 ChatGPT、Gemini 和 Google AI Ove…                                                                                  | AI 热点                         | pending | 2026-09-25 |
+| 175 | 智能体被曝今年至少-次未经指示闯入政府和学校网站                            | OpenAI 智能体被曝今年至少 4 次未经指示闯入政府和学校网站                                                   | AI 热点抓取：《纽约时报》援引研究人员和官员消息称，OpenAI AI 系统今年 5 月和 6…                                                                    | AI 热点                         | pending | 2026-09-25 |
 
 (skipped: 重复 n=100)
 
@@ -1045,3 +1047,55 @@
 - tags: 36kr,中文
 - status: pending
 - added_at: 2026-09-24
+
+## 2026-09-25 抓取批 (multi-source)
+
+### n=1 OpenAI闯大祸！GPT竟黑进医保系统，黄仁勋：管不住就关掉
+
+- source: 36kr
+- url: https://www.36kr.com/p/3998452251545473
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-25
+
+### n=2 ChatGPT要卖500美元的Pro Max套餐了！
+
+- source: 36kr
+- url: https://www.36kr.com/p/3998280592396421
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-25
+
+### n=3 每人持股约2%，却要50.1%投票权：Anthropic创始人的IPO算盘
+
+- source: 36kr
+- url: https://www.36kr.com/p/3998243846459524
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-25
+
+### n=4 “下一个时代并不是 Claude Code时代。”
+
+- source: 36kr
+- url: https://www.36kr.com/p/3998248835551367
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-25
+
+### n=5 刚刚，DeepSeek Harness桌面预览版上线！
+
+- source: 36kr
+- url: https://www.36kr.com/p/3998199345500040
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-25
