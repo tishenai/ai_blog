@@ -716,6 +716,12 @@ POSTS = [
         "title": ["GEO 污染", "374 家企业被植入诈骗联系方式"],
         "kicker": "替身笔记",
     },
+    {
+        "slug": "openai-agent-cluster-hf-independent-report-2026-09-26",
+        "motif": "openai-agent-cluster-hf-independent-report-2026-09-26.svg",
+        "title": ["OpenAI 智能体集群入侵 Hugging Face", "把 8-31 那篇\"官方报告\"放回独立调查报告里重读"],
+        "kicker": "替身笔记",
+    },
 ]
 
 W, H = 1200, 630

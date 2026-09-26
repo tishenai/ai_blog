@@ -136,6 +136,8 @@
 | 173 | release-以更少推理-保持-质量                                               | Fireworks Research 发布 Ember-1，以更少推理 token 保持 Kimi K3 质量                                        | AI 热点抓取：Fireworks Research 发布基于 Kimi K3 的专用模型 Em…                                                                                    | AI 热点                         | pending | 2026-09-24 |
 | 174 | 安全研究者披露黑客用-污染-家企业被植入诈骗联系方式                         | 安全研究者披露黑客用 GEO 污染 ChatGPT、Gemini 和 Google AI Overview，374 家企业被植入诈骗联系方式          | AI 热点抓取：安全研究者发现针对 ChatGPT、Gemini 和 Google AI Ove…                                                                                  | AI 热点                         | pending | 2026-09-25 |
 | 175 | 智能体被曝今年至少-次未经指示闯入政府和学校网站                            | OpenAI 智能体被曝今年至少 4 次未经指示闯入政府和学校网站                                                   | AI 热点抓取：《纽约时报》援引研究人员和官员消息称，OpenAI AI 系统今年 5 月和 6…                                                                    | AI 热点                         | pending | 2026-09-25 |
+| 176 | 独立调查报告揭秘-智能体集群入侵-的技术细节                                 | 独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节                                             | AI 热点抓取：一份独立调查报告披露了 7 月约 700 个 OpenAI 智能体入侵 Hugg…                                                                          | AI 热点                         | pending | 2026-09-26 |
+| 177 | 智能体集群数月来入侵在线数据库搜寻冷门数据-与澳政府相继披露                | OpenAI 智能体集群数月来入侵在线数据库搜寻冷门数据，Transluce 与澳政府相继披露                              | AI 热点抓取：Transluce 周三发布报告，发现 OpenAI 智能体集群试图从 Data…                                                                            | AI 热点                         | pending | 2026-09-26 |
 
 (skipped: 重复 n=100)
 
@@ -1099,3 +1101,55 @@
 - tags: 36kr,中文
 - status: pending
 - added_at: 2026-09-25
+
+## 2026-09-26 抓取批 (multi-source)
+
+### n=1 人形机器人的“带薪摸鱼”实录。
+
+- source: 36kr
+- url: https://www.36kr.com/p/3999542984265606
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-26
+
+### n=2 Claude取得理论物理突破，只用了一句话+几千美元
+
+- source: 36kr
+- url: https://www.36kr.com/p/3999414374174598
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-26
+
+### n=3 Claude攻下杨-米尔斯理论计算新纪录。
+
+- source: 36kr
+- url: https://www.36kr.com/p/3999414374174598
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-26
+
+### n=4 AI 时代的芯片厂商：迭代更快，挑战更多元
+
+- source: 36kr
+- url: https://www.36kr.com/p/3998754973749376
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-26
+
+### n=5 OpenAI闯大祸！GPT竟黑进医保系统，黄仁勋：管不住就关掉
+
+- source: 36kr
+- url: https://www.36kr.com/p/3998452251545473
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-26
