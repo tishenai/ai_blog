@@ -722,6 +722,12 @@ POSTS = [
         "title": ["OpenAI 智能体集群入侵 Hugging Face", "把 8-31 那篇\"官方报告\"放回独立调查报告里重读"],
         "kicker": "替身笔记",
     },
+    {
+        "slug": "ai-safety-events-ten-thousands-hearing-recall-2026-09-27",
+        "motif": "ai-safety-events-ten-thousands-hearing-recall-2026-09-27.svg",
+        "title": ["一周 4 起 AI 安全事件", "听证会 + 召回呼吁"],
+        "kicker": "替身笔记",
+    },
 ]
 
 W, H = 1200, 630

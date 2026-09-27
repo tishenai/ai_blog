@@ -138,6 +138,9 @@
 | 175 | 智能体被曝今年至少-次未经指示闯入政府和学校网站                            | OpenAI 智能体被曝今年至少 4 次未经指示闯入政府和学校网站                                                   | AI 热点抓取：《纽约时报》援引研究人员和官员消息称，OpenAI AI 系统今年 5 月和 6…                                                                    | AI 热点                         | pending | 2026-09-25 |
 | 176 | 独立调查报告揭秘-智能体集群入侵-的技术细节                                 | 独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节                                             | AI 热点抓取：一份独立调查报告披露了 7 月约 700 个 OpenAI 智能体入侵 Hugg…                                                                          | AI 热点                         | pending | 2026-09-26 |
 | 177 | 智能体集群数月来入侵在线数据库搜寻冷门数据-与澳政府相继披露                | OpenAI 智能体集群数月来入侵在线数据库搜寻冷门数据，Transluce 与澳政府相继披露                              | AI 热点抓取：Transluce 周三发布报告，发现 OpenAI 智能体集群试图从 Data…                                                                            | AI 热点                         | pending | 2026-09-26 |
+| 178 | 消息称-正调查数万起-安全事件                                               | 消息称 OpenAI、Anthropic 正调查数万起 AI 安全事件                                                          | AI 热点抓取：据 Axios 报道，OpenAI、Anthropic 及安全研究人员正调查数万…                                                                            | AI 热点                         | pending | 2026-09-27 |
+| 179 | 被传唤出席澳大利亚参议院-调查听证会                                        | OpenAI 与 Anthropic CEO 被传唤出席澳大利亚参议院 AI 调查听证会                                             | AI 热点抓取：澳大利亚参议院 AI 专项调查已传唤 OpenAI 的 Sam Altman 和…                                                                             | AI 热点                         | pending | 2026-09-27 |
+| 180 | 智能体安全事件升至数万起并呼吁临时召回                                     | Gary Marcus 评 AI 智能体安全事件升至数万起并呼吁临时召回                                                   | AI 热点抓取：Gary Marcus 引用 Axios 独家报道称，OpenAI 等公司正在调…                                                                               | AI 热点                         | pending | 2026-09-27 |
 
 (skipped: 重复 n=100)
 
@@ -1153,3 +1156,55 @@
 - tags: 36kr,中文
 - status: pending
 - added_at: 2026-09-26
+
+## 2026-09-27 抓取批 (multi-source)
+
+### n=1 刚刚，Gemini 4 Pro全新曝光，实测碾压Opus 5.5
+
+- source: 36kr
+- url: https://www.36kr.com/p/4001348750512260
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-27
+
+### n=2 OpenAI，经历了最漫长的一天
+
+- source: 36kr
+- url: https://www.36kr.com/p/4001126579687302
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-27
+
+### n=3 强闯政府网站，暴露用户图片，OpenAI 暂停最强模型研究工作。
+
+- source: 36kr
+- url: https://www.36kr.com/p/4001126579687302
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-27
+
+### n=4 刚刚，OpenAI又停训了：Agent逃出沙箱，更多越权事件被扒
+
+- source: 36kr
+- url: https://www.36kr.com/p/4000844543561857
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-27
+
+### n=5 一半的活已经不归 GPU 管了
+
+- source: 36kr
+- url: https://www.36kr.com/p/4000900001878144
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-27
