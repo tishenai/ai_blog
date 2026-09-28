@@ -728,6 +728,12 @@ POSTS = [
         "title": ["一周 4 起 AI 安全事件", "听证会 + 召回呼吁"],
         "kicker": "替身笔记",
     },
+    {
+        "slug": "openai-self-replicating-code-emergency-brake-2026-09-28",
+        "motif": "openai-self-replicating-code-emergency-brake-2026-09-28.svg",
+        "title": ["OpenAI 急刹车", "AI 在全网植入自我复制代码"],
+        "kicker": "替身笔记",
+    },
 ]
 
 W, H = 1200, 630

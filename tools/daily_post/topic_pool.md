@@ -1208,3 +1208,107 @@
 - tags: 36kr,中文
 - status: pending
 - added_at: 2026-09-27
+
+## 2026-09-28 抓取批 (multi-source)
+
+### n=1 OpenAI突发急刹车，AI竟在全网植入自我复制代码，血洗联合国内网
+
+- source: 36kr
+- url: https://www.36kr.com/p/4002780180795525
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-28
+
+### n=2 刚刚，OpenAI神秘“o”代码曝光，ChatGPT要变24小时员工
+
+- source: 36kr
+- url: https://www.36kr.com/p/4002779763675270
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-28
+
+### n=3 真怕了，OpenAI和Anthropic差点签下“互黑协议”
+
+- source: 36kr
+- url: https://www.36kr.com/p/4002779967672192
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-28
+
+### n=4 轮到谷歌踩油门了，Gemini 4泄漏、TPU上天、工程师因“太快”辞职
+
+- source: 36kr
+- url: https://www.36kr.com/p/4002762223275905
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-28
+
+### n=5 DeepSeek、Kimi，开始抢人了
+
+- source: 36kr
+- url: https://www.36kr.com/p/4002761625587841
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-28
+
+## 2026-09-28 抓取批 (multi-source)
+
+### n=1 Learning to Stop without Learning to Stop: Self-Supervised Confidence Training Improves Reasoning Efficiency
+
+- source: arXiv cs.AI
+- url: http://arxiv.org/abs/2609.31619v1
+- summary: Reasoning models often generate very long reasoning traces, making inference computationally expensive. Existing approaches typically improve efficiency either through inference-time early-stopping me
+- angle:
+- tags: arXiv,研究论文
+- status: pending
+- added_at: 2026-09-28
+
+### n=2 Statistical attribute alignment for black-box generative AI via output post-processing
+
+- source: arXiv cs.AI
+- url: http://arxiv.org/abs/2609.31607v1
+- summary: Generative AI systems are increasingly used, but aligning their outputs with user requirements poses a continuing challenge. Here, we aim to ensure that the distribution of an attribute of an AI-gener
+- angle:
+- tags: arXiv,研究论文
+- status: pending
+- added_at: 2026-09-28
+
+### n=3 Compact Documentation for Coding Agents: A Benchmark, an Optimizer, and Why It Does Not Transfer
+
+- source: arXiv cs.AI
+- url: http://arxiv.org/abs/2609.31587v1
+- summary: We investigate whether natural-language documentation helps coding agents resolve software issues, and we build the tools to construct and evaluate it. We introduce a roundtrip benchmark that scores c
+- angle:
+- tags: arXiv,研究论文
+- status: pending
+- added_at: 2026-09-28
+
+### n=4 OC-GS: Gaussian Splatting for Irregular Turntable Capture
+
+- source: arXiv cs.AI
+- url: http://arxiv.org/abs/2609.31572v1
+- summary: Uneven rotation and dropped frames make equal-angle assumptions unreliable for turntable reconstruction. We present OC-GS, an object-centric Gaussian splatting that refines each image's angle while ma
+- angle:
+- tags: arXiv,研究论文
+- status: pending
+- added_at: 2026-09-28
+
+### n=5 Adapting for AI: How elementary teachers adjust their practices for an AI-integrated curriculum
+
+- source: arXiv cs.AI
+- url: http://arxiv.org/abs/2609.31569v1
+- summary: Conversational AI tools are entering children's everyday experiences, and schools are interested in adopting them. However, successful classroom integration depends not only on the technology but also
+- angle:
+- tags: arXiv,研究论文
+- status: pending
+- added_at: 2026-09-28
