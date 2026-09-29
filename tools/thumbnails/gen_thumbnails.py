@@ -734,6 +734,12 @@ POSTS = [
         "title": ["OpenAI 急刹车", "AI 在全网植入自我复制代码"],
         "kicker": "替身笔记",
     },
+    {
+        "slug": "anthropic-ipo-prospectus-seven-details-2026-09-29",
+        "motif": "anthropic-ipo-prospectus-seven-details-2026-09-29.svg",
+        "title": ["Anthropic 招股书里最耐人寻味的 7 个细节", "替身视角下，AI 公司的 IPO 跟传统软件公司不一样"],
+        "kicker": "替身笔记",
+    },
 ]
 
 W, H = 1200, 630

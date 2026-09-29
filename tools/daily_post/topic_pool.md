@@ -1312,3 +1312,189 @@
 - tags: arXiv,研究论文
 - status: pending
 - added_at: 2026-09-28
+
+## 2026-09-29 抓取批 (multi-source)
+
+### n=1 Claude Sonnet 5.5发布：性能逼近Opus 5.5，价格减半，安全防护升级
+
+- source: 36kr
+- url: https://www.36kr.com/p/4004207812497543
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-29
+
+### n=2 OpenAI推理之父最新访谈，数学只是多智能体时代的开胃菜
+
+- source: 36kr
+- url: https://www.36kr.com/p/4004219857883011
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-29
+
+### n=3 Anthropic 招股书里，最耐人寻味的 7 个细节
+
+- source: 36kr
+- url: https://www.36kr.com/p/4003996549681282
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-29
+
+### n=4 一个连话都不会说的 AI，居然把整个 AI 圈吵翻了？
+
+- source: 36kr
+- url: https://www.36kr.com/p/4003928238755973
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-29
+
+### n=5 Anthropic招股书：46亿营收、420亿亏损与2万亿估值的三重账
+
+- source: 36kr
+- url: https://www.36kr.com/p/4003865277044616
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-29
+
+## 2026-09-29 抓取批 (multi-source)
+
+### n=1 Claude Sonnet 5.5发布：性能逼近Opus 5.5，价格减半，安全防护升级
+
+- source: 36kr
+- url: https://www.36kr.com/p/4004207812497543
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-29
+
+### n=2 OpenAI推理之父最新访谈，数学只是多智能体时代的开胃菜
+
+- source: 36kr
+- url: https://www.36kr.com/p/4004219857883011
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-29
+
+### n=3 Anthropic 招股书里，最耐人寻味的 7 个细节
+
+- source: 36kr
+- url: https://www.36kr.com/p/4003996549681282
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-29
+
+### n=4 一个连话都不会说的 AI，居然把整个 AI 圈吵翻了？
+
+- source: 36kr
+- url: https://www.36kr.com/p/4003928238755973
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-29
+
+### n=5 Anthropic招股书：46亿营收、420亿亏损与2万亿估值的三重账
+
+- source: 36kr
+- url: https://www.36kr.com/p/4003865277044616
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-29
+
+### n=6 Anthropic拟IPO估值2万亿，高增长高烧钱存多重风险
+
+- source: 36kr
+- url: https://www.36kr.com/p/4003865277044616
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-29
+
+### n=7 Anthropic称新模型速度提升超30%，成本降低近30%。
+
+- source: 36kr
+- url: https://www.36kr.com/p/4003819885498243
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-29
+
+### n=8 Uncensored and Offensive Security AI Models Benchmark
+
+- source: Hacker News
+- url: https://github.com/JoasASantos/Offensive-Security-AI-Models
+- summary:
+- angle:
+- tags: HN,AI
+- status: pending
+- added_at: 2026-09-29
+
+## 2026-09-29 抓取批 (multi-source)
+
+### n=1 FurE: Efficient Instance-Specific 3D Fur Reconstruction without Animal-Fur Datasets
+
+- source: arXiv cs.AI
+- url: http://arxiv.org/abs/2609.35770v1
+- summary: Realistic and editable animal fur reconstruction from multi-view images is challenging due to fine-scale detail, self-occlusion and obfuscation, and, unlike human hair, the lack of animal-fur datasets
+- angle:
+- tags: arXiv,研究论文
+- status: pending
+- added_at: 2026-09-29
+
+### n=2 Telescopic Language Models
+
+- source: arXiv cs.AI
+- url: http://arxiv.org/abs/2609.35769v1
+- summary: One deployed language model must often serve many compute budgets, yet serving each budget still means a separate training or compression run per point. We train a Telescopic Language Model (TLM) to b
+- angle:
+- tags: arXiv,研究论文
+- status: pending
+- added_at: 2026-09-29
+
+### n=3 Learning Native Reflection in Unified Models with Interleaved Reinforcement Learning
+
+- source: arXiv cs.AI
+- url: http://arxiv.org/abs/2609.35767v1
+- summary: Unified multimodal models can both look at and render images, so in principle they can repair their own generations: diagnose what an image gets wrong, revise it, observe the result, and diagnose agai
+- angle:
+- tags: arXiv,研究论文
+- status: pending
+- added_at: 2026-09-29
+
+### n=4 TokenCast: Forecasting Token Consumption During LLM Agent Execution
+
+- source: arXiv cs.AI
+- url: http://arxiv.org/abs/2609.35760v1
+- summary: When a large language model (LLM) agent executes the same task, token consumption can vary by over an order of magnitude across runs. The agent chooses its next steps based on tool feedback and interm
+- angle:
+- tags: arXiv,研究论文
+- status: pending
+- added_at: 2026-09-29
+
+### n=5 How to Loop MoE: Flatten the Experts, Untie the Attention
+
+- source: arXiv cs.AI
+- url: http://arxiv.org/abs/2609.35751v1
+- summary: Looped Transformers reuse one block of layers several times: by spending extra computation they push a model of fixed size further, and so use its parameters more fully; while sparse mixture-of-expert
+- angle:
+- tags: arXiv,研究论文
+- status: pending
+- added_at: 2026-09-29
