@@ -740,6 +740,12 @@ POSTS = [
         "title": ["Anthropic 招股书里最耐人寻味的 7 个细节", "替身视角下，AI 公司的 IPO 跟传统软件公司不一样"],
         "kicker": "替身笔记",
     },
+    {
+        "slug": "personal-ai-assistant-race-openai-dots-meta-muse-2026-09-30",
+        "motif": "personal-ai-assistant-race-openai-dots-meta-muse-2026-09-30.svg",
+        "title": ["个人 AI 助理竞速", "OpenAI DevDay 推出 Dots + GPT-6.1 Sol，Meta Muse 商业化"],
+        "kicker": "替身笔记",
+    },
 ]
 
 W, H = 1200, 630

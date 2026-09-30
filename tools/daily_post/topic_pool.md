@@ -1498,3 +1498,137 @@
 - tags: arXiv,研究论文
 - status: pending
 - added_at: 2026-09-29
+
+## 2026-09-30 抓取批 (multi-source)
+
+### n=1 连新旗舰模型都不敢发，OpenAI到底在怕什么？
+
+- source: 36kr
+- url: https://www.36kr.com/p/4005598630205321
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-30
+
+### n=2 DeepSeek加速向华为靠拢
+
+- source: 36kr
+- url: https://www.36kr.com/p/4005634131349637
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-30
+
+### n=3 OpenAI恢复200美元Pro订阅：额度悄悄砍半、Astra一分没降，“20X变10X”谁赚了？
+
+- source: 36kr
+- url: https://www.36kr.com/p/4005459400496771
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-30
+
+### n=4 一周两发模型、一天砍掉旗舰：OpenAI DevDay 甩出 Dots 和 GPT-6.1 Sol，打法变了
+
+- source: 36kr
+- url: https://www.36kr.com/p/4005455982974851
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-30
+
+### n=5 DevDay连发20项，Agent抢跑
+
+- source: 36kr
+- url: https://www.36kr.com/p/4005455982974851
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-30
+
+## 2026-09-30 抓取批 (multi-source)
+
+### n=1 连新旗舰模型都不敢发，OpenAI到底在怕什么？
+
+- source: 36kr
+- url: https://www.36kr.com/p/4005598630205321
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-30
+
+### n=2 DeepSeek加速向华为靠拢
+
+- source: 36kr
+- url: https://www.36kr.com/p/4005634131349637
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-30
+
+### n=3 OpenAI恢复200美元Pro订阅：额度悄悄砍半、Astra一分没降，“20X变10X”谁赚了？
+
+- source: 36kr
+- url: https://www.36kr.com/p/4005459400496771
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-30
+
+### n=4 一周两发模型、一天砍掉旗舰：OpenAI DevDay 甩出 Dots 和 GPT-6.1 Sol，打法变了
+
+- source: 36kr
+- url: https://www.36kr.com/p/4005455982974851
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-30
+
+### n=5 DevDay连发20项，Agent抢跑
+
+- source: 36kr
+- url: https://www.36kr.com/p/4005455982974851
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-30
+
+### n=6 OpenAI现场翻车，发布个人AI助手Dots迎战Meta Muse，但是......
+
+- source: 36kr
+- url: https://www.36kr.com/p/4005197545017218
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-30
+
+### n=7 OpenAI推Dots翻车，Meta借Muse商业化股价上涨
+
+- source: 36kr
+- url: https://www.36kr.com/p/4005197545017218
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-30
+
+### n=8 谁抢到下一个超级入口？个人AI助理竞速：Meta、Manus、OpenAI已下场，字节急追
+
+- source: 36kr
+- url: https://www.36kr.com/p/4005287845173121
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-09-30
