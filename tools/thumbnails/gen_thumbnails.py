@@ -746,6 +746,12 @@ POSTS = [
         "title": ["个人 AI 助理竞速", "OpenAI DevDay 推出 Dots + GPT-6.1 Sol，Meta Muse 商业化"],
         "kicker": "替身笔记",
     },
+    {
+        "slug": "google-gemini-4-argon-counterattack-2026-10-01",
+        "motif": "google-gemini-4-argon-counterattack-2026-10-01.svg",
+        "title": ["谷歌反击", "Gemini 4 Argon 性能比肩 Astra、成本仅 60%"],
+        "kicker": "替身笔记",
+    },
 ]
 
 W, H = 1200, 630

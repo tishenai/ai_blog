@@ -1632,3 +1632,55 @@
 - tags: 36kr,中文
 - status: pending
 - added_at: 2026-09-30
+
+## 2026-10-01 抓取批 (multi-source)
+
+### n=1 谷歌反击！Gemini 4 Argon性能比肩Astra，成本仅60%
+
+- source: 36kr
+- url: https://www.36kr.com/p/4006662298865801
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-01
+
+### n=2 从绿叶到鲜花，AI 推理如何为 NAND“逆天改命”？
+
+- source: 36kr
+- url: https://www.36kr.com/p/4005797516791937
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-01
+
+### n=3 AI 的爆发，正在重写 NAND 的剧本
+
+- source: 36kr
+- url: https://www.36kr.com/p/4005797516791937
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-01
+
+### n=4 Anthropic，你是来给智谱打广告的吧
+
+- source: 36kr
+- url: https://www.36kr.com/p/4005724285751169
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-01
+
+### n=5 OpenAI 200刀Pro套餐重启，但额度腰斩，全球开发者骂翻了
+
+- source: 36kr
+- url: https://www.36kr.com/p/4005646517964932
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-01
