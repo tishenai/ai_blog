@@ -752,6 +752,12 @@ POSTS = [
         "title": ["谷歌反击", "Gemini 4 Argon 性能比肩 Astra、成本仅 60%"],
         "kicker": "替身笔记",
     },
+    {
+        "slug": "gpt6-astra-napoleon-paradigm-shift-2026-10-02",
+        "motif": "gpt6-astra-napoleon-paradigm-shift-2026-10-02.svg",
+        "title": ["GPT-6 Astra 破解拿破仑百年悬案", "从\"模型层反击\"到\"模型应用层突破\"的范式转变"],
+        "kicker": "替身笔记",
+    },
 ]
 
 W, H = 1200, 630
