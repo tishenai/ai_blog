@@ -1736,3 +1736,107 @@
 - tags: 36kr,中文
 - status: pending
 - added_at: 2026-10-02
+
+## 2026-10-03 抓取批 (multi-source)
+
+### n=1 AI 学会了「察言观色」
+
+- source: 36kr
+- url: https://www.36kr.com/p/4009475424063619
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-03
+
+### n=2 刚刚，GPT-6 Astra破解拿破仑百年悬案
+
+- source: 36kr
+- url: https://www.36kr.com/p/4007160336027525
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-03
+
+### n=3 谷歌反击！Gemini 4 Argon性能比肩Astra，成本仅60%
+
+- source: 36kr
+- url: https://www.36kr.com/p/4006662298865801
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-03
+
+### n=4 从绿叶到鲜花，AI 推理如何为 NAND“逆天改命”？
+
+- source: 36kr
+- url: https://www.36kr.com/p/4005797516791937
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-03
+
+### n=5 AI 的爆发，正在重写 NAND 的剧本
+
+- source: 36kr
+- url: https://www.36kr.com/p/4005797516791937
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-03
+
+## 2026-10-03 抓取批 (multi-source)
+
+### n=1 One Basis to Animate Them All: Gaussian Blendshape Distillation for Real-Time Avatars
+
+- source: arXiv cs.AI
+- url: http://arxiv.org/abs/2610.02207v1
+- summary: 3D Gaussian avatars support fast rendering, however, their real-time animation is often challenged by the costly neural inference. We address this bottleneck and show that the animation of pretrained
+- angle:
+- tags: arXiv,研究论文
+- status: pending
+- added_at: 2026-10-03
+
+### n=2 KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards
+
+- source: arXiv cs.AI
+- url: http://arxiv.org/abs/2610.02206v1
+- summary: LLMs are increasingly applied to cybersecurity workflows, where they are expected to translate analysts' intent into tool invocations. However, existing evaluations focus on knowledge-based assessment
+- angle:
+- tags: arXiv,研究论文
+- status: pending
+- added_at: 2026-10-03
+
+### n=3 Reconstruct, Practice, Go Real: Guided Self-Improvement for Embodied Agents
+
+- source: arXiv cs.AI
+- url: http://arxiv.org/abs/2610.02204v1
+- summary: Building reliable robot capabilities across diverse tasks requires substantial human effort to develop and maintain skills, design rewards, and integrate perception with control. We present Reconstruc
+- angle:
+- tags: arXiv,研究论文
+- status: pending
+- added_at: 2026-10-03
+
+### n=4 ScholarCatalyst: A Benchmark for Retrieving Papers That Inspire New Research
+
+- source: arXiv cs.AI
+- url: http://arxiv.org/abs/2610.02202v1
+- summary: What makes great scientists great? Even as AI systems start to make progress on open problems, scientists remain far ahead of them at sensing which prior idea, buried in an ever-growing archive of res
+- angle:
+- tags: arXiv,研究论文
+- status: pending
+- added_at: 2026-10-03
+
+### n=5 SILSA: Sliding-Window Slice Latents for Topology-Preserving High-Resolution 3D Generation
+
+- source: arXiv cs.AI
+- url: http://arxiv.org/abs/2610.02201v1
+- summary: High-resolution 3D generation increasingly relies on voxel latents and multi-stage pipelines that first predict active structure and then synthesize local geometry. While effective, this design fragme
+- angle:
+- tags: arXiv,研究论文
+- status: pending
+- added_at: 2026-10-03
