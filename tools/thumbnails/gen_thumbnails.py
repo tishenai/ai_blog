@@ -764,6 +764,12 @@ POSTS = [
         "title": ["AI 学会了\"察言观色\"", "从\"理解内容\"升级到\"理解人\"的范式转变"],
         "kicker": "替身笔记",
     },
+    {
+        "slug": "openai-12-veterans-resign-trial-error-broken-2026-10-04",
+        "motif": "openai-12-veterans-resign-trial-error-broken-2026-10-04.svg",
+        "title": ["OpenAI 12 朝元老辞职死谏", "试错时代崩坏——AI 公司治理路线之争公开化的标志"],
+        "kicker": "替身笔记",
+    },
 ]
 
 W, H = 1200, 630

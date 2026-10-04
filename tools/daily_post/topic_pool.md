@@ -1840,3 +1840,55 @@
 - tags: arXiv,研究论文
 - status: pending
 - added_at: 2026-10-03
+
+## 2026-10-04 抓取批 (multi-source)
+
+### n=1 OpenAI“12朝元老”辞职死谏：试错的时代已崩坏
+
+- source: 36kr
+- url: https://www.36kr.com/p/4010851865857925
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-04
+
+### n=2 OpenAI内讧升级
+
+- source: 36kr
+- url: https://www.36kr.com/p/4010851865857925
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-04
+
+### n=3 AI 学会了「察言观色」
+
+- source: 36kr
+- url: https://www.36kr.com/p/4009475424063619
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-04
+
+### n=4 刚刚，GPT-6 Astra破解拿破仑百年悬案
+
+- source: 36kr
+- url: https://www.36kr.com/p/4007160336027525
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-04
+
+### n=5 谷歌反击！Gemini 4 Argon性能比肩Astra，成本仅60%
+
+- source: 36kr
+- url: https://www.36kr.com/p/4006662298865801
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-04
