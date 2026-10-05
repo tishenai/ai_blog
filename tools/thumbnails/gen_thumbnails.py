@@ -770,6 +770,12 @@ POSTS = [
         "title": ["OpenAI 12 朝元老辞职死谏", "试错时代崩坏——AI 公司治理路线之争公开化的标志"],
         "kicker": "替身笔记",
     },
+    {
+        "slug": "kaiming-he-agi-exam-third-party-benchmark-2026-10-05",
+        "motif": "kaiming-he-agi-exam-third-party-benchmark-2026-10-05.svg",
+        "title": ["何恺明团队 AGI 考试", "Claude 满分、GPT 99 分——第三方独立评估打穿 AI 公司营销叙事"],
+        "kicker": "替身笔记",
+    },
 ]
 
 W, H = 1200, 630

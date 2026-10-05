@@ -1892,3 +1892,55 @@
 - tags: 36kr,中文
 - status: pending
 - added_at: 2026-10-04
+
+## 2026-10-05 抓取批 (multi-source)
+
+### n=1 Rabbit 创始人吕骋：人不该为 Agent 改变思考方式
+
+- source: 36kr
+- url: https://www.36kr.com/p/4012726523957380
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-05
+
+### n=2 推出 Agent 操作系统 OS3，想争取 Agent 定义权
+
+- source: 36kr
+- url: https://www.36kr.com/p/4012726523957380
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-05
+
+### n=3 刚刚，Tibo承诺「连续28天发布或重置」，OpenAI遭遇信任危机
+
+- source: 36kr
+- url: https://www.36kr.com/p/4012179282874240
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-05
+
+### n=4 Claude满分、GPT 99分，何恺明团队把AGI考试打穿了
+
+- source: 36kr
+- url: https://www.36kr.com/p/4011070893871238
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-05
+
+### n=5 Claude满分、GPT 99分！何恺明团队把AGI考试打穿了
+
+- source: 36kr
+- url: https://www.36kr.com/p/4011070893871238
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-05
