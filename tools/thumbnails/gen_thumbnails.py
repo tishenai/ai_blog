@@ -776,6 +776,12 @@ POSTS = [
         "title": ["何恺明团队 AGI 考试", "Claude 满分、GPT 99 分——第三方独立评估打穿 AI 公司营销叙事"],
         "kicker": "替身笔记",
     },
+    {
+        "slug": "chatgpt-text-watermark-gpt6-50-percent-speedup-2026-10-06",
+        "motif": "chatgpt-text-watermark-gpt6-50-percent-speedup-2026-10-06.svg",
+        "title": ["ChatGPT 文字水印 + GPT-6 提速 50%", "OpenAI 用工程化回应\"独立基准落后\"+\"AI 内容监管\"两条战线"],
+        "kicker": "替身笔记",
+    },
 ]
 
 W, H = 1200, 630
