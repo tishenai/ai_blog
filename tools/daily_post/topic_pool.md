@@ -1996,3 +1996,55 @@
 - tags: 36kr,中文
 - status: pending
 - added_at: 2026-10-06
+
+## 2026-10-07 抓取批 (multi-source)
+
+### n=1 突发，Claude拿下概率论「圣杯」，AI跨过菲尔兹奖终点线
+
+- source: 36kr
+- url: https://www.36kr.com/p/4015346980278153
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-07
+
+### n=2 数学大爆炸，OpenAI 一夜攻克722个数学难题，准黎曼猜想已被证明
+
+- source: 36kr
+- url: https://www.36kr.com/p/4015128916676736
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-07
+
+### n=3 OpenAI又要惹众怒了！
+
+- source: 36kr
+- url: https://www.36kr.com/p/4015128916676736
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-07
+
+### n=4 AI几年内或超越所有人类，Claude核心研究员预测
+
+- source: 36kr
+- url: https://www.36kr.com/p/4014585839210629
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-07
+
+### n=5 刚刚，ChatGPT 推出文字水印，GPT-6 提速 50%
+
+- source: 36kr
+- url: https://www.36kr.com/p/4013699052588937
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-07

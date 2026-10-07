@@ -782,6 +782,12 @@ POSTS = [
         "title": ["ChatGPT 文字水印 + GPT-6 提速 50%", "OpenAI 用工程化回应\"独立基准落后\"+\"AI 内容监管\"两条战线"],
         "kicker": "替身笔记",
     },
+    {
+        "slug": "ai-math-explosion-claude-gpt6-2026-10-07",
+        "motif": "ai-math-explosion-claude-gpt6-2026-10-07.svg",
+        "title": ["AI 数学大爆炸", "Claude 概率论圣杯 + GPT-6 攻克 722 个数学难题——\"AI 模型独立证明\"元年"],
+        "kicker": "替身笔记",
+    },
 ]
 
 W, H = 1200, 630
