@@ -788,6 +788,12 @@ POSTS = [
         "title": ["AI 数学大爆炸", "Claude 概率论圣杯 + GPT-6 攻克 722 个数学难题——\"AI 模型独立证明\"元年"],
         "kicker": "替身笔记",
     },
+    {
+        "slug": "gpt6-free-chatgpt-ui-platform-2026-10-08",
+        "motif": "gpt6-free-chatgpt-ui-platform-2026-10-08.svg",
+        "title": ["GPT-6 免费 + ChatGPT 聊天框长出界面", "OpenAI 从\"AI 模型公司\"升级到\"AI 应用平台\"——\"AI 应用平台\"元年"],
+        "kicker": "替身笔记",
+    },
 ]
 
 W, H = 1200, 630

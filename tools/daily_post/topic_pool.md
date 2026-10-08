@@ -2048,3 +2048,55 @@
 - tags: 36kr,中文
 - status: pending
 - added_at: 2026-10-07
+
+## 2026-10-08 抓取批 (multi-source)
+
+### n=1 芯片巨头们开抢模型
+
+- source: 36kr
+- url: https://www.36kr.com/p/4016791764866949
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-08
+
+### n=2 GPT-6今起免费用，拒答变少，话变多了
+
+- source: 36kr
+- url: https://www.36kr.com/p/4016873226113158
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-08
+
+### n=3 ChatGPT聊天框长出界面
+
+- source: 36kr
+- url: https://www.36kr.com/p/4016873226113158
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-08
+
+### n=4 「AI 的尽头是卖课」，以前是句调侃，现在A社都下场做课了。
+
+- source: 36kr
+- url: https://www.36kr.com/p/4016354742669443
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-08
+
+### n=5 95% 的人不愿为 AI 付费，1% 的超级玩家养活 AI 圈
+
+- source: 36kr
+- url: https://www.36kr.com/p/4016354339393673
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-08
