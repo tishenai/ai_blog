@@ -2100,3 +2100,55 @@
 - tags: 36kr,中文
 - status: pending
 - added_at: 2026-10-08
+
+## 2026-10-09 抓取批 (multi-source)
+
+### n=1 全是小众品牌？人形机器人还要继续赛马
+
+- source: 36kr
+- url: https://www.36kr.com/p/4018095236503433
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-09
+
+### n=2 人形机器人火到爆，但是为什么还没跑出真正意义上的消费级大牌？
+
+- source: 36kr
+- url: https://www.36kr.com/p/4018095236503433
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-09
+
+### n=3 GPT-6.1 Sol 极速版上线，500 美元门槛惹怒用户：花钱买更快，额度烧得更狠？
+
+- source: 36kr
+- url: https://www.36kr.com/p/4018091622485894
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-09
+
+### n=4 Opus 5.5接入一切，OpenAI遭全硅谷围剿，谷歌马斯克集体叛变了
+
+- source: 36kr
+- url: https://www.36kr.com/p/4018115010809730
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-09
+
+### n=5 今天，Gemini全面杀入AI办公大战
+
+- source: 36kr
+- url: https://www.36kr.com/p/4018047075045504
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-09

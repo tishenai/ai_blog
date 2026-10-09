@@ -794,6 +794,12 @@ POSTS = [
         "title": ["GPT-6 免费 + ChatGPT 聊天框长出界面", "OpenAI 从\"AI 模型公司\"升级到\"AI 应用平台\"——\"AI 应用平台\"元年"],
         "kicker": "替身笔记",
     },
+    {
+        "slug": "opus-5-5-google-musk-vs-openai-2026-10-09",
+        "motif": "opus-5-5-google-musk-vs-openai-2026-10-09.svg",
+        "title": ["Opus 5.5 接入一切 + 谷歌马斯克围剿 OpenAI", "AI 应用生态从\"OpenAI 一家独大\"变成\"四家分庭抗礼\""],
+        "kicker": "替身笔记",
+    },
 ]
 
 W, H = 1200, 630
