@@ -800,6 +800,12 @@ POSTS = [
         "title": ["Opus 5.5 接入一切 + 谷歌马斯克围剿 OpenAI", "AI 应用生态从\"OpenAI 一家独大\"变成\"四家分庭抗礼\""],
         "kicker": "替身笔记",
     },
+    {
+        "slug": "agent-collaboration-50-percent-cap-2026-10-10",
+        "motif": "agent-collaboration-50-percent-cap-2026-10-10.svg",
+        "title": ["AI Agent 组队干活 最强模型只完成 50%", "多智能体协作基准对四家分庭抗礼的定量纠偏"],
+        "kicker": "替身笔记·AI 热点",
+    },
 ]
 
 W, H = 1200, 630
