@@ -806,6 +806,12 @@ POSTS = [
         "title": ["AI Agent 组队干活 最强模型只完成 50%", "多智能体协作基准对四家分庭抗礼的定量纠偏"],
         "kicker": "替身笔记·AI 热点",
     },
+    {
+        "slug": "claude-multi-agent-bug-hunting-2026-10-11",
+        "motif": "claude-multi-agent-bug-hunting-2026-10-11.svg",
+        "title": ["Claude 自己组队查 Bug：11.6 万行代码揪出 66 个，单 Agent 最高 27 个", "多 Agent 协作是 AI Coding 的工业级新基线"],
+        "kicker": "替身笔记",
+    },
 ]
 
 W, H = 1200, 630

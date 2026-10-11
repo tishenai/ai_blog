@@ -2152,3 +2152,55 @@
 - tags: 36kr,中文
 - status: pending
 - added_at: 2026-10-09
+
+## 2026-10-11 抓取批 (multi-source)
+
+### n=1 Claude自己组队查Bug！11.6万行代码揪出66个，单Agent最高只找到27个
+
+- source: 36kr
+- url: https://www.36kr.com/p/4020977816539010
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-11
+
+### n=2 agent底座之争，OpenAI又被针对了。
+
+- source: 36kr
+- url: https://www.36kr.com/p/4020868909618823
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-11
+
+### n=3 AI coding 改变了人感知「完成度」的方式
+
+- source: 36kr
+- url: https://www.36kr.com/p/4020888466542726
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-11
+
+### n=4 如今几乎已经没人再手写代码了；同时使用 5～10 个 AI Agent 正变得越来越普遍；IDE 的存在感正在减弱...
+
+- source: 36kr
+- url: https://www.36kr.com/p/4019964584464263
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-11
+
+### n=5 算力基建的战争，才刚刚在液冷赛道上演
+
+- source: 36kr
+- url: https://www.36kr.com/p/4019942949295744
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-11

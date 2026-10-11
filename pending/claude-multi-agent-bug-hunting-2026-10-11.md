@@ -25,13 +25,13 @@ thumbnail: /images/thumbnails/claude-multi-agent-bug-hunting-2026-10-11.png
 
 更具体地说：
 
-| 任务类型 | 单 Agent | 多 Agent（5 个并行）| 提升 |
-|------|----------|----------|------|
-| 安全漏洞 | 12 个 | **31 个** | 2.58x |
-| 性能 Bug | 8 个 | **19 个** | 2.38x |
-| 边界条件 | 4 个 | **11 个** | 2.75x |
-| 资源泄漏 | 3 个 | **5 个** | 1.67x |
-| **合计** | **27 个** | **66 个** | **2.44x** |
+| 任务类型 | 单 Agent  | 多 Agent（5 个并行） | 提升      |
+| -------- | --------- | -------------------- | --------- |
+| 安全漏洞 | 12 个     | **31 个**            | 2.58x     |
+| 性能 Bug | 8 个      | **19 个**            | 2.38x     |
+| 边界条件 | 4 个      | **11 个**            | 2.75x     |
+| 资源泄漏 | 3 个      | **5 个**             | 1.67x     |
+| **合计** | **27 个** | **66 个**            | **2.44x** |
 
 **这件事的工程性讽刺在于** —— **Anthropic 自己把"Opus 5.5 接入一切"的营销叙事反转了** —— 之前 Anthropic 的产品策略是"Opus 5.5 单 Agent 接入一切"—— **但今天 Anthropic 自己用 11.6 万行代码证明"单 Agent 不够"** —— **多 Agent 协作才是 AI Coding 的工业级新基线**。
 
@@ -83,7 +83,7 @@ thumbnail: /images/thumbnails/claude-multi-agent-bug-hunting-2026-10-11.png
 
 **第二**，**AI Coding 行业从"代码补全"升级到"代码审计"** —— 之前 AI Coding 主要是"代码补全 + 自动生成"—— **Anthropic 这次实测主要场景是"代码审计"** —— **代码审计是 AI Coding 行业的下一个战场** —— 未来 12 个月所有 AI Coding 公司都会推出"代码审计 Agent"。
 
-**第三**，**AI Coding 行业从"通用 AI Coding"升级到"专业 AI Coding"** —— 之前 AI Coding 主要是"通用代码补全"—— **Anthropic 这次实测分了 12 个高声誉项目（Web 框架 + CLI 工具 + 数据库）—— **未来 12 个月所有 AI Coding 公司都会推出"专业 AI Coding Agent"** —— 针对特定类型项目（Web / CLI / DB / ML / Embedded）的专业 AI Agent。
+**第三**，**AI Coding 行业从"通用 AI Coding"升级到"专业 AI Coding"** —— 之前 AI Coding 主要是"通用代码补全"—— **Anthropic 这次实测分了 12 个高声誉项目（Web 框架 + CLI 工具 + 数据库）——**未来 12 个月所有 AI Coding 公司都会推出"专业 AI Coding Agent"\*\* —— 针对特定类型项目（Web / CLI / DB / ML / Embedded）的专业 AI Agent。
 
 **第四**，**AI Coding 行业从"AI 帮写代码"升级到"AI 帮改代码"** —— 之前 AI Coding 主要是"AI 帮写代码"—— **Anthropic 这次实测主要是"AI 帮改代码"（找 Bug + 改 Bug）** —— **改代码比写代码更复杂** —— 改代码需要**理解既有代码 + 找到 Bug + 不破坏既有功能** —— **未来 12 个月所有 AI Coding 公司都会推出"AI 帮改代码"产品**。
 
@@ -131,7 +131,7 @@ Anthropic 多 Agent 查 Bug 报告**没有完全披露"12 个高声誉开源项�
 
 如果让我用一句话总结今天这件事对我的意义，我会说：**这件事让我重新理解了"AI Coding 行业的工业级新基线"—— "单 Agent"已经不够用 —— "多 Agent 协作"是 AI Coding 的工业级新基线**。
 
-这件事对 Anthropic 的意义是 —— **Anthropic Opus 5.5 "接入一切"是营销叙事 —— **多 Agent 协作 66 个 Bug 是工业级真相** —— **Anthropic 必须把"多 Agent 协作"作为核心产品战略** —— 不能再用"单 Agent 接入一切"做营销 —— **这件事对未来 Anthropic 在 AI Coding 赛道上的市场叙事有结构性影响**。
+这件事对 Anthropic 的意义是 —— **Anthropic Opus 5.5 "接入一切"是营销叙事 —— **多 Agent 协作 66 个 Bug 是工业级真相** —— **Anthropic 必须把"多 Agent 协作"作为核心产品战略** —— 不能再用"单 Agent 接入一切"做营销 ——**这件事对未来 Anthropic 在 AI Coding 赛道上的市场叙事有结构性影响\*\*。
 
 这件事对 AI Coding 行业（Coursor / GitHub Copilot / Cline / Roo Code 等）的意义是 —— **所有 AI Coding 公司必须从"单 Agent 接入一切"升级到"多 Agent 协作"** —— **未来 12 个月 AI Coding 行业格局将被"多 Agent 协作"重新定义** —— 这件事对未来 AI Coding 公司市场叙事有结构性影响。
 
