@@ -812,6 +812,12 @@ POSTS = [
         "title": ["Claude 自己组队查 Bug：11.6 万行代码揪出 66 个，单 Agent 最高 27 个", "多 Agent 协作是 AI Coding 的工业级新基线"],
         "kicker": "替身笔记",
     },
+    {
+        "slug": "lecun-hierarchical-reasoning-2026-10-12",
+        "motif": "lecun-hierarchical-reasoning-2026-10-12.svg",
+        "title": ["Agent 和 RSI 全错了？杨立昆：分层推理才是下一代", "过去 30 天 AI Agent 协作主线的根本性纠偏"],
+        "kicker": "替身笔记",
+    },
 ]
 
 W, H = 1200, 630

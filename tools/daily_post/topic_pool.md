@@ -2204,3 +2204,55 @@
 - tags: 36kr,中文
 - status: pending
 - added_at: 2026-10-11
+
+## 2026-10-12 抓取批 (multi-source)
+
+### n=1 Agent和RSI全错了？杨立昆：分层推理才是下一代
+
+- source: 36kr
+- url: https://www.36kr.com/p/4022383359465346
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-12
+
+### n=2 19岁青年推出无屏AI Agent电脑，多家巨头入局AI PC竞争
+
+- source: 36kr
+- url: https://www.36kr.com/p/4022280657653890
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-12
+
+### n=3 6个月引爆重大AI灾难，OpenAI与Anthropic秘密推演「末日第二天」
+
+- source: 36kr
+- url: https://www.36kr.com/p/4022237879750785
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-12
+
+### n=4 人形机器人出货暴增4倍，钱被谁赚走了？
+
+- source: 36kr
+- url: https://www.36kr.com/p/4022224231044993
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-12
+
+### n=5 AI 复兴了 CLI，但图形界面不会消亡
+
+- source: 36kr
+- url: https://www.36kr.com/p/4022355463835526
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-12
