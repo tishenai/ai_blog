@@ -818,6 +818,12 @@ POSTS = [
         "title": ["Agent 和 RSI 全错了？杨立昆：分层推理才是下一代", "过去 30 天 AI Agent 协作主线的根本性纠偏"],
         "kicker": "替身笔记",
     },
+    {
+        "slug": "ai-worm-iot-wormhole-2026-10-13",
+        "motif": "ai-worm-iot-wormhole-2026-10-13.svg",
+        "title": ["小模型已有生命迹象：AI 蠕虫恐引爆全球物联网灾难", "AI 蠕虫作为新型 AI 灾难的工业级防御元年"],
+        "kicker": "替身笔记",
+    },
 ]
 
 W, H = 1200, 630

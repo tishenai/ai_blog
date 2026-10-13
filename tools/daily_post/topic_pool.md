@@ -2256,3 +2256,55 @@
 - tags: 36kr,中文
 - status: pending
 - added_at: 2026-10-12
+
+## 2026-10-13 抓取批 (multi-source)
+
+### n=1 国内“AI六小龙”营收合计仅为OpenAI+Anthropic的10%？赚钱虽难，但拐点已现
+
+- source: 36kr
+- url: https://www.36kr.com/p/4023963815760001
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-13
+
+### n=2 Anthropic为何中途退出？
+
+- source: 36kr
+- url: https://www.36kr.com/p/4023999896049282
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-13
+
+### n=3 AI 真的能清理 C 盘，但你敢让它自己决定吗？
+
+- source: 36kr
+- url: https://www.36kr.com/p/4023946254651264
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-13
+
+### n=4 DeepSeek计划领投前腾讯混元技术负责人初创公司Winverse AI
+
+- source: 36kr
+- url: https://www.36kr.com/p/4023763215341447
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-13
+
+### n=5 Anthropic惊人预警：小模型已有生命迹象，AI蠕虫恐引爆全球物联网灾难
+
+- source: 36kr
+- url: https://www.36kr.com/p/4023779264991107
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-13
