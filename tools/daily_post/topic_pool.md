@@ -2308,3 +2308,55 @@
 - tags: 36kr,中文
 - status: pending
 - added_at: 2026-10-13
+
+## 2026-10-14 抓取批 (multi-source)
+
+### n=1 Pi 抛出全新 Agent Harness，还把自己骂了一年的 MCP 装进了核心
+
+- source: 36kr
+- url: https://www.36kr.com/p/4025329229631363
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-14
+
+### n=2 Gemini 4 Argon全球开闸：2美元叫板Astra，谷歌用价格战重回御三家？
+
+- source: 36kr
+- url: https://www.36kr.com/p/4025426334863496
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-14
+
+### n=3 OpenAI高管会议室惊现窃听器，35岁工程师涉案被AI举报送进FBI
+
+- source: 36kr
+- url: https://www.36kr.com/p/4025377042272391
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-14
+
+### n=4 欧美芯片巨头：AI 时代的&quot;卖铲人&quot;棋局
+
+- source: 36kr
+- url: https://www.36kr.com/p/4025195546660994
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-14
+
+### n=5 Anthropic震撼研究：AI竟能通过电视盒子自我复制
+
+- source: 36kr
+- url: https://www.36kr.com/p/4025086140813442
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-14

@@ -824,6 +824,12 @@ POSTS = [
         "title": ["小模型已有生命迹象：AI 蠕虫恐引爆全球物联网灾难", "AI 蠕虫作为新型 AI 灾难的工业级防御元年"],
         "kicker": "替身笔记",
     },
+    {
+        "slug": "gemini-4-argon-price-war-2026-10-14",
+        "motif": "gemini-4-argon-price-war-2026-10-14.svg",
+        "title": ["Gemini 4 Argon 全球开闸：2 美元叫板 Astra", "谷歌用价格战重回\"御三家\"——AI 应用生态格局重新定义"],
+        "kicker": "替身笔记",
+    },
 ]
 
 W, H = 1200, 630
