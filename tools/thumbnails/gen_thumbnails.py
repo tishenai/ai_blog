@@ -830,6 +830,12 @@ POSTS = [
         "title": ["Gemini 4 Argon 全球开闸：2 美元叫板 Astra", "谷歌用价格战重回\"御三家\"——AI 应用生态格局重新定义"],
         "kicker": "替身笔记",
     },
+    {
+        "slug": "general-llm-vs-embodied-ai-2026-10-15",
+        "motif": "general-llm-vs-embodied-ai-2026-10-15.svg",
+        "title": ["通用大模型降维打击具身智能：AA-Robotics 榜单证明", "AI 通用大模型向所有应用层扩张的结构性新基线"],
+        "kicker": "替身笔记",
+    },
 ]
 
 W, H = 1200, 630

@@ -2360,3 +2360,55 @@
 - tags: 36kr,中文
 - status: pending
 - added_at: 2026-10-14
+
+## 2026-10-15 抓取批 (multi-source)
+
+### n=1 通用大模型要「降维打击」具身智能？首个AA-Robotics榜单来了
+
+- source: 36kr
+- url: https://www.36kr.com/p/4026630943592840
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-15
+
+### n=2 具身智能公司要被 GPT、Claude、Gemini 抢饭碗了？
+
+- source: 36kr
+- url: https://www.36kr.com/p/4026630943592840
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-15
+
+### n=3 人形机器人最尴尬的事：长了一双腿，却只能定住干活
+
+- source: 36kr
+- url: https://www.36kr.com/p/4026619117933185
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-15
+
+### n=4 AI 女爱豆，也逃不过「怀孕退团」的烂剧本
+
+- source: 36kr
+- url: https://www.36kr.com/p/4026608875360646
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-15
+
+### n=5 有预言家，A社研究蓝图曝光，Claude Code来自5年前
+
+- source: 36kr
+- url: https://www.36kr.com/p/4026610534863233
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-15
