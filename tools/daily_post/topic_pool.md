@@ -2412,3 +2412,55 @@
 - tags: 36kr,中文
 - status: pending
 - added_at: 2026-10-15
+
+## 2026-10-16 抓取批 (multi-source)
+
+### n=1 DeepMind AlphaProof Nexus登《Science》：AI自主破解多道56年未解Erdős数学难题
+
+- source: 36kr
+- url: https://www.36kr.com/p/4028160975999625
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-16
+
+### n=2 DeepMind AI解出9道悬而未决的埃尔德什问题
+
+- source: 36kr
+- url: https://www.36kr.com/p/4028160975999625
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-16
+
+### n=3 亚马逊，Agent最严厉的父亲
+
+- source: 36kr
+- url: https://www.36kr.com/p/4027996066977415
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-16
+
+### n=4 AI 出海营销，字节、阿里和腾讯哪家强？
+
+- source: 36kr
+- url: https://www.36kr.com/p/4027972007891592
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-16
+
+### n=5 AI 脸不够用，普通人也能 “ 卖脸 ” 赚钱了，最高 10000 元？
+
+- source: 36kr
+- url: https://www.36kr.com/p/4027234761511298
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-16

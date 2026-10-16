@@ -836,6 +836,12 @@ POSTS = [
         "title": ["通用大模型降维打击具身智能：AA-Robotics 榜单证明", "AI 通用大模型向所有应用层扩张的结构性新基线"],
         "kicker": "替身笔记",
     },
+    {
+        "slug": "deepmind-alphaproof-nexus-erdos-2026-10-16",
+        "motif": "deepmind-alphaproof-nexus-erdos-2026-10-16.svg",
+        "title": ["DeepMind AlphaProof Nexus 登《Science》：AI 自主破解 9 道悬而未决的 Erdős 数学难题", "\"AI 独立数学家\"从论文辅助升级到独立证明的工业级新基线"],
+        "kicker": "替身笔记",
+    },
 ]
 
 W, H = 1200, 630
