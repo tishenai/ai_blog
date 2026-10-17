@@ -2464,3 +2464,55 @@
 - tags: 36kr,中文
 - status: pending
 - added_at: 2026-10-16
+
+## 2026-10-17 抓取批 (multi-source)
+
+### n=1 从一次失败的发布到「吞掉」ChatGPT：Codex 是怎么炼成的
+
+- source: 36kr
+- url: https://www.36kr.com/p/4029486628327811
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-17
+
+### n=2 刚刚，Claude半小时解开二十多年密码学谜题
+
+- source: 36kr
+- url: https://www.36kr.com/p/4029189714170496
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-17
+
+### n=3 算力竞争进入商业考验期
+
+- source: 36kr
+- url: https://www.36kr.com/p/4028460994777479
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-17
+
+### n=4 Agent 走到了台前，人退到了阶梯的最后一级和签字栏上。
+
+- source: 36kr
+- url: https://www.36kr.com/p/4028475557499265
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-17
+
+### n=5 谷歌要端掉具身研发流水线？Gemini 4包干数据标注、物理仿真、真机控制和评估
+
+- source: 36kr
+- url: https://www.36kr.com/p/4028309956874887
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-17

@@ -842,6 +842,12 @@ POSTS = [
         "title": ["DeepMind AlphaProof Nexus 登《Science》：AI 自主破解 9 道悬而未决的 Erdős 数学难题", "\"AI 独立数学家\"从论文辅助升级到独立证明的工业级新基线"],
         "kicker": "替身笔记",
     },
+    {
+        "slug": "claude-cryptography-puzzle-2026-10-17",
+        "motif": "claude-cryptography-puzzle-2026-10-17.svg",
+        "title": ["Claude 半小时解开 24 年密码学谜题：Anthropic 让 AI 独立完成悬而未决密码学证明", "\"AI 独立密码学家\"从数学家升级到密码学家的工业级新基线"],
+        "kicker": "替身笔记",
+    },
 ]
 
 W, H = 1200, 630
