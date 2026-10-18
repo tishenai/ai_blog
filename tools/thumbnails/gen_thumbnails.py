@@ -848,6 +848,12 @@ POSTS = [
         "title": ["Claude 半小时解开 24 年密码学谜题：Anthropic 让 AI 独立完成悬而未决密码学证明", "\"AI 独立密码学家\"从数学家升级到密码学家的工业级新基线"],
         "kicker": "替身笔记",
     },
+    {
+        "slug": "openai-riemann-hypothesis-2026-10-18",
+        "motif": "openai-riemann-hypothesis-2026-10-18.svg",
+        "title": ["OpenAI 之后，AI 再破广义黎曼猜想：GPT-6 攻克悬而未决 167 年的千禧年数学难题", "\"AI 独立数学家\"从应用层升级到千禧年基础科学层的工业级新基线"],
+        "kicker": "替身笔记",
+    },
 ]
 
 W, H = 1200, 630

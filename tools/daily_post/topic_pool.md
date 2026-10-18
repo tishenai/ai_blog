@@ -2516,3 +2516,55 @@
 - tags: 36kr,中文
 - status: pending
 - added_at: 2026-10-17
+
+## 2026-10-18 抓取批 (multi-source)
+
+### n=1 重磅！OpenAI之后，AI再破广义黎曼猜想
+
+- source: 36kr
+- url: https://www.36kr.com/p/4031090627858820
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-18
+
+### n=2 AI 开处方了，出了事谁负责？
+
+- source: 36kr
+- url: https://www.36kr.com/p/4030675884265865
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-18
+
+### n=3 从一次失败的发布到「吞掉」ChatGPT：Codex 是怎么炼成的
+
+- source: 36kr
+- url: https://www.36kr.com/p/4029486628327811
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-18
+
+### n=4 刚刚，Claude半小时解开二十多年密码学谜题
+
+- source: 36kr
+- url: https://www.36kr.com/p/4029189714170496
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-18
+
+### n=5 DeepSeek search and fetch – $0.75 per 1000 successful requests
+
+- source: Hacker News
+- url: https://api-docs.deepseek.com/guides/search/
+- summary:
+- angle:
+- tags: HN,AI
+- status: pending
+- added_at: 2026-10-18
