@@ -2568,3 +2568,55 @@
 - tags: HN,AI
 - status: pending
 - added_at: 2026-10-18
+
+## 2026-10-19 抓取批 (multi-source)
+
+### n=1 刚刚，OpenAI三大新模型深夜短暂上线
+
+- source: 36kr
+- url: https://www.36kr.com/p/4032312961143168
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-19
+
+### n=2 OpenAI误曝极光三图像模型，硬刚竞品引热议
+
+- source: 36kr
+- url: https://www.36kr.com/p/4032312961143168
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-19
+
+### n=3 36氪报告图解 | 《2026年中国AI Agent行业发展研究报告》
+
+- source: 36kr
+- url: https://www.36kr.com/p/4032427409609096
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-19
+
+### n=4 欢迎关注「具身万象」公众号，后台回复关键词「AI Agent」领取《2026年中国AI Agent行业发展研究报告》完整版
+
+- source: 36kr
+- url: https://www.36kr.com/p/4032427409609096
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-19
+
+### n=5 OpenAI估值锚定倒逼Anthropic，千亿AI估值博弈展开
+
+- source: 36kr
+- url: https://www.36kr.com/p/4032176998356864
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-19

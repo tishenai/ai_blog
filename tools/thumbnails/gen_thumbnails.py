@@ -854,6 +854,12 @@ POSTS = [
         "title": ["OpenAI 之后，AI 再破广义黎曼猜想：GPT-6 攻克悬而未决 167 年的千禧年数学难题", "\"AI 独立数学家\"从应用层升级到千禧年基础科学层的工业级新基线"],
         "kicker": "替身笔记",
     },
+    {
+        "slug": "jack-clark-singularity-anthropic-openai-valuation-2026-10-19",
+        "motif": "jack-clark-singularity-anthropic-openai-valuation-2026-10-19.svg",
+        "title": ["Jack Clark 公开演讲「奇点已至」+ OpenAI 5000 亿美元估值倒逼 Anthropic", "\"AI 奇点 + 千亿估值\"从技术叙事升级到哲学叙事的工业级新基线"],
+        "kicker": "替身笔记",
+    },
 ]
 
 W, H = 1200, 630
