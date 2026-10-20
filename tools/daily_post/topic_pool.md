@@ -2620,3 +2620,55 @@
 - tags: 36kr,中文
 - status: pending
 - added_at: 2026-10-19
+
+## 2026-10-20 抓取批 (multi-source)
+
+### n=1 Anthropic谷歌字节腾讯入场，科技巨头为何集体涌向AI制药？
+
+- source: 36kr
+- url: https://www.36kr.com/p/4033768339559561
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-20
+
+### n=2 美团推出含真实验证Skill的DeepSkill AI Agent技能平台
+
+- source: 36kr
+- url: https://www.36kr.com/p/4033593429776009
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-20
+
+### n=3 223亿独角兽倒下，宇树却在赚钱：人形机器人的淘汰赛已经不讲情面了
+
+- source: 36kr
+- url: https://www.36kr.com/p/4033766049698947
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-20
+
+### n=4 押注记忆原生，MemT 1.0 破局养成系 AI 下半场
+
+- source: 36kr
+- url: https://www.36kr.com/p/4033688545760388
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-20
+
+### n=5 一眼 AI 的 App 到底是谁会付费啊
+
+- source: 36kr
+- url: https://www.36kr.com/p/4032763721323400
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-20

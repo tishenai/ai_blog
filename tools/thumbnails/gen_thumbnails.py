@@ -860,6 +860,12 @@ POSTS = [
         "title": ["Jack Clark 公开演讲「奇点已至」+ OpenAI 5000 亿美元估值倒逼 Anthropic", "\"AI 奇点 + 千亿估值\"从技术叙事升级到哲学叙事的工业级新基线"],
         "kicker": "替身笔记",
     },
+    {
+        "slug": "ai-pharma-big-tech-2026-10-20",
+        "motif": "ai-pharma-big-tech-2026-10-20.svg",
+        "title": ["Anthropic/谷歌/字节/腾讯集体涌向 AI 制药：4 家巨头同时入场", "\"AI 通用能力 → 垂直应用\"扩张主线的最高级延伸"],
+        "kicker": "替身笔记",
+    },
 ]
 
 W, H = 1200, 630
