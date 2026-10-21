@@ -866,6 +866,12 @@ POSTS = [
         "title": ["Anthropic/谷歌/字节/腾讯集体涌向 AI 制药：4 家巨头同时入场", "\"AI 通用能力 → 垂直应用\"扩张主线的最高级延伸"],
         "kicker": "替身笔记",
     },
+    {
+        "slug": "anthropic-ipo-cashflow-2026-10-21",
+        "motif": "anthropic-ipo-cashflow-2026-10-21.svg",
+        "title": ["Anthropic 招股书披露：日亏 30 亿 + 780 亿美元算力承诺", "AI 行业第一次被迫公开\"真实账本\"的结构性新基线"],
+        "kicker": "替身笔记",
+    },
 ]
 
 W, H = 1200, 630

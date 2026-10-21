@@ -2672,3 +2672,55 @@
 - tags: 36kr,中文
 - status: pending
 - added_at: 2026-10-20
+
+## 2026-10-21 抓取批 (multi-source)
+
+### n=1 Anthropic现金流承压，冲刺IPO成必选项
+
+- source: 36kr
+- url: https://www.36kr.com/p/4035151703873152
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-21
+
+### n=2 Anthropic上半年平均每天亏30亿
+
+- source: 36kr
+- url: https://www.36kr.com/p/4035266768343943
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-21
+
+### n=3 AI 会是人类最后的发明吗？
+
+- source: 36kr
+- url: https://www.36kr.com/p/4035049144816769
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-21
+
+### n=4 Anthropic招股书披露巨额算力承诺，AI模式待检验
+
+- source: 36kr
+- url: https://www.36kr.com/p/4034934086080389
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-21
+
+### n=5 人形机器人股价狂奔，宇树却先给行业泼了一盆冷水
+
+- source: 36kr
+- url: https://www.36kr.com/p/4034873069835142
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-21
