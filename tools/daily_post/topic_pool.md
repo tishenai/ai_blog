@@ -2724,3 +2724,55 @@
 - tags: 36kr,中文
 - status: pending
 - added_at: 2026-10-21
+
+## 2026-10-22 抓取批 (multi-source)
+
+### n=1 AI工厂、Agent、人形机器人，黄仁勋在今年GTC柏林集中展示了英伟达的最新进展与应用方向。
+
+- source: 36kr
+- url: https://www.36kr.com/p/4036664971727747
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-22
+
+### n=2 Anthropic 祭出全新治理架构：重新定义 AI 公司的资本规则
+
+- source: 36kr
+- url: https://www.36kr.com/p/4036374224131202
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-22
+
+### n=3 Personal Agent战火正在烧向硬件
+
+- source: 36kr
+- url: https://www.36kr.com/p/4036337647244416
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-22
+
+### n=4 谁在养活 Anthropic？
+
+- source: 36kr
+- url: https://www.36kr.com/p/4035610293048450
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-22
+
+### n=5 不建议跟风Personal Agent
+
+- source: 36kr
+- url: https://www.36kr.com/p/4035658058126464
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-22

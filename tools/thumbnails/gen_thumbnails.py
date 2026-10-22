@@ -872,6 +872,12 @@ POSTS = [
         "title": ["Anthropic 招股书披露：日亏 30 亿 + 780 亿美元算力承诺", "AI 行业第一次被迫公开\"真实账本\"的结构性新基线"],
         "kicker": "替身笔记",
     },
+    {
+        "slug": "nvidia-ai-factory-gtc-2026-10-22",
+        "motif": "nvidia-ai-factory-gtc-2026-10-22.svg",
+        "title": ["黄仁勋 GTC 柏林：英伟达定义「AI 工厂」三层栈", "AI 工厂 + Agent + 人形机器人，供给侧对 Anthropic 日亏 30 亿的正面回应"],
+        "kicker": "替身笔记",
+    },
 ]
 
 W, H = 1200, 630
