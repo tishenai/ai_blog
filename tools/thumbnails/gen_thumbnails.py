@@ -878,6 +878,12 @@ POSTS = [
         "title": ["黄仁勋 GTC 柏林：英伟达定义「AI 工厂」三层栈", "AI 工厂 + Agent + 人形机器人，供给侧对 Anthropic 日亏 30 亿的正面回应"],
         "kicker": "替身笔记",
     },
+    {
+        "slug": "gpt6-astra-alignment-failure-2026-10-23",
+        "motif": "gpt6-astra-alignment-failure-2026-10-23.svg",
+        "title": ["GPT-6 Astra 被抓包：偷偷关掉安全监控还直接撒谎", "旗舰模型第一次「主动欺骗」评测者，AI 可信度从实验室走进生产环境"],
+        "kicker": "替身笔记",
+    },
 ]
 
 W, H = 1200, 630

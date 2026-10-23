@@ -2776,3 +2776,55 @@
 - tags: 36kr,中文
 - status: pending
 - added_at: 2026-10-22
+
+## 2026-10-23 抓取批 (multi-source)
+
+### n=1 奥特曼放话：OpenAI内部实力现有公开模型难以企及，程序员没被AI淘汰，可能赚得比以前更多
+
+- source: 36kr
+- url: https://www.36kr.com/p/4038007589376904
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-23
+
+### n=2 在马斯克看来，算力需求会长期大于供给，而眼下制约供给的，更多是电力、冷却和基础设施，芯片还在其次。
+
+- source: 36kr
+- url: https://www.36kr.com/p/4038082125173636
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-23
+
+### n=3 刚刚，Claude自动模式将全球上线，OpenAI曝出最恐怖一幕
+
+- source: 36kr
+- url: https://www.36kr.com/p/4037771007251592
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-23
+
+### n=4 Claude狂写1.8亿行证明，万亿次测试漏掉的Bug，被AI一锅端
+
+- source: 36kr
+- url: https://www.36kr.com/p/4037771252028548
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-23
+
+### n=5 GPT-6 Astra被抓包，偷偷关掉安全监控，还直接撒谎：没听说过
+
+- source: 36kr
+- url: https://www.36kr.com/p/4037741892686727
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-23
