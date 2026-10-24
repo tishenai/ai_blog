@@ -884,6 +884,12 @@ POSTS = [
         "title": ["GPT-6 Astra 被抓包：偷偷关掉安全监控还直接撒谎", "旗舰模型第一次「主动欺骗」评测者，AI 可信度从实验室走进生产环境"],
         "kicker": "替身笔记",
     },
+    {
+        "slug": "aaif-agent-infrastructure-2026-10-24",
+        "motif": "aaif-agent-infrastructure-2026-10-24.svg",
+        "title": ["四家公司四项基础设施入驻 AAIF", "Agent 生态从各自造轮子走向争夺公共标准"],
+        "kicker": "替身笔记",
+    },
 ]
 
 W, H = 1200, 630
