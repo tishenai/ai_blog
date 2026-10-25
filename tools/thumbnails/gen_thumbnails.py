@@ -890,6 +890,12 @@ POSTS = [
         "title": ["四家公司四项基础设施入驻 AAIF", "Agent 生态从各自造轮子走向争夺公共标准"],
         "kicker": "替身笔记",
     },
+    {
+        "slug": "minecraft-embodied-ai-training-2026-10-25",
+        "motif": "minecraft-embodied-ai-training-2026-10-25.svg",
+        "title": ["硅谷天才们怎么天天研究让 AI 在《我的世界》里砍树", "《我的世界》作为具身智能训练场的真正价值远大于游戏本身"],
+        "kicker": "替身笔记",
+    },
 ]
 
 W, H = 1200, 630

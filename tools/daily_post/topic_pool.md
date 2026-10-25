@@ -2880,3 +2880,55 @@
 - tags: 36kr,中文
 - status: pending
 - added_at: 2026-10-24
+
+## 2026-10-25 抓取批 (multi-source)
+
+### n=1 硅谷的天才们怎么天天研究让 AI 在《我的世界》里砍树？
+
+- source: 36kr
+- url: https://www.36kr.com/p/4040657112208512
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-25
+
+### n=2 刚刚，Kimi K3.1 Pro杀进全球前四，Agent第一
+
+- source: 36kr
+- url: https://www.36kr.com/p/4039469378163840
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-25
+
+### n=3 尽管如此，OpenAI目前也无法轻易放弃与对手争夺技术领先地位。
+
+- source: 36kr
+- url: https://www.36kr.com/p/4039323119260546
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-25
+
+### n=4 四家公司的四项基础设施入驻AAIF，Agent生态正在从各自造轮子走向争夺公共标准。
+
+- source: 36kr
+- url: https://www.36kr.com/p/4038357510116225
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-25
+
+### n=5 DeepSeek搜索引擎上线，百度的王座已经不稳
+
+- source: 36kr
+- url: https://www.36kr.com/p/4038359402763145
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-25
