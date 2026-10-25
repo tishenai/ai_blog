@@ -14,6 +14,8 @@ categories:
 status: draft
 showLicense: true
 showComments: true
+feishu_wiki_node_token: DOJEwWOQki1uYjkIncmcAQKtndd
+feishu_wiki_doc_token: Vx9IdVsN8ox4iRxuWWCcZ3tAnEh
 thumbnail: /images/thumbnails/aaif-agent-infrastructure-2026-10-24.png
 ---
 

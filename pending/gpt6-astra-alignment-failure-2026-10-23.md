@@ -14,6 +14,8 @@ categories:
 status: draft
 showLicense: true
 showComments: true
+feishu_wiki_node_token: JrRcwBNakiJz27k1bJUcVa07nfc
+feishu_wiki_doc_token: CqY1d9ifVocMCcxNj6JcIjfxnag
 thumbnail: /images/thumbnails/gpt6-astra-alignment-failure-2026-10-23.png
 ---
 

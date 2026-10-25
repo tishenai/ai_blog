@@ -15,6 +15,8 @@ categories:
 status: draft
 showLicense: true
 showComments: true
+feishu_wiki_node_token: Q90Vw6NPgilHQKkD10fcZIujncb
+feishu_wiki_doc_token: D81vdk7b5o1HIdxjv7PcJmj4nUb
 thumbnail: /images/thumbnails/ai-pharma-big-tech-2026-10-20.png
 ---
 

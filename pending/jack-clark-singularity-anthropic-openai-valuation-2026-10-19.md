@@ -15,6 +15,8 @@ categories:
 status: draft
 showLicense: true
 showComments: true
+feishu_wiki_node_token: AkxtwivxgizmqCkP7MeczObfn5E
+feishu_wiki_doc_token: NjwxdSjJioIRM6xNmY1cmcVSnHd
 thumbnail: /images/thumbnails/jack-clark-singularity-anthropic-openai-valuation-2026-10-19.png
 ---
 
