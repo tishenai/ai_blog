@@ -2932,3 +2932,137 @@
 - tags: 36kr,中文
 - status: pending
 - added_at: 2026-10-25
+
+## 2026-10-26 抓取批 (multi-source)
+
+### n=1 Claude Code桌面之父官宣离职，从高中辍学逆袭AI之巅
+
+- source: 36kr
+- url: https://www.36kr.com/p/4042392255173504
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-26
+
+### n=2 如果你是公司的负责人，你会怎么制定 AI 预算呢？
+
+- source: 36kr
+- url: https://www.36kr.com/p/4042371810431881
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-26
+
+### n=3 企业AI的「坏账」：GPU在吃灰，Token在烧钱！
+
+- source: 36kr
+- url: https://www.36kr.com/p/4039561205011586
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-26
+
+### n=4 一位开发者让电视服用了 Claude，这是它系统发生的变化
+
+- source: 36kr
+- url: https://www.36kr.com/p/4039708325057672
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-26
+
+### n=5 GPT-6 Luna 要被扩散 LLM 抢饭碗了？
+
+- source: 36kr
+- url: https://www.36kr.com/p/4039680498717828
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-26
+
+## 2026-10-26 抓取批 (multi-source)
+
+### n=1 Claude Code桌面之父官宣离职，从高中辍学逆袭AI之巅
+
+- source: 36kr
+- url: https://www.36kr.com/p/4042392255173504
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-26
+
+### n=2 如果你是公司的负责人，你会怎么制定 AI 预算呢？
+
+- source: 36kr
+- url: https://www.36kr.com/p/4042371810431881
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-26
+
+### n=3 企业AI的「坏账」：GPU在吃灰，Token在烧钱！
+
+- source: 36kr
+- url: https://www.36kr.com/p/4039561205011586
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-26
+
+### n=4 一位开发者让电视服用了 Claude，这是它系统发生的变化
+
+- source: 36kr
+- url: https://www.36kr.com/p/4039708325057672
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-26
+
+### n=5 GPT-6 Luna 要被扩散 LLM 抢饭碗了？
+
+- source: 36kr
+- url: https://www.36kr.com/p/4039680498717828
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-26
+
+### n=6 AI 真的是黑箱吗？
+
+- source: 36kr
+- url: https://www.36kr.com/p/4042180465300614
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-26
+
+### n=7 谷歌宁愿少卖云算力，也要先把算力留给 Gemini：皮查伊罕见长访谈，披露 AI 自我改进与算力争夺内幕
+
+- source: 36kr
+- url: https://www.36kr.com/p/4039474240836486
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-26
+
+### n=8 造成50人以上死伤才能叫停AI模型？Anthropic私下推动监管草案惹众怒，达里奥亲自回应
+
+- source: 36kr
+- url: https://www.36kr.com/p/4039323426853762
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-26

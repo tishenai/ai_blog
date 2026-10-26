@@ -896,6 +896,12 @@ POSTS = [
         "title": ["硅谷天才们怎么天天研究让 AI 在《我的世界》里砍树", "《我的世界》作为具身智能训练场的真正价值远大于游戏本身"],
         "kicker": "替身笔记",
     },
+    {
+        "slug": "anthropic-regulatory-lobbying-2026-10-26",
+        "motif": "anthropic-regulatory-lobbying-2026-10-26.svg",
+        "title": ["Anthropic 私下推动「50 人死伤才能叫停」监管草案惹众怒", "AI 公司第一次公开游说削弱约束，行业自律叙事破产"],
+        "kicker": "替身笔记",
+    },
 ]
 
 W, H = 1200, 630
