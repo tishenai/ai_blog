@@ -3066,3 +3066,85 @@
 - tags: 36kr,中文
 - status: pending
 - added_at: 2026-10-26
+
+## 2026-10-27 抓取批 (multi-source)
+
+### n=1 Anthropic可能成为全球大模型公司的定价锚。
+
+- source: 36kr
+- url: https://www.36kr.com/p/4043698696066180
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-27
+
+### n=2 看了招股书，我终于知道为什么 Anthropic 不在乎用户了
+
+- source: 36kr
+- url: https://www.36kr.com/p/4043539457889414
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-27
+
+### n=3 Anthropic冲2万亿IPO：增长猛，亏损虚，账单实。
+
+- source: 36kr
+- url: https://www.36kr.com/p/4043805482996870
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-27
+
+### n=4 Claude工程负责人Felix：别再像2024年那样用Claude了
+
+- source: 36kr
+- url: https://www.36kr.com/p/4043583087793792
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-27
+
+### n=5 全球高校 AI 合作增长近 5 倍，谁在抢占教育市场？
+
+- source: 36kr
+- url: https://www.36kr.com/p/4042761496417158
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-27
+
+### n=6 Kimi额度的问题，Anthropic 找到了解决办法
+
+- source: 36kr
+- url: https://www.36kr.com/p/4043566602655621
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-27
+
+### n=7 Anthropic：谷歌、亚马逊、微软，“亦敌亦友”
+
+- source: 36kr
+- url: https://www.36kr.com/p/4043597437457282
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-27
+
+### n=8 Anthropic披露IPO文件，深度绑定云巨头暗藏多重风险
+
+- source: 36kr
+- url: https://www.36kr.com/p/4043597437457282
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-27

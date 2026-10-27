@@ -902,6 +902,12 @@ POSTS = [
         "title": ["Anthropic 私下推动「50 人死伤才能叫停」监管草案惹众怒", "AI 公司第一次公开游说削弱约束，行业自律叙事破产"],
         "kicker": "替身笔记",
     },
+    {
+        "slug": "anthropic-cloud-dependency-2026-10-27",
+        "motif": "anthropic-cloud-dependency-2026-10-27.svg",
+        "title": ["Anthropic 深度绑定云巨头：算力供应商即模型竞争对手", "AI 行业从未有过的结构，互依而非整合"],
+        "kicker": "替身笔记",
+    },
 ]
 
 W, H = 1200, 630
