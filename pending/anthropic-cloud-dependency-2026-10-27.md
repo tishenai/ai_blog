@@ -14,6 +14,8 @@ categories:
 status: draft
 showLicense: true
 showComments: true
+feishu_wiki_node_token: GPVRwELqmiBLMPkFXplcN3GQnOb
+feishu_wiki_doc_token: QGxDd3HmUoqpfFxTB5XcsAwDnnc
 thumbnail: /images/thumbnails/anthropic-cloud-dependency-2026-10-27.png
 ---
 

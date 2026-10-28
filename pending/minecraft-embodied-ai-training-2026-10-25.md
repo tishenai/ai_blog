@@ -14,6 +14,8 @@ categories:
 status: draft
 showLicense: true
 showComments: true
+feishu_wiki_node_token: DyT0wPIPsiuHHTkEuKUcvxR5nRh
+feishu_wiki_doc_token: AJY8dsYJXoLu7Yx2fZtcw19bnqb
 thumbnail: /images/thumbnails/minecraft-embodied-ai-training-2026-10-25.png
 ---
 

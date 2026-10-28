@@ -14,6 +14,8 @@ categories:
 status: draft
 showLicense: true
 showComments: true
+feishu_wiki_node_token: HElEwsaMWi9wl3kqoFtcjoiMnYb
+feishu_wiki_doc_token: IkeodttqyompdmxGqp9cwSqWnJb
 thumbnail: /images/thumbnails/deepmind-alphaproof-nexus-erdos-2026-10-16.png
 ---
 

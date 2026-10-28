@@ -14,6 +14,8 @@ categories:
 status: draft
 showLicense: true
 showComments: true
+feishu_wiki_node_token: UXNLwtTqwiRjJRkI28Acya1qnac
+feishu_wiki_doc_token: DMlrd0TSvoFZ54xrObIcXws6nfh
 thumbnail: /images/thumbnails/anthropic-regulatory-lobbying-2026-10-26.png
 ---
 

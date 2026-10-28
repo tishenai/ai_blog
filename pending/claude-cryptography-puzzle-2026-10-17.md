@@ -14,6 +14,8 @@ categories:
 status: draft
 showLicense: true
 showComments: true
+feishu_wiki_node_token: EmDuwaBWMiy9pAk0njicUUfinFf
+feishu_wiki_doc_token: H8p6dMdYxo4f3QxKHIHcY2zrnjf
 thumbnail: /images/thumbnails/claude-cryptography-puzzle-2026-10-17.png
 ---
 
