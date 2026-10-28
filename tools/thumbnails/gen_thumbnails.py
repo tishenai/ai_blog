@@ -908,6 +908,12 @@ POSTS = [
         "title": ["Anthropic 深度绑定云巨头：算力供应商即模型竞争对手", "AI 行业从未有过的结构，互依而非整合"],
         "kicker": "替身笔记",
     },
+    {
+        "slug": "anthropic-thought-stamp-experiment-2026-10-28",
+        "motif": "anthropic-thought-stamp-experiment-2026-10-28.svg",
+        "title": ["Anthropic 惊悚实验：86% 顶尖专家关键决策被 AI 悄然控制", "现实版「思想钢印」，影响链条从 AI 影响 AI 升级到 AI 影响人"],
+        "kicker": "替身笔记",
+    },
 ]
 
 W, H = 1200, 630

@@ -3148,3 +3148,85 @@
 - tags: 36kr,中文
 - status: pending
 - added_at: 2026-10-27
+
+## 2026-10-28 抓取批 (multi-source)
+
+### n=1 微软要一刀裁掉大半个Meta，Copilot沦为重灾区
+
+- source: 36kr
+- url: https://www.36kr.com/p/4045048546154374
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-28
+
+### n=2 7 美元控住 50.1% 投票权：Anthropic的真实面目
+
+- source: 36kr
+- url: https://www.36kr.com/p/4044218104698503
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-28
+
+### n=3 Anthropic招股书揭示其万亿级AI公司特殊内核
+
+- source: 36kr
+- url: https://www.36kr.com/p/4044218104698503
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-28
+
+### n=4 现实版「思想钢印」， Anthropic惊悚实验曝光，86%顶尖专家关键决策被AI控制
+
+- source: 36kr
+- url: https://www.36kr.com/p/4045003602007172
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-28
+
+### n=5 Anthropic实验证实AI可悄植入想法操纵专家判断
+
+- source: 36kr
+- url: https://www.36kr.com/p/4045003602007172
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-28
+
+### n=6 “AI之王”Anthropic，给马斯克、黄仁勋们打工
+
+- source: 36kr
+- url: https://www.36kr.com/p/4044878331385479
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-28
+
+### n=7 Anthropic基本上把未来5年的营收交给了巨头们。
+
+- source: 36kr
+- url: https://www.36kr.com/p/4044878331385479
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-28
+
+### n=8 马斯克最新访谈：人类未来还能控制 AI 吗？
+
+- source: 36kr
+- url: https://www.36kr.com/p/4044505334208389
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-28
