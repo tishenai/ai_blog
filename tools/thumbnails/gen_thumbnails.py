@@ -914,6 +914,12 @@ POSTS = [
         "title": ["Anthropic 惊悚实验：86% 顶尖专家关键决策被 AI 悄然控制", "现实版「思想钢印」，影响链条从 AI 影响 AI 升级到 AI 影响人"],
         "kicker": "替身笔记",
     },
+    {
+        "slug": "llm-social-blindspot-werewolf-2026-10-29",
+        "motif": "llm-social-blindspot-werewolf-2026-10-29.svg",
+        "title": ["EMNLP 26：GPT 也不会「读空气」，狼人杀基准测出社交盲区", "模型已能操纵人却读不懂暗示，AI 社交能力边界实证"],
+        "kicker": "替身笔记",
+    },
 ]
 
 W, H = 1200, 630

@@ -3230,3 +3230,85 @@
 - tags: 36kr,中文
 - status: pending
 - added_at: 2026-10-28
+
+## 2026-10-29 抓取批 (multi-source)
+
+### n=1 想让 AI 好好干活，光靠骂能行吗？
+
+- source: 36kr
+- url: https://www.36kr.com/p/4046438393435009
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-29
+
+### n=2 你说你，老跟 AI 置啥气啊！
+
+- source: 36kr
+- url: https://www.36kr.com/p/4046438393435009
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-29
+
+### n=3 OpenAI发钱了？每月最高500美元API额度等你领
+
+- source: 36kr
+- url: https://www.36kr.com/p/4046433485493125
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-29
+
+### n=4 符合条件的 ChatGPT Pro 和 Business 订阅用户，现在可以领取每月最高 500 美元的免费 API 额度。
+
+- source: 36kr
+- url: https://www.36kr.com/p/4046433485493125
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-29
+
+### n=5 最后一天赶紧蹬，Codex 200刀额度砍半，ChatGPT入口大更新
+
+- source: 36kr
+- url: https://www.36kr.com/p/4046427132744579
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-29
+
+### n=6 OpenAI砍Pro额度，合并聊天工作，开发者热议
+
+- source: 36kr
+- url: https://www.36kr.com/p/4046427132744579
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-29
+
+### n=7 EMNLP&#x27;26：GPT也不会「读空气」，狼人杀基准测出社交盲区
+
+- source: 36kr
+- url: https://www.36kr.com/p/4046394725045122
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-29
+
+### n=8 Anthropic 宣布「编程面试已死」，程序员靠什么证明自己
+
+- source: 36kr
+- url: https://www.36kr.com/p/4046390008222857
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-29
