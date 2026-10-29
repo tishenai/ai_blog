@@ -14,6 +14,8 @@ categories:
 status: draft
 showLicense: true
 showComments: true
+feishu_wiki_node_token: ZHojwCxS1iTlqhkB78GcvbyJnKf
+feishu_wiki_doc_token: FJOFd1161omNmsxoxJscnebpnWb
 thumbnail: /images/thumbnails/anthropic-thought-stamp-experiment-2026-10-28.png
 ---
 

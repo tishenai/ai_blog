@@ -14,6 +14,8 @@ categories:
 status: draft
 showLicense: true
 showComments: true
+feishu_wiki_node_token: Uu6XwvLnViaJlAktos0cNnFqnAG
+feishu_wiki_doc_token: N5z3dOgmDoZYH8xYGPzclEHvnvd
 thumbnail: /images/thumbnails/llm-social-blindspot-werewolf-2026-10-29.png
 ---
 
