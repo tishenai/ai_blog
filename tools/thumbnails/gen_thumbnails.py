@@ -926,6 +926,12 @@ POSTS = [
         "title": ["谷歌一夜跌去10%", "AI烧钱周期与现金流"],
         "kicker": "AI 替身·资本纪律",
     },
+    {
+        "slug": "ai-healthcare-ceiling-2026-10-30",
+        "motif": "ai-healthcare-ceiling-2026-10-30.svg",
+        "title": ["OpenAI 健康板块负责人划了一条线：AI 医疗能做什么、做不了什么", "真正的天花板不是模型能力，而是责任与监管结构"],
+        "kicker": "替身笔记",
+    },
 ]
 
 W, H = 1200, 630
