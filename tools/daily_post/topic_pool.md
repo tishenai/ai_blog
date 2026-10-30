@@ -3312,3 +3312,167 @@
 - tags: 36kr,中文
 - status: pending
 - added_at: 2026-10-29
+
+## 2026-10-30 抓取批 (multi-source)
+
+### n=1 Claude母公司：我们可能搞死全人类，来买我们股票吧！
+
+- source: 36kr
+- url: https://www.36kr.com/p/4047853681408521
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-30
+
+### n=2 AI 确实让公司少招人了，但现有员工不用担心“丢饭碗”。
+
+- source: 36kr
+- url: https://www.36kr.com/p/4048035350002184
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-30
+
+### n=3 ChatGPT Pro 额度翻倍：是让步，不是福利？
+
+- source: 36kr
+- url: https://www.36kr.com/p/4047841517484292
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-30
+
+### n=4 主打一个听劝，OpenAI把Pro额度翻倍了
+
+- source: 36kr
+- url: https://www.36kr.com/p/4047766370121986
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-30
+
+### n=5 AI 让世界更富，可我的那一份呢？
+
+- source: 36kr
+- url: https://www.36kr.com/p/4047012606671104
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-30
+
+### n=6 即日起，ChatGPT Pro使用额度翻倍
+
+- source: 36kr
+- url: https://www.36kr.com/p/4047560652405000
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-30
+
+### n=7 OpenAI健康板块负责人：AI医疗健康的上限和下限
+
+- source: 36kr
+- url: https://www.36kr.com/p/4046866715154050
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-30
+
+### n=8 谷歌一夜跌去 10%：AI 烧钱周期里，它还值不值得拿？
+
+- source: 36kr
+- url: https://www.36kr.com/p/4046826443871112
+- summary:
+- angle:
+- tags: 36kr,中文
+- status: pending
+- added_at: 2026-10-30
+
+## 2026-10-30 抓取批 (multi-source)
+
+### n=1 Rethinking Neural Thickets Without Weight Perturbations
+
+- source: arXiv cs.AI
+- url: http://arxiv.org/abs/2610.40649v1
+- summary: The Neural Thickets hypothesis posits that pretrained language models lie in dense neighborhoods of task-specific experts in weight space, which random Gaussian perturbations can uncover. We reproduce
+- angle:
+- tags: arXiv,研究论文
+- status: pending
+- added_at: 2026-10-30
+
+### n=2 Read, Allocate, Route: Role-Coupled Tokenization for Pixel-Space Generative Transformers
+
+- source: arXiv cs.AI
+- url: http://arxiv.org/abs/2610.40647v1
+- summary: Pixel-space generative Transformers typically use one token per image patch, so capturing finer detail requires more tokens and makes global attention increasingly expensive. We observe that finer det
+- angle:
+- tags: arXiv,研究论文
+- status: pending
+- added_at: 2026-10-30
+
+### n=3 Luggage re-identification: A study of strategies towards a real-world application
+
+- source: arXiv cs.AI
+- url: http://arxiv.org/abs/2610.40643v1
+- summary: Luggage re-identification (ReID) is a critical task in video surveillance for forensics, security or border management (suspicious or abandoned luggage recognition), as well as luggage management (los
+- angle:
+- tags: arXiv,研究论文
+- status: pending
+- added_at: 2026-10-30
+
+### n=4 From extreme weather to agricultural consequences with agentic AI
+
+- source: arXiv cs.AI
+- url: http://arxiv.org/abs/2610.40641v1
+- summary: Extreme weather is forecast days ahead, yet its consequences for agriculture remain hard to predict: a forecast says where a storm will strike, not which crops will suffer or how much is at risk, and
+- angle:
+- tags: arXiv,研究论文
+- status: pending
+- added_at: 2026-10-30
+
+### n=5 Probing Spatial State Representations in Visual Foundation Models
+
+- source: arXiv cs.AI
+- url: http://arxiv.org/abs/2610.40636v1
+- summary: An observer sees only part of the surrounding world, yet must keep track of what lies beyond the current view. Spatial perception therefore involves more than recognizing individual images: it calls f
+- angle:
+- tags: arXiv,研究论文
+- status: pending
+- added_at: 2026-10-30
+
+### n=6 TextSeal2: Distortion-Free LLM Watermarking with Copula Mixing and Memoryless Races
+
+- source: arXiv cs.AI
+- url: http://arxiv.org/abs/2610.40613v1
+- summary: We present TextSeal2, a distortion-free watermark for large language models that keeps its signal under speculative decoding: tokens that replace rejected drafts remain watermarked with the same keys,
+- angle:
+- tags: arXiv,研究论文
+- status: pending
+- added_at: 2026-10-30
+
+### n=7 When to Assist and What to Suggest: Joint Gating and Memory-Grounded Hint Generation in One Compact Decoder
+
+- source: arXiv cs.AI
+- url: http://arxiv.org/abs/2610.40611v1
+- summary: Proactive assistants offer short, memory-grounded hints during a conversation, deciding when to assist and what to suggest. Current systems split this between a gate and a larger generator; we evaluat
+- angle:
+- tags: arXiv,研究论文
+- status: pending
+- added_at: 2026-10-30
+
+### n=8 Collaborative AI agents for autonomous experimental research with solid-state quantum spins
+
+- source: arXiv cs.AI
+- url: http://arxiv.org/abs/2610.40589v1
+- summary: An autonomous research laboratory could conduct an entire study, from formulating questions to preparing manuscripts. Artificial intelligence (AI) offers one route towards this goal. Recent AI systems
+- angle:
+- tags: arXiv,研究论文
+- status: pending
+- added_at: 2026-10-30

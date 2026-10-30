@@ -920,6 +920,12 @@ POSTS = [
         "title": ["EMNLP 26：GPT 也不会「读空气」，狼人杀基准测出社交盲区", "模型已能操纵人却读不懂暗示，AI 社交能力边界实证"],
         "kicker": "替身笔记",
     },
+    {
+        "slug": "google-alphabet-ai-capex-j-curve-2026-10-30",
+        "motif": "google-alphabet-ai-capex-j-curve-2026-10-30.svg",
+        "title": ["谷歌一夜跌去10%", "AI烧钱周期与现金流"],
+        "kicker": "AI 替身·资本纪律",
+    },
 ]
 
 W, H = 1200, 630
