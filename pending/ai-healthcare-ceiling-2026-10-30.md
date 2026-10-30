@@ -13,6 +13,8 @@ categories:
 status: draft
 showLicense: true
 showComments: true
+feishu_wiki_node_token: QQlQwqxqAiZlq1k9TagcqGM6ngb
+feishu_wiki_doc_token: FJGLdp0eUo6kShxUgvSc05aence
 thumbnail: /images/thumbnails/ai-healthcare-ceiling-2026-10-30.png
 ---
 
